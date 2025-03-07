@@ -1,7 +1,7 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:operating_systems/features/study/presentation/home_page.dart';
+import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 
 
 // Define your different screens here

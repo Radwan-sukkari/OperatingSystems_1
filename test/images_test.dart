@@ -5,6 +5,6 @@ import 'package:operating_systems/resources/resources.dart';
 
 void main() {
   test('images assets test', () {
-    expect(File(Images.doneImage).existsSync(), isTrue);
+    expect(File(Images.boy).existsSync(), isTrue);
   });
 }
