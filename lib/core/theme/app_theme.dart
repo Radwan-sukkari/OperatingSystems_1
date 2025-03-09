@@ -7,7 +7,7 @@ class AppTheme {
 
   static ColorScheme lightScheme() => const ColorScheme(
         brightness: Brightness.light,
-        primary: Color(0xff910000),
+        primary: Color(0xff205781),
         surfaceTint: Color(0xffFFF0BD),
         onPrimary: Color(0xfffefefe),
         primaryContainer: Color(0xffdac6e0),

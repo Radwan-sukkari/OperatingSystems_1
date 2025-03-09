@@ -1,6 +1,7 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/chhose_quiz_type.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 
@@ -37,7 +38,7 @@ class _NavBarState extends State<NavBar> {
         return HomePageScreen(); // Replace with your Add Post screen widget
       case _SelectedTab.AllUser:
 
-        return HomePageScreen(); // Replace with your Profile screen widget
+        return ChooseQuizTypeScreen(); // Replace with your Profile screen widget
       default:
         return HomePageScreen(); // Fallback to home content
     }
