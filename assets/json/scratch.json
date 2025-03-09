@@ -1,0 +1,58 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": "Chapter 1",
+      "title_ar": "الفصل الأول",
+      "questions": [
+        {
+          "question_en": "Networks of computers have become so powerful that they are used to:",
+          "question_ar": "أصبحت شبكات أجهزة الكمبيوتر قوية جدًا بحيث يتم استخدامها من أجل:",
+          "answers": [
+            {"answer_en": "Emulate human intelligence", "answer_ar": "محاكاة الذكاء البشري", "is_correct": false},
+            {"answer_en": "Model the Earth’s climate", "answer_ar": "تصميم مناخ الأرض", "is_correct": false},
+            {"answer_en": "Construct lifelike 3D animations", "answer_ar": "إنشاء رسوم متحركة ثلاثية الأبعاد", "is_correct": false},
+            {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": true}
+          ]
+        },
+        {
+          "question_en": "Operating systems can be found in which of the following devices?",
+          "question_ar": "يمكن العثور على أنظمة التشغيل في أي من الأجهزة التالية؟",
+          "answers": [
+            {"answer_en": "Cell phones", "answer_ar": "الهواتف المحمولة", "is_correct": false},
+            {"answer_en": "Automobiles", "answer_ar": "السيارات", "is_correct": false},
+            {"answer_en": "MP3 players", "answer_ar": "مشغلات MP3", "is_correct": false},
+            {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": true}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title_en": "Chapter 2",
+      "title_ar": "الفصل الثاني",
+      "questions": [
+        {
+          "question_en": "Operating systems use ________ to perform device-specific I/O operations.",
+          "question_ar": "تستخدم أنظمة التشغيل ________ لتنفيذ عمليات الإدخال / الإخراج الخاصة بالجهاز.",
+          "answers": [
+            {"answer_en": "APIs", "answer_ar": "واجهات برمجة التطبيقات", "is_correct": false},
+            {"answer_en": "Controllers", "answer_ar": "وحدات التحكم", "is_correct": false},
+            {"answer_en": "Device drivers", "answer_ar": "برامج تشغيل الأجهزة", "is_correct": true},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Which type of memory provides the fastest data access?",
+          "question_ar": "أي نوع من الذاكرة يوفر أسرع وصول إلى البيانات؟",
+          "answers": [
+            {"answer_en": "L1 Cache", "answer_ar": "ذاكرة التخزين المؤقت L1", "is_correct": true},
+            {"answer_en": "L2 Cache", "answer_ar": "ذاكرة التخزين المؤقت L2", "is_correct": false},
+            {"answer_en": "L3 Cache", "answer_ar": "ذاكرة التخزين المؤقت L3", "is_correct": false},
+            {"answer_en": "Registers", "answer_ar": "السجلات", "is_correct": false}
+          ]
+        }
+      ]
+    }
+  ]
+}

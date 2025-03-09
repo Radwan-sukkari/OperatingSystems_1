@@ -27,7 +27,7 @@ class OsiChapterGridScreen extends StatelessWidget {
                   mainAxisSpacing: 16,
                   childAspectRatio: 2.5,
                 ),
-                itemCount: 12, // عدد الأزرار
+                itemCount: 12,
                 itemBuilder: (context, index) {
                   return AnimationConfiguration.staggeredGrid(
                     position: index,
