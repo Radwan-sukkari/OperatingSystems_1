@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/buttons.dart';
 import 'package:operating_systems/core/app/size.dart';
+import 'package:operating_systems/core/injection/injection.dart';
+import 'package:operating_systems/features/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
@@ -33,7 +36,8 @@ class ChooseQuizTypeScreen extends StatelessWidget {
               function: () {},
             ),
           ],
-        ), name: 'اختر نوع الكويز',
+        ),
+        name: 'اختر نوع الكويز',
       )),
     );
   }

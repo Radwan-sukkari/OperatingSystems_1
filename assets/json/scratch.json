@@ -24,9 +24,178 @@
             {"answer_en": "MP3 players", "answer_ar": "مشغلات MP3", "is_correct": false},
             {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": true}
           ]
+        },
+        {
+          "question_en": "The software that contains the core components of the operating system is called the ________.",
+          "question_ar": "البرنامج الذي يحتوي على المكونات الأساسية لنظام التشغيل يسمى ________.",
+          "answers": [
+            {"answer_en": "Controller", "answer_ar": "وحدة التحكم", "is_correct": false},
+            {"answer_en": "Kernel", "answer_ar": "النواة", "is_correct": true},
+            {"answer_en": "Root", "answer_ar": "الجذر", "is_correct": false},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Which of the following statements about computing in the 1940s and 1950s is false?",
+          "question_ar": "أي من العبارات التالية عن الحوسبة في الأربعينيات والخمسينيات خاطئة؟",
+          "answers": [
+            {"answer_en": "Machine-language programs could be entered using punched cards.", "answer_ar": "يمكن إدخال برامج لغة الآلة باستخدام البطاقات المثقبة.", "is_correct": false},
+            {"answer_en": "The earliest digital computers of the 1940s and 1950s included operating systems.", "answer_ar": "أجهزة الكمبيوتر الرقمية الأولى في الأربعينيات والخمسينيات تضمنت أنظمة تشغيل.", "is_correct": true},
+            {"answer_en": "Programmers often entered programs in machine language one bit at a time using mechanical switches.", "answer_ar": "كان المبرمجون يدخلون البرامج بلغة الآلة بتة واحدة في كل مرة باستخدام المفاتيح الميكانيكية.", "is_correct": false},
+            {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Which of the following statements about the single-stream batch-processing systems of the 1950s is false?",
+          "question_ar": "أي من العبارات التالية عن أنظمة معالجة الدُفعات ذات التدفق الواحد في الخمسينيات خاطئة؟",
+          "answers": [
+            {"answer_en": "Programs were submitted in groups or batches.", "answer_ar": "تم تقديم البرامج في مجموعات أو دفعات.", "is_correct": false},
+            {"answer_en": "Jobs could run for days at a time.", "answer_ar": "يمكن أن تعمل الوظائف لأيام في كل مرة.", "is_correct": false},
+            {"answer_en": "Jobs typically required extensive user input during program execution.", "answer_ar": "تطلبت الوظائف عادةً إدخالًا مكثفًا من المستخدم أثناء تنفيذ البرنامج.", "is_correct": true},
+            {"answer_en": "An entire program had to be loaded into memory for the program to run.", "answer_ar": "كان يجب تحميل البرنامج بالكامل في الذاكرة لكي يعمل.", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "________ jobs in a multiprogramming computer system mainly use peripheral devices to perform their tasks.",
+          "question_ar": "________ الوظائف في نظام الكمبيوتر متعدد البرامج تستخدم بشكل رئيسي الأجهزة الطرفية لأداء مهامها.",
+          "answers": [
+            {"answer_en": "Processor-bound", "answer_ar": "مرتبطة بالمعالج", "is_correct": false},
+            {"answer_en": "Compute-bound", "answer_ar": "مرتبطة بالحساب", "is_correct": false},
+            {"answer_en": "I/O-bound", "answer_ar": "مرتبطة بالإدخال/الإخراج", "is_correct": true},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Which of the following was a benefit of the timesharing systems of the 1960s?",
+          "question_ar": "أي مما يلي كان فائدة لأنظمة المشاركة الزمنية في الستينيات؟",
+          "answers": [
+            {"answer_en": "The average turnaround time decreased significantly.", "answer_ar": "انخفض متوسط وقت الاستجابة بشكل كبير.", "is_correct": false},
+            {"answer_en": "Timesharing made it possible for real-time systems to provide quick results to users.", "answer_ar": "جعلت المشاركة الزمنية من الممكن لأنظمة الوقت الحقيقي تقديم نتائج سريعة للمستخدمين.", "is_correct": false},
+            {"answer_en": "Multiple interactive users could operate simultaneously.", "answer_ar": "يمكن لعدة مستخدمين تفاعليين العمل في نفس الوقت.", "is_correct": true},
+            {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Ken Thompson and Dennis Ritchie designed the high-level language ________ specifically to implement the UNIX operating system.",
+          "question_ar": "صمم كين طومسون ودينيس ريتشي لغة البرمجة عالية المستوى ________ خصيصًا لتنفيذ نظام التشغيل UNIX.",
+          "answers": [
+            {"answer_en": "Visual Basic", "answer_ar": "فيجوال بيسك", "is_correct": false},
+            {"answer_en": "C++", "answer_ar": "سي بلس بلس", "is_correct": false},
+            {"answer_en": "Java", "answer_ar": "جافا", "is_correct": false},
+            {"answer_en": "C", "answer_ar": "سي", "is_correct": true}
+          ]
+        },
+        {
+          "question_en": "During the 1970s, communication throughout the United States and across local area networks increased due to the proliferation of the Department of Defense’s ________ communication standards and Xerox’s ________ standard.",
+          "question_ar": "خلال السبعينيات، زادت الاتصالات في جميع أنحاء الولايات المتحدة وعبر الشبكات المحلية بسبب انتشار معايير الاتصالات ________ لوزارة الدفاع ومعيار ________ لشركة Xerox.",
+          "answers": [
+            {"answer_en": "HTTP, TCP/IP", "answer_ar": "HTTP, TCP/IP", "is_correct": false},
+            {"answer_en": "Ethernet, TCP/IP", "answer_ar": "إيثرنت, TCP/IP", "is_correct": false},
+            {"answer_en": "POP, Ethernet", "answer_ar": "POP, إيثرنت", "is_correct": false},
+            {"answer_en": "TCP/IP, Ethernet", "answer_ar": "TCP/IP, إيثرنت", "is_correct": true}
+          ]
+        },
+        {
+          "question_en": "In the 1980s, software such as spreadsheet programs, word processors, database packages and graphics packages helped drive the ________ revolution by creating demand from businesses that could use these products to increase their productivity.",
+          "question_ar": "في الثمانينيات، ساعدت البرامج مثل جداول البيانات ومعالجات النصوص وحزم قواعد البيانات وحزم الرسومات في دفع ثورة ________ من خلال خلق طلب من الشركات التي يمكنها استخدام هذه المنتجات لزيادة إنتاجيتها.",
+          "answers": [
+            {"answer_en": "Distributed computing", "answer_ar": "الحوسبة الموزعة", "is_correct": false},
+            {"answer_en": "Mainframe computing", "answer_ar": "الحوسبة المركزية", "is_correct": false},
+            {"answer_en": "Personal computing", "answer_ar": "الحوسبة الشخصية", "is_correct": true},
+            {"answer_en": "Timesharing", "answer_ar": "المشاركة الزمنية", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "In a distributed computing environment, clients are ________.",
+          "question_ar": "في بيئة الحوسبة الموزعة، العملاء هم ________.",
+          "answers": [
+            {"answer_en": "Computers that perform requested services", "answer_ar": "أجهزة الكمبيوتر التي تنفذ الخدمات المطلوبة", "is_correct": false},
+            {"answer_en": "User computers that request remote services", "answer_ar": "أجهزة الكمبيوتر الخاصة بالمستخدم التي تطلب خدمات عن بعد", "is_correct": true},
+            {"answer_en": "Often dedicated to one type of task, such as rendering graphics or managing databases", "answer_ar": "غالبًا ما تكون مخصصة لنوع واحد من المهام، مثل عرض الرسومات أو إدارة قواعد البيانات", "is_correct": false},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "The ________ is the grandparent of today’s Internet.",
+          "question_ar": "________ هو الجد للإنترنت اليوم.",
+          "answers": [
+            {"answer_en": "ARPAnet", "answer_ar": "ARPAnet", "is_correct": true},
+            {"answer_en": "TCP/IP protocol", "answer_ar": "بروتوكول TCP/IP", "is_correct": false},
+            {"answer_en": "Ethernet", "answer_ar": "إيثرنت", "is_correct": false},
+            {"answer_en": "World Wide Web", "answer_ar": "شبكة الويب العالمية", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
+          "question_ar": "________ يساعد في ضمان توجيه الرسائل بشكل صحيح من المرسل إلى المستقبل وأن تصل الرسائل سليمة.",
+          "answers": [
+            {"answer_en": "HyperText Markup Language (HTML)", "answer_ar": "لغة ترميز النص التشعبي (HTML)", "is_correct": false},
+            {"answer_en": "Internet Protocol (IP)", "answer_ar": "بروتوكول الإنترنت (IP)", "is_correct": false},
+            {"answer_en": "Transmission Control Protocol (TCP)", "answer_ar": "بروتوكول التحكم في الإرسال (TCP)", "is_correct": true},
+            {"answer_en": "The Ethernet standard", "answer_ar": "معيار إيثرنت", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
+          "question_ar": "طور تيم بيرنرز لي ________ في عام 1990.",
+          "answers": [
+            {"answer_en": "TCP/IP standard", "answer_ar": "معيار TCP/IP", "is_correct": false},
+            {"answer_en": "World Wide Web (WWW)", "answer_ar": "شبكة الويب العالمية (WWW)", "is_correct": true},
+            {"answer_en": "Internet", "answer_ar": "الإنترنت", "is_correct": false},
+            {"answer_en": "Graphical user interface (GUI)", "answer_ar": "واجهة المستخدم الرسومية (GUI)", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
+          "question_ar": "جعل تطوير الإنترنت وشبكة الويب العالمية ________ شائعًا بين أجهزة الكمبيوتر الشخصية.",
+          "answers": [
+            {"answer_en": "Distributed computing", "answer_ar": "الحوسبة الموزعة", "is_correct": false},
+            {"answer_en": "Object-oriented programming", "answer_ar": "البرمجة الشيئية", "is_correct": false},
+            {"answer_en": "Supercomputing", "answer_ar": "الحوسبة الفائقة", "is_correct": false},
+            {"answer_en": "Open-source software", "answer_ar": "البرمجيات مفتوحة المصدر", "is_correct": true}
+          ]
+        },
+        {
+          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
+          "question_ar": "يتم توزيع الكود المصدري لبرامج ________ بحرية، مما يسمح للمبرمجين بفحص البرنامج وتعديله قبل تجميعه وتنفيذه.",
+          "answers": [
+            {"answer_en": "Proprietary", "answer_ar": "الملكية", "is_correct": false},
+            {"answer_en": "Open-source", "answer_ar": "مفتوحة المصدر", "is_correct": true},
+            {"answer_en": "Free", "answer_ar": "مجانية", "is_correct": false},
+            {"answer_en": "All of the above", "answer_ar": "كل ما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
+          "question_ar": "________ تشمل مجموعة من المعايير التي تسمح للتطبيقات بتبادل البيانات عبر الإنترنت.",
+          "answers": [
+            {"answer_en": "Web browsers", "answer_ar": "متصفحات الويب", "is_correct": false},
+            {"answer_en": "Web services", "answer_ar": "خدمات الويب", "is_correct": true},
+            {"answer_en": "Distributed computing", "answer_ar": "الحوسبة الموزعة", "is_correct": false},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "A system that exhibits massive parallelism ________.",
+          "question_ar": "النظام الذي يعرض التوازي الهائل ________.",
+          "answers": [
+            {"answer_en": "Has a large number of processors that perform many independent parts of computations in parallel", "answer_ar": "لديه عدد كبير من المعالجات التي تنفذ العديد من أجزاء الحسابات المستقلة بالتوازي", "is_correct": true},
+            {"answer_en": "Has one processor that performs many independent parts of computations at the same time", "answer_ar": "لديه معالج واحد ينفذ العديد من أجزاء الحسابات المستقلة في نفس الوقت", "is_correct": false},
+            {"answer_en": "Communicates over a network to supply a specific set of operations that other applications can invoke", "answer_ar": "يتواصل عبر الشبكة لتوفير مجموعة محددة من العمليات التي يمكن للتطبيقات الأخرى استدعاؤها", "is_correct": false},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
+        },
+        {
+          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
+          "question_ar": "________ يسمح للمبرمجين بتنفيذ مهام النظام المعقدة ببساطة عن طريق استدعاء وظائف محددة مسبقًا.",
+          "answers": [
+            {"answer_en": "System call", "answer_ar": "استدعاء النظام", "is_correct": false},
+            {"answer_en": "Application programming interface (API)", "answer_ar": "واجهة برمجة التطبيقات (API)", "is_correct": true},
+            {"answer_en": "Web service", "answer_ar": "خدمة الويب", "is_correct": false},
+            {"answer_en": "None of the above", "answer_ar": "لا شيء مما سبق", "is_correct": false}
+          ]
         }
-      ]
-    },
+        ]},
     {
       "id": 2,
       "title_en": "Chapter 2",
