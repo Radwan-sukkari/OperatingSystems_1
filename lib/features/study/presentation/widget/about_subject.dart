@@ -69,7 +69,7 @@ class SmallButton extends StatelessWidget {
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
-        backgroundColor: Colors.black,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         fixedSize: size,
       ),
       child: Text(text,

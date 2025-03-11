@@ -29,7 +29,7 @@ class AboutSubjectContainer extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall!
-                    .copyWith(fontWeight: FontWeight.bold),
+                    .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
               ),
               SizedBox(
                 height: height(5),
@@ -39,7 +39,7 @@ class AboutSubjectContainer extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .bodySmall!
-                    .copyWith(fontWeight: FontWeight.bold),
+                    .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
               ),
               SizedBox(
                 height: height(15),

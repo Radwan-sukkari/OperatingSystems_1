@@ -20,6 +20,8 @@ class HomePageScreen extends StatelessWidget {
             child: Column(
               children: [
                 AboutSubjectContainer(),
+                SizedBox(height: 10,),
+                
               ],
             ),
           ),

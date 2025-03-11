@@ -54,7 +54,7 @@ class OsiChapterGridScreen extends StatelessWidget {
                                       child: SecondButton(
                                         name: state.chapters[index].titleEn,
                                         function: () {
-                                          context.pushNamed(QuizScreen.name);
+                                          context.pushNamed(QuizScreen.name,extra: state.chapters[index].questions);
                                         },
                                       ),
                                     ),
