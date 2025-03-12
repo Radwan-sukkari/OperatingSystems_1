@@ -3,8 +3,14 @@ import 'package:operating_systems/core/app/size.dart';
 
 class AnswerWidget extends StatelessWidget {
   final int index;
+  final String answer;
+  final bool isArabic;
 
-  const AnswerWidget({super.key, required this.index});
+  const AnswerWidget(
+      {super.key,
+      required this.index,
+      required this.answer,
+      required this.isArabic});
 
   @override
   Widget build(BuildContext context) {
@@ -25,37 +31,64 @@ class AnswerWidget extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                //  crossAxisAlignment: CrossAxisAlignment.start,
-
+                mainAxisAlignment: isArabic == true
+                    ? MainAxisAlignment.start
+                    : MainAxisAlignment.end,
+                //   crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Flexible(
-                    child: Text(
-                      " Ls resourcesinux . $index",
-                      textAlign: TextAlign.left,
-                      softWrap: true,
-                      overflow: TextOverflow
-                          .visible, // Prevents text from being clipped
-                    ),
-                  ),
-                  SizedBox(width: width(8)),
-                  Align(
-                    alignment: Alignment.topLeft,
-                    child: Container(
-                      height: height(25),
-                      width: width(25),
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Theme.of(context).colorScheme.primary,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          "A",
-                          style: TextStyle(color: Colors.white),
+                  isArabic == false
+                      ? Flexible(
+                          child: Text(
+                            answer,
+                            textAlign: TextAlign.left,
+                            softWrap: true,
+                            overflow: TextOverflow
+                                .visible, // Prevents text from being clipped
+                          ),
+                        )
+                      : Container(
+                          height: height(25),
+                          width: width(25),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "${index + 1}",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
+                  SizedBox(
+                    width: width(10),
                   ),
+                  isArabic == false
+                      ? Container(
+                          height: height(25),
+                          width: width(25),
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          child: Center(
+                            child: Text(
+                              "${index + 1}",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ),
+                        )
+                      : Flexible(
+                          child: Text(
+                            answer,
+                            textAlign: isArabic == true
+                                ? TextAlign.right
+                                : TextAlign.left,
+                            softWrap: true,
+                            overflow: TextOverflow
+                                .visible, // Prevents text from being clipped
+                          ),
+                        ),
                 ],
               ),
             ),

@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:operating_systems/core/app/size.dart';
 
 class QuestionWidget extends StatelessWidget {
-  const QuestionWidget({super.key});
+  final String question;
+  final bool isArabic;
+  const QuestionWidget(
+      {super.key,
+      required this.question, required this.isArabic,
+      });
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +19,10 @@ class QuestionWidget extends StatelessWidget {
               color: Color(0xff205781).withOpacity(0.9), width: 1.5)),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-        child: Text("نا  يكتب نص السؤالنا  يكتب نص السؤالنا  يكتب نص السؤالنا  يكتب نص السؤالنا  يكتب نص السؤالهنا  يكتب نص السؤال"),
+        child: Text(
+    question,
+          textDirection: isArabic==false?TextDirection.ltr:TextDirection.rtl,
       ),
-    );
+    ));
   }
 }

@@ -56,6 +56,12 @@ class OsiChapterGridScreen extends StatelessWidget {
                                         name: state.chapters[index].titleEn,
                                         function: () {
                                           context.pushNamed(QuizScreen.name,
+                                              queryParameters: {
+                                                'chapterEnglish': state
+                                                    .chapters[index].titleEn,
+                                                'chapterArabic': state
+                                                    .chapters[index].titleAr
+                                              },
                                               extra: state
                                                   .chapters[index].questions);
                                         },
