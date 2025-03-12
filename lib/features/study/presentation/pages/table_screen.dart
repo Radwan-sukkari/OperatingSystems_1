@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:operating_systems/core/app/size.dart';
+import 'package:operating_systems/resources/resources.dart';
 
 class TableScreen extends StatelessWidget {
   static const String name = 'table_screen';
@@ -39,7 +41,7 @@ class TableScreen extends StatelessWidget {
                   ]),
                   DataRow(cells: [
                     DataCell(Text('2')),
-                    DataCell(Text('أحمدأحمدأحمدأحمدأحمدأحمدأحمدأحمدأحمدأحمد')),
+                    DataCell(Text(' ')),
                     DataCell(Text('30')),
                   ]),
                   DataRow(cells: [
@@ -49,6 +51,9 @@ class TableScreen extends StatelessWidget {
                   ]),
                 ],
               ),
+              SizedBox(height: height(20),
+         ),
+              Image.asset(Images.boy3,height: height(200),width:width(200),)
             ],
           ),
         ),

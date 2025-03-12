@@ -3,19 +3,23 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/buttons.dart';
+import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
 import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
+import 'package:operating_systems/features/quiz/presentation/widget/shimmer/osi_chapter_shimmer.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
+import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 
 class OsiChapterGridScreen extends StatelessWidget {
+  final String isStudy;
   static const String name = 'osi_chapter_grid_screen';
   static const String path = '/osi_chapter_grid_screen';
 
-  const OsiChapterGridScreen({super.key});
+  const OsiChapterGridScreen({super.key, required this.isStudy});
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +35,7 @@ class OsiChapterGridScreen extends StatelessWidget {
               builder: (context, state) {
                 return BlocStateDataBuilder(
                     data: state,
-                    onLoading: Center(child: Text("please wait ")),
+                    onLoading: OsiChapterShimmer(),
                     onSuccess: (state) => Expanded(
                           child: AnimationLimiter(
                             child: GridView.builder(
@@ -55,15 +59,20 @@ class OsiChapterGridScreen extends StatelessWidget {
                                       child: SecondButton(
                                         name: state.chapters[index].titleEn,
                                         function: () {
-                                          context.pushNamed(QuizScreen.name,
-                                              queryParameters: {
-                                                'chapterEnglish': state
-                                                    .chapters[index].titleEn,
-                                                'chapterArabic': state
-                                                    .chapters[index].titleAr
-                                              },
-                                              extra: state
-                                                  .chapters[index].questions);
+                                          isStudy == "isNotStudy"
+                                              ? context.pushNamed(
+                                                  QuizScreen.name,
+                                                  queryParameters: {
+                                                    'chapterEnglish': state
+                                                        .chapters[index]
+                                                        .titleEn,
+                                                    'chapterArabic': state
+                                                        .chapters[index].titleAr
+                                                  },
+                                                  extra: state.chapters[index]
+                                                      .questions)
+                                              : context.pushNamed(
+                                                  NavBar.name);
                                         },
                                       ),
                                     ),

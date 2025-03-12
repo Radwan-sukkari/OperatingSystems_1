@@ -1,9 +1,10 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/chhose_quiz_type.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/choose_quiz_type.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/table_screen.dart';
 
 
@@ -34,7 +35,7 @@ class _NavBarState extends State<NavBar> {
       case _SelectedTab.HomePage:
         return HomePageScreen(); // Replace with your actual home content widget
       case _SelectedTab.FavouriteScreen:
-        return TableScreen(); // Replace with your Favourite screen widget
+        return StudySectionStudyScreen(); // Replace with your Favourite screen widget
       case _SelectedTab.PhotoSelector:
         return HomePageScreen(); // Replace with your Add Post screen widget
       case _SelectedTab.AllUser:

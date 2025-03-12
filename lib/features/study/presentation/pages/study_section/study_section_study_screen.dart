@@ -1,0 +1,69 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:go_router/go_router.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
+import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
+
+class StudySectionStudyScreen extends StatelessWidget {
+  static const String name = 'study_section_screen';
+  static const String path = '/study_section_screen';
+
+  const StudySectionStudyScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
+      body: SectionWidget(
+        widget: AnimationLimiter(
+          child: Expanded(
+            child: ListView.builder(
+              padding: EdgeInsets.symmetric(vertical: 0),
+              itemCount: content.length,
+              itemBuilder: (context, index) {
+                return AnimationConfiguration.staggeredList(
+                  position: index,
+                  duration: Duration(milliseconds: 500),
+                  child: SlideAnimation(
+                    verticalOffset: 50.0,
+                    child: FadeInAnimation(
+                      child: GestureDetector(
+                        onTap: ()=>context.goNamed(OsiChapterGridScreen.name,queryParameters: {
+                          "isStudy":"isStudy",
+                        }),
+                        child: Container(
+                          margin:
+                              EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+                          padding: EdgeInsets.all(16),
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).primaryColor,
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Text(content[index],
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .labelMedium!
+                                  .copyWith(color: Colors.white)),
+                        ),
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
+        name: "اختر ماتود ان تدرسه من الاقسام",
+      ),
+    );
+  }
+}
+
+// قائمة العناصر
+List<String> content = [
+  "اسئلة الصح والخطا",
+  "اسئلة الموقع",
+  "التعاريف",
+  "الخوارزميات",
+  "المقارنات",
+];

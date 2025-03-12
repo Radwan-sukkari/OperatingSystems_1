@@ -7,6 +7,8 @@ void main() {
   test('images assets test', () {
     expect(File(Images.boy).existsSync(), isTrue);
     expect(File(Images.boy2).existsSync(), isTrue);
+    expect(File(Images.boy3).existsSync(), isTrue);
+    expect(File(Images.boy4).existsSync(), isTrue);
     expect(File(Images.boyQuiz).existsSync(), isTrue);
   });
 }

@@ -27,7 +27,10 @@ class ChooseQuizTypeScreen extends StatelessWidget {
             SecondButton(
               name: 'اسئلة الموقع OSI',
               function: () {
-                context.pushNamed(OsiChapterGridScreen.name);
+                context.pushNamed(OsiChapterGridScreen.name,
+                queryParameters: {
+                  "isStudy":"isNotStudy",
+                });
               },
             ),
             SizedBox(width: width(30)),

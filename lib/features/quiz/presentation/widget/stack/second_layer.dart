@@ -4,9 +4,14 @@ import 'package:operating_systems/core/app/size.dart';
 class SecondLayer extends StatelessWidget {
   final String chapter;
   final int questionNumberInTheChapter;
-  final int  questionIReceived;
+  final int questionIReceived;
 
-  const SecondLayer({super.key, required this.chapter, required this.questionNumberInTheChapter, required this.questionIReceived, });
+  const SecondLayer({
+    super.key,
+    required this.chapter,
+    required this.questionNumberInTheChapter,
+    required this.questionIReceived,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +29,11 @@ class SecondLayer extends StatelessWidget {
             child: Column(
               children: [
                 Text("  $chapter"),
-                SizedBox(height: height(2),),
-                Text(" $questionIReceived/$questionNumberInTheChapter question",textDirection:TextDirection.ltr),
-
+                SizedBox(
+                  height: height(2),
+                ),
+                Text("$questionIReceived/$questionNumberInTheChapter question",
+                    textDirection: TextDirection.ltr),
               ],
             ),
           ),

@@ -5,6 +5,5 @@ import 'package:operating_systems/core/injection/injection.dart';
 void main() {
   configureDependencies();
 
-  runApp( OperatingSystemApp());
+  runApp(OperatingSystemApp());
 }
-
