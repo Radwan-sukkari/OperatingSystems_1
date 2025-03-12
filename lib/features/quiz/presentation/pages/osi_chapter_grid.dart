@@ -31,6 +31,7 @@ class OsiChapterGridScreen extends StatelessWidget {
               builder: (context, state) {
                 return BlocStateDataBuilder(
                     data: state,
+                    onLoading: Center(child: Text("please wait ")),
                     onSuccess: (state) => Expanded(
                           child: AnimationLimiter(
                             child: GridView.builder(
@@ -54,7 +55,9 @@ class OsiChapterGridScreen extends StatelessWidget {
                                       child: SecondButton(
                                         name: state.chapters[index].titleEn,
                                         function: () {
-                                          context.pushNamed(QuizScreen.name,extra: state.chapters[index].questions);
+                                          context.pushNamed(QuizScreen.name,
+                                              extra: state
+                                                  .chapters[index].questions);
                                         },
                                       ),
                                     ),
