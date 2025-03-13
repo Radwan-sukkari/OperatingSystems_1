@@ -13,6 +13,7 @@ import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.d
 import 'package:operating_systems/features/quiz/presentation/widget/shimmer/osi_chapter_shimmer.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 
 class OsiChapterGridScreen extends StatelessWidget {
   final String isStudy;
@@ -72,7 +73,16 @@ class OsiChapterGridScreen extends StatelessWidget {
                                                   extra: state.chapters[index]
                                                       .questions)
                                               : context.pushNamed(
-                                                  NavBar.name);
+                                                  OsiQuestionStudyScreen.name,
+                                                  queryParameters: {
+                                                    'chapterEnglish': state
+                                                        .chapters[index]
+                                                        .titleEn,
+                                                    'chapterArabic': state
+                                                        .chapters[index].titleAr
+                                                  },
+                                                  extra: state.chapters[index]
+                                                      .questions);
                                         },
                                       ),
                                     ),

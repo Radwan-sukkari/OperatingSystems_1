@@ -12,6 +12,24 @@ class StudySectionStudyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final List<Function()?> onTap = [
+      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+    ];
+
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SectionWidget(
@@ -28,9 +46,7 @@ class StudySectionStudyScreen extends StatelessWidget {
                     verticalOffset: 50.0,
                     child: FadeInAnimation(
                       child: GestureDetector(
-                        onTap: ()=>context.goNamed(OsiChapterGridScreen.name,queryParameters: {
-                          "isStudy":"isStudy",
-                        }),
+                        onTap: onTap[index], // Use the onTap list here
                         child: Container(
                           margin:
                               EdgeInsets.symmetric(vertical: 6, horizontal: 4),
@@ -59,7 +75,6 @@ class StudySectionStudyScreen extends StatelessWidget {
   }
 }
 
-// قائمة العناصر
 List<String> content = [
   "اسئلة الصح والخطا",
   "اسئلة الموقع",

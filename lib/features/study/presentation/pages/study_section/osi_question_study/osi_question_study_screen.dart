@@ -1,10 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:operating_systems/core/app/size.dart';
+import 'package:operating_systems/features/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/study/presentation/widget/osi_card.dart';
+import 'package:operating_systems/features/study/presentation/widget/second_layer_study_widget.dart';
+import 'package:operating_systems/features/study/presentation/widget/third_layer_study_widget.dart';
 
 class OsiQuestionStudyScreen extends StatelessWidget {
-  const OsiQuestionStudyScreen({super.key});
+  final List<Question> questions;
+  final String chapterEnglish;
+  final String chapterArabic;
+  static const String name = 'osi_question_study_screen';
+  static const String path = '/osi_question_study_screen';
+
+  const OsiQuestionStudyScreen({
+    super.key,
+    required this.questions,
+    required this.chapterEnglish,
+    required this.chapterArabic,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
+      body: Padding(
+        padding: const EdgeInsets.only(top: 50),
+        child: Column(
+          children: [
+            Text(
+              chapterArabic,
+              style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                  fontWeight: FontWeight.w500,
+                  color: Theme.of(context).primaryColor),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: questions.length,
+                itemBuilder: (context, index) {
+                  final question = questions[index];
+                  return OsiCard(
+                    index: index,
+                    question: question,
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

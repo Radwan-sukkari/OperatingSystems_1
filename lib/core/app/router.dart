@@ -3,6 +3,7 @@ import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/table_screen.dart';
 
@@ -21,9 +22,7 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
         final String isStudy = state.uri.queryParameters['isStudy']!;
 
         return OsiChapterGridScreen(isStudy: isStudy);
-      }
-  ),
-
+      }),
   GoRoute(
     path: TableScreen.path,
     name: TableScreen.name,
@@ -35,6 +34,21 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     builder: (context, state) => StudySectionStudyScreen(),
   ),
   GoRoute(
+      path: OsiQuestionStudyScreen.path,
+      name: OsiQuestionStudyScreen.name,
+      builder: (context, state) {
+        final questions = state.extra as List<Question>;
+        final String chapterEnglish =
+            state.uri.queryParameters['chapterEnglish']!;
+        final String chapterArabic =
+            state.uri.queryParameters['chapterArabic']!;
+        return OsiQuestionStudyScreen(
+          chapterArabic: chapterArabic,
+          questions: questions,
+          chapterEnglish: chapterEnglish,
+        );
+      }),
+  GoRoute(
     path: TranslateQuestionTArabicScreen.path,
     name: TranslateQuestionTArabicScreen.name,
     builder: (context, state) {
@@ -43,10 +57,10 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
       final String chapterArabic = state.uri.queryParameters['chapterArabic']!;
 
       final int questionNumberInTheChapter =
-      int.parse(state.uri.queryParameters['questionNumberInTheChapter']!);
+          int.parse(state.uri.queryParameters['questionNumberInTheChapter']!);
 
       final int questionIReceived =
-      int.parse(state.uri.queryParameters['questionIReceived']!);
+          int.parse(state.uri.queryParameters['questionIReceived']!);
 
       return TranslateQuestionTArabicScreen(
         questions: questions,
@@ -62,9 +76,9 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
       builder: (context, state) {
         final questions = state.extra as List<Question>;
         final String chapterEnglish =
-        state.uri.queryParameters['chapterEnglish']!;
+            state.uri.queryParameters['chapterEnglish']!;
         final String chapterArabic =
-        state.uri.queryParameters['chapterArabic']!;
+            state.uri.queryParameters['chapterArabic']!;
         return QuizScreen(
           questions: questions,
           chapterEnglish: chapterEnglish,

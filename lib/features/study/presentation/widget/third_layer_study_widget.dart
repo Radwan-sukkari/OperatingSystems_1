@@ -2,13 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/resources/resources.dart';
 
-class ThirdLayer extends StatelessWidget {
-  const ThirdLayer({super.key});
+class ThirdLayerStudyWidget extends StatelessWidget {
+  const ThirdLayerStudyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return
-      Positioned(
+    return                           Positioned(
       right: 0,
       top: -75,
       child: Image.asset(
@@ -17,5 +16,6 @@ class ThirdLayer extends StatelessWidget {
         width: width(90),
       ),
     );
+
   }
 }
