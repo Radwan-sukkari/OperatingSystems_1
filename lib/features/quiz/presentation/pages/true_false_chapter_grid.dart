@@ -17,24 +17,24 @@ import 'package:operating_systems/features/study/presentation/pages/home_page.da
 import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/resources/resources.dart';
 
-class OsiChapterGridScreen extends StatelessWidget {
+class TrueFalseChapterGridScreen extends StatelessWidget {
   final String isStudy;
-  static const String name = 'osi_chapter_grid_screen';
-  static const String path = '/osi_chapter_grid_screen';
+  static const String name = 'true_false_chapter_grid_screen';
+  static const String path = '/true_false_chapter_grid_screen';
 
-  const OsiChapterGridScreen({super.key, required this.isStudy});
+  const TrueFalseChapterGridScreen({super.key, required this.isStudy});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: getIt<QuizFeatureBloc>()..add(OsiQuizEvent()),
+      value: getIt<QuizFeatureBloc>()..add(TrueFalseQuizEvent()),
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: SectionWidget(
             widget: BlocSelector<QuizFeatureBloc, QuizFeatureState,
                 BlocStateData<QuizModel>>(
-              selector: (state) => state.osiQuizState,
+              selector: (state) => state.trueFalseQuizState,
               builder: (context, state) {
                 return BlocStateDataBuilder(
                     data: state,
@@ -64,7 +64,7 @@ class OsiChapterGridScreen extends StatelessWidget {
                                         function: () {
                                           isStudy == "isNotStudy"
                                               ? context.pushNamed(
-                                                  QuizScreen.name,
+                                              QuizScreen.name,
                                                   queryParameters: {
                                                     'chapterEnglish': state
                                                         .chapters[index]

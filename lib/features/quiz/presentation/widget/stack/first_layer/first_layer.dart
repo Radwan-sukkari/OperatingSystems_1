@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/buttons.dart';
+import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/quiz/presentation/manager/answer_selected_bloc.dart';
@@ -63,6 +64,10 @@ class FirstLayer extends StatelessWidget {
                         context
                             .read<ToggleBloc>()
                             .add(ShowAnswer(question.answers));
+                        question.description != null &&
+                                question.description!.isNotEmpty
+                            ? showFlushBar(context, question.description ?? "")
+                            : SizedBox.shrink();
                       },
                       child: MainButton(
                         name: "اظهار الجواب",

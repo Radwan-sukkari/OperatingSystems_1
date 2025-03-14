@@ -47,7 +47,7 @@ class SecondButton extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .labelMedium!
-              .copyWith(color: Colors.white),
+              .copyWith(color: Colors.white, fontWeight: FontWeight.w500),
         )),
       ),
     );

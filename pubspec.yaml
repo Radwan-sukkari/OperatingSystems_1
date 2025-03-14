@@ -49,6 +49,7 @@ dependencies:
   dartz: ^0.10.1
   shimmer: ^3.0.0
   marquee: ^2.3.0
+  another_flushbar: ^1.12.30
 
 dev_dependencies:
   flutter_test:

@@ -6,6 +6,7 @@ import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
 
@@ -35,7 +36,11 @@ class ChooseQuizTypeScreen extends StatelessWidget {
             SizedBox(width: width(30)),
             SecondButton(
               name: 'اسئلة الصح والخطأ',
-              function: () {},
+              function: () {
+                context.pushNamed(TrueFalseChapterGridScreen.name, queryParameters: {
+                  "isStudy": "isNotStudy",
+                });
+              },
             ),
           ],
         ),

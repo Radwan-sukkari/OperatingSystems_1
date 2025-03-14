@@ -3,7 +3,9 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
+import 'package:operating_systems/features/study/presentation/widget/study_section_study_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
 import 'dart:math' as math;
 
@@ -15,22 +17,22 @@ class StudySectionStudyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Function()?> onTap = [
-      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
-      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
-      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
-      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
-      () => context.goNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
+    final List<VoidCallback> onTap = [
+          () => context.pushNamed(TrueFalseChapterGridScreen.name, queryParameters: {
+        "isStudy": "isStudy",
+      }),
+          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+        "isStudy": "isStudy",
+      }),
+          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+        "isStudy": "isStudy",
+      }),
+          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+        "isStudy": "isStudy",
+      }),
+          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+        "isStudy": "isStudy",
+      }),
     ];
 
     return Scaffold(
@@ -48,22 +50,9 @@ class StudySectionStudyScreen extends StatelessWidget {
                   child: SlideAnimation(
                     verticalOffset: 50.0,
                     child: FadeInAnimation(
-                      child: GestureDetector(
-                        onTap: onTap[index], // Use the onTap list here
-                        child: Container(
-                          margin:
-                              EdgeInsets.symmetric(vertical: 6, horizontal: 4),
-                          padding: EdgeInsets.all(16),
-                          decoration: BoxDecoration(
-                            color: Theme.of(context).primaryColor,
-                            borderRadius: BorderRadius.circular(8),
-                          ),
-                          child: Text(content[index],
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .labelMedium!
-                                  .copyWith(color: Colors.white)),
-                        ),
+                      child: StudySectionStudyWidget(
+                        text: content[index],
+                        fun: onTap[index],
                       ),
                     ),
                   ),
@@ -72,15 +61,15 @@ class StudySectionStudyScreen extends StatelessWidget {
             ),
           ),
         ),
-        name: "اختر ماتود ان تدرسه من الاقسام", image:  Transform(
-        alignment: Alignment.center,
-        transform: Matrix4.rotationY(math.pi),
-        child:
-        Image.asset(
-          Images.boy5,
-          height: height(210),
+        name: "اختر ماتود ان تدرسه من الاقسام",
+        image: Transform(
+          alignment: Alignment.center,
+          transform: Matrix4.rotationY(math.pi),
+          child: Image.asset(
+            Images.boy5,
+            height: height(210),
+          ),
         ),
-      ),
       ),
     );
   }

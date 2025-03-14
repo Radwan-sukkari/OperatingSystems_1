@@ -3,6 +3,7 @@ import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/table_screen.dart';
@@ -22,6 +23,14 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
         final String isStudy = state.uri.queryParameters['isStudy']!;
 
         return OsiChapterGridScreen(isStudy: isStudy);
+      }),
+  GoRoute(
+      path: TrueFalseChapterGridScreen.path,
+      name: TrueFalseChapterGridScreen.name,
+      builder: (context, state) {
+        final String isStudy = state.uri.queryParameters['isStudy']!;
+
+        return TrueFalseChapterGridScreen(isStudy: isStudy);
       }),
   GoRoute(
     path: TableScreen.path,
