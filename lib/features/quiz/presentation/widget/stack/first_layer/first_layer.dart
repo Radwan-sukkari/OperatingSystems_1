@@ -16,6 +16,7 @@ class FirstLayer extends StatelessWidget {
   final int questionNumberInTheChapter;
   final int questionIReceived;
   final VoidCallback onNextQuestion;
+  final VoidCallback onPreviousQuestion;
 
   const FirstLayer({
     super.key,
@@ -25,60 +26,90 @@ class FirstLayer extends StatelessWidget {
     required this.questionNumberInTheChapter,
     required this.questionIReceived,
     required this.onNextQuestion,
+    required this.onPreviousQuestion,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: width(350),
-      decoration: BoxDecoration(
-        color: Colors.white38,
-        borderRadius: BorderRadius.circular(15),
-      ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: height(40),horizontal: width(20)),
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              QuestionWidget(
-                question: isArabic ? question.questionAr : question.questionEn,
-                isArabic: isArabic,
-              ),
-              SizedBox(height: height(30)),
-              AnswersList(
-                answers: question.answers,
-                isArabic: isArabic,
-              ),
-              if (!isArabic) SizedBox(height: height(30)),
-              if (!isArabic)
-                GestureDetector(
-                  onTap: () {
-                    context.read<ToggleBloc>().add(ShowAnswer(question.answers));
-                    Future.delayed(Duration(seconds: 1), onNextQuestion);
-                  },
-                  child: MainButton(
-                    name: "اظهار الاجابة",
-                  ),
-                ),
-              SizedBox(height: height(8)),
-              if (!isArabic)
-                GestureDetector(
-                  onTap: () {
-                    context.pushNamed(TranslateQuestionTArabicScreen.name,
-                        extra: question,
-                        queryParameters: {
-                          "chapterArabic": chapterArabic,
-                          "questionNumberInTheChapter": questionNumberInTheChapter.toString(),
-                          "questionIReceived": questionIReceived.toString()
-                        });
-                  },
-                  child: MainButton(name: "اظهار الترجمة"),
-                ),
-            ],
+    return BlocBuilder<ToggleBloc, ToggleState>(
+      builder: (context, state) {
+        return Container(
+          width: width(350),
+          decoration: BoxDecoration(
+            color: Colors.white38,
+            borderRadius: BorderRadius.circular(15),
           ),
-        ),
-      ),
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+                vertical: height(40), horizontal: width(20)),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  QuestionWidget(
+                    question:
+                        isArabic ? question.questionAr : question.questionEn,
+                    isArabic: isArabic,
+                  ),
+                  SizedBox(height: height(30)),
+                  AnswersList(
+                    answers: question.answers,
+                    isArabic: isArabic,
+                  ),
+                  if (!isArabic) SizedBox(height: height(30)),
+                  if (!isArabic)
+                    GestureDetector(
+                      onTap: () {
+                        context
+                            .read<ToggleBloc>()
+                            .add(ShowAnswer(question.answers));
+                      },
+                      child: MainButton(
+                        name: "اظهار الجواب",
+                      ),
+                    ),
+                  SizedBox(height: height(8)),
+                  if (!isArabic)
+                    GestureDetector(
+                      onTap: () {
+                        context.pushNamed(TranslateQuestionTArabicScreen.name,
+                            extra: question,
+                            queryParameters: {
+                              "chapterArabic": chapterArabic,
+                              "questionNumberInTheChapter":
+                                  questionNumberInTheChapter.toString(),
+                              "questionIReceived": questionIReceived.toString()
+                            });
+                      },
+                      child: MainButton(name: "اظهار الترجمة"),
+                    ),
+                  if (state
+                      is AnswerValidated) // Show "Next Question" and "Previous Question" buttons after answer is validated
+                    Column(
+                      children: [
+                        SizedBox(height: height(10)),
+                        GestureDetector(
+                          onTap: onNextQuestion,
+                          child: MainButton(
+                            name: " السؤال التالي",
+                          ),
+                        ),
+                        SizedBox(height: height(10)),
+                        GestureDetector(
+                          onTap: onPreviousQuestion,
+                          child: MainButton(
+                            name: "السؤال السايق ",
+                          ),
+                        ),
+                      ],
+                    ),
+                  SizedBox(height: height(8)),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }

@@ -49,7 +49,7 @@ class TranslateQuestionTArabicScreen extends StatelessWidget {
                           isArabic: true,
                           questionNumberInTheChapter: questionNumberInTheChapter,
                           questionIReceived: questionIReceived,
-                          onNextQuestion: () {},
+                          onNextQuestion: () {}, onPreviousQuestion: () {  },
                         ),
                         SecondLayer(
                           chapter: chapterArabic,

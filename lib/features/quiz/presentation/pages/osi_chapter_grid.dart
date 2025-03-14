@@ -4,6 +4,7 @@ import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/buttons.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
+import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
 import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
@@ -14,6 +15,7 @@ import 'package:operating_systems/features/quiz/presentation/widget/shimmer/osi_
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
+import 'package:operating_systems/resources/resources.dart';
 
 class OsiChapterGridScreen extends StatelessWidget {
   final String isStudy;
@@ -94,7 +96,11 @@ class OsiChapterGridScreen extends StatelessWidget {
                         ));
               },
             ),
-            name: 'اختر الفصل',
+            name: 'اختر الفصل', image:         Image.asset(
+            Images.boy6,
+            height: height(210),
+          ),
+
           ),
         ),
       ),

@@ -58,6 +58,27 @@ class _QuizScreenState extends State<QuizScreen> {
     }
   }
 
+  void _previousQuestion(BuildContext context) {
+    if (_currentPage > 0) {
+      _pageController.previousPage(
+        duration: Duration(milliseconds: 300),
+        curve: Curves.easeInOut,
+      );
+      setState(() {
+        _currentPage--;
+      });
+
+      context.read<ToggleBloc>().add(ResetState());
+    } else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("This is the first question!"),
+          duration: Duration(seconds: 2),
+        ),
+      );
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
@@ -89,6 +110,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                 questionNumberInTheChapter: widget.questions.length,
                                 questionIReceived: index + 1,
                                 onNextQuestion: () => _nextQuestion(context),
+                                onPreviousQuestion: () => _previousQuestion(context), // Pass the previous question callback
                               ),
                               SecondLayer(
                                 chapter: widget.chapterEnglish,

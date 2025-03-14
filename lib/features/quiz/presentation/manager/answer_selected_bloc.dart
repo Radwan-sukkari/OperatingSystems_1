@@ -22,13 +22,16 @@ class ToggleInitial extends ToggleState {
   ToggleInitial(this.selectedIndex);
 }
 
+// In your ToggleBloc, ensure you have a state for AnswerValidated
 class AnswerValidated extends ToggleState {
   final int? selectedIndex;
   final bool isCorrect;
   final int correctAnswerIndex;
+
   AnswerValidated(this.selectedIndex, this.isCorrect, this.correctAnswerIndex);
 }
 
+// In your ToggleBloc, handle the ShowAnswer event
 class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
   ToggleBloc() : super(ToggleInitial(null)) {
     on<SelectAnswer>((event, emit) {

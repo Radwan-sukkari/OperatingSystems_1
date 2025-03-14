@@ -56,23 +56,31 @@ class Question {
   final String questionEn;
   final String questionAr;
   final List<Answer> answers;
+  final String? description;
+
 
   Question({
     required this.questionEn,
     required this.questionAr,
     required this.answers,
+    this.description,
+
   });
 
   factory Question.fromJson(Map<String, dynamic> json) => Question(
     questionEn: json["question_en"],
     questionAr: json["question_ar"],
     answers: List<Answer>.from(json["answers"].map((x) => Answer.fromJson(x))),
+    description: json["description"],
+
   );
 
   Map<String, dynamic> toJson() => {
     "question_en": questionEn,
     "question_ar": questionAr,
     "answers": List<dynamic>.from(answers.map((x) => x.toJson())),
+    "description": description,
+
   };
 }
 

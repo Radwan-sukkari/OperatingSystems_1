@@ -27,9 +27,8 @@ class ChooseQuizTypeScreen extends StatelessWidget {
             SecondButton(
               name: 'اسئلة الموقع OSI',
               function: () {
-                context.pushNamed(OsiChapterGridScreen.name,
-                queryParameters: {
-                  "isStudy":"isNotStudy",
+                context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+                  "isStudy": "isNotStudy",
                 });
               },
             ),
@@ -41,6 +40,10 @@ class ChooseQuizTypeScreen extends StatelessWidget {
           ],
         ),
         name: 'اختر نوع الكويز',
+        image: Image.asset(
+          Images.boy7,
+          height: height(210),
+        ),
       )),
     );
   }

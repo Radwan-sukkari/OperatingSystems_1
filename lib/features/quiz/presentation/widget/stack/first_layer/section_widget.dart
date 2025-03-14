@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:marquee/marquee.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/resources/resources.dart';
+import 'dart:math' as math;
 
 class SectionWidget extends StatelessWidget {
   final Widget widget;
   final String name;
+  final Widget image;
 
-  const SectionWidget({super.key, required this.widget, required this.name});
+  const SectionWidget({super.key, required this.widget, required this.name, required this.image});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class SectionWidget extends StatelessWidget {
               Expanded(
                 child: isLongText
                     ? SizedBox(
-                  height: height(20), // لضبط الارتفاع عند استخدام Marquee
+                  height: height(20),
                   child: Marquee(
                     text: name,
                     style: Theme.of(context).textTheme.titleLarge!.copyWith(
@@ -32,7 +34,7 @@ class SectionWidget extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                     scrollAxis: Axis.horizontal,
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
                     blankSpace: 50.0,
                     velocity: 30.0,
                     pauseAfterRound: Duration(seconds: 2),
@@ -51,10 +53,7 @@ class SectionWidget extends StatelessWidget {
                   ),
                 ),
               ),
-              Image.asset(
-                Images.boy2,
-                height: height(210),
-              ),
+          image,
             ],
           ),
           widget
