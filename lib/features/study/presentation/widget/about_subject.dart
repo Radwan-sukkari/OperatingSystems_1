@@ -24,12 +24,12 @@ class _AboutSubjectState extends State<AboutSubject>
     _animation = Tween<double>(begin: 1.0, end: 0.9).animate(
       CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
     )..addStatusListener((status) {
-      if (status == AnimationStatus.completed) {
-        _controller.reverse();
-      } else if (status == AnimationStatus.dismissed) {
-        _controller.forward();
-      }
-    });
+        if (status == AnimationStatus.completed) {
+          _controller.reverse();
+        } else if (status == AnimationStatus.dismissed) {
+          _controller.forward();
+        }
+      });
 
     _controller.forward();
   }
@@ -42,16 +42,13 @@ class _AboutSubjectState extends State<AboutSubject>
 
   @override
   Widget build(BuildContext context) {
-    return           ScaleTransition(
+    return ScaleTransition(
         scale: _animation,
         child: SmallButton(
-            text: " اضفط هنا",
-            size: Size(120.w, 30.h),
-            onPressed: () {
-            }));
-
+            text: " اضفط هنا", size: Size(120.w, 30.h), onPressed: () {}));
   }
 }
+
 class SmallButton extends StatelessWidget {
   final String text;
   final Size size;
@@ -76,7 +73,7 @@ class SmallButton extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .bodyMedium
-              ?.copyWith(color: Colors.white, fontWeight: FontWeight.bold)),
+              ?.copyWith(color: Colors.white, fontWeight: FontWeight.w500)),
     );
   }
 }

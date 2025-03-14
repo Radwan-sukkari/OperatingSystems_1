@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/study/presentation/widget/about_subject_container.dart';
 import 'package:operating_systems/features/study/presentation/widget/home_page_row_widget.dart';
-import 'package:operating_systems/resources/resources.dart';
 
 class HomePageScreen extends StatelessWidget {
   static const String name = 'home_page_screen';
@@ -17,20 +16,27 @@ class HomePageScreen extends StatelessWidget {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-              top: height(30),
+              top: height(40),
             ),
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  AboutSubjectContainer(),
+                  Padding(
+                    padding:  EdgeInsets.symmetric(horizontal: width(20)),
+                    child: AboutSubjectContainer(),
+                  ),
                   SizedBox(
                     height: height(20),
                   ),
-                  HomePageRowWidget(isFirstRow: true,),
-                  SizedBox(
-                    height: height(10),
+                  HomePageRowWidget(
+                    isFirstRow: true,
                   ),
-                  HomePageRowWidget(isFirstRow: false,),
+                  SizedBox(
+                    height: height(20),
+                  ),
+                  HomePageRowWidget(
+                    isFirstRow: false,
+                  ),
                 ],
               ),
             ),

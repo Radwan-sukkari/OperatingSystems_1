@@ -37,9 +37,10 @@ class ChooseQuizTypeScreen extends StatelessWidget {
             SecondButton(
               name: 'اسئلة الصح والخطأ',
               function: () {
-                context.pushNamed(TrueFalseChapterGridScreen.name, queryParameters: {
-                  "isStudy": "isNotStudy",
-                });
+                context.pushNamed(TrueFalseChapterGridScreen.name,
+                    queryParameters: {
+                      "isStudy": "isNotStudy",
+                    });
               },
             ),
           ],

@@ -10,44 +10,48 @@ class AboutSubjectContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: height(200),
-      width: width(355),
+      width: width(360),
       decoration: BoxDecoration(
         color: Colors.white38,
         borderRadius: BorderRadius.circular(15),
       ),
-      child: Row(
-        children: [
-          Image.asset(
-            Images.boy,
-            height: height(200),
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                "خلينا نتعرف شوي عن  ",
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall!
-                    .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
-              ),
-              SizedBox(
-                height: height(5),
-              ),
-              Text(
-                " المادة وشلون بتجي الأسئلة ",
-                style: Theme.of(context)
-                    .textTheme
-                    .bodySmall!
-                    .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
-              ),
-              SizedBox(
-                height: height(15),
-              ),
-              AboutSubject()
-            ],
-          )
-        ],
+      child: Padding(
+        padding:  EdgeInsets.only(left: width(8)),
+        child: Row(
+          children: [
+            Image.asset(
+              Images.boy,
+              height: height(170),
+              width: width(130),
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "خلينا نتعرف شوي عن  ",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge!
+                      .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
+                ),
+                SizedBox(
+                  height: height(5),
+                ),
+                Text(
+                  " المادة وشلون بتجي الأسئلة ",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyLarge!
+                      .copyWith(fontWeight: FontWeight.bold,color: Theme.of(context).colorScheme.primary),
+                ),
+                SizedBox(
+                  height: height(15),
+                ),
+                AboutSubject()
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
