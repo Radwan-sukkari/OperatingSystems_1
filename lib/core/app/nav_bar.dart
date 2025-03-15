@@ -5,7 +5,7 @@ import 'package:operating_systems/features/quiz/presentation/pages/choose_quiz_t
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/table_screen.dart';
+import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
 
 
 // Define your different screens here
@@ -37,7 +37,7 @@ class _NavBarState extends State<NavBar> {
       case _SelectedTab.FavouriteScreen:
         return StudySectionStudyScreen(); // Replace with your Favourite screen widget
       case _SelectedTab.PhotoSelector:
-        return HomePageScreen(); // Replace with your Add Post screen widget
+        return StudySectionStudyScreen(); // Replace with your Add Post screen widget
       case _SelectedTab.AllUser:
 
         return ChooseQuizTypeScreen(); // Replace with your Profile screen widget

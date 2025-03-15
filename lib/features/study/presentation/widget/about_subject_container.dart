@@ -21,8 +21,8 @@ class AboutSubjectContainer extends StatelessWidget {
           children: [
             Image.asset(
               Images.boy,
-              height: height(170),
-              width: width(130),
+              height: height(150),
+              width: width(120),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,

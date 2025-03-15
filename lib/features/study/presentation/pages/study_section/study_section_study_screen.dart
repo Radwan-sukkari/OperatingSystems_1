@@ -5,6 +5,7 @@ import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/study/presentation/widget/study_section_study_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
 import 'dart:math' as math;
@@ -18,21 +19,22 @@ class StudySectionStudyScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<VoidCallback> onTap = [
-          () => context.pushNamed(TrueFalseChapterGridScreen.name, queryParameters: {
-        "isStudy": "isStudy",
-      }),
-          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-        "isStudy": "isStudy",
-      }),
-          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-        "isStudy": "isStudy",
-      }),
-          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-        "isStudy": "isStudy",
-      }),
-          () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-        "isStudy": "isStudy",
-      }),
+      () =>
+          context.pushNamed(TrueFalseChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
+      () => context.pushNamed(
+            ChooseAlgorithmsScreen.name,
+          ),
+      () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
     ];
 
     return Scaffold(

@@ -1,0 +1,220 @@
+{
+  "algorithms": [
+    {
+      "id": 1,
+      "algorithm_name": "  Dekker’s Algorithm v1  ",
+      "exam_question": "جميع الفصول ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";int threadName=1",
+            "startThreads ()"
+          ],
+          "thread 1": [
+            "Thread2",
+            "} () void main ",
+            "}while(!done)",
+            ";while(threadNumber==2)",
+            "critical Section//",
+            ";ThreadNumber==2",
+            "code outside critical Section;",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            " ",
+            "} () void main ",
+            "}while(!done)",
+            ";while(threadNumber==1)",
+            "critical Section//",
+            ";ThreadNumber==1",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "algorithm_name": "  Dekker’s Algorithm v2 ",
+      "exam_question": "جميع الفصول ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";bool t1Inside=false",
+            ";bool t2Inside=false",
+            "()startThreads "
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main ",
+            "}while(!done)",
+            ";while(t2Inside)",
+            ";t1Inside=true",
+            "critical Section//",
+            ";t2Inside=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            "} () void main ",
+            "}while(!done)",
+            ";while(t1Inside)",
+            ";t2Inside=true",
+            "critical Section//",
+            ";t1Inside=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "algorithm_name": "  Dekker’s Algorithm v3 ",
+      "exam_question": "جميع الفصول ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";bool t1WantsToEnter=false",
+            ";bool t2WantsToEnter=false",
+            "()startThreads "
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main ",
+            "}while(!done)",
+            ";t1WantsToEnter=true",
+            ";while(t2WantsToEnter)",
+            "critical Section//",
+            ";t1WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread1",
+            "} () void main ",
+            "}while(!done)",
+            ";t2WantsToEnter=true",
+            ";while(t1WantsToEnter)",
+            "critical Section//",
+            ";t1WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "algorithm_name": "  Dekker’s Algorithm v4 ",
+      "exam_question": " Dekker’s Algorithm v4 ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";bool t1WantsToEnter=false",
+            ";bool t2WantsToEnter=false",
+            "()startThreads"
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main",
+            "}while(!done)",
+            ";t1WantsToEnter=true",
+            "}while(t2WantsToEnter)",
+            ";t1WantsToEnter=false",
+            "()sleep//",
+            ";t1WantsToEnter=true",
+            "{",
+            "critical Section//",
+            ";t1WantsToEnter=true",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            "} () void main",
+            "}while(!done)",
+            ";t2WantsToEnter=true",
+            "}while(t1WantsToEnter)",
+            ";t1WantsToEnter=false",
+            "()sleep//",
+            ";t2WantsToEnter=true",
+            "{",
+            "critical Section//",
+            ";t2WantsToEnter=true",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "algorithm_name": "  Dekker’s Algorithm v5 ",
+      "exam_question": " Dekker’s Algorithm v5 ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";int favoredThread=1",
+            ";bool t1WantsToEnter=false",
+            ";bool t2WantsToEnter=false",
+            "()startThreads"
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main",
+            "}while(!done)",
+            ";t1WantsToEnter=true",
+            "}while(t2WantsToEnter)",
+            "}if(favoredThread==2)",
+            ";t1WantsToEnter=false",
+            ";while(favoredThread==2)",
+            ";t1WantsToEnter=true",
+            "{",
+            "{",
+            "critical Section//",
+            "favouredThread=2",
+            ";t1WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            "} () void main",
+            "}while(!done)",
+            ";t2WantsToEnter=true",
+            "}while(t1WantsToEnter)",
+            "}if(favoredThread==1)",
+            ";t2WantsToEnter=false",
+            ";while(favoredThread==1)",
+            ";t2WantsToEnter=true",
+            "{",
+            "{",
+            "critical Section//",
+            "favouredThread=1",
+            ";t2WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    }
+  ]
+}
