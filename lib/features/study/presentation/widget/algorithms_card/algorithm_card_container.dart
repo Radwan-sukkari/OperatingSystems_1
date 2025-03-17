@@ -7,7 +7,7 @@ class AlgorithmCardContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return  Container(
       decoration: BoxDecoration(
         color: Colors.white38,
         borderRadius: BorderRadius.circular(8),
@@ -19,10 +19,13 @@ class AlgorithmCardContainer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: List.generate(
             list.length,
-            (index) => RichText(
-              text: TextSpan(
-                style: TextStyle(fontSize: 18),
-                children: _buildTextSpans(list[index], context),
+            (index) => Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: RichText(
+                text: TextSpan(
+                  style: TextStyle(fontSize: 18),
+                  children: _buildTextSpans(list[index], context),
+                ),
               ),
             ),
           ),

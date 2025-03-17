@@ -215,6 +215,206 @@
           ]
         }
       ]
+    },
+    {
+      "id": 6,
+      "algorithm_name": "  peterson Algorithm v5 ",
+      "exam_question": " peterson Algorithm v5 ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";int favoredThread=1",
+            ";bool t1WantsToEnter=false",
+            ";bool t2WantsToEnter=false",
+            "()startThreads"
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main",
+            "}while(!done)",
+            ";t1WantsToEnter=true",
+            "favouredThread=2",
+            ";while(t2WantsToEnter&&favouredThread==2)",
+            "critical Section//",
+            ";t1WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            "} () void main",
+            "}while(!done)",
+            ";t2WantsToEnter=true",
+            "favouredThread=1",
+            ";while(t1WantsToEnter&&favouredThread==1)",
+            "critical Section//",
+            ";t2WantsToEnter=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "algorithm_name": " Test_and_Set_Instruction ",
+      "exam_question": " peterson Algorithm v5 ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";bool occupied=false",
+            "()startThreads"
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main",
+            ";bool p1MustToWait=true",
+            "}while(!done)",
+            "}while(p1MustToWait)",
+            "testAndSet(p1MustToWait,occupied)",
+            "{",
+            "critical Section//",
+            ";p1MustToWait=false",
+            "; occupied=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread2",
+            "} () void main",
+            ";bool p2MustToWait=true",
+            "}while(!done)",
+            "}while(p2MustToWait)",
+            ";testAndSet(p2MustToWait,occupied)",
+            "{",
+            "critical Section//",
+            ";p2MustToWait=false",
+            "; occupied=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "algorithm_name": " Swap_Instruction ",
+      "exam_question": " Swap_Instruction   ",
+      "first_name": "thread1",
+      "second_name": "thread2",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";bool occupied=false",
+            "()startThreads"
+          ],
+          "thread 1": [
+            "Thread1",
+            "} () void main",
+            ";bool p1MustToWait=true",
+            "}while(!done)",
+            "}do",
+            ";swap(p1MustToWait,occupied)",
+            "} while(p1MustToWait)",
+            "critical Section//",
+            ";p1MustToWait=true",
+            "; occupied=false",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Thread1",
+            "} () void main",
+            ";bool p2MustToWait=true",
+            "}while(!done)",
+            "}do",
+            ";swap(p2MustToWait,occupied)",
+            "} while(p2MustToWait)",
+            "critical Section//",
+            ";p2MustToWait=true",
+            "; occupied=false",
+            "code outside critical Section//",
+            "{{"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "algorithm_name": " Semphores ",
+      "exam_question": " Semphores   ",
+      "first_name": "threadX",
+      "second_name": "",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";semphore occupied=new semphore(1)",
+            ";()startThreads"
+          ],
+          "thread 1": [
+            "Threadx",
+            "} () void main",
+            "}while(!done)",
+            " p(occupied); //wait",
+            "critical Section//",
+            "v(occupied);  //signal ",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "algorithm_name": " Semphores ",
+      "exam_question": " Semphores   ",
+      "first_name": "threadX",
+      "second_name": "",
+      "algorithm_body": [
+        {
+          "system": [
+            "System",
+            ";semphore occupied=new semphore(0)",
+            ";semphore occupied=new semphore(1)",
+            "; int SharedValue",
+            ";()startThreads"
+          ],
+          "thread 1": [
+            "Producer Thread",
+            "} () void main",
+            "; int nextValueProducer",
+            "}while(!done)",
+            ";nextValueProducer=generateTheValue()",
+            "p(valueConsumed);   ",
+            ";sharedValue=nextValurProducer",
+            "critical Section//",
+            "v(valueProducer);   ",
+            "code outside critical Section//",
+            "{{"
+          ],
+          "thread2": [
+            "Consumer Thread",
+            "} () void main",
+            "; int nextValueProducer",
+            "}while(!done)",
+            "p(valueProducer);",
+            ";nextValurConsumed=sharedValue",
+            "v(valueProducer); ",
+            ";processThreadValue(nextValueConsumed)",
+            "{{"
+          ]
+        }
+      ]
     }
   ]
 }

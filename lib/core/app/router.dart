@@ -5,7 +5,10 @@ import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.d
 import 'package:operating_systems/features/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
+import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/choose_algorithm_screen.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/comparisons_screen.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
@@ -22,6 +25,21 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     path: ChooseAlgorithmsScreen.path,
     name: ChooseAlgorithmsScreen.name,
     builder: (context, state) => ChooseAlgorithmsScreen(),
+  ),
+  GoRoute(
+    path: ComparisonsScreen.path,
+    name: ComparisonsScreen.name,
+    builder: (context, state) {
+      final Comparisons = state.extra as List<Comparison>;
+
+    return  ComparisonsScreen(comparisons: Comparisons,);
+
+    }
+  ),
+  GoRoute(
+    path: ChooseComparisonsScreen.path,
+    name: ChooseComparisonsScreen.name,
+    builder: (context, state) => ChooseComparisonsScreen(),
   ),
   GoRoute(
       path: OsiChapterGridScreen.path,

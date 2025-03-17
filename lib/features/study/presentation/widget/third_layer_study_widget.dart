@@ -7,7 +7,8 @@ class ThirdLayerStudyWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return                           Positioned(
+    return
+      Positioned(
       right: 0,
       top: -75,
       child: Image.asset(

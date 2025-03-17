@@ -13,27 +13,29 @@ import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_g
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
+import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/study/presentation/manager/study_bloc.dart';
 import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
+import 'package:operating_systems/features/study/presentation/pages/study_section/comparisons_screen.dart';
 import 'package:operating_systems/resources/resources.dart';
 
-class ChooseAlgorithmsScreen extends StatelessWidget {
-  static const String name = 'choose_algorithm_screen';
-  static const String path = '/choose_algorithm_screen';
+class ChooseComparisonsScreen extends StatelessWidget {
+  static const String name = 'choose_comparisons_screen';
+  static const String path = '/choose_comparisons_screen.dart';
 
-  const ChooseAlgorithmsScreen({super.key});
+  const ChooseComparisonsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: getIt<StudyBloc>()..add(AlgorithmsEvent()),
+      value: getIt<StudyBloc>()..add(ComparisonsEvent()),
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: SectionWidget(
             widget: BlocSelector<StudyBloc, StudyState,
-                BlocStateData<AlgorithmsModel>>(
-              selector: (state) => state.algorithmState,
+                BlocStateData<ComparisonsModel>>(
+              selector: (state) => state.comparisonsState,
               builder: (context, state) {
                 return BlocStateDataBuilder(
                     data: state,
@@ -49,7 +51,7 @@ class ChooseAlgorithmsScreen extends StatelessWidget {
                                 mainAxisSpacing: 16,
                                 childAspectRatio: 6,
                               ),
-                              itemCount: state!.algorithms.length,
+                              itemCount: state!.chapters.length,
                               itemBuilder: (context, index) {
                                 return AnimationConfiguration.staggeredGrid(
                                   position: index,
@@ -59,10 +61,12 @@ class ChooseAlgorithmsScreen extends StatelessWidget {
                                     verticalOffset: 50.0,
                                     child: FadeInAnimation(
                                         child: SecondButton(
-                                            name: state.algorithms[index]
-                                                .algorithmName,
+                                            name: state.chapters[index].titleAr,
                                             function: () {
-                                              context.pushNamed(AlgorithmsScreens.name,extra: state.algorithms[index]);
+                                              context.pushNamed(
+                                                ComparisonsScreen.name,
+                                                extra: state.chapters[index].comparisons,
+                                              );
                                             })),
                                   ),
                                 );

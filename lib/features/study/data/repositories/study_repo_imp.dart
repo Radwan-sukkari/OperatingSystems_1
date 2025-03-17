@@ -5,6 +5,7 @@ import 'package:operating_systems/core/errors/failuer.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/study/data/data_source/study_data_source.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
+import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/study/domain/repositories/study_repo.dart';
 
 @LazySingleton(as: StudyRepo)
@@ -19,6 +20,15 @@ class StudyRepoImp implements StudyRepo {
     networkRepository = getIt<NetworkRepository>();
     final algorithms = networkRepository<AlgorithmsModel>(
       remoteDataFetcher: () => studyDataSource.algorithms(),
+    );
+    return algorithms;
+  }
+
+  @override
+  Future<Either<Failure, ComparisonsModel>> comparisons() {
+    networkRepository = getIt<NetworkRepository>();
+    final algorithms = networkRepository<ComparisonsModel>(
+      remoteDataFetcher: () => studyDataSource.comparisons(),
     );
     return algorithms;
   }
