@@ -1,17 +1,16 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/choose_quiz_type.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
+import 'package:operating_systems/features/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
 
 
-// Define your different screens here
 
-enum _SelectedTab { HomePage, FavouriteScreen, PhotoSelector, AllUser }
+enum _SelectedTab { homePage, studySection, randomQuiz, chooseQuizType ,setting}
 
 class NavBar extends StatefulWidget {
   static const String name = 'nav_bar';
@@ -23,7 +22,7 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
-  var _selectedTab = _SelectedTab.HomePage;
+  var _selectedTab = _SelectedTab.homePage;
 
   void _handleIndexChanged(int i) {
     setState(() {
@@ -33,25 +32,28 @@ class _NavBarState extends State<NavBar> {
 
   Widget _getSelectedTabWidget() {
     switch (_selectedTab) {
-      case _SelectedTab.HomePage:
-        return HomePageScreen(); // Replace with your actual home content widget
-      case _SelectedTab.FavouriteScreen:
-        return StudySectionStudyScreen(); // Replace with your Favourite screen widget
-      case _SelectedTab.PhotoSelector:
-        return RandomQuiz(); // Replace with your Add Post screen widget
-      case _SelectedTab.AllUser:
-
-        return ChooseQuizTypeScreen(); // Replace with your Profile screen widget
+      case _SelectedTab.homePage:
+        return HomePageScreen();
+      case _SelectedTab.studySection:
+        return StudySectionStudyScreen();
+      case _SelectedTab.randomQuiz:
+        return RandomQuiz();
+      case _SelectedTab.chooseQuizType:
+        return ChooseQuizTypeScreen();
+      case _SelectedTab.setting:
+        return SettingsScreen();
       default:
-        return HomePageScreen(); // Fallback to home content
+        return HomePageScreen();
     }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
+
       extendBody: true,
-      body: _getSelectedTabWidget(), // Dynamically display the selected widget
+      body: _getSelectedTabWidget(),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.only(bottom: 5),
         child: CrystalNavigationBar(
@@ -59,33 +61,39 @@ class _NavBarState extends State<NavBar> {
           onTap: _handleIndexChanged,
           items: [
             CrystalNavigationBarItem(
+
               icon: IconlyBold.home,
-              unselectedIcon: IconlyLight.home,
-              selectedColor: Colors.black,
-              unselectedColor:  Colors.black,
+              unselectedIcon: IconlyBold.home,
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor:  Theme.of(context).primaryColor,
             ),
             CrystalNavigationBarItem(
-              icon: IconlyLight.bookmark,
-              unselectedIcon: IconlyLight.bookmark,
-              selectedColor: Colors.black,
-              unselectedColor:  Colors.black,
-
-            ),
-            CrystalNavigationBarItem(
-              icon: IconlyBold.plus,
-              unselectedIcon: IconlyLight.plus,
-              selectedColor: Colors.black,
-              unselectedColor:  Colors.black,
+              icon: FontAwesomeIcons.bookOpen,
+              unselectedIcon: FontAwesomeIcons.bookOpen,
+              selectedColor:Theme.of(context).primaryColor,
+              unselectedColor:  Theme.of(context).primaryColor,
 
             ),
             CrystalNavigationBarItem(
-              icon: IconlyBold.chat,
-              unselectedIcon: IconlyLight.chat,
-              selectedColor: Colors.black,
-                           unselectedColor:  Colors.black,
+              icon: FontAwesomeIcons.question,
+              unselectedIcon: FontAwesomeIcons.question,
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor:  Theme.of(context).primaryColor,
 
             ),
+            CrystalNavigationBarItem(
+              icon: FontAwesomeIcons.book,
+              unselectedIcon: FontAwesomeIcons.book,
+              selectedColor:Theme.of(context).primaryColor,
+                           unselectedColor:  Theme.of(context).primaryColor,
 
+            ),
+            CrystalNavigationBarItem(
+              icon: IconlyBold.setting,
+              unselectedIcon: IconlyBold.setting,
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor:Theme.of(context).primaryColor,
+            ),
           ],
           backgroundColor: Colors.white70,  // Set a different color for the navigation bar
 

@@ -14,7 +14,6 @@ class AlgorithmsScreens extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: Padding(
           padding: const EdgeInsets.only(left: 20, top: 100, right: 20),
           child: Column(

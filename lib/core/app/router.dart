@@ -7,6 +7,7 @@ import 'package:operating_systems/features/quiz/presentation/pages/translate_the
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/comparisons_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
@@ -23,20 +24,25 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     builder: (context, state) => NavBar(),
   ),
   GoRoute(
+    path: SettingsScreen.path,
+    name: SettingsScreen.name,
+    builder: (context, state) => SettingsScreen(),
+  ),
+  GoRoute(
     path: ChooseAlgorithmsScreen.path,
     name: ChooseAlgorithmsScreen.name,
     builder: (context, state) => ChooseAlgorithmsScreen(),
   ),
   GoRoute(
-    path: ComparisonsScreen.path,
-    name: ComparisonsScreen.name,
-    builder: (context, state) {
-      final Comparisons = state.extra as List<Comparison>;
+      path: ComparisonsScreen.path,
+      name: ComparisonsScreen.name,
+      builder: (context, state) {
+        final Comparisons = state.extra as List<Comparison>;
 
-    return  ComparisonsScreen(comparisons: Comparisons,);
-
-    }
-  ),
+        return ComparisonsScreen(
+          comparisons: Comparisons,
+        );
+      }),
   GoRoute(
     path: ChooseComparisonsScreen.path,
     name: ChooseComparisonsScreen.name,
@@ -64,15 +70,13 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
         return TrueFalseChapterGridScreen(isStudy: isStudy);
       }),
   GoRoute(
-    path: AlgorithmsScreens.path,
-    name: AlgorithmsScreens.name,
-    builder: (context, state) {
-      final algorithm = state.extra as Algorithm;
+      path: AlgorithmsScreens.path,
+      name: AlgorithmsScreens.name,
+      builder: (context, state) {
+        final algorithm = state.extra as Algorithm;
 
-     return AlgorithmsScreens(algorithm: algorithm);
-
-    }
-  ),
+        return AlgorithmsScreens(algorithm: algorithm);
+      }),
   GoRoute(
     path: StudySectionStudyScreen.path,
     name: StudySectionStudyScreen.name,
