@@ -9,6 +9,8 @@ void main() {
     expect(File(Images.boy).existsSync(), isTrue);
     expect(File(Images.boy10).existsSync(), isTrue);
     expect(File(Images.boy11).existsSync(), isTrue);
+    expect(File(Images.boy12).existsSync(), isTrue);
+    expect(File(Images.boy13).existsSync(), isTrue);
     expect(File(Images.boy2).existsSync(), isTrue);
     expect(File(Images.boy3).existsSync(), isTrue);
     expect(File(Images.boy4).existsSync(), isTrue);

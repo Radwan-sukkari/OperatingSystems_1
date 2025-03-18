@@ -5,3 +5,4 @@ abstract class StudyEvent {}
 class AlgorithmsEvent extends StudyEvent {}
 
 class ComparisonsEvent extends StudyEvent {}
+class RandomQuizEvent extends StudyEvent{}

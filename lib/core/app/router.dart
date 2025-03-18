@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
@@ -40,6 +41,11 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     path: ChooseComparisonsScreen.path,
     name: ChooseComparisonsScreen.name,
     builder: (context, state) => ChooseComparisonsScreen(),
+  ),
+  GoRoute(
+    path: RandomQuiz.path,
+    name: RandomQuiz.name,
+    builder: (context, state) => RandomQuiz(),
   ),
   GoRoute(
       path: OsiChapterGridScreen.path,

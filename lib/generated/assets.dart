@@ -7,6 +7,8 @@ class Assets {
   static const String imagesBoy6 = 'assets/images/boy 6.png';
   static const String imagesBoy10 = 'assets/images/boy10.png';
   static const String imagesBoy11 = 'assets/images/boy11.png';
+  static const String imagesBoy12 = 'assets/images/boy12.png';
+  static const String imagesBoy13 = 'assets/images/boy13.png';
   static const String imagesBoy2 = 'assets/images/boy2.png';
   static const String imagesBoy3 = 'assets/images/boy3.png';
   static const String imagesBoy4 = 'assets/images/boy4.png';
@@ -17,6 +19,7 @@ class Assets {
   static const String imagesBoyQuiz = 'assets/images/boy_quiz.png';
   static const String jsonAlgorithms = 'assets/json/algorithms.json';
   static const String jsonComparison = 'assets/json/comparison.json';
+  static const String jsonRandomQuiz = 'assets/json/random_quiz.json';
   static const String jsonScratch = 'assets/json/scratch.json';
   static const String jsonTrueFalse = 'assets/json/true_false.json';
 

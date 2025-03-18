@@ -9,7 +9,7 @@ class ComparisonsScreen extends StatelessWidget {
   static const String name = 'comparisons_screen';
   static const String path = '/comparisons_screen';
 
-  const ComparisonsScreen({super.key, required this.comparisons});
+  const ComparisonsScreen({super.key, required this.comparisons, });
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +22,15 @@ class ComparisonsScreen extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                    "ملاحظة يمكنك تمرير الجدول افقيا لرؤية محتوى الجدول ككل ويمكنك تمرير الخانة الواحدة عموديا لرؤية محتواها كاملا"),
+                    "ملاحظة يمكنك تمرير الجدول افقيا لرؤية محتوى الجدول ككل ويمكنك تمرير الخانة الواحدة عموديا لرؤية محتواها كاملا",style: TextStyle(color: Theme.of(context).colorScheme.primary),),
                 Expanded(
                   child: ListView.builder(
+                    physics: BouncingScrollPhysics(),
                       itemCount: comparisons.length,
                       itemBuilder: (context, index) {
-                        return ComparisonsWidget(comparison: comparisons[index],);
+                        return ComparisonsWidget(
+                          comparison: comparisons[index],
+                        );
                       }),
                 ),
               ],

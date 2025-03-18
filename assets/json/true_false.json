@@ -6,6 +6,8 @@
       "title_ar": "جميع الفصول ",
       "questions": [
         {
+          "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A thread can continue execution after its primary process exits.",
           "question_ar": "يمكن أن يستمر الخيط في التنفيذ بعد انتهاء العملية الرئيسية.",
           "description": "Correction: A thread cannot continue execution after its primary process exits.",
@@ -23,6 +25,8 @@
           ]
         },
         {
+          "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "When quantum size is too large, the overhead involved in context switching dominates and performance degrades.",
           "question_ar": "عندما يكون حجم الكم كبيرًا جدًا، فإن النفقات العامة المتعلقة بتبديل السياق تهيمن ويتدهور الأداء.",
           "description": "Correction: When quantum size is too small, the overhead involved in context switching dominates and performance degrades.",
@@ -39,7 +43,8 @@
             }
           ]
         },
-        {
+        {  "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Virtual memory can be thought of as a modern operating system-controlled version of overlays.",
           "question_ar": "يمكن اعتبار الذاكرة الافتراضية كنسخة حديثة من التراكبات التي يتم التحكم فيها بواسطة نظام التشغيل.",
           "description": "",
@@ -56,7 +61,9 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
+
           "question_en": "A FIFO page replacement strategy can be implemented with relatively low overhead using a stack.",
           "question_ar": "يمكن تنفيذ استراتيجية استبدال الصفحات FIFO مع نفقات عامة منخفضة نسبيًا باستخدام مكدس.",
           "description": "Correction: A FIFO page replacement strategy is implemented using a queue, not a stack.",
@@ -73,7 +80,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Programmed I/O enables devices and controllers to transfer blocks of data to and from main memory directly.",
           "question_ar": "تمكن الإدخال/الإخراج المبرمج الأجهزة والتحكم من نقل كتل البيانات من وإلى الذاكرة الرئيسية مباشرة.",
           "description": "Correction: DMA (Direct Memory Access) enables devices and controllers to transfer blocks of data to and from main memory directly.",
@@ -90,7 +98,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A thread enters a waiting state when it must wait for the completion of an I/O request.",
           "question_ar": "يدخل الخيط حالة الانتظار عندما يجب أن ينتظر اكتمال طلب الإدخال/الإخراج.",
           "description": "Correction: A thread enters a blocked state when it must wait for the completion of an I/O request.",
@@ -107,7 +116,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A segment protection exception is generated when a displacement is greater than a segment length.",
           "question_ar": "يتم إنشاء استثناء حماية المقطع عندما يكون الإزاحة أكبر من طول المقطع.",
           "description": "Correction: A segment overflow exception is generated when a displacement is greater than a segment length.",
@@ -124,7 +134,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Maximizing throughput and minimizing variance of response times can lead to increased transmission time.",
           "question_ar": "يمكن أن يؤدي تعظيم الإنتاجية وتقليل تباين أوقات الاستجابة إلى زيادة وقت الإرسال.",
           "description": "Correction: Maximizing throughput and minimizing variance of response times can lead to decreased seek time and improved storage protection.",
@@ -141,7 +152,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A benefit of the time-sharing systems of the 1960s is that time-sharing made it possible for real-time systems to provide quick results to users.",
           "question_ar": "فائدة أنظمة المشاركة الزمنية في الستينيات هي أن المشاركة الزمنية جعلت من الممكن لأنظمة الوقت الحقيقي تقديم نتائج سريعة للمستخدمين.",
           "description": "",
@@ -158,7 +170,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "From the user’s point of view, plug-and-play devices that are added to the system are typically ready to use after manually configuring the operating system to identify the device.",
           "question_ar": "من وجهة نظر المستخدم، تكون الأجهزة القابلة للتوصيل والتشغيل التي تتم إضافتها إلى النظام جاهزة للاستخدام عادةً بعد التهيئة اليدوية لنظام التشغيل لتحديد الجهاز.",
           "description": "Correction: Plug-and-play devices are typically ready to use immediately with little or no user interaction.",
@@ -175,7 +188,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Thread cancellation always terminates the target thread immediately.",
           "question_ar": "إلغاء الخيط ينهي دائمًا الخيط الهدف على الفور.",
           "description": "Correction: Thread cancellation does not always terminate the target thread immediately.",
@@ -192,7 +206,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Only one thread at a time can execute the instructions in its critical section for a particular resource.",
           "question_ar": "يمكن لخيط واحد فقط في كل مرة تنفيذ التعليمات في قسمه الحرجي لمورد معين.",
           "description": "",
@@ -209,7 +224,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Compacting temporarily removes a process from main memory to allow another process to make use of the system’s resources.",
           "question_ar": "يقوم الضغط بإزالة عملية مؤقتًا من الذاكرة الرئيسية للسماح لعملية أخرى باستخدام موارد النظام.",
           "description": "Correction: Swapping temporarily removes a process from main memory to allow another process to make use of the system’s resources.",
@@ -226,7 +242,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "In a combined segmentation/paging system, all of the pages of a segment must be in main memory at once.",
           "question_ar": "في نظام التجزئة/الصفحات المشترك، يجب أن تكون جميع صفحات المقطع في الذاكرة الرئيسية في وقت واحد.",
           "description": "Correction: In a combined segmentation/paging system, not all pages of a segment need to be in main memory at once.",
@@ -243,7 +260,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "The source code of free software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
           "question_ar": "يتم توزيع الكود المصدري للبرمجيات الحرة بحرية، مما يسمح للمبرمجين بفحص وتعديل البرنامج قبل تجميعه وتنفيذه.",
           "description": "Correction: The source code of open-source software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
@@ -260,7 +278,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A data bus is a bus that connects exactly 2 devices and an I/O channel is a bus that several devices share to perform I/O operations.",
           "question_ar": "ناقل البيانات هو ناقل يربط جهازين بالضبط، وقناة الإدخال/الإخراج هي ناقل يتشاركه عدة أجهزة لأداء عمليات الإدخال/الإخراج.",
           "description": "Correction: A port connects exactly 2 devices, and an I/O channel is a bus that several devices share to perform I/O operations.",
@@ -277,7 +296,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Sending and receiving processes often use a synchronization protocol to ensure that messages are properly received.",
           "question_ar": "غالبًا ما تستخدم عمليات الإرسال والاستقبال بروتوكول مزامنة للتأكد من استلام الرسائل بشكل صحيح.",
           "description": "Correction: Sending and receiving processes often use an acknowledgment protocol to ensure that messages are properly received.",
@@ -294,7 +314,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Protection restricts access to a shared variable to only one thread at a time.",
           "question_ar": "تقييد الحماية الوصول إلى متغير مشترك لخيط واحد فقط في كل مرة.",
           "description": "Correction: Mutual exclusion restricts access to a shared variable to only one thread at a time.",
@@ -311,7 +332,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "The intermediate level scheduler determines which jobs may join admission to the system and actively compete for system resources.",
           "question_ar": "يحدد المجدول ذو المستوى المتوسط الوظائف التي يمكنها الانضمام إلى النظام والتنافس بنشاط على موارد النظام.",
           "description": "Correction: The high-level scheduler determines which jobs may join admission to the system and actively compete for system resources.",
@@ -328,7 +350,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A memory manager's primary function is to interact with special memory management hardware.",
           "question_ar": "الوظيفة الأساسية لمدير الذاكرة هي التفاعل مع أجهزة إدارة الذاكرة الخاصة.",
           "description": "Correction: A memory manager's primary function is to obtain optimal memory performance.",
@@ -345,7 +368,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "In a paging system, a page frame is always larger than an incoming page.",
           "question_ar": "في نظام الصفحات، يكون إطار الصفحة دائمًا أكبر من الصفحة الواردة.",
           "description": "Correction: In a paging system, a page frame is the same size as an incoming page.",
@@ -362,7 +386,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Demand paging improves performance for processes with predictable memory access patterns.",
           "question_ar": "تحسن الصفحات الطلبية الأداء للعمليات ذات أنماط الوصول إلى الذاكرة القابلة للتنبؤ.",
           "description": "Correction: Anticipatory paging improves performance for processes with predictable memory access patterns.",
@@ -379,7 +404,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "The lexical analyzer groups tokens in a program source code into syntactically correct statements.",
           "question_ar": "يقوم المحلل المعجمي بتجميع الرموز في الكود المصدري للبرنامج في عبارات صحيحة نحويًا.",
           "description": "Correction: The parser groups tokens in a program source code into syntactically correct statements.",
@@ -396,7 +422,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "An efficient operating system generally achieves high throughput and high average TOT.",
           "question_ar": "يحقق نظام التشغيل الفعال عمومًا إنتاجية عالية ومتوسط TOT مرتفع.",
           "description": "Correction: An efficient operating system generally achieves high throughput and low average TOT.",
@@ -413,7 +440,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Querying can be used instead of interrupts to inform the processor of changes in device status.",
           "question_ar": "يمكن استخدام الاستعلام بدلاً من المقاطعات لإعلام المعالج بالتغييرات في حالة الجهاز.",
           "description": "Correction: Polling can be used instead of interrupts to inform the processor of changes in device status.",
@@ -430,7 +458,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "To allow programs to access and execute operating system instructions, operating systems provide memory protection keys.",
           "question_ar": "للسماح للبرامج بالوصول إلى وتنفيذ تعليمات نظام التشغيل، توفر أنظمة التشغيل مفاتيح حماية الذاكرة.",
           "description": "Correction: To allow programs to access and execute operating system instructions, operating systems provide system calls.",
@@ -447,7 +476,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Signals often are used to pass data between processes.",
           "question_ar": "غالبًا ما تُستخدم الإشارات لتمرير البيانات بين العمليات.",
           "description": "Correction: Signals are used to notify a process that an event has occurred, not to pass data between processes.",
@@ -464,7 +494,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Batch processes tend to use all the processor time that the system allocates for it.",
           "question_ar": "تميل العمليات الدفعية إلى استخدام كل وقت المعالج الذي يخصصه النظام لها.",
           "description": "Correction: Processor-bound processes tend to use all the processor time that the system allocates for them.",
@@ -481,7 +512,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "In a paging system, given the virtual memory address R, [pd], where page P is in page frame number p' and the fixed page size is Ps, then the real memory address of r is [a':sql *p, ( P' + Ps + d )].",
           "question_ar": "في نظام الصفحات، بالنظر إلى عنوان الذاكرة الافتراضية R، [pd]، حيث تكون الصفحة P في إطار الصفحة رقم p' وحجم الصفحة الثابت هو Ps، فإن عنوان الذاكرة الحقيقي لـ r هو [a':sql *p, ( P' + Ps + d )].",
           "description": "",
@@ -498,7 +530,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A thread that uses processor cycles to continually test a condition before entering its critical section is said to be deadlocked.",
           "question_ar": "يُقال إن الخيط الذي يستخدم دورات المعالج لاختبار حالة بشكل مستمر قبل الدخول إلى قسمه الحرج يكون في حالة تعليق.",
           "description": "Correction: A thread that uses processor cycles to continually test a condition before entering its critical section is said to be busy waiting.",
@@ -515,7 +548,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Demand paging improves performance for processes with predictable memory access patterns.",
           "question_ar": "تحسن الصفحات الطلبية الأداء للعمليات ذات أنماط الوصول إلى الذاكرة القابلة للتنبؤ.",
           "description": "Correction: Anticipatory paging improves performance for processes with predictable memory access patterns.",
@@ -532,7 +566,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "An application base is the combination of the software and OS environment in which apps are developed.",
           "question_ar": "قاعدة التطبيق هي مزيج من البرمجيات وبيئة نظام التشغيل التي يتم فيها تطوير التطبيقات.",
           "description": "Correction: An application base is the combination of hardware, software, and OS environment in which apps are developed.",
@@ -549,7 +584,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A thread can execute instructions independent of other processes.",
           "question_ar": "يمكن للخيط تنفيذ التعليمات بشكل مستقل عن العمليات الأخرى.",
           "description": "",
@@ -566,7 +602,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A thread that uses processor cycles to continually test a condition before entering its critical section is said to be deadlocked.",
           "question_ar": "يُقال إن الخيط الذي يستخدم دورات المعالج لاختبار حالة بشكل مستمر قبل الدخول إلى قسمه الحرج يكون في حالة تعليق.",
           "description": "Correction: A thread that uses processor cycles to continually test a condition before entering its critical section is said to be busy waiting.",
@@ -583,7 +620,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "A cache hit occurs when a referenced piece of data isn't present in cache memory.",
           "question_ar": "يحدث ضرب ذاكرة التخزين المؤقت عندما لا تكون قطعة البيانات المشار إليها موجودة في ذاكرة التخزين المؤقت.",
           "description": "Correction: A cache hit occurs when a referenced piece of data is present in cache memory.",
@@ -600,7 +638,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Loading assigns a processor to the first process in the ready list.",
           "question_ar": "يقوم التحميل بتعيين معالج للعملية الأولى في قائمة الانتظار.",
           "description": "Correction: Dispatching assigns a processor to the first process in the ready list.",
@@ -617,7 +656,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "User-level threads are also called one-to-many thread mapping.",
           "question_ar": "تُسمى الخيوط على مستوى المستخدم أيضًا بتعيين الخيوط من واحد إلى كثير.",
           "description": "Correction: User-level threads are also called many-to-one thread mapping.",
@@ -634,7 +674,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "The constructs that encapsulate a thread's critical section are sometimes called critical section primitives.",
           "question_ar": "تُسمى التركيبات التي تغلف القسم الحرج للخيط أحيانًا بالبدائيات الحرجة.",
           "description": "Correction: The constructs that encapsulate a thread's critical section are sometimes called mutual exclusion primitives.",
@@ -651,7 +692,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Baseline scheduling is most important in real-time systems.",
           "question_ar": "يكون جدولة الخط الأساسي أكثر أهمية في أنظمة الوقت الحقيقي.",
           "description": "",
@@ -668,7 +710,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Secondary storage can be referenced directly by a processor.",
           "question_ar": "يمكن الرجوع إلى التخزين الثانوي مباشرة بواسطة المعالج.",
           "description": "Correction: Main memory can be referenced directly by a processor, not secondary storage.",
@@ -685,7 +728,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Next-fit placement strategies attempt to load a piece of program or data into main memory before it’s referenced.",
           "question_ar": "تحاول استراتيجيات وضع الملاءمة التالية تحميل جزء من البرنامج أو البيانات في الذاكرة الرئيسية قبل الإشارة إليها.",
           "description": "Correction: Anticipatory fetch strategies attempt to load a piece of program or data into main memory before it’s referenced.",
@@ -702,7 +746,8 @@
             }
           ]
         },
-        {
+        { "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
           "question_en": "Under a random page replacement strategy, the system is consistently likely to achieve high performance.",
           "question_ar": "تحت استراتيجية استبدال الصفحات العشوائية، من المرجح أن يحقق النظام أداءً عاليًا بشكل ثابت.",
           "description": "Correction: Under a random page replacement strategy, there is a small chance that the replaced page will be referenced soon, leading to potential performance issues.",

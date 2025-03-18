@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/choose_quiz_type.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
+import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.dart';
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
@@ -37,7 +38,7 @@ class _NavBarState extends State<NavBar> {
       case _SelectedTab.FavouriteScreen:
         return StudySectionStudyScreen(); // Replace with your Favourite screen widget
       case _SelectedTab.PhotoSelector:
-        return StudySectionStudyScreen(); // Replace with your Add Post screen widget
+        return RandomQuiz(); // Replace with your Add Post screen widget
       case _SelectedTab.AllUser:
 
         return ChooseQuizTypeScreen(); // Replace with your Profile screen widget

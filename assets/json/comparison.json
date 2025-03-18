@@ -6,6 +6,9 @@
       "title_ar": "الفصل الأول",
       "Comparisons": [
         {
+          "comparisonsHeight": 54.4,
+          "firstColumnWidth": 75.4,
+          "contentWidth": 75,
           "notes": "",
           "tableTitle": "المعماريات",
           "firstColumn": [
@@ -32,6 +35,52 @@
             ]
           ]
         }
+      ]
+    },
+    {
+      "id": 4,
+      "title_en": "Chapter 4",
+      "title_ar": "الفصل الرابع",
+      "Comparisons": [
+        {
+          "comparisonsHeight": 54.4,
+          "firstColumnWidth": 75.4,
+          "contentWidth": 75,
+          "notes": "",
+          "tableTitle": "النموذج",
+          "firstColumn": [
+            "user_level \nthreads",
+            "kernal_level\nthreads",
+            "comination\nuser_level\nand Kernel_\nlevel threads"
+          ],
+          "mainColumnHeadings": [
+            "شرح",
+            "ايجابيات",
+            "سلبيات",
+            "الرسم"
+          ],
+          "rows": [
+            [
+              "تنفذ عملياتها ضمن (user space) ولاتستطبع تنفيذ تعليمات ذات صلاحية معينة او الوصول الى موارد (kernal) بشكل مباشر ويقوم نظام التشغيل بتعيين كل ال (threads) ضمن (process) متعددة ",
+              "1_اكثر محمولية\n 2-التزامن خارج ال (kernal) \n 3_مكتبات ال user level تستطيع جدولة threads الخاصة بها لتحسين الاداء ",
+              "1_ترى ال kernal العملية المتعددة threads على انها threads وحيد ولايمكن جدولة العملية على اكثر من معالج ",
+              ""
+            ],
+            [
+              " 1_ تقوم بتعيين كل threads الى سياق تنفيذ خاص به  \n 2_ ليست دائما الحل الأفضل من أجل تطبيق متعدد ال (threads)",
+              "1_ تزيد من ال (scalability)  \n 2_ التفاعل (interactivity)  \n 3 _الانتاجية (productivity)",
+              "1_تزيد العبء (overhead) \n 2 _ تقلل المحمولية  (protability)",
+              ""
+            ],
+            [
+              "عدد ال (user level thread) وال (kernal level thread) ليس بالضرورة ان يكون متساوي ",
+              " يخفف من العبء (overhead) مقارنة مع (one to one mapping) وذلك بتوظيف فكرة تجميع ال (threads) ",
+              "",
+              ""
+            ]
+          ]
+        }
+
       ]
     }
   ]

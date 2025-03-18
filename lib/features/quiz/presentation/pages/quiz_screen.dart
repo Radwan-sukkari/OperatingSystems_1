@@ -105,7 +105,7 @@ class _QuizScreenState extends State<QuizScreen> {
                             children: [
                               FirstLayer(
                                 question: widget.questions[index],
-                                chapterArabic: widget.chapterArabic,
+                                chapterArabic: widget.questions[index].chapterAr,
                                 isArabic: false,
                                 questionNumberInTheChapter: widget.questions.length,
                                 questionIReceived: index + 1,
@@ -113,7 +113,7 @@ class _QuizScreenState extends State<QuizScreen> {
                                 onPreviousQuestion: () => _previousQuestion(context), // Pass the previous question callback
                               ),
                               SecondLayer(
-                                chapter: widget.chapterEnglish,
+                                chapter: widget.questions[index].chapterEn,
                                 questionNumberInTheChapter: widget.questions.length,
                                 questionIReceived: index + 1,
                               ),

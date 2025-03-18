@@ -7,6 +7,8 @@ class Images {
   static const String boy = 'assets/images/boy.png';
   static const String boy10 = 'assets/images/boy10.png';
   static const String boy11 = 'assets/images/boy11.png';
+  static const String boy12 = 'assets/images/boy12.png';
+  static const String boy13 = 'assets/images/boy13.png';
   static const String boy2 = 'assets/images/boy2.png';
   static const String boy3 = 'assets/images/boy3.png';
   static const String boy4 = 'assets/images/boy4.png';

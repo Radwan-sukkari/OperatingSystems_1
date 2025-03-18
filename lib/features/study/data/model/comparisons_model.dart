@@ -23,7 +23,8 @@ class ComparisonsModel {
             json["chapters"].map((x) => Chapter.fromJson(x))),
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String, dynamic> toJson() =>
+      {
         "chapters": List<dynamic>.from(chapters.map((x) => x.toJson())),
       };
 }
@@ -41,7 +42,8 @@ class Chapter {
     required this.comparisons,
   });
 
-  factory Chapter.fromJson(Map<String, dynamic> json) => Chapter(
+  factory Chapter.fromJson(Map<String, dynamic> json) =>
+      Chapter(
         id: json["id"],
         titleEn: json["title_en"],
         titleAr: json["title_ar"],
@@ -49,7 +51,8 @@ class Chapter {
             json["Comparisons"].map((x) => Comparison.fromJson(x))),
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String, dynamic> toJson() =>
+      {
         "id": id,
         "title_en": titleEn,
         "title_ar": titleAr,
@@ -72,22 +75,24 @@ class Comparison {
     required this.rows,
   });
 
-  factory Comparison.fromJson(Map<String, dynamic> json) => Comparison(
+  factory Comparison.fromJson(Map<String, dynamic> json) =>
+      Comparison(
         notes: json["notes"],
         tableTitle: json["tableTitle"],
         firstColumn: List<String>.from(json["firstColumn"].map((x) => x)),
         mainColumnHeadings:
-            List<String>.from(json["mainColumnHeadings"].map((x) => x)),
+        List<String>.from(json["mainColumnHeadings"].map((x) => x)),
         rows: List<List<String>>.from(
             json["rows"].map((x) => List<String>.from(x.map((x) => x)))),
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String, dynamic> toJson() =>
+      {
         "notes": notes,
         "tableTitle": tableTitle,
         "firstColumn": List<dynamic>.from(firstColumn.map((x) => x)),
         "mainColumnHeadings":
-            List<dynamic>.from(mainColumnHeadings.map((x) => x)),
+        List<dynamic>.from(mainColumnHeadings.map((x) => x)),
         "rows": List<dynamic>.from(
             rows.map((x) => List<dynamic>.from(x.map((x) => x)))),
       };

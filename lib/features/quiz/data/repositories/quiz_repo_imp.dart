@@ -5,6 +5,7 @@ import 'package:operating_systems/core/errors/failuer.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/quiz/data/data_source/quiz_data_source.dart';
 import 'package:operating_systems/features/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/quiz/data/model/quiz_random_model.dart';
 import 'package:operating_systems/features/quiz/domain/repositories/quiz_repo.dart';
 
 @LazySingleton(as: QuizRepo)
@@ -31,5 +32,14 @@ class QuizRepoImp implements QuizRepo {
       remoteDataFetcher: () => quizDataSource.trueFalseQuiz(),
     );
     return trueFalseQuiz;
+  }
+
+  @override
+  Future<Either<Failure, RandomQuizModel>> randomQuiz() {
+    networkRepository = getIt<NetworkRepository>();
+    final randomQuiz = networkRepository<RandomQuizModel>(
+      remoteDataFetcher: () => quizDataSource.randomQuiz(),
+    );
+    return randomQuiz;
   }
 }

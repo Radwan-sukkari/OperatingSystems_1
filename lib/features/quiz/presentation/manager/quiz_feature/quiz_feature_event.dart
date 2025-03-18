@@ -5,3 +5,4 @@ abstract class QuizFeatureEvent {}
 class OsiQuizEvent extends QuizFeatureEvent {}
 
 class TrueFalseQuizEvent extends QuizFeatureEvent {}
+class RandomQuizEvent extends QuizFeatureEvent{}
