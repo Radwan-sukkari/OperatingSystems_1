@@ -35,6 +35,7 @@ class OsiQuestionStudyScreen extends StatelessWidget {
             ),
             Expanded(
               child: ListView.builder(
+                physics: BouncingScrollPhysics(),
                 itemCount: questions.length,
                 itemBuilder: (context, index) {
                   final question = questions[index];

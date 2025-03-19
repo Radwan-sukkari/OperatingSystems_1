@@ -21,7 +21,9 @@ class QuestionWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
         child: Text(
     question,
-          textDirection: isArabic==false?TextDirection.ltr:TextDirection.rtl,
+          textDirection: isArabic==false?TextDirection.ltr:TextDirection.rtl,style: Theme.of(context).textTheme.titleMedium!.copyWith(
+    color: Theme.of(context).colorScheme.shadow,
+    fontWeight: FontWeight.w500)
       ),
     ));
   }

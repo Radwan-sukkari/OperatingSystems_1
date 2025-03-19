@@ -16,11 +16,14 @@ class RandomQuiz extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: Padding(
           padding: EdgeInsets.only(
-              right: width(25), left: width(25), bottom: height(40)),
+            right: width(25),
+            left: width(25),
+            bottom: height(0),
+          ),
           child: ColumnAnimations(
-            mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
-              duration: 200,
+              duration: 150,
               curve: Curves.easeIn,
               columnContent: [
                 Image.asset(Images.boy12),

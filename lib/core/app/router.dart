@@ -7,6 +7,8 @@ import 'package:operating_systems/features/quiz/presentation/pages/translate_the
 import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_app.dart';
+import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_subject.dart';
 import 'package:operating_systems/features/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/comparisons_screen.dart';
@@ -22,6 +24,16 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     path: NavBar.path,
     name: NavBar.name,
     builder: (context, state) => NavBar(),
+  ),
+  GoRoute(
+    path: AboutTheSubject.path,
+    name: AboutTheSubject.name,
+    builder: (context, state) => AboutTheSubject(),
+  ),
+  GoRoute(
+    path: AboutTheApp.path,
+    name: AboutTheApp.name,
+    builder: (context, state) => AboutTheApp(),
   ),
   GoRoute(
     path: SettingsScreen.path,

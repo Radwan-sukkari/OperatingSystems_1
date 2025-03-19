@@ -61,9 +61,8 @@ class _NavBarState extends State<NavBar> {
           onTap: _handleIndexChanged,
           items: [
             CrystalNavigationBarItem(
-
               icon: IconlyBold.home,
-              unselectedIcon: IconlyBold.home,
+              unselectedIcon: IconlyLight.home,
               selectedColor: Theme.of(context).primaryColor,
               unselectedColor:  Theme.of(context).primaryColor,
             ),

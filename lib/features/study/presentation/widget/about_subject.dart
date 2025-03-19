@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_subject.dart';
 
 class AboutSubject extends StatefulWidget {
   const AboutSubject({Key? key}) : super(key: key);
@@ -45,7 +47,8 @@ class _AboutSubjectState extends State<AboutSubject>
     return ScaleTransition(
         scale: _animation,
         child: SmallButton(
-            text: " اضفط هنا", size: Size(120.w, 30.h), onPressed: () {}));
+            text: " اضفط هنا", size: Size(120.w, 30.h), onPressed: () {                            context.pushNamed(AboutTheSubject.name);
+        }));
   }
 }
 

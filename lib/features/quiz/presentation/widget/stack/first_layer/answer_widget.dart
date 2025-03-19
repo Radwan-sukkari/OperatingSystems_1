@@ -51,7 +51,8 @@ class AnswerWidget extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 7),
               child: Row(
-                mainAxisAlignment: isArabic ? MainAxisAlignment.start : MainAxisAlignment.end,
+                mainAxisAlignment:
+                    isArabic ? MainAxisAlignment.start : MainAxisAlignment.end,
                 children: [
                   if (!isArabic)
                     Flexible(
@@ -60,9 +61,15 @@ class AnswerWidget extends StatelessWidget {
                         textAlign: TextAlign.left,
                         softWrap: true,
                         overflow: TextOverflow.visible,
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .copyWith(
+                                color: Theme.of(context).colorScheme.shadow,
+                                fontWeight: FontWeight.w500),
                       ),
                     ),
-                  SizedBox(width: width(10)),
+                  if (!isArabic) SizedBox(width: width(10)),
                   Container(
                     height: height(25),
                     width: width(25),
@@ -73,10 +80,16 @@ class AnswerWidget extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "${index + 1}",
-                        style: TextStyle(color: Colors.white),
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .copyWith(
+                                color: Theme.of(context).colorScheme.onPrimary,
+                                fontWeight: FontWeight.w500),
                       ),
                     ),
                   ),
+                  if (isArabic) SizedBox(width: width(10)),
                   if (isArabic)
                     Flexible(
                       child: Text(
@@ -84,6 +97,12 @@ class AnswerWidget extends StatelessWidget {
                         textAlign: TextAlign.right,
                         softWrap: true,
                         overflow: TextOverflow.visible,
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleMedium!
+                            .copyWith(
+                                color: Theme.of(context).colorScheme.shadow,
+                                fontWeight: FontWeight.w500),
                       ),
                     ),
                 ],

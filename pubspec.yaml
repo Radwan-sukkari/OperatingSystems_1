@@ -52,6 +52,8 @@ dependencies:
   another_flushbar: ^1.12.30
   hugeicons: ^0.0.10
   font_awesome_flutter: ^10.8.0
+  flutter_launcher_icons: ^0.14.3
+  huge_icons_flutter: ^0.0.2
 
 dev_dependencies:
   flutter_test:

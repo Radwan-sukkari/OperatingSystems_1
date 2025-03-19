@@ -17,6 +17,7 @@ class Assets {
   static const String imagesBoy8 = 'assets/images/boy8.png';
   static const String imagesBoy9 = 'assets/images/boy9.png';
   static const String imagesBoyQuiz = 'assets/images/boy_quiz.png';
+  static const String imagesLogo = 'assets/images/logo.png';
   static const String jsonAlgorithms = 'assets/json/algorithms.json';
   static const String jsonComparison = 'assets/json/comparison.json';
   static const String jsonRandomQuiz = 'assets/json/random_quiz.json';

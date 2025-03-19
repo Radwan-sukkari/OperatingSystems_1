@@ -19,5 +19,6 @@ void main() {
     expect(File(Images.boy8).existsSync(), isTrue);
     expect(File(Images.boy9).existsSync(), isTrue);
     expect(File(Images.boyQuiz).existsSync(), isTrue);
+    expect(File(Images.logo).existsSync(), isTrue);
   });
 }

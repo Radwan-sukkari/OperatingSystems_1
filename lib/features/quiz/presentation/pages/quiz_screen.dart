@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/quiz/presentation/manager/answer_selected_bloc.dart';
@@ -70,12 +71,7 @@ class _QuizScreenState extends State<QuizScreen> {
 
       context.read<ToggleBloc>().add(ResetState());
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text("This is the first question!"),
-          duration: Duration(seconds: 2),
-        ),
-      );
+      showFlushBar(context, "هذا اول سؤال");
     }
   }
 

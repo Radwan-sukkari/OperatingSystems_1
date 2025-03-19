@@ -15,13 +15,12 @@ class SecondLayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return
-      Positioned(
+    return Positioned(
       top: -30,
       child: Column(
         children: [
           Container(
-            height: height(55),
+            height: height(62),
             width: width(160),
             decoration: BoxDecoration(
                 color: Colors.white.withOpacity(0.5),
@@ -29,12 +28,22 @@ class SecondLayer extends StatelessWidget {
                 border: Border.all(color: Color(0xff205781))),
             child: Column(
               children: [
-                Text("  $chapter"),
+                Text(
+                  "  $chapter",
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      color: Theme.of(context).colorScheme.shadow,
+                      fontWeight: FontWeight.w500),
+                ),
                 SizedBox(
                   height: height(2),
                 ),
-                Text("$questionIReceived/$questionNumberInTheChapter question",
-                    textDirection: TextDirection.ltr),
+                Text(
+                  "$questionIReceived/$questionNumberInTheChapter question",
+                  textDirection: TextDirection.ltr,
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      color: Theme.of(context).colorScheme.shadow,
+                      fontWeight: FontWeight.w500),
+                ),
               ],
             ),
           ),
