@@ -25,7 +25,9 @@ class Assets {
   static const String imagesSplashScreen = 'assets/images/splash_screen.png';
   static const String jsonAlgorithms = 'assets/json/algorithms.json';
   static const String jsonComparison = 'assets/json/comparison.json';
+  static const String jsonOsi2quiz = 'assets/json/osi2quiz.json';
   static const String jsonRandomQuiz = 'assets/json/random_quiz.json';
+  static const String jsonRandomQuizOsi2 = 'assets/json/random_quiz_osi2.json';
   static const String jsonScratch = 'assets/json/scratch.json';
   static const String jsonTrueFalse = 'assets/json/true_false.json';
 
