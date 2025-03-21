@@ -15,10 +15,13 @@ class SettingWidget extends StatelessWidget {
       children: [
         Row(
           children: [
-            Icon(
-              HugeIcons.strokeRoundedCube,
-              size: 30,
-              color: Theme.of(context).primaryColor,
+            Container(
+              margin: EdgeInsets.only(top: 10),
+              child: Icon(
+                HugeIcons.strokeRoundedCube,
+                size: 25,
+                color: Theme.of(context).primaryColor,
+              ),
             ),
             SizedBox(
               width: width(20),
@@ -27,7 +30,7 @@ class SettingWidget extends StatelessWidget {
               name,
               style: Theme.of(context).textTheme.titleLarge!.copyWith(
                   color: Theme.of(context).primaryColor,
-                  fontWeight: FontWeight.w600),
+                  fontWeight: FontWeight.w500,fontSize: 18),
             ),
             Spacer(),
             IconButton(

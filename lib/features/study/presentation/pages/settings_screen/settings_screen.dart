@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:go_router/go_router.dart';
-import 'package:hugeicons/hugeicons.dart';
 import 'package:operating_systems/core/animations/colum_animations.dart';
+import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_app.dart';
 import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_subject.dart';
@@ -14,6 +15,14 @@ class SettingsScreen extends StatelessWidget {
   static const String path = '/settings_screen';
 
   const SettingsScreen({super.key});
+
+  Future<void> _saveAndNavigate(
+      BuildContext context, String role, String route) async {
+    const storage = FlutterSecureStorage();
+
+    await storage.write(key: "role", value: role);
+    context.goNamed(route);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +52,7 @@ class SettingsScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.topCenter,
                 child: Container(
-                  height: height(300),
+                  height: height(400),
                   width: width(320),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
@@ -65,6 +74,25 @@ class SettingsScreen extends StatelessWidget {
                           name: 'عن التطبيق',
                           function: () {
                             context.pushNamed(AboutTheApp.name);
+                          },
+                        ),
+                        SizedBox(
+                          height: height(20),
+                        ),
+                        SettingWidget(
+                          name: 'المصادر ',
+                          function: () {
+                            context.pushNamed(AboutTheApp.name);
+                          },
+                        ),
+                        SizedBox(
+                          height: height(20),
+                        ),
+                        SettingWidget(
+                          name: 'تغيير المقرر ',
+                          function: () {
+                            _saveAndNavigate(
+                                context, "3", ChooseSubjectScreen.name);
                           },
                         ),
                         SizedBox(

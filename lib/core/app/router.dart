@@ -1,5 +1,8 @@
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
+import 'package:operating_systems/core/app/splash_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/second_home_page_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.dart';
@@ -19,7 +22,7 @@ import 'package:operating_systems/features/study/presentation/pages/algorithms_s
 
 import '../../features/quiz/data/model/quiz_model.dart';
 
-final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
+final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
     path: NavBar.path,
     name: NavBar.name,
@@ -29,6 +32,21 @@ final GoRouter router = GoRouter(initialLocation: NavBar.path, routes: [
     path: AboutTheSubject.path,
     name: AboutTheSubject.name,
     builder: (context, state) => AboutTheSubject(),
+  ),
+  GoRoute(
+    path: SplashScreen.path,
+    name: SplashScreen.name,
+    builder: (context, state) => SplashScreen(),
+  ),
+  GoRoute(
+    path: ChooseSubjectScreen.path,
+    name: ChooseSubjectScreen.name,
+    builder: (context, state) => ChooseSubjectScreen(),
+  ),
+  GoRoute(
+    path: SecondHomePageScreen.path,
+    name: SecondHomePageScreen.name,
+    builder: (context, state) => SecondHomePageScreen(),
   ),
   GoRoute(
     path: AboutTheApp.path,

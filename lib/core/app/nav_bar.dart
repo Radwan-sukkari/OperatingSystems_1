@@ -1,4 +1,5 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
@@ -7,14 +8,20 @@ import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.d
 import 'package:operating_systems/features/study/presentation/pages/home_page.dart';
 import 'package:operating_systems/features/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 
-
-
-enum _SelectedTab { homePage, studySection, randomQuiz, chooseQuizType ,setting}
+enum _SelectedTab {
+  homePage,
+  studySection,
+  randomQuiz,
+  chooseQuizType,
+  setting
+}
 
 class NavBar extends StatefulWidget {
   static const String name = 'nav_bar';
   static const String path = '/nav_bar';
+
   const NavBar({super.key});
 
   @override
@@ -51,7 +58,6 @@ class _NavBarState extends State<NavBar> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
-
       extendBody: true,
       body: _getSelectedTabWidget(),
       bottomNavigationBar: Padding(
@@ -64,38 +70,35 @@ class _NavBarState extends State<NavBar> {
               icon: IconlyBold.home,
               unselectedIcon: IconlyLight.home,
               selectedColor: Theme.of(context).primaryColor,
-              unselectedColor:  Theme.of(context).primaryColor,
+              unselectedColor: Theme.of(context).primaryColor,
             ),
             CrystalNavigationBarItem(
-              icon: FontAwesomeIcons.bookOpen,
-              unselectedIcon: FontAwesomeIcons.bookOpen,
-              selectedColor:Theme.of(context).primaryColor,
-              unselectedColor:  Theme.of(context).primaryColor,
-
-            ),
-            CrystalNavigationBarItem(
-              icon: FontAwesomeIcons.question,
-              unselectedIcon: FontAwesomeIcons.question,
+              icon: PhosphorIcons.books(PhosphorIconsStyle.bold),
+              unselectedIcon: PhosphorIcons.books(),
               selectedColor: Theme.of(context).primaryColor,
-              unselectedColor:  Theme.of(context).primaryColor,
-
+              unselectedColor: Theme.of(context).primaryColor,
             ),
             CrystalNavigationBarItem(
-              icon: FontAwesomeIcons.book,
-              unselectedIcon: FontAwesomeIcons.book,
-              selectedColor:Theme.of(context).primaryColor,
-                           unselectedColor:  Theme.of(context).primaryColor,
-
+              icon: CupertinoIcons.question_circle_fill,
+              unselectedIcon: CupertinoIcons.question_circle,
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor: Theme.of(context).primaryColor,
+            ),
+            CrystalNavigationBarItem(
+              icon: PhosphorIcons.exam(PhosphorIconsStyle.bold),
+              unselectedIcon: PhosphorIcons.exam(),
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor: Theme.of(context).primaryColor,
             ),
             CrystalNavigationBarItem(
               icon: IconlyBold.setting,
-              unselectedIcon: IconlyBold.setting,
+              unselectedIcon: CupertinoIcons.gear,
               selectedColor: Theme.of(context).primaryColor,
-              unselectedColor:Theme.of(context).primaryColor,
+              unselectedColor: Theme.of(context).primaryColor,
             ),
           ],
-          backgroundColor: Colors.white70,  // Set a different color for the navigation bar
-
+          backgroundColor:
+              Colors.white70, // Set a different color for the navigation bar
         ),
       ),
     );
