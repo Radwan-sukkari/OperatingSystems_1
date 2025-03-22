@@ -1,35 +1,32 @@
 import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/choose_quiz_type.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/random_quiz.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/home_page.dart';
-import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/study_section_study_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
-
-import '../../features/operating_system_1/quiz/presentation/pages/choose_quiz_type.dart';
-import '../../features/operating_system_1/quiz/presentation/pages/random_quiz.dart';
-import '../../features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
 
 enum _SelectedTab {
   homePage,
-  studySection,
   randomQuiz,
   chooseQuizType,
   setting
 }
 
-class NavBar extends StatefulWidget {
-  static const String name = 'nav_bar';
-  static const String path = '/nav_bar';
+class NavBar2 extends StatefulWidget {
+  static const String name = 'nav_bar2';
+  static const String path = '/nav_bar2';
 
-  const NavBar({super.key});
+  const NavBar2({super.key});
 
   @override
-  State<NavBar> createState() => _NavBarState();
+  State<NavBar2> createState() => _NavBar2State();
 }
 
-class _NavBarState extends State<NavBar> {
+class _NavBar2State extends State<NavBar2> {
   var _selectedTab = _SelectedTab.homePage;
 
   void _handleIndexChanged(int i) {
@@ -41,9 +38,7 @@ class _NavBarState extends State<NavBar> {
   Widget _getSelectedTabWidget() {
     switch (_selectedTab) {
       case _SelectedTab.homePage:
-        return HomePageScreen();
-      case _SelectedTab.studySection:
-        return StudySectionStudyScreen();
+        return SecondHomePageScreen();
       case _SelectedTab.randomQuiz:
         return RandomQuiz();
       case _SelectedTab.chooseQuizType:
@@ -74,12 +69,6 @@ class _NavBarState extends State<NavBar> {
               unselectedColor: Theme.of(context).primaryColor,
             ),
             CrystalNavigationBarItem(
-              icon: PhosphorIcons.books(PhosphorIconsStyle.bold),
-              unselectedIcon: PhosphorIcons.books(),
-              selectedColor: Theme.of(context).primaryColor,
-              unselectedColor: Theme.of(context).primaryColor,
-            ),
-            CrystalNavigationBarItem(
               icon: CupertinoIcons.question_circle_fill,
               unselectedIcon: CupertinoIcons.question_circle,
               selectedColor: Theme.of(context).primaryColor,
@@ -99,7 +88,7 @@ class _NavBarState extends State<NavBar> {
             ),
           ],
           backgroundColor:
-              Colors.white70, // Set a different color for the navigation bar
+          Colors.white70, // Set a different color for the navigation bar
         ),
       ),
     );

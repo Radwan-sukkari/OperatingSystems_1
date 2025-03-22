@@ -3,8 +3,10 @@ import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
+import 'package:operating_systems/core/app/nav_bar2.dart';
 import 'package:operating_systems/core/app/size.dart';
-import 'package:operating_systems/features/operating_system_2/quiz/second_home_page_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 
 import '../../resources/resources.dart';
 
@@ -35,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> {
     if (role == "1") {
       context.goNamed(NavBar.name);
     } else if (role == "2") {
-      context.pushNamed(SecondHomePageScreen.name);
+      context.pushNamed(NavBar2.name);
     } else {
       context.goNamed(ChooseSubjectScreen.name);
     }
@@ -49,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child:Padding(
           padding: const EdgeInsets.all(14.0),
-          child: Image.asset(Images.splashScreen),
+          child: AboutSubject(child: Image.asset(Images.logo3))
         )
       ),
     );

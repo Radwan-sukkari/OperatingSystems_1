@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
+import 'package:operating_systems/core/app/nav_bar2.dart';
 import 'package:operating_systems/core/app/size.dart';
-import 'package:operating_systems/features/operating_system_2/quiz/second_home_page_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 import 'package:operating_systems/resources/resources.dart';
 
 class ChooseSubjectScreen extends StatelessWidget {
@@ -69,7 +70,7 @@ class ChooseSubjectScreen extends StatelessWidget {
               // زر نظم تشغيل 2
               GestureDetector(
                 onTap: () =>
-                    _saveAndNavigate(context, "2", SecondHomePageScreen.name),
+                    _saveAndNavigate(context, "2", NavBar2.name),
                 child: Container(
                   height: height(42),
                   width: width(300),

@@ -1,26 +1,27 @@
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
+import 'package:operating_systems/core/app/nav_bar2.dart';
 import 'package:operating_systems/core/app/splash_screen.dart';
-import 'package:operating_systems/features/operating_system_2/quiz/second_home_page_screen.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/osi_chapter_grid.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/quiz_screen.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/random_quiz.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
-import 'package:operating_systems/features/quiz/presentation/pages/true_false_chapter_grid.dart';
-import 'package:operating_systems/features/study/data/model/algorithms_model.dart';
-import 'package:operating_systems/features/study/data/model/comparisons_model.dart';
-import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_app.dart';
-import 'package:operating_systems/features/study/presentation/pages/settings_screen/about_the_subject.dart';
-import 'package:operating_systems/features/study/presentation/pages/settings_screen/settings_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/study_section/choose_algorithm_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/study_section/comparisons_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/study_section/study_section_study_screen.dart';
-import 'package:operating_systems/features/study/presentation/pages/algorithms_screen.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/random_quiz.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/algorithms_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/study_section_study_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 
-import '../../features/quiz/data/model/quiz_model.dart';
 
 final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
@@ -32,6 +33,11 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     path: AboutTheSubject.path,
     name: AboutTheSubject.name,
     builder: (context, state) => AboutTheSubject(),
+  ),
+  GoRoute(
+    path: NavBar2.path,
+    name: NavBar2.name,
+    builder: (context, state) => NavBar2(),
   ),
   GoRoute(
     path: SplashScreen.path,
