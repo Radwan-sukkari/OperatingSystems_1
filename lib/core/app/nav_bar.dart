@@ -47,7 +47,7 @@ class _NavBarState extends State<NavBar> {
       case _SelectedTab.randomQuiz:
         return RandomQuiz(isOperatingSystem1: "1",);
       case _SelectedTab.chooseQuizType:
-        return ChooseQuizTypeScreen();
+        return ChooseQuizTypeScreen(subjectType: '1',);
       case _SelectedTab.setting:
         return SettingsScreen();
       default:

@@ -7,10 +7,12 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/home_page.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
+import 'package:operating_systems/features/operating_system_2/study/presentation/pages/choose_section_to_study2_screen.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 enum _SelectedTab {
   homePage,
+  studySection,
   randomQuiz,
   chooseQuizType,
   setting
@@ -39,10 +41,12 @@ class _NavBar2State extends State<NavBar2> {
     switch (_selectedTab) {
       case _SelectedTab.homePage:
         return SecondHomePageScreen();
+      case _SelectedTab.studySection:
+        return ChooseSectionToStudy2Screen();
       case _SelectedTab.randomQuiz:
         return RandomQuiz(isOperatingSystem1: "2",);
       case _SelectedTab.chooseQuizType:
-        return ChooseQuizTypeScreen();
+        return ChooseQuizTypeScreen(subjectType: '2',);
       case _SelectedTab.setting:
         return SettingsScreen();
       default:
@@ -65,6 +69,12 @@ class _NavBar2State extends State<NavBar2> {
             CrystalNavigationBarItem(
               icon: IconlyBold.home,
               unselectedIcon: IconlyLight.home,
+              selectedColor: Theme.of(context).primaryColor,
+              unselectedColor: Theme.of(context).primaryColor,
+            ),
+            CrystalNavigationBarItem(
+              icon: PhosphorIcons.books(PhosphorIconsStyle.bold),
+              unselectedIcon: PhosphorIcons.books(),
               selectedColor: Theme.of(context).primaryColor,
               unselectedColor: Theme.of(context).primaryColor,
             ),

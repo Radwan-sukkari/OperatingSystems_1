@@ -20,7 +20,9 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/study_section_study_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
 
 final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
@@ -95,12 +97,28 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
         );
       }),
   GoRoute(
+      path: Osi2ChapterGridScreen.path,
+      name: Osi2ChapterGridScreen.name,
+      builder: (context, state) {
+        final String isStudy = state.uri.queryParameters['isStudy']!;
+
+        return Osi2ChapterGridScreen(isStudy: isStudy);
+      }),
+  GoRoute(
       path: OsiChapterGridScreen.path,
       name: OsiChapterGridScreen.name,
       builder: (context, state) {
         final String isStudy = state.uri.queryParameters['isStudy']!;
 
         return OsiChapterGridScreen(isStudy: isStudy);
+      }),
+  GoRoute(
+      path: TrueFalse2ChapterGridScreen.path,
+      name: TrueFalse2ChapterGridScreen.name,
+      builder: (context, state) {
+        final String isStudy = state.uri.queryParameters['isStudy']!;
+
+        return TrueFalse2ChapterGridScreen(isStudy: isStudy);
       }),
   GoRoute(
       path: TrueFalseChapterGridScreen.path,

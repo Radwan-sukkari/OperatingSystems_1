@@ -18,8 +18,7 @@ class RandomQuiz extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme
           .of(context)
-          .colorScheme
-          .surfaceTint,
+          .colorScheme.surfaceTint,
       body: Padding(
           padding: EdgeInsets.only(
             right: width(25),

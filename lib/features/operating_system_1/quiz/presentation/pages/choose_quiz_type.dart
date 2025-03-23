@@ -7,14 +7,17 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
 
 import 'package:operating_systems/resources/resources.dart';
 
 class ChooseQuizTypeScreen extends StatelessWidget {
+  final String subjectType;
   static const String name = 'choose-screen_type_screen';
   static const String path = '/choose-screen_type_screen';
 
-  const ChooseQuizTypeScreen({super.key});
+  const ChooseQuizTypeScreen({super.key, required this.subjectType});
 
   @override
   Widget build(BuildContext context) {
@@ -28,19 +31,30 @@ class ChooseQuizTypeScreen extends StatelessWidget {
             SecondButton(
               name: 'اسئلة الموقع OSI',
               function: () {
-                context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-                  "isStudy": "isNotStudy",
-                });
+                subjectType == "1"
+                    ? context
+                        .pushNamed(OsiChapterGridScreen.name, queryParameters: {
+                        "isStudy": "isNotStudy",
+                      })
+                    : context.pushNamed(Osi2ChapterGridScreen.name,
+                        queryParameters: {
+                            "isStudy": "isNotStudy",
+                          });
               },
             ),
             SizedBox(width: width(30)),
             SecondButton(
               name: 'اسئلة الصح والخطأ',
               function: () {
-                context.pushNamed(TrueFalseChapterGridScreen.name,
-                    queryParameters: {
-                      "isStudy": "isNotStudy",
-                    });
+                subjectType == "1"
+                    ? context.pushNamed(TrueFalseChapterGridScreen.name,
+                        queryParameters: {
+                            "isStudy": "isNotStudy",
+                          })
+                    : context.pushNamed(TrueFalse2ChapterGridScreen.name,
+                        queryParameters: {
+                            "isStudy": "isNotStudy",
+                          });
               },
             ),
           ],

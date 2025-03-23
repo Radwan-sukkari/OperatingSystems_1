@@ -37,6 +37,20 @@ import '../../features/operating_system_1/study/domain/use_case/comparisons_use_
     as _i575;
 import '../../features/operating_system_1/study/presentation/manager/study_bloc.dart'
     as _i927;
+import '../../features/operating_system_2/quiz/data/data_sources/quiz_2_data_source.dart'
+    as _i955;
+import '../../features/operating_system_2/quiz/data/repositories/quiz_2_repo_imp.dart'
+    as _i945;
+import '../../features/operating_system_2/quiz/domain/repositories/quiz_operating_system_2_repo.dart'
+    as _i963;
+import '../../features/operating_system_2/quiz/domain/use_cases/osi_2_quiz_use_case.dart'
+    as _i724;
+import '../../features/operating_system_2/quiz/domain/use_cases/random_quiz_2_use_case.dart'
+    as _i799;
+import '../../features/operating_system_2/quiz/domain/use_cases/true_false_2_use_case.dart'
+    as _i589;
+import '../../features/operating_system_2/quiz/presentation/manager/quiz_2/quiz_operating_system2_bloc.dart'
+    as _i193;
 import '../app/network_repository.dart' as _i81;
 import '../app/role_local_data_source.dart' as _i201;
 
@@ -54,10 +68,22 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i81.NetworkRepository>(() => _i81.NetworkRepository());
     gh.factory<_i125.QuizDataSource>(() => _i125.QuizDataSource());
     gh.factory<_i1021.StudyDataSource>(() => _i1021.StudyDataSource());
+    gh.factory<_i955.QuizOperatingSystem2DataSource>(
+        () => _i955.QuizOperatingSystem2DataSource());
     gh.lazySingleton<_i201.UserAuthenticationLocalDataSource>(
         () => _i201.AuthImpLocalDataSource());
     gh.lazySingleton<_i1006.QuizRepo>(
         () => _i172.QuizRepoImp(quizDataSource: gh<_i125.QuizDataSource>()));
+    gh.lazySingleton<_i963.QuizOperatingSystem2Repo>(() =>
+        _i945.QuizOperatingSystem2ImpRepo(
+            quizOperatingSystem2DataSource:
+                gh<_i955.QuizOperatingSystem2DataSource>()));
+    gh.lazySingleton<_i724.Osi2QuizUseCase>(() => _i724.Osi2QuizUseCase(
+        quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
+    gh.lazySingleton<_i799.RandomQuiz2UseCase>(() => _i799.RandomQuiz2UseCase(
+        quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
+    gh.lazySingleton<_i589.TrueFalse2UseCase>(() => _i589.TrueFalse2UseCase(
+        quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i370.StudyRepo>(() =>
         _i1023.StudyRepoImp(studyDataSource: gh<_i1021.StudyDataSource>()));
     gh.lazySingleton<_i453.OsiQuizUseCase>(
@@ -66,6 +92,12 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i862.RandomQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i668.TrueFalseQuizUseCase>(
         () => _i668.TrueFalseQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
+    gh.factory<_i193.QuizOperatingSystem2Bloc>(
+        () => _i193.QuizOperatingSystem2Bloc(
+              gh<_i724.Osi2QuizUseCase>(),
+              gh<_i799.RandomQuiz2UseCase>(),
+              gh<_i589.TrueFalse2UseCase>(),
+            ));
     gh.lazySingleton<_i577.AlgorithmsUseCase>(
         () => _i577.AlgorithmsUseCase(studyRepo: gh<_i370.StudyRepo>()));
     gh.lazySingleton<_i575.ComparisonsUseCase>(
