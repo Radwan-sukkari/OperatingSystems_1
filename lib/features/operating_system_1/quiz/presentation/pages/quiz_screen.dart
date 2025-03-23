@@ -4,10 +4,10 @@ import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/answer_selected_bloc.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/previous_and_next_question.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/first_layer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/second_layer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/third_layer.dart';
-
 
 class QuizScreen extends StatefulWidget {
   static const String name = 'quiz_screen';
@@ -40,19 +40,17 @@ class _QuizScreenState extends State<QuizScreen> {
   void _nextQuestion(BuildContext context) {
     if (_currentPage < widget.questions.length - 1) {
       _pageController.nextPage(
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
       setState(() {
         _currentPage++;
       });
 
-      // Reset the ToggleBloc state for the next question
       context.read<ToggleBloc>().add(ResetState());
     } else {
-      // Show a message when there are no more questions
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text("No more questions!"),
           duration: Duration(seconds: 2),
         ),
@@ -63,7 +61,7 @@ class _QuizScreenState extends State<QuizScreen> {
   void _previousQuestion(BuildContext context) {
     if (_currentPage > 0) {
       _pageController.previousPage(
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
       setState(() {
@@ -84,13 +82,24 @@ class _QuizScreenState extends State<QuizScreen> {
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.only(right: width(20), left: width(20)),
+            padding: EdgeInsets.only(
+                right: width(20), left: width(20), top: height(20)),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                PreviousAndNextQuestion(
+                  nextQuestion: () {
+                    _nextQuestion(context);
+                  },
+                  previousQuestion: () {
+                    _previousQuestion(context);
+                  },
+                ),
                 Flexible(
                   child: PageView.builder(
                     controller: _pageController,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: widget.questions.length,
                     itemBuilder: (context, index) {
                       return Padding(
@@ -102,19 +111,23 @@ class _QuizScreenState extends State<QuizScreen> {
                             children: [
                               FirstLayer(
                                 question: widget.questions[index],
-                                chapterArabic: widget.questions[index].chapterAr,
+                                chapterArabic:
+                                    widget.questions[index].chapterAr,
                                 isArabic: false,
-                                questionNumberInTheChapter: widget.questions.length,
+                                questionNumberInTheChapter:
+                                    widget.questions.length,
                                 questionIReceived: index + 1,
                                 onNextQuestion: () => _nextQuestion(context),
-                                onPreviousQuestion: () => _previousQuestion(context), // Pass the previous question callback
+                                onPreviousQuestion: () =>
+                                    _previousQuestion(context),
                               ),
                               SecondLayer(
                                 chapter: widget.questions[index].chapterEn,
-                                questionNumberInTheChapter: widget.questions.length,
+                                questionNumberInTheChapter:
+                                    widget.questions.length,
                                 questionIReceived: index + 1,
                               ),
-                              ThirdLayer(),
+                              const ThirdLayer(),
                             ],
                           ),
                         ),
@@ -122,6 +135,8 @@ class _QuizScreenState extends State<QuizScreen> {
                     },
                   ),
                 ),
+
+                /// 🔹 **أزرار التنقل بين الأسئلة**
               ],
             ),
           ),
