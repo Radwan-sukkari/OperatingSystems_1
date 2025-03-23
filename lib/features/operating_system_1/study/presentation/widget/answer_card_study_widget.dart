@@ -5,11 +5,13 @@ import 'package:operating_systems/features/operating_system_1/quiz/data/model/qu
 class AnswerCardStudyWidget extends StatelessWidget {
   final Answer answer;
   final int index2;
-  const AnswerCardStudyWidget({super.key, required this.answer, required this.index2});
+
+  const AnswerCardStudyWidget(
+      {super.key, required this.answer, required this.index2});
 
   @override
   Widget build(BuildContext context) {
-    return           Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(vertical: height(10)),
       child: Column(
         children: [
@@ -22,10 +24,11 @@ class AnswerCardStudyWidget extends StatelessWidget {
                   textAlign: TextAlign.left,
                   softWrap: true,
                   overflow: TextOverflow.visible,
-                  style: TextStyle(
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       color: answer.isCorrect == false
                           ? Theme.of(context).primaryColor
-                          : Colors.green),
+                          : Colors.green,
+                      fontWeight: FontWeight.w500),
                 ),
               ),
               SizedBox(width: width(8)),
@@ -76,17 +79,15 @@ class AnswerCardStudyWidget extends StatelessWidget {
                   // Allow text to wrap
                   overflow: TextOverflow.visible,
                   // Prevent clipping
-                  style: TextStyle(
-                      color: answer.isCorrect == false
-                          ? Theme.of(context).shadowColor
-                          : Colors.green),
-                ),
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                      color:answer.isCorrect == false? Theme.of(context).shadowColor:Colors.green,
+                      fontWeight: FontWeight.w500
+                ),)
               ),
             ],
           ),
         ],
       ),
     );
-
   }
 }

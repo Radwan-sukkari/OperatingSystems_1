@@ -4,7 +4,9 @@ import 'package:operating_systems/core/app/size.dart';
 class QuestionOsiCardWidget extends StatelessWidget {
   final String questionEnglish;
   final String questionArabic;
-  const QuestionOsiCardWidget({super.key, required this.questionEnglish, required this.questionArabic});
+
+  const QuestionOsiCardWidget(
+      {super.key, required this.questionEnglish, required this.questionArabic});
 
   @override
   Widget build(BuildContext context) {
@@ -14,13 +16,14 @@ class QuestionOsiCardWidget extends StatelessWidget {
           children: [
             Flexible(
               child: Text(
-questionEnglish,                textAlign: TextAlign.left,
+                questionEnglish, textAlign: TextAlign.left,
                 softWrap: true,
                 // Allow text to wrap
                 overflow: TextOverflow.visible,
                 // Prevent clipping
-                style:
-                TextStyle(color: Theme.of(context).primaryColor),
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Theme.of(context).primaryColor,
+                    fontWeight: FontWeight.w500),
               ),
             ),
           ],
@@ -34,8 +37,9 @@ questionEnglish,                textAlign: TextAlign.left,
                 textDirection: TextDirection.rtl,
                 softWrap: true,
                 overflow: TextOverflow.visible,
-                style:
-                TextStyle(color: Theme.of(context).shadowColor),
+                style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                    color: Theme.of(context).shadowColor,
+                    fontWeight: FontWeight.w500),
               ),
             ),
           ],
