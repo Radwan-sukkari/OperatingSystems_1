@@ -1,0 +1,30 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title_en": " all chapters ",
+      "title_ar": "جميع الفصول ",
+      "questions": [
+        {
+          "chapter_en": "all chapter",
+          "chapter_ar": " كل الفصول",
+          "question_en": "A thread can continue execution after its primary process exits.",
+          "question_ar": "يمكن أن يستمر الخيط في التنفيذ بعد انتهاء العملية الرئيسية.",
+          "description": "Correction: A thread cannot continue execution after its primary process exits.",
+          "answers": [
+            {
+              "answer_en": "True",
+              "answer_ar": "صحيح",
+              "is_correct": false
+            },
+            {
+              "answer_en": "False",
+              "answer_ar": "خطأ",
+              "is_correct": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
