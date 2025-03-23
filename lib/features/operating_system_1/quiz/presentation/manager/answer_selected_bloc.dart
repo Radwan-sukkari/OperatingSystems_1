@@ -1,4 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 
 abstract class ToggleEvent {}
@@ -30,7 +31,7 @@ class AnswerValidated extends ToggleState {
 
   AnswerValidated(this.selectedIndex, this.isCorrect, this.correctAnswerIndex);
 }
-
+@injectable
 // In your ToggleBloc, handle the ShowAnswer event
 class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
   ToggleBloc() : super(ToggleInitial(null)) {

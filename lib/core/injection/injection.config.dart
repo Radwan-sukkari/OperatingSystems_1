@@ -23,6 +23,8 @@ import '../../features/operating_system_1/quiz/domain/use_case/random_quiz_use_c
     as _i862;
 import '../../features/operating_system_1/quiz/domain/use_case/true_false_quiz_use_case.dart'
     as _i668;
+import '../../features/operating_system_1/quiz/presentation/manager/answer_selected_bloc.dart'
+    as _i660;
 import '../../features/operating_system_1/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart'
     as _i438;
 import '../../features/operating_system_1/study/data/data_source/study_data_source.dart'
@@ -67,6 +69,7 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i81.NetworkRepository>(() => _i81.NetworkRepository());
     gh.factory<_i125.QuizDataSource>(() => _i125.QuizDataSource());
+    gh.factory<_i660.ToggleBloc>(() => _i660.ToggleBloc());
     gh.factory<_i1021.StudyDataSource>(() => _i1021.StudyDataSource());
     gh.factory<_i955.QuizOperatingSystem2DataSource>(
         () => _i955.QuizOperatingSystem2DataSource());

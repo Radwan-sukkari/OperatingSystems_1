@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
+import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/answer_selected_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/previous_and_next_question.dart';
@@ -76,8 +77,8 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => ToggleBloc(),
+    return BlocProvider.value(
+      value: getIt<ToggleBloc> (),
       child: Scaffold(
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
