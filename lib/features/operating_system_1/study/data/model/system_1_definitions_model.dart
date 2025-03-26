@@ -57,12 +57,15 @@ class Definition {
   String titleEn;
   String explain;
   String note;
+  String? whichCourse;
+
 
   Definition({
     required this.title,
     required this.titleEn,
     required this.explain,
     required this.note,
+     this.whichCourse
   });
 
   factory Definition.fromJson(Map<String, dynamic> json) => Definition(
@@ -70,6 +73,7 @@ class Definition {
     titleEn: json["title_en"],
     explain: json["explain"],
     note: json["note"],
+    whichCourse: json["whichCourse"]
   );
 
   Map<String, dynamic> toJson() => {
@@ -77,5 +81,6 @@ class Definition {
     "title_en": titleEn,
     "explain": explain,
     "note": note,
+    "whichCourse":whichCourse
   };
 }
