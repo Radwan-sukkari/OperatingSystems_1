@@ -6,6 +6,7 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/data_source/study_data_source.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/domain/repositories/study_repo.dart';
 
 @LazySingleton(as: StudyRepo)
@@ -31,5 +32,14 @@ class StudyRepoImp implements StudyRepo {
       remoteDataFetcher: () => studyDataSource.comparisons(),
     );
     return algorithms;
+  }
+
+  @override
+  Future<Either<Failure, SystemDefinitionsModel>> definitions() {
+    networkRepository = getIt<NetworkRepository>();
+    final definitions = networkRepository<SystemDefinitionsModel>(
+      remoteDataFetcher: () => studyDataSource.definitions(),
+    );
+    return definitions;
   }
 }

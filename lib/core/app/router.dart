@@ -11,12 +11,15 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/algorithms_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/study_section_study_screen.dart';
@@ -46,9 +49,23 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => SplashScreen(),
   ),
   GoRoute(
+      path: DefinitionsScreen.path,
+      name: DefinitionsScreen.name,
+      builder: (context, state) {
+        final definitions = state.extra as List<Definition>;
+        return DefinitionsScreen(
+          definitions: definitions,
+        );
+      }),
+  GoRoute(
     path: ChooseSubjectScreen.path,
     name: ChooseSubjectScreen.name,
     builder: (context, state) => ChooseSubjectScreen(),
+  ),
+  GoRoute(
+    path: DefinitionsGridScreen.path,
+    name: DefinitionsGridScreen.name,
+    builder: (context, state) => DefinitionsGridScreen(),
   ),
   GoRoute(
     path: SecondHomePageScreen.path,

@@ -37,6 +37,8 @@ import '../../features/operating_system_1/study/domain/use_case/algorithms_use_c
     as _i577;
 import '../../features/operating_system_1/study/domain/use_case/comparisons_use_case.dart'
     as _i575;
+import '../../features/operating_system_1/study/domain/use_case/definitions_use_case.dart'
+    as _i635;
 import '../../features/operating_system_1/study/presentation/manager/study_bloc.dart'
     as _i927;
 import '../../features/operating_system_2/quiz/data/data_sources/quiz_2_data_source.dart'
@@ -105,14 +107,17 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i577.AlgorithmsUseCase(studyRepo: gh<_i370.StudyRepo>()));
     gh.lazySingleton<_i575.ComparisonsUseCase>(
         () => _i575.ComparisonsUseCase(studyRepo: gh<_i370.StudyRepo>()));
-    gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
-          gh<_i577.AlgorithmsUseCase>(),
-          gh<_i575.ComparisonsUseCase>(),
-        ));
+    gh.lazySingleton<_i635.DefinitionsUseCase>(
+        () => _i635.DefinitionsUseCase(studyRepo: gh<_i370.StudyRepo>()));
     gh.factory<_i438.QuizFeatureBloc>(() => _i438.QuizFeatureBloc(
           gh<_i453.OsiQuizUseCase>(),
           gh<_i668.TrueFalseQuizUseCase>(),
           gh<_i862.RandomQuizUseCase>(),
+        ));
+    gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
+          gh<_i577.AlgorithmsUseCase>(),
+          gh<_i575.ComparisonsUseCase>(),
+          gh<_i635.DefinitionsUseCase>(),
         ));
     return this;
   }

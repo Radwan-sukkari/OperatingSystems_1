@@ -6,9 +6,9 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/study_section_study_widget.dart';
-
 import 'package:operating_systems/resources/resources.dart';
 import 'dart:math' as math;
 
@@ -28,9 +28,9 @@ class StudySectionStudyScreen extends StatelessWidget {
       () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
             "isStudy": "isStudy",
           }),
-      () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
-            "isStudy": "isStudy",
-          }),
+      () => context.pushNamed(
+            DefinitionsGridScreen.name,
+          ),
       () => context.pushNamed(
             ChooseAlgorithmsScreen.name,
           ),

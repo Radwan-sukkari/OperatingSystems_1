@@ -29,6 +29,7 @@ class Assets {
   static const String jsonRandomQuiz = 'assets/json/random_quiz.json';
   static const String jsonRandomQuizOsi2 = 'assets/json/random_quiz_osi2.json';
   static const String jsonScratch = 'assets/json/scratch.json';
+  static const String jsonSystem1Definitions = 'assets/json/system1_definitions.json';
   static const String jsonTrueFalse = 'assets/json/true_false.json';
   static const String jsonTrueFalse2 = 'assets/json/true_false_2.json';
 
