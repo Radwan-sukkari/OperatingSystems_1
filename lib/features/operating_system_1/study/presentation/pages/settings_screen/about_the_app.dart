@@ -20,12 +20,11 @@ class AboutTheApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                margin: EdgeInsets.only(left: width(40)),
+              Transform.rotate(
+                angle: 4.5 * (3.1415926535 / 180),
                 child: Image.asset(
                   Images.logo,
-                  height: height(400),
-                  width: width(300),
+                  height: height(380),
                 ),
               ),
               SizedBox(

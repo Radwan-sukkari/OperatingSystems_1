@@ -18,15 +18,34 @@ class DefinitionFirstLayer extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("${definition.title} ( ${definition.titleEn} )",
-                style: Theme.of(context).textTheme.titleMedium!.copyWith(
-                      color: Theme.of(context).colorScheme.error,
-                      fontWeight: FontWeight.w500,
-                    )),
+            Wrap(
+              children: [
+                Text(
+                  "${definition.title} (${definition.titleEn})",
+                  style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                        color: Theme.of(context).colorScheme.error,
+                        fontWeight: FontWeight.w500,
+                      ),
+                ),
+                SizedBox(
+                  width: width(3),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: height(5)),
+                  child: Text(
+                    "${definition.whichCourse}",
+                    style: Theme.of(context).textTheme.labelSmall!.copyWith(
+                          color: Theme.of(context).colorScheme.error,
+                          fontWeight: FontWeight.w500,
+                        ),
+                  ),
+                ),
+              ],
+            ),
             SizedBox(
               height: height(15),
             ),
-            Text(definition.explain,
+            Text("${definition.explain}  ${definition.note}",
                 style: Theme.of(context).textTheme.titleMedium!.copyWith(
                       color: Theme.of(context).colorScheme.primary,
                       fontWeight: FontWeight.w500,

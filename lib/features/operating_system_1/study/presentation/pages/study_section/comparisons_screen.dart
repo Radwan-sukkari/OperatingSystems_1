@@ -21,7 +21,7 @@ class ComparisonsScreen extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                    "ملاحظة يمكنك تمرير الجدول افقيا لرؤية محتوى الجدول ككل ويمكنك تمرير الخانة الواحدة عموديا لرؤية محتواها كاملا",style: TextStyle(color: Theme.of(context).colorScheme.primary),),
+                    "ملاحظة يمكنك تمرير الجدول افقيا لرؤية محتوى الجدول ككل ويمكنك تمرير الخانة الواحدة عموديا لرؤية محتواها كاملا و في حال كانت المقارنة تحتوي على رسمة يمكنك الضغط على الرسمة لرؤيتها بشكل افضل",style: TextStyle(color: Theme.of(context).colorScheme.primary,fontWeight: FontWeight.w500),),
                 Expanded(
                   child: ListView.builder(
                     physics: BouncingScrollPhysics(),
