@@ -3,6 +3,7 @@ part of 'resources.dart';
 class Images {
   Images._();
 
+  static const String  image1= 'assets/images/1.jpg';
   static const String boy6 = 'assets/images/boy 6.png';
   static const String boy = 'assets/images/boy.png';
   static const String boy10 = 'assets/images/boy10.png';

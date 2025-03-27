@@ -48,7 +48,7 @@ class ComparisonsCell extends StatelessWidget {
     try {
       return Image.asset(
         title,
-        width: width * 0.8,
+        width: width * 0.9,
         fit: BoxFit.contain,
         errorBuilder: (context, error, stackTrace) =>
             Text('Image Error', style: style),
@@ -64,32 +64,35 @@ class ComparisonsCell extends StatelessWidget {
       builder: (context) => Dialog(
         insetPadding: EdgeInsets.zero,
         backgroundColor: Colors.transparent,
-        child: Stack(
-          children: [
-            InteractiveViewer(
-              panEnabled: true,
-              minScale: 0.6,
-              maxScale: 5.0,
-              child: Container(
-                constraints: BoxConstraints(
-                  maxWidth: MediaQuery.of(context).size.width,
-                  maxHeight: MediaQuery.of(context).size.height,
-                ),
-                child: Image.asset(
-                  imagePath,
-                  fit: BoxFit.contain,
+        child: Padding(
+          padding: const EdgeInsets.all(4.0),
+          child: Stack(
+            children: [
+              InteractiveViewer(
+                panEnabled: true,
+                minScale: 0.6,
+                maxScale: 5.0,
+                child: Container(
+                  constraints: BoxConstraints(
+                    maxWidth: MediaQuery.of(context).size.width,
+                    maxHeight: MediaQuery.of(context).size.height,
+                  ),
+                  child: Image.asset(
+                    imagePath,
+                    fit: BoxFit.contain,
+                  ),
                 ),
               ),
-            ),
-            Positioned(
-              top: 40,
-              right: 30,
-              child: IconButton(
-                icon: const Icon(Icons.close, color: Colors.white, size: 30),
-                onPressed: () => Navigator.of(context).pop(),
+              Positioned(
+                top: 10,
+                right: 30,
+                child: IconButton(
+                  icon: const Icon(Icons.close, color: Colors.white, size: 30),
+                  onPressed: () => Navigator.of(context).pop(),
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

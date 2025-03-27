@@ -3,6 +3,12 @@ class Assets {
   Assets._();
 
   static const String fontsCairoRegular = 'assets/fonts/Cairo-Regular.ttf';
+  static const String images1 = 'assets/images/1.jpg';
+  static const String images2 = 'assets/images/2.jpg';
+  static const String images3 = 'assets/images/3.jpg';
+  static const String images4 = 'assets/images/4.jpg';
+  static const String images5 = 'assets/images/5.jpg';
+  static const String images6 = 'assets/images/6.jpg';
   static const String imagesBoy = 'assets/images/boy.png';
   static const String imagesBoy6 = 'assets/images/boy 6.png';
   static const String imagesBoy10 = 'assets/images/boy10.png';
