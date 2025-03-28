@@ -106,6 +106,7 @@ class _QuizScreenState extends State<QuizScreen> {
                 ),
                 Flexible(
                   child: PageView.builder(
+                    physics: NeverScrollableScrollPhysics(),
                     controller: _pageController,
                     itemCount: widget.questions.length,
                     itemBuilder: (context, index) {

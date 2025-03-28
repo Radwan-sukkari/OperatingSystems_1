@@ -9,7 +9,8 @@ class DefinitionFirstLayer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Container(
       width: width(350),
       decoration: BoxDecoration(
           color: Colors.white38, borderRadius: BorderRadius.circular(8)),
