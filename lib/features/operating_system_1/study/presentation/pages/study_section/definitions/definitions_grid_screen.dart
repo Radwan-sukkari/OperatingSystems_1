@@ -10,6 +10,7 @@ import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/identification_quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/shimmer/osi_chapter_shimmer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
@@ -21,10 +22,11 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/resources/resources.dart';
 
 class DefinitionsGridScreen extends StatelessWidget {
+  final String isStudy;
   static const String name = 'definitions_grid_screen';
   static const String path = '/definitions_grid_screen';
 
-  const DefinitionsGridScreen({super.key});
+  const DefinitionsGridScreen({super.key, required this.isStudy});
 
   @override
   Widget build(BuildContext context) {
@@ -65,11 +67,19 @@ class DefinitionsGridScreen extends StatelessWidget {
                                           name: state.systemDefinitions[index]
                                               .pdfNumberArabic,
                                           function: () {
-                                            context.pushNamed(
-                                                DefinitionsScreen.name,
-                                                extra: state
-                                                    .systemDefinitions[index]
-                                                    .definitions);
+                                            isStudy == "true"
+                                                ? context.pushNamed(
+                                                    DefinitionsScreen.name,
+                                                    extra: state
+                                                        .systemDefinitions[
+                                                            index]
+                                                        .definitions)
+                                                : context.pushNamed(
+                                                    IdentificationQuizScreen
+                                                        .name , extra: state
+                                                .systemDefinitions[
+                                                index]
+                                                .definitions);
                                           }),
                                     ),
                                   ),

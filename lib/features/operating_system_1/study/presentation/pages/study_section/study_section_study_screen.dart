@@ -29,7 +29,9 @@ class StudySectionStudyScreen extends StatelessWidget {
             "isStudy": "isStudy",
           }),
       () => context.pushNamed(
-            DefinitionsGridScreen.name,
+            DefinitionsGridScreen.name,queryParameters: {
+              "isStudy":"true"
+      }
           ),
       () => context.pushNamed(
             ChooseAlgorithmsScreen.name,

@@ -5,6 +5,7 @@ class QuizFeatureState {
   final BlocStateData<QuizModel> trueFalseQuizState;
   final BlocStateData<RandomQuizModel> randomQuizState;
 
+
   const QuizFeatureState({
     this.osiQuizState = const BlocStateData.init(),
     this.trueFalseQuizState = const BlocStateData.init(),
@@ -14,9 +15,12 @@ class QuizFeatureState {
   copWith(
           {BlocStateData<QuizModel>? quizState,
           BlocStateData<QuizModel>? trueFalseQuizState,
-          BlocStateData<RandomQuizModel>? randomQuizState}) =>
+          BlocStateData<RandomQuizModel>? randomQuizState,
+
+          }) =>
       QuizFeatureState(
           osiQuizState: quizState ?? this.osiQuizState,
           trueFalseQuizState: trueFalseQuizState ?? this.trueFalseQuizState,
-          randomQuizState: randomQuizState ?? this.randomQuizState);
+          randomQuizState: randomQuizState ?? this.randomQuizState,
+      );
 }

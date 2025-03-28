@@ -78,9 +78,12 @@ class _QuizScreenState extends State<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: getIt<ToggleBloc> (),
+      value: getIt<ToggleBloc>(),
       child: Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.surfaceTint,
+        backgroundColor: Theme
+            .of(context)
+            .colorScheme
+            .surfaceTint,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
@@ -89,18 +92,21 @@ class _QuizScreenState extends State<QuizScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                PreviousAndNextQuestion(
-                  nextQuestion: () {
-                    _nextQuestion(context);
-                  },
-                  previousQuestion: () {
-                    _previousQuestion(context);
+                BlocBuilder<ToggleBloc, ToggleState>(
+                  builder: (context, state) {
+                    return PreviousAndNextQuestion(
+                      nextQuestion: () {
+                        _nextQuestion(context);
+                      },
+                      previousQuestion: () {
+                        _previousQuestion(context);
+                      },
+                    );
                   },
                 ),
                 Flexible(
                   child: PageView.builder(
                     controller: _pageController,
-                    physics: const NeverScrollableScrollPhysics(),
                     itemCount: widget.questions.length,
                     itemBuilder: (context, index) {
                       return Padding(
@@ -113,10 +119,10 @@ class _QuizScreenState extends State<QuizScreen> {
                               FirstLayer(
                                 question: widget.questions[index],
                                 chapterArabic:
-                                    widget.questions[index].chapterAr,
+                                widget.questions[index].chapterAr,
                                 isArabic: false,
                                 questionNumberInTheChapter:
-                                    widget.questions.length,
+                                widget.questions.length,
                                 questionIReceived: index + 1,
                                 onNextQuestion: () => _nextQuestion(context),
                                 onPreviousQuestion: () =>
@@ -125,7 +131,7 @@ class _QuizScreenState extends State<QuizScreen> {
                               SecondLayer(
                                 chapter: widget.questions[index].chapterEn,
                                 questionNumberInTheChapter:
-                                    widget.questions.length,
+                                widget.questions.length,
                                 questionIReceived: index + 1,
                               ),
                               const ThirdLayer(),

@@ -4,6 +4,7 @@ import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/core/app/nav_bar2.dart';
 import 'package:operating_systems/core/app/splash_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/identification_quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/random_quiz.dart';
@@ -32,6 +33,15 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     path: NavBar.path,
     name: NavBar.name,
     builder: (context, state) => NavBar(),
+  ),
+  GoRoute(
+    path: IdentificationQuizScreen.path,
+    name: IdentificationQuizScreen.name,
+    builder: (context, state) {
+      final definitions = state.extra as List<Definition>;
+
+      return IdentificationQuizScreen(definitions: definitions,);
+    }
   ),
   GoRoute(
     path: AboutTheSubject.path,
@@ -63,10 +73,15 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => ChooseSubjectScreen(),
   ),
   GoRoute(
-    path: DefinitionsGridScreen.path,
-    name: DefinitionsGridScreen.name,
-    builder: (context, state) => DefinitionsGridScreen(),
-  ),
+      path: DefinitionsGridScreen.path,
+      name: DefinitionsGridScreen.name,
+      builder: (context, state) {
+        final String isStudy = state.uri.queryParameters['isStudy']!;
+
+        return DefinitionsGridScreen(
+          isStudy: isStudy,
+        );
+      }),
   GoRoute(
     path: SecondHomePageScreen.path,
     name: SecondHomePageScreen.name,

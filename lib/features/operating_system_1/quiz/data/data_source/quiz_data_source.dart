@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_random_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
 import 'package:operating_systems/generated/assets.dart';
 
 @injectable
@@ -27,6 +28,7 @@ class QuizDataSource {
     final model = RandomQuizModel.fromJson(data);
     return model;
   }
+
 }
 
 

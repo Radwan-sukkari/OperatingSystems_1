@@ -6,6 +6,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/data/model/qu
 import 'package:operating_systems/features/operating_system_1/quiz/domain/use_case/osi_quiz_use_case.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/domain/use_case/random_quiz_use_case.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/domain/use_case/true_false_quiz_use_case.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
 
 part 'quiz_feature_event.dart';
 

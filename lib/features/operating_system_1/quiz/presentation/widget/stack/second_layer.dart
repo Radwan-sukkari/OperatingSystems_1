@@ -16,7 +16,9 @@ class SecondLayer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      top: -30,
+      top: -35,
+      right: 0,
+      left: 0,
       child: Column(
         children: [
           Container(
