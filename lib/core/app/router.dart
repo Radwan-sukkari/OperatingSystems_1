@@ -27,6 +27,7 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_2/study/presentation/pages/identification2_grid.dart';
 
 final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
@@ -52,6 +53,15 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     path: NavBar2.path,
     name: NavBar2.name,
     builder: (context, state) => NavBar2(),
+  ),
+  GoRoute(
+    path: Identification2GridScreen.path,
+    name: Identification2GridScreen.name,
+    builder: (context, state) {
+      final String isStudy = state.uri.queryParameters['isStudy']!;
+
+      return Identification2GridScreen(isStudy: isStudy,);
+    }
   ),
   GoRoute(
     path: SplashScreen.path,

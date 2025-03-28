@@ -10,6 +10,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_2/study/presentation/pages/identification2_grid.dart';
 
 import 'package:operating_systems/resources/resources.dart';
 
@@ -74,7 +75,7 @@ class ChooseQuizTypeScreen extends StatelessWidget {
                       queryParameters: {
                         "isStudy": "isNotStudy",
                       })
-                      : context.pushNamed(TrueFalse2ChapterGridScreen.name,
+                      : context.pushNamed(Identification2GridScreen.name,
                       queryParameters: {
                         "isStudy": "isNotStudy",
                       });

@@ -10,6 +10,7 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/study_section_study_widget.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_2/study/presentation/pages/identification2_grid.dart';
 
 import 'package:operating_systems/resources/resources.dart';
 import 'dart:math' as math;
@@ -30,7 +31,10 @@ class ChooseSectionToStudy2Screen extends StatelessWidget {
       () => context.pushNamed(Osi2ChapterGridScreen.name, queryParameters: {
             "isStudy": "isStudy",
           }),
-      () => {},
+      () => context.pushNamed(Identification2GridScreen.name,queryParameters: {
+        "isStudy": "isStudy",
+
+      }),
       () => {},
     ];
 

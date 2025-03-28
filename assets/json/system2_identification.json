@@ -1,0 +1,137 @@
+{
+  "system_definitions": [
+    {
+      "id": 0,
+      "pdf_number_arabic": "اسئلة الدورات ",
+      "pdf_number_en": " اسئلة الدورات",
+      "definitions": [
+        {
+          "title": "",
+          "title_en": "Monolithic Architecture",
+          "explain": "تكون فيها كل مكونات نظام التشغيل محتواه في الـ kernel بحيث أي مكون يستطيع التواصل مع مكون آخر بشكل مباشر، وهذا ما يجعل أداء نظام التشغيل يميل إلى السرعة، ولكن في المقابل يصعب تحديد مكان الخطأ في هذه المعمارية أن وقع.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Blocked state",
+          "explain": "تنتظر العملية حصول حدث معين قبل أن يتم استكمالها.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Kernel-level threads",
+          "explain": "تحاول الـ kernel-level threads أن تعالج القيود على الـ user-level thread، وذلك عن طريق تحيين كل thread إلى سياق تنفيذ خاص به، يمكن هذا النموذج بـ One-to-one thread بـ mapping.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Intermediate-level scheduling",
+          "explain": "يتم فيها تحديد العمليات (processes) التي سوف تقوم بالوصول نفس المعالجات، وتستعجب للتقلبات في تحليل النظام.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Memory Management",
+          "explain": "يوجد استراتيجيات للحصول على الأداء الأفضل للذاكرة، حيث ينفذ الـ memory manager أو الـ memory الداكرة (هذه الاستراتيجيات، كما يعالج الحالات التالية).",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Fetch strategy",
+          "explain": "استراتيجيات الجلب (Fetch) تكون إما حسب الطلب (بطلب جلب بيانات محددة إلى الذاكرة الرئيسية) أو على التوقع (توقع حاجة هذه البيانات فيتم خليها إلى الذاكرة الرئيسية)، وتقرير أي قسم من البيانات سيتم تحميله لاحقاً.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Defragmentation",
+          "explain": "هي عملية تحديد موقع الأجراء غير المتجاوزة من البيانات وإعادة ترتيب هذه الأجراء واستعادتها ضمن أجراء أقل.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "external fragmentation",
+          "explain": "تحدث التجزئة خارجية في البرمجة المتحدة متغيرة التقسيم، وذلك عند إزالة عملية، لأنها يذلك تترك فجوات صغيرة جداً للعمليات الجديدة القادمة دون أن تترك فجوات كبيرة كافية للعمليات القادمة.",
+          "note": "",
+          "whichCourse": "(دورة 2020 فصل ثاني)"
+        },
+        {
+          "title": "",
+          "title_en": "Response Time",
+          "explain": "هو الزمن ما بين تسليم العمل والحصول على النتائج.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "API (Application Programming Interface)",
+          "explain": "هي عبارة عن مجموعة من الروتينات، يستخدم المبرمجين هذه الروتينات ليعملوا معينة من نظام التشغيل. تقوم البرامج بمناداة وظائف (functions) إلى API التي يمكن أن تصل لنظام التشغيل عن طريق عمل استدعاء نظام أمثلة: .Portable Operating System Interface (POSIX) standard .Windows API",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Exceptions",
+          "explain": "الاستثناءات هي المقاطعات التي تم إنشاؤها استجابة للأخطاء.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Excel-level threads (Repeated)",
+          "explain": "مكرر.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Semaphore",
+          "explain": "فقط في نية برمجية يتم استخدامها لفرض الاستبعاد المتبادل، تحوي على متحول محمي يتم الوصول له عبر تعليمات الانتخاب P والإنشاؤة V (الإشارة للانتهاء).",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Binary Semaphore",
+          "explain": "حيث أن الـ semaphore الثنائية تتسمح بوجود Thread واحد في المنطقة الحرجة.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Preemption",
+          "explain": "العمليات يمكن إزالتها من المعالج الحالي. يمكن أن تؤدي لتحسين أوقات الاستجابة. مهمة للبيئة التفاعلية. العمليات لا يتلقى preempted في الذاكرة (حتى يصل لها المصالح بشكل أسرع).",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Memory Allocation Techniques",
+          "explain": "تقنيات برمجية للتغلب على حدود التخصيص المتجاوز.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Virtual vs Physical Addresses",
+          "explain": "ليس بالضرورة للعناوين الفتراضية المتجاوزة أن تقابل عناوين حقيقية متجاوزة.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        },
+        {
+          "title": "",
+          "title_en": "Page Faults and Frames",
+          "explain": "زيادة عدد الـ frames في الذاكرة الرئيسية ليس بالضرورة أن يقبل من الـ faults page وإتما توجد حالات يزداد فيها الـ false faults.",
+          "note": "",
+          "whichCourse": "(دورة 2019 فصل ثالث)"
+        }
+      ]
+    }
+  ]
+}

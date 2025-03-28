@@ -57,6 +57,16 @@ import '../../features/operating_system_2/quiz/domain/use_cases/true_false_2_use
     as _i589;
 import '../../features/operating_system_2/quiz/presentation/manager/quiz_2/quiz_operating_system2_bloc.dart'
     as _i193;
+import '../../features/operating_system_2/study/data/data_sources/syudy_2_data_source.dart'
+    as _i881;
+import '../../features/operating_system_2/study/data/repositories/study_2_repo_imp.dart'
+    as _i636;
+import '../../features/operating_system_2/study/domain/repositories/study_operaaring_system2_repo.dart'
+    as _i822;
+import '../../features/operating_system_2/study/domain/use_cases/identification_use_case.dart'
+    as _i333;
+import '../../features/operating_system_2/study/presentation/manager/study2_bloc.dart'
+    as _i958;
 import '../app/network_repository.dart' as _i81;
 import '../app/role_local_data_source.dart' as _i201;
 
@@ -78,6 +88,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i1021.StudyDataSource>(() => _i1021.StudyDataSource());
     gh.factory<_i955.QuizOperatingSystem2DataSource>(
         () => _i955.QuizOperatingSystem2DataSource());
+    gh.factory<_i881.Study2DataSource>(() => _i881.Study2DataSource());
     gh.lazySingleton<_i201.UserAuthenticationLocalDataSource>(
         () => _i201.AuthImpLocalDataSource());
     gh.lazySingleton<_i1006.QuizRepo>(
@@ -100,6 +111,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i862.RandomQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i668.TrueFalseQuizUseCase>(
         () => _i668.TrueFalseQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
+    gh.lazySingleton<_i822.StudyOperatingSystem2Repo>(() =>
+        _i636.Study2RepoImp(study2dataSource: gh<_i881.Study2DataSource>()));
     gh.factory<_i193.QuizOperatingSystem2Bloc>(
         () => _i193.QuizOperatingSystem2Bloc(
               gh<_i724.Osi2QuizUseCase>(),
@@ -117,6 +130,11 @@ extension GetItInjectableX on _i174.GetIt {
           gh<_i668.TrueFalseQuizUseCase>(),
           gh<_i862.RandomQuizUseCase>(),
         ));
+    gh.lazySingleton<_i333.Identification2UseCase>(() =>
+        _i333.Identification2UseCase(
+            studyOperatingSystem2Repo: gh<_i822.StudyOperatingSystem2Repo>()));
+    gh.factory<_i958.Study2Bloc>(
+        () => _i958.Study2Bloc(gh<_i333.Identification2UseCase>()));
     gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
           gh<_i577.AlgorithmsUseCase>(),
           gh<_i575.ComparisonsUseCase>(),
