@@ -17,6 +17,7 @@ class ToggleShowAnswer extends ShowAnswerEvent {}
 
 
 
+
 class ShowAnswerState {
   final bool isShowAnswer;
 
@@ -24,5 +25,5 @@ class ShowAnswerState {
 }
 
 class ShowAnswerInitial extends ShowAnswerState {
-  ShowAnswerInitial(super.isShowAnswer);
+  ShowAnswerInitial(bool isShowAnswer) : super(isShowAnswer);
 }
