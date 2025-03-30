@@ -49,7 +49,7 @@ class _NavBarState extends State<NavBar> {
       case _SelectedTab.chooseQuizType:
         return ChooseQuizTypeScreen(subjectType: '1',);
       case _SelectedTab.setting:
-        return SettingsScreen();
+        return SettingsScreen(subjectType: '1',);
       default:
         return HomePageScreen();
     }

@@ -4,6 +4,8 @@ import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/role_local_data_source.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject_container.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/home_page_row_widget.dart';
 
@@ -40,7 +42,9 @@ class _HomePageScreenState extends State<HomePageScreen> {
                     child: AboutSubjectContainer(
                       title1: "خلينا نتعرف شوي عن  ",
                       title2: ' المادة وشلون بتجي الأسئلة',
-                      function: () {},
+                      function: () {
+                        context.pushNamed(AboutTheSubject.name);
+                      },
                     ),
                   ),
                   SizedBox(

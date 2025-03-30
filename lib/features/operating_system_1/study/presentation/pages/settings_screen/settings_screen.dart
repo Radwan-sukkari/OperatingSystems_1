@@ -1,27 +1,26 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/animations/colum_animations.dart';
 import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/size.dart';
-import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/favourite/presentation/pages/favourite_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/resources_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/setting_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
 
-
 class SettingsScreen extends StatelessWidget {
+  final String subjectType;
   static const String name = 'settings_screen';
   static const String path = '/settings_screen';
 
-  const SettingsScreen({super.key});
+  const SettingsScreen({super.key, required this.subjectType});
 
-  Future<void> _saveAndNavigate(BuildContext context, String role,
-      String route) async {
+  Future<void> _saveAndNavigate(
+      BuildContext context, String role, String route) async {
     const storage = FlutterSecureStorage();
 
     await storage.write(key: "role", value: role);
@@ -31,14 +30,13 @@ class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppAppBar(title: "الاعدادات",),
-      backgroundColor: Theme
-          .of(context)
-          .colorScheme
-          .surfaceTint,
+      appBar: AppAppBar(
+        title: "الاعدادات",
+      ),
+      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: Padding(
-        padding: EdgeInsets.only(
-            right: width(15), left: width(15), top: height(20)),
+        padding:
+            EdgeInsets.only(right: width(15), left: width(15), top: height(20)),
         child: ColumnAnimations(
             duration: 150,
             curve: Curves.easeIn,
@@ -90,7 +88,7 @@ class SettingsScreen extends StatelessWidget {
                           SettingWidget(
                             name: 'المصادر ',
                             function: () {
-                              context.pushNamed(AboutTheApp.name);
+                              context.pushNamed(ResourcesScreen.name);
                             },
                           ),
                           SizedBox(
@@ -99,14 +97,14 @@ class SettingsScreen extends StatelessWidget {
                           SettingWidget(
                             name: ' المفضلة',
                             function: () {
-                              context.pushNamed(FavouriteScreen.name);
+                              context.pushNamed(FavouriteScreen.name,queryParameters: {
+                                "subjectType":subjectType
+                              });
                             },
                           ),
                           SizedBox(
                             height: height(20),
                           ),
-
-
                           SettingWidget(
                             name: 'تغيير المقرر ',
                             function: () {
@@ -117,8 +115,6 @@ class SettingsScreen extends StatelessWidget {
                           SizedBox(
                             height: height(20),
                           ),
-
-
                         ],
                       ),
                     ),

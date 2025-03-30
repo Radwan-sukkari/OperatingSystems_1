@@ -10,12 +10,22 @@ import 'package:operating_systems/features/operating_system_1/quiz/data/model/qu
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/osi_card.dart';
 import 'package:operating_systems/resources/resources.dart';
 
-class FavouriteScreen extends StatelessWidget {
+class FavouriteScreen extends StatefulWidget {
+  final String subjectType;
   static const String name = 'favourite_screen';
   static const String path = '/favourite_screen';
 
-  const FavouriteScreen({super.key});
+  const FavouriteScreen({super.key, required this.subjectType});
 
+  @override
+  State<FavouriteScreen> createState() => _FavouriteScreenState();
+}
+
+class _FavouriteScreenState extends State<FavouriteScreen> {
+  @override
+  void initState() {
+print(widget.subjectType)   ; super.initState();
+  }
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
@@ -63,7 +73,13 @@ class FavouriteScreen extends StatelessWidget {
 
             if (filteredQuestions?.isEmpty ?? true) {
               return Center(
-                child: Image.asset(Images.empty,height: height(300),width: width(250),),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Image.asset(Images.boy15,height: height(300),width: width(250),),
+                    Text("المفضلة فارغة",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Theme.of(context).primaryColor,fontSize: 22),)
+                  ],
+                ),
 
               );
             }

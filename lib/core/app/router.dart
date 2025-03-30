@@ -17,6 +17,7 @@ import 'package:operating_systems/features/operating_system_1/study/data/model/s
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/algorithms_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/resources_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
@@ -37,14 +38,15 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => NavBar(),
   ),
   GoRoute(
-    path: IdentificationQuizScreen.path,
-    name: IdentificationQuizScreen.name,
-    builder: (context, state) {
-      final definitions = state.extra as List<Definition>;
+      path: IdentificationQuizScreen.path,
+      name: IdentificationQuizScreen.name,
+      builder: (context, state) {
+        final definitions = state.extra as List<Definition>;
 
-      return IdentificationQuizScreen(definitions: definitions,);
-    }
-  ),
+        return IdentificationQuizScreen(
+          definitions: definitions,
+        );
+      }),
   GoRoute(
     path: AboutTheSubject.path,
     name: AboutTheSubject.name,
@@ -56,24 +58,29 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => NavBar2(),
   ),
   GoRoute(
-    path: Identification2GridScreen.path,
-    name: Identification2GridScreen.name,
-    builder: (context, state) {
-      final String isStudy = state.uri.queryParameters['isStudy']!;
+      path: Identification2GridScreen.path,
+      name: Identification2GridScreen.name,
+      builder: (context, state) {
+        final String isStudy = state.uri.queryParameters['isStudy']!;
 
-      return Identification2GridScreen(isStudy: isStudy,);
-    }
-  ),
+        return Identification2GridScreen(
+          isStudy: isStudy,
+        );
+      }),
   GoRoute(
     path: SplashScreen.path,
     name: SplashScreen.name,
     builder: (context, state) => SplashScreen(),
   ),
   GoRoute(
-    path: FavouriteScreen.path,
-    name: FavouriteScreen.name,
-    builder: (context, state) => FavouriteScreen(),
-  ),
+      path: FavouriteScreen.path,
+      name: FavouriteScreen.name,
+      builder: (context, state) {
+        final String subjectType = state.uri.queryParameters['subjectType']!;
+        return FavouriteScreen(
+          subjectType: subjectType,
+        );
+      }),
   GoRoute(
       path: DefinitionsScreen.path,
       name: DefinitionsScreen.name,
@@ -109,10 +116,15 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => AboutTheApp(),
   ),
   GoRoute(
-    path: SettingsScreen.path,
-    name: SettingsScreen.name,
-    builder: (context, state) => SettingsScreen(),
-  ),
+      path: SettingsScreen.path,
+      name: SettingsScreen.name,
+      builder: (context, state) {
+        final String subjectType = state.uri.queryParameters['subjectType']!;
+
+        return SettingsScreen(
+          subjectType: subjectType,
+        );
+      }),
   GoRoute(
     path: ChooseAlgorithmsScreen.path,
     name: ChooseAlgorithmsScreen.name,
@@ -132,6 +144,11 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     path: ChooseComparisonsScreen.path,
     name: ChooseComparisonsScreen.name,
     builder: (context, state) => ChooseComparisonsScreen(),
+  ),
+  GoRoute(
+    path: ResourcesScreen.path,
+    name: ResourcesScreen.name,
+    builder: (context, state) => ResourcesScreen(),
   ),
   GoRoute(
       path: RandomQuiz.path,

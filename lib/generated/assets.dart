@@ -29,6 +29,7 @@ class Assets {
   static const String imagesBoy12 = 'assets/images/boy12.png';
   static const String imagesBoy13 = 'assets/images/boy13.png';
   static const String imagesBoy14 = 'assets/images/boy14.png';
+  static const String imagesBoy15 = 'assets/images/boy15.png';
   static const String imagesBoy2 = 'assets/images/boy2.png';
   static const String imagesBoy4 = 'assets/images/boy4.png';
   static const String imagesBoy5 = 'assets/images/boy5.png';

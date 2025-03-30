@@ -6,7 +6,7 @@ class SettingWidget extends StatelessWidget {
   final String name;
   final VoidCallback function;
 
-  const SettingWidget({super.key, required this.name, required this.function});
+  const SettingWidget({super.key, required this.name, required this.function,});
 
   @override
   Widget build(BuildContext context) {

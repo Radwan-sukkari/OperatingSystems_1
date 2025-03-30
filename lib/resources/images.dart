@@ -23,13 +23,14 @@ class Images {
   static const String image8 = 'assets/images/8.jpg';
   static const String image9 = 'assets/images/9.jpg';
 
-  static const String boy6 = 'assets/images/boy 6.png'; // إزالة المسافة في الاسم
+  static const String boy6 = 'assets/images/boy 6.png'; // Removed space
   static const String boy = 'assets/images/boy.png';
   static const String boy10 = 'assets/images/boy10.png';
   static const String boy11 = 'assets/images/boy11.png';
   static const String boy12 = 'assets/images/boy12.png';
   static const String boy13 = 'assets/images/boy13.png';
   static const String boy14 = 'assets/images/boy14.png';
+  static const String boy15 = 'assets/images/boy15.png';
   static const String boy2 = 'assets/images/boy2.png';
   static const String boy4 = 'assets/images/boy4.png';
   static const String boy5 = 'assets/images/boy5.png';
@@ -41,6 +42,7 @@ class Images {
   static const String branding = 'assets/images/branding.png';
   static const String branding2 = 'assets/images/branding2.png';
   static const String branding3 = 'assets/images/branding3.png';
+
   static const String empty = 'assets/images/empty.png';
   static const String logo = 'assets/images/logo.png';
   static const String logo3 = 'assets/images/logo3.png';
