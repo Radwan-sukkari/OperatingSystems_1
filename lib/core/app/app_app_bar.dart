@@ -36,9 +36,9 @@ final bool isBack;
     IconButton(
       onPressed: () => context.pop(),
       icon: Padding(
-        padding: EdgeInsets.only(right: width(5)),
+        padding: EdgeInsets.only(left: width(10)),
         child: Icon(
-          Icons.arrow_forward_ios,
+          Icons.arrow_back_ios_new,
           color: Theme.of(context).colorScheme.primary,
         ),
       ),

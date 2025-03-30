@@ -8,6 +8,7 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/favourite/presentation/manager/favourite/favourite_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/osi_card.dart';
+import 'package:operating_systems/resources/resources.dart';
 
 class FavouriteScreen extends StatelessWidget {
   static const String name = 'favourite_screen';
@@ -62,12 +63,8 @@ class FavouriteScreen extends StatelessWidget {
 
             if (filteredQuestions?.isEmpty ?? true) {
               return Center(
-                child: Text(
-                  isTrueFalse
-                      ? 'No True/False favorites yet'
-                      : 'No Multi Choice favorites yet',
-                  style: Theme.of(context).textTheme.titleMedium,
-                ),
+                child: Image.asset(Images.empty,height: height(300),width: width(250),),
+
               );
             }
 
