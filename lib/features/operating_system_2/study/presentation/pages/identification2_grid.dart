@@ -25,7 +25,7 @@ import 'package:operating_systems/resources/resources.dart';
 class Identification2GridScreen extends StatelessWidget {
   final String isStudy;
   static const String name = 'identification2_grid_screen';
-  static const String path = '/osi2_chapter_grid_screen';
+  static const String path = '/identification2_grid_screen';
 
   const Identification2GridScreen({super.key, required this.isStudy});
 

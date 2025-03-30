@@ -7,22 +7,12 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
 
-class SecondHomePageScreen extends StatefulWidget {
+class SecondHomePageScreen extends StatelessWidget {
   static const String name = 'second_home_page_screen';
   static const String path = '/choose-second_home_page_screen';
 
   const SecondHomePageScreen({super.key});
 
-  @override
-  State<SecondHomePageScreen> createState() => _SecondHomePageScreenState();
-}
-
-class _SecondHomePageScreenState extends State<SecondHomePageScreen> {
-  @override
-  void initState() {
-    print(  AuthImpLocalDataSource.userRole) ;// Use static variable);    super.initState();
-    super.initState();
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
@@ -9,7 +8,6 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/favourite/presentation/manager/favourite/favourite_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/osi_card.dart';
-import 'package:operating_systems/resources/resources.dart';
 
 class FavouriteScreen extends StatelessWidget {
   static const String name = 'favourite_screen';

@@ -21,13 +21,11 @@ class HomePageScreen extends StatefulWidget {
 
 class _HomePageScreenState extends State<HomePageScreen> {
   @override
-  void initState() {
-print(  AuthImpLocalDataSource.userRole) ;// Use static variable);    super.initState();
-  }
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppAppBar(title: "الرئيسية",),
+        appBar: AppAppBar(
+          title: "الرئيسية",
+        ),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(

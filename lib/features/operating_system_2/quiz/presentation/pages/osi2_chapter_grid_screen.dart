@@ -9,7 +9,6 @@ import 'package:operating_systems/core/bloc/app_state_bloc.dart';
 import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
-import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/shimmer/osi_chapter_shimmer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
@@ -18,12 +17,23 @@ import 'package:operating_systems/features/operating_system_2/quiz/presentation/
 
 import 'package:operating_systems/resources/resources.dart';
 
-class Osi2ChapterGridScreen extends StatelessWidget {
+class Osi2ChapterGridScreen extends StatefulWidget {
   final String isStudy;
   static const String name = 'osi2_chapter_grid_screen';
   static const String path = '/osi2_chapter_grid_screen';
 
   const Osi2ChapterGridScreen({super.key, required this.isStudy});
+
+  @override
+  State<Osi2ChapterGridScreen> createState() => _Osi2ChapterGridScreenState();
+}
+
+class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
+  @override
+  void initState() {
+    print("____________________________i am insideOsi2ChapterGridScreen ");
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +73,7 @@ class Osi2ChapterGridScreen extends StatelessWidget {
                                       child: SecondButton(
                                         name: state.chapters[index].titleEn,
                                         function: () {
-                                          isStudy == "isNotStudy"
+                                          widget.isStudy == "isNotStudy"
                                               ? context.pushNamed(
                                                   QuizScreen.name,
                                                   queryParameters: {
