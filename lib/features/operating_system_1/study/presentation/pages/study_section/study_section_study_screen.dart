@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
@@ -42,6 +43,7 @@ class StudySectionStudyScreen extends StatelessWidget {
     ];
 
     return Scaffold(
+      appBar: AppAppBar(title: "الدراسة",),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SectionWidget(
         widget: AnimationLimiter(
@@ -73,7 +75,7 @@ class StudySectionStudyScreen extends StatelessWidget {
           transform: Matrix4.rotationY(math.pi),
           child: Image.asset(
             Images.boy5,
-            height: height(210),
+            height: height(220),
           ),
         ),
       ),

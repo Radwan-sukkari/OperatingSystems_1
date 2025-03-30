@@ -3,6 +3,7 @@ import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/core/app/nav_bar2.dart';
 import 'package:operating_systems/core/app/splash_screen.dart';
+import 'package:operating_systems/features/favourite/presentation/pages/favourite_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/identification_quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
@@ -67,6 +68,11 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     path: SplashScreen.path,
     name: SplashScreen.name,
     builder: (context, state) => SplashScreen(),
+  ),
+  GoRoute(
+    path: FavouriteScreen.path,
+    name: FavouriteScreen.name,
+    builder: (context, state) => FavouriteScreen(),
   ),
   GoRoute(
       path: DefinitionsScreen.path,

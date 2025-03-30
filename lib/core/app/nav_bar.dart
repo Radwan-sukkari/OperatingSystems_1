@@ -58,11 +58,12 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       extendBody: true,
       body: _getSelectedTabWidget(),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 5),
+        padding: const EdgeInsets.only(bottom: 0),
         child: CrystalNavigationBar(
           currentIndex: _SelectedTab.values.indexOf(_selectedTab),
           onTap: _handleIndexChanged,

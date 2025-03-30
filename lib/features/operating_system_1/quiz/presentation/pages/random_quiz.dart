@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:operating_systems/core/animations/colum_animations.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/operating_system_app.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/choose_random_question_number-dialoge.dart';
@@ -16,6 +17,7 @@ class RandomQuiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppAppBar(title: "اختبار شامل",),
       backgroundColor: Theme
           .of(context)
           .colorScheme.surfaceTint,
@@ -23,11 +25,10 @@ class RandomQuiz extends StatelessWidget {
           padding: EdgeInsets.only(
             right: width(25),
             left: width(25),
+            top: height(50),
             bottom: height(0),
           ),
           child: ColumnAnimations(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
               duration: 150,
               curve: Curves.easeIn,
               columnContent: [

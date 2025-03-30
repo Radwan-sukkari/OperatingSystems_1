@@ -16,7 +16,7 @@ class SectionWidget extends StatelessWidget {
     bool isLongText = name.split(" ").length > 10; // التحقق إذا كان النص طويلًا
 
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: width(20), vertical: height(20)),
+      padding: EdgeInsets.symmetric(horizontal: width(20),),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

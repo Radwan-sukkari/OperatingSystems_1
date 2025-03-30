@@ -9,10 +9,26 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i174;
+import 'package:hive/hive.dart' as _i979;
 import 'package:injectable/injectable.dart' as _i526;
 
+import '../../features/favourite/data/data_sources/local_favourite.dart'
+    as _i976;
+import '../../features/favourite/data/repositories/fav_repo_imp.dart' as _i437;
+import '../../features/favourite/domain/repositories/favourite_repo.dart'
+    as _i555;
+import '../../features/favourite/domain/use_cases/add_to_favorite_use_case.dart'
+    as _i875;
+import '../../features/favourite/domain/use_cases/delete_from_favourite_use_case.dart'
+    as _i351;
+import '../../features/favourite/domain/use_cases/get_favourite_use_case.dart'
+    as _i785;
+import '../../features/favourite/presentation/manager/favourite/favourite_bloc.dart'
+    as _i464;
 import '../../features/operating_system_1/quiz/data/data_source/quiz_data_source.dart'
     as _i125;
+import '../../features/operating_system_1/quiz/data/model/quiz_model.dart'
+    as _i595;
 import '../../features/operating_system_1/quiz/data/repositories/quiz_repo_imp.dart'
     as _i172;
 import '../../features/operating_system_1/quiz/domain/repositories/quiz_repo.dart'
@@ -91,6 +107,8 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i881.Study2DataSource>(() => _i881.Study2DataSource());
     gh.lazySingleton<_i201.UserAuthenticationLocalDataSource>(
         () => _i201.AuthImpLocalDataSource());
+    gh.lazySingleton<_i976.FavoriteLocalDataSource>(() =>
+        _i976.FavoriteLocalDataSourceImpl(gh<_i979.Box<_i595.Question>>()));
     gh.lazySingleton<_i1006.QuizRepo>(
         () => _i172.QuizRepoImp(quizDataSource: gh<_i125.QuizDataSource>()));
     gh.lazySingleton<_i963.QuizOperatingSystem2Repo>(() =>
@@ -111,8 +129,17 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i862.RandomQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i668.TrueFalseQuizUseCase>(
         () => _i668.TrueFalseQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
+    gh.lazySingleton<_i555.FavouriteRepo>(() =>
+        _i437.FavoriteRepositoryImpl(gh<_i976.FavoriteLocalDataSource>()));
     gh.lazySingleton<_i822.StudyOperatingSystem2Repo>(() =>
         _i636.Study2RepoImp(study2dataSource: gh<_i881.Study2DataSource>()));
+    gh.lazySingleton<_i875.AddToFavouriteUseCae>(() =>
+        _i875.AddToFavouriteUseCae(favouriteRepo: gh<_i555.FavouriteRepo>()));
+    gh.lazySingleton<_i351.RemoveFromFavouriteUseCase>(() =>
+        _i351.RemoveFromFavouriteUseCase(
+            favouriteRepo: gh<_i555.FavouriteRepo>()));
+    gh.lazySingleton<_i785.GetFavouriteUseCase>(() =>
+        _i785.GetFavouriteUseCase(favouriteRepo: gh<_i555.FavouriteRepo>()));
     gh.factory<_i193.QuizOperatingSystem2Bloc>(
         () => _i193.QuizOperatingSystem2Bloc(
               gh<_i724.Osi2QuizUseCase>(),
@@ -135,6 +162,11 @@ extension GetItInjectableX on _i174.GetIt {
             studyOperatingSystem2Repo: gh<_i822.StudyOperatingSystem2Repo>()));
     gh.factory<_i958.Study2Bloc>(
         () => _i958.Study2Bloc(gh<_i333.Identification2UseCase>()));
+    gh.factory<_i464.FavouriteBloc>(() => _i464.FavouriteBloc(
+          gh<_i875.AddToFavouriteUseCae>(),
+          gh<_i351.RemoveFromFavouriteUseCase>(),
+          gh<_i785.GetFavouriteUseCase>(),
+        ));
     gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
           gh<_i577.AlgorithmsUseCase>(),
           gh<_i575.ComparisonsUseCase>(),

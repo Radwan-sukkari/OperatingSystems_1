@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
+import 'package:operating_systems/core/app/role_local_data_source.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject_container.dart';
@@ -7,20 +9,30 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 
 import '../../../quiz/presentation/pages/osi_chapter_grid.dart';
 
-class HomePageScreen extends StatelessWidget {
+class HomePageScreen extends StatefulWidget {
   static const String name = 'home_page_screen';
   static const String path = '/home_page_screen';
 
   const HomePageScreen({super.key});
 
   @override
+  State<HomePageScreen> createState() => _HomePageScreenState();
+}
+
+class _HomePageScreenState extends State<HomePageScreen> {
+  @override
+  void initState() {
+print(  AuthImpLocalDataSource.userRole) ;// Use static variable);    super.initState();
+  }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppAppBar(title: "الرئيسية",),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-              top: height(40),
+              top: height(5),
             ),
             child: SingleChildScrollView(
               child: Column(

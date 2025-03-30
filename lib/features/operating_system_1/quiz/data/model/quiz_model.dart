@@ -4,6 +4,10 @@
 
 import 'dart:convert';
 
+import 'package:hive/hive.dart';
+
+part 'quiz_model.g.dart';
+
 QuizModel quizModelFromJson(String str) => QuizModel.fromJson(json.decode(str));
 
 String quizModelToJson(QuizModel data) => json.encode(data.toJson());
@@ -25,10 +29,15 @@ class QuizModel {
       };
 }
 
+@HiveType(typeId: 0)
 class Chapter {
+  @HiveField(0)
   final int id;
+  @HiveField(1)
   final String titleEn;
+  @HiveField(2)
   final String titleAr;
+  @HiveField(3)
   final List<Question> questions;
 
   Chapter({
@@ -54,12 +63,19 @@ class Chapter {
       };
 }
 
-class Question {
+@HiveType(typeId: 1)
+class Question extends HiveObject {
+  @HiveField(0)
   final String chapterEn;
+  @HiveField(1)
   final String chapterAr;
+  @HiveField(2)
   final String questionEn;
+  @HiveField(3)
   final String questionAr;
+  @HiveField(4)
   final List<Answer> answers;
+  @HiveField(5)
   final String? description;
 
   Question({
@@ -91,9 +107,13 @@ class Question {
       };
 }
 
+@HiveType(typeId: 2)
 class Answer {
+  @HiveField(0)
   final String answerEn;
+  @HiveField(1)
   final String answerAr;
+  @HiveField(2)
   final bool isCorrect;
 
   Answer({

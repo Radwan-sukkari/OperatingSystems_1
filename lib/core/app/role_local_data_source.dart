@@ -2,28 +2,27 @@ import 'package:injectable/injectable.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 
 abstract class UserAuthenticationLocalDataSource {
-  Future<String?> userGetToken();
-
-  Future<void> userSaveToken(String? token,);
+  Future<String?> userGetRole();
+  Future<void> userSaveRole(String role);
 }
 
 @LazySingleton(as: UserAuthenticationLocalDataSource)
-class AuthImpLocalDataSource  implements UserAuthenticationLocalDataSource {
-  final FlutterSecureStorage storage = FlutterSecureStorage(
-  );
+class AuthImpLocalDataSource implements UserAuthenticationLocalDataSource {
+  final FlutterSecureStorage storage = const FlutterSecureStorage();
 
-  static const String tokenKey = "key";
+  static const String roleKey = "role";
 
+  static String? userRole;
 
   @override
-  Future<String?> userGetToken() async {
-    return await storage.read(key: tokenKey);
+  Future<String?> userGetRole() async {
+    userRole ??= await storage.read(key: roleKey);
+    return userRole;
   }
 
   @override
-  Future<void> userSaveToken(String? token, ) async {
-    if (token == null) {
-      throw Exception("Attempting to save a null token");
-    }
-    await storage.write(key: tokenKey, value: token);
-  }}
+  Future<void> userSaveRole(String role) async {
+    userRole = role;
+    await storage.write(key: roleKey, value: role);
+  }
+}

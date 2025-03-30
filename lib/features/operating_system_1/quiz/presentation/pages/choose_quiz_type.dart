@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/buttons.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
@@ -24,6 +25,8 @@ class ChooseQuizTypeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppAppBar(title: "الكويز",),
+
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SafeArea(
           child: SectionWidget(
