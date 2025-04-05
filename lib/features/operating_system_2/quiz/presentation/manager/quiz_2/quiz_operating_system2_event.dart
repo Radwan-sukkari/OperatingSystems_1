@@ -7,3 +7,5 @@ class QuizOsi2Event extends QuizOperatingSystem2Event {}
 class QuizTrueFalse2Event extends QuizOperatingSystem2Event {}
 
 class RandomQuiz2Event extends QuizOperatingSystem2Event {}
+
+class DefinitionRandom2QuizEvent extends QuizOperatingSystem2Event{}

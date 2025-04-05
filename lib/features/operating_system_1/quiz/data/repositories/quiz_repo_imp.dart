@@ -4,6 +4,7 @@ import 'package:operating_systems/core/app/network_repository.dart';
 import 'package:operating_systems/core/errors/failuer.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/data_source/quiz_data_source.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/data/model/definitions_random_quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_random_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/domain/repositories/quiz_repo.dart';
@@ -42,6 +43,15 @@ class QuizRepoImp implements QuizRepo {
       remoteDataFetcher: () => quizDataSource.randomQuiz(),
     );
     return randomQuiz;
+  }
+
+  @override
+  Future<Either<Failure, DefinitionsRandomQuizModel>> definitionsRandomQuiz() {
+    networkRepository=getIt<NetworkRepository>();
+    final definitionsRandomQuiz = networkRepository<DefinitionsRandomQuizModel>(
+      remoteDataFetcher: () => quizDataSource.definitionsRandomQuiz(),
+    );
+    return definitionsRandomQuiz;
   }
 
 

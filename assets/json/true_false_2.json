@@ -6,7 +6,7 @@
       "title_ar": "جميع الفصول ",
       "questions": [
         {
-          "chapter_en": "all chapter",
+          "chapter_en": "12",
           "chapter_ar": " كل الفصول",
           "question_en": "A thread can continue execution after its primary process exits.",
           "question_ar": "يمكن أن يستمر الخيط في التنفيذ بعد انتهاء العملية الرئيسية.",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/comparisons_card/compaision_card.dart';
@@ -6,18 +7,20 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 class ComparisonsScreen extends StatelessWidget {
   final List<Comparison> comparisons;
   static const String name = 'comparisons_screen';
+  final String title;
   static const String path = '/comparisons_screen';
 
-  const ComparisonsScreen({super.key, required this.comparisons, });
+  const ComparisonsScreen({super.key, required this.comparisons, required this.title, });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppAppBar(title: title,isBack: true,),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: Center(
         child: Padding(
             padding: EdgeInsets.only(
-                top: height(40), right: width(15), left: width(15)),
+                top: height(0), right: width(15), left: width(15)),
             child: Column(
               children: [
                 Text(

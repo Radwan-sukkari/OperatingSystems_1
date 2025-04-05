@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/animations/colum_animations.dart';
 import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/role_local_data_source.dart';
 import 'package:operating_systems/core/app/size.dart';
@@ -26,7 +27,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppAppBar(
-          title: "الرئيسية",
+          title: "نظم تشغيل 1",
         ),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
@@ -35,81 +36,83 @@ class _HomePageScreenState extends State<HomePageScreen> {
               top: height(5),
             ),
             child: SingleChildScrollView(
-              child: Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: width(20)),
-                    child: AboutSubjectContainer(
-                      title1: "خلينا نتعرف شوي عن  ",
-                      title2: ' المادة وشلون بتجي الأسئلة',
-                      function: () {
-                        context.pushNamed(AboutTheSubject.name);
-                      },
-                    ),
-                  ),
-                  SizedBox(
-                    height: height(20),
-                  ),
-                  HomePageRowWidget(
-                    isFirstRow: true,
-                    questionOsiFunction: () {
-                      context.pushNamed(OsiChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isStudy",
-                          });
-                    },
-                    quizOsiFunction: () {
-                      context.pushNamed(OsiChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isNotStudy",
-                          });
-                    },
-                    trueFalseQuestionFunction: () {
-                      context.pushNamed(TrueFalseChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isStudy",
-                          });
-                    },
-                    trueFalseQuizFunction: () {
-                      context.pushNamed(TrueFalseChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isNotStudy",
-                          });
-                    },
-                  ),
-                  SizedBox(
-                    height: height(20),
-                  ),
-                  HomePageRowWidget(
-                    isFirstRow: false,
-                    questionOsiFunction: () {
-                      context.pushNamed(OsiChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isStudy",
-                          });
-                    },
-                    quizOsiFunction: () {
-                      context.pushNamed(OsiChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isNotStudy",
-                          });
-                    },
-                    trueFalseQuestionFunction: () {
-                      context.pushNamed(TrueFalseChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isStudy",
-                          });
-                    },
-                    trueFalseQuizFunction: () {
-                      context.pushNamed(TrueFalseChapterGridScreen.name,
-                          queryParameters: {
-                            "isStudy": "isNotStudy",
-                          });
-                    },
-                  ),
-                ],
-              ),
-            ),
+                child: ColumnAnimations(
+                    duration: 250,
+                    curve: Curves.easeIn,
+                    columnContent: [
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: width(20)),
+                        child: AboutSubjectContainer(
+                          title1: "خلينا نتعرف شوي عن  ",
+                          title2: ' المادة وشلون بتجي الأسئلة',
+                          function: () {
+                            context.pushNamed(AboutTheSubject.name);
+                          },
+                        ),
+                      ),
+                      SizedBox(
+                        height: height(20),
+                      ),
+                      HomePageRowWidget(
+                        isFirstRow: true,
+                        questionOsiFunction: () {
+                          context.pushNamed(OsiChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isStudy",
+                              });
+                        },
+                        quizOsiFunction: () {
+                          context.pushNamed(OsiChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isNotStudy",
+                              });
+                        },
+                        trueFalseQuestionFunction: () {
+                          context.pushNamed(TrueFalseChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isStudy",
+                              });
+                        },
+                        trueFalseQuizFunction: () {
+                          context.pushNamed(TrueFalseChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isNotStudy",
+                              });
+                        },
+                      ),
+                      SizedBox(
+                        height: height(20),
+                      ),
+                      HomePageRowWidget(
+                        isFirstRow: false,
+                        questionOsiFunction: () {
+                          context.pushNamed(OsiChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isStudy",
+                              });
+                        },
+                        quizOsiFunction: () {
+                          context.pushNamed(OsiChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isNotStudy",
+                              });
+                        },
+                        trueFalseQuestionFunction: () {
+                          context.pushNamed(TrueFalseChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isStudy",
+                              });
+                        },
+                        trueFalseQuizFunction: () {
+                          context.pushNamed(TrueFalseChapterGridScreen.name,
+                              queryParameters: {
+                                "isStudy": "isNotStudy",
+                              });
+                        },
+                      ),
+                    ],
+                    verticalOffset: 0,
+                    horizontalOffset: 200)),
           ),
         ));
   }

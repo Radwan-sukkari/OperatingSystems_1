@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
@@ -31,14 +32,15 @@ class ChooseSectionToStudy2Screen extends StatelessWidget {
       () => context.pushNamed(Osi2ChapterGridScreen.name, queryParameters: {
             "isStudy": "isStudy",
           }),
-      () => context.pushNamed(Identification2GridScreen.name,queryParameters: {
-        "isStudy": "isStudy",
-
-      }),
-      () => {},
+      () => context.pushNamed(Identification2GridScreen.name, queryParameters: {
+            "isStudy": "isStudy",
+          }),
     ];
 
     return Scaffold(
+      appBar: AppAppBar(
+        title: "الدراسة",
+      ),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SectionWidget(
         widget: AnimationLimiter(
@@ -82,5 +84,4 @@ List<String> content = [
   "اسئلة الصح والخطا",
   "اسئلة الموقع",
   "التعاريف",
-  "المقارنات",
 ];

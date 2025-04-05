@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:operating_systems/core/animations/colum_animations.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/resources/resources.dart';
 import 'package:phosphor_flutter/phosphor_flutter.dart';
@@ -14,6 +15,7 @@ class AboutTheApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppAppBar(title: "عن التطبيق",isBack: true,),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: Padding(
             padding: const EdgeInsets.all(14.0),

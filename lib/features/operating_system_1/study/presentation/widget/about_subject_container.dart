@@ -18,7 +18,7 @@ class AboutSubjectContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: height(200),
+      height: height(205),
       width: width(360),
       decoration: BoxDecoration(
         color: Colors.white38,

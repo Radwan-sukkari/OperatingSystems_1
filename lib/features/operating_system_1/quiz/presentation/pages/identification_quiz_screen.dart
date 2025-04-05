@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
@@ -70,13 +71,14 @@ class _IdentificationQuizScreenState extends State<IdentificationQuizScreen> {
     return BlocProvider.value(
       value: getIt<ShowAnswerBloc>(),
       child: Scaffold(
+        appBar: AppAppBar(title: "كويز التعاريف",isBack: true,),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
                 right: width(15),
                 left: width(15),
-                top: height(20),
+                top: height(30),
                 bottom: height(20)),
             child: Column(
               children: [
@@ -88,6 +90,7 @@ class _IdentificationQuizScreenState extends State<IdentificationQuizScreen> {
                     _previousQuestion(context);
                   },
                 ),
+                SizedBox(height: height(15),),
                 Flexible(
                   child: SingleChildScrollView(
                     child: Column(

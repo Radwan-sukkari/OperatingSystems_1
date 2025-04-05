@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
@@ -87,7 +88,7 @@ class _QuizScreenState extends State<QuizScreen> {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-                right: width(20), left: width(20), top: height(20)),
+                right: width(20), left: width(20), top: height(30)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,

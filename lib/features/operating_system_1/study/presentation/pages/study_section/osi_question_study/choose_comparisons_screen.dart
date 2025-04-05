@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/buttons.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
@@ -25,6 +26,7 @@ class ChooseComparisonsScreen extends StatelessWidget {
     return BlocProvider.value(
       value: getIt<StudyBloc>()..add(ComparisonsEvent()),
       child: Scaffold(
+        appBar: AppAppBar(title: "المقارنات",isBack: true,),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: SectionWidget(
@@ -60,6 +62,9 @@ class ChooseComparisonsScreen extends StatelessWidget {
                                             function: () {
                                               context.pushNamed(
                                                 ComparisonsScreen.name,
+                                                queryParameters: {
+                                                  "title":state.chapters[index].titleAr,
+                                                },
                                                 extra: state.chapters[index].comparisons,
                                               );
                                             })),

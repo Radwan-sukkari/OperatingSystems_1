@@ -13,7 +13,7 @@ class ComparisonsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 35),
+      padding:  EdgeInsets.symmetric(vertical: height(70),),
       child: Stack(
         clipBehavior: Clip.none,
         children: [

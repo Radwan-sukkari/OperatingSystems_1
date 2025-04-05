@@ -1,8 +1,10 @@
 import 'package:bloc/bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/data/model/definitions_random_quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_random_model.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/domain/use_cases/definitions_random_2_quiz.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/domain/use_cases/osi_2_quiz_use_case.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/domain/use_cases/random_quiz_2_use_case.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/domain/use_cases/true_false_2_use_case.dart';
@@ -17,13 +19,15 @@ class QuizOperatingSystem2Bloc
   final Osi2QuizUseCase osi2quizUseCase;
   final RandomQuiz2UseCase randomQuiz2UseCase;
   final TrueFalse2UseCase trueFalse2UseCase;
+  final DefinitionsRandom2QuizUseCase definitionsRandom2QuizUseCase;
 
-  QuizOperatingSystem2Bloc(
-      this.osi2quizUseCase, this.randomQuiz2UseCase, this.trueFalse2UseCase)
+  QuizOperatingSystem2Bloc(this.osi2quizUseCase, this.randomQuiz2UseCase,
+      this.trueFalse2UseCase, this.definitionsRandom2QuizUseCase)
       : super(QuizOperatingSystem2State()) {
     on<QuizOsi2Event>(quizOsi2Event);
     on<QuizTrueFalse2Event>(quizTrueFalse2Event);
     on<RandomQuiz2Event>(randomQuiz2Event);
+    on<DefinitionRandom2QuizEvent>(definitionRandom2QuizEvent);
   }
 
   Future<void> quizOsi2Event(QuizOperatingSystem2Event event,
@@ -64,6 +68,21 @@ class QuizOperatingSystem2Bloc
           emit(state.copWith(randomQuiz2State: const BlocStateData.failed())),
       (data) =>
           emit(state.copWith(randomQuiz2State: BlocStateData.success(data))),
+    );
+  }
+
+  Future<void> definitionRandom2QuizEvent(DefinitionRandom2QuizEvent event,
+      Emitter<QuizOperatingSystem2State> emit) async {
+    emit(state.copWith(
+        definitionsRandom2QuizState: const BlocStateData.loading()));
+
+    final quiz = await definitionsRandom2QuizUseCase();
+
+    quiz.fold(
+      (failure) => emit(state.copWith(
+          definitionsRandom2QuizState: const BlocStateData.failed())),
+      (data) => emit(state.copWith(
+          definitionsRandom2QuizState: BlocStateData.success(data))),
     );
   }
 }

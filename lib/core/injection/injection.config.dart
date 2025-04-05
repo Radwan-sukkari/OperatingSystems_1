@@ -33,6 +33,8 @@ import '../../features/operating_system_1/quiz/data/repositories/quiz_repo_imp.d
     as _i172;
 import '../../features/operating_system_1/quiz/domain/repositories/quiz_repo.dart'
     as _i1006;
+import '../../features/operating_system_1/quiz/domain/use_case/definitions_random_quiz_use_case.dart'
+    as _i589;
 import '../../features/operating_system_1/quiz/domain/use_case/osi_quiz_use_case.dart'
     as _i453;
 import '../../features/operating_system_1/quiz/domain/use_case/random_quiz_use_case.dart'
@@ -57,6 +59,8 @@ import '../../features/operating_system_1/study/domain/use_case/comparisons_use_
     as _i575;
 import '../../features/operating_system_1/study/domain/use_case/definitions_use_case.dart'
     as _i635;
+import '../../features/operating_system_1/study/domain/use_case/important_question_use_case.dart'
+    as _i225;
 import '../../features/operating_system_1/study/presentation/manager/study_bloc.dart'
     as _i927;
 import '../../features/operating_system_2/quiz/data/data_sources/quiz_2_data_source.dart'
@@ -65,6 +69,8 @@ import '../../features/operating_system_2/quiz/data/repositories/quiz_2_repo_imp
     as _i945;
 import '../../features/operating_system_2/quiz/domain/repositories/quiz_operating_system_2_repo.dart'
     as _i963;
+import '../../features/operating_system_2/quiz/domain/use_cases/definitions_random_2_quiz.dart'
+    as _i750;
 import '../../features/operating_system_2/quiz/domain/use_cases/osi_2_quiz_use_case.dart'
     as _i724;
 import '../../features/operating_system_2/quiz/domain/use_cases/random_quiz_2_use_case.dart'
@@ -121,6 +127,9 @@ extension GetItInjectableX on _i174.GetIt {
         quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i589.TrueFalse2UseCase>(() => _i589.TrueFalse2UseCase(
         quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
+    gh.lazySingleton<_i750.DefinitionsRandom2QuizUseCase>(() =>
+        _i750.DefinitionsRandom2QuizUseCase(
+            quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i370.StudyRepo>(() =>
         _i1023.StudyRepoImp(studyDataSource: gh<_i1021.StudyDataSource>()));
     gh.lazySingleton<_i453.OsiQuizUseCase>(
@@ -129,6 +138,14 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i862.RandomQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i668.TrueFalseQuizUseCase>(
         () => _i668.TrueFalseQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
+    gh.lazySingleton<_i589.DefinitionsRandomQuizUseCse>(() =>
+        _i589.DefinitionsRandomQuizUseCse(quizRepo: gh<_i1006.QuizRepo>()));
+    gh.factory<_i438.QuizFeatureBloc>(() => _i438.QuizFeatureBloc(
+          gh<_i453.OsiQuizUseCase>(),
+          gh<_i668.TrueFalseQuizUseCase>(),
+          gh<_i862.RandomQuizUseCase>(),
+          gh<_i589.DefinitionsRandomQuizUseCse>(),
+        ));
     gh.lazySingleton<_i555.FavouriteRepo>(() =>
         _i437.FavoriteRepositoryImpl(gh<_i976.FavoriteLocalDataSource>()));
     gh.lazySingleton<_i822.StudyOperatingSystem2Repo>(() =>
@@ -145,6 +162,7 @@ extension GetItInjectableX on _i174.GetIt {
               gh<_i724.Osi2QuizUseCase>(),
               gh<_i799.RandomQuiz2UseCase>(),
               gh<_i589.TrueFalse2UseCase>(),
+              gh<_i750.DefinitionsRandom2QuizUseCase>(),
             ));
     gh.lazySingleton<_i577.AlgorithmsUseCase>(
         () => _i577.AlgorithmsUseCase(studyRepo: gh<_i370.StudyRepo>()));
@@ -152,25 +170,23 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i575.ComparisonsUseCase(studyRepo: gh<_i370.StudyRepo>()));
     gh.lazySingleton<_i635.DefinitionsUseCase>(
         () => _i635.DefinitionsUseCase(studyRepo: gh<_i370.StudyRepo>()));
-    gh.factory<_i438.QuizFeatureBloc>(() => _i438.QuizFeatureBloc(
-          gh<_i453.OsiQuizUseCase>(),
-          gh<_i668.TrueFalseQuizUseCase>(),
-          gh<_i862.RandomQuizUseCase>(),
-        ));
+    gh.lazySingleton<_i225.ImportantQuestionUseCase>(
+        () => _i225.ImportantQuestionUseCase(studyRepo: gh<_i370.StudyRepo>()));
     gh.lazySingleton<_i333.Identification2UseCase>(() =>
         _i333.Identification2UseCase(
             studyOperatingSystem2Repo: gh<_i822.StudyOperatingSystem2Repo>()));
+    gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
+          gh<_i577.AlgorithmsUseCase>(),
+          gh<_i575.ComparisonsUseCase>(),
+          gh<_i635.DefinitionsUseCase>(),
+          gh<_i225.ImportantQuestionUseCase>(),
+        ));
     gh.factory<_i958.Study2Bloc>(
         () => _i958.Study2Bloc(gh<_i333.Identification2UseCase>()));
     gh.factory<_i464.FavouriteBloc>(() => _i464.FavouriteBloc(
           gh<_i875.AddToFavouriteUseCae>(),
           gh<_i351.RemoveFromFavouriteUseCase>(),
           gh<_i785.GetFavouriteUseCase>(),
-        ));
-    gh.factory<_i927.StudyBloc>(() => _i927.StudyBloc(
-          gh<_i577.AlgorithmsUseCase>(),
-          gh<_i575.ComparisonsUseCase>(),
-          gh<_i635.DefinitionsUseCase>(),
         ));
     return this;
   }

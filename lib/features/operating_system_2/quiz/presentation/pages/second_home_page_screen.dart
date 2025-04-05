@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/role_local_data_source.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject_container.dart';
@@ -16,11 +17,14 @@ class SecondHomePageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppAppBar(
+          title: "نظم تشغيل 2",
+        ),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-              top: height(40),
+              top: height(10),
             ),
             child: SingleChildScrollView(
               child: Column(

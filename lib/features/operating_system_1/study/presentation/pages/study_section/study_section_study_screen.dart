@@ -8,6 +8,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/important_question/important_question_sreen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/study_section_study_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
@@ -29,21 +30,21 @@ class StudySectionStudyScreen extends StatelessWidget {
       () => context.pushNamed(OsiChapterGridScreen.name, queryParameters: {
             "isStudy": "isStudy",
           }),
-      () => context.pushNamed(
-            DefinitionsGridScreen.name,queryParameters: {
-              "isStudy":"true"
-      }
-          ),
+      () => context.pushNamed(DefinitionsGridScreen.name,
+          queryParameters: {"isStudy": "true"}),
       () => context.pushNamed(
             ChooseAlgorithmsScreen.name,
           ),
       () => context.pushNamed(
             ChooseComparisonsScreen.name,
           ),
+      ()=>context.pushNamed(ImportantQuestionScreen.name)
     ];
 
     return Scaffold(
-      appBar: AppAppBar(title: "الدراسة",),
+      appBar: AppAppBar(
+        title: "الدراسة",
+      ),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SectionWidget(
         widget: AnimationLimiter(
@@ -89,4 +90,5 @@ List<String> content = [
   "التعاريف",
   "الخوارزميات",
   "المقارنات",
+  "اسئلة دورات مكررة"
 ];

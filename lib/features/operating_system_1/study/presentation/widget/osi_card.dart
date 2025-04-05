@@ -22,12 +22,12 @@ class OsiCard extends StatelessWidget {
       value: getIt<FavouriteBloc>()..add(GetFavouriteEvent()),
       child: Padding(
         padding:
-            EdgeInsets.symmetric(horizontal: width(15), vertical: height(40)),
+            EdgeInsets.symmetric(horizontal: width(15), vertical: height(65)),
         child: Stack(
           clipBehavior: Clip.none,
           children: [
             FirstLayerStudyWidget(question: question),
-            SecondLayerStudyWidget(questionNumber: index + 1),
+            SecondLayerStudyWidget(questionNumber: index + 1, chapter: question.chapterAr,),
             ThirdLayerStudyWidget(),
             BlocBuilder<FavouriteBloc, FavouriteState>(
               builder: (context, state) {

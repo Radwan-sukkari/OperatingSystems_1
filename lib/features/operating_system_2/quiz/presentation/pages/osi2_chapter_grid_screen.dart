@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:go_router/go_router.dart';
+import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/buttons.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
@@ -29,17 +30,14 @@ class Osi2ChapterGridScreen extends StatefulWidget {
 }
 
 class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
-  @override
-  void initState() {
-    print("____________________________i am insideOsi2ChapterGridScreen ");
-    super.initState();
-  }
+
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
       value: getIt<QuizOperatingSystem2Bloc>()..add(QuizOsi2Event()),
       child: Scaffold(
+        appBar: AppAppBar(title: "الفصول",isBack: true,),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: SectionWidget(

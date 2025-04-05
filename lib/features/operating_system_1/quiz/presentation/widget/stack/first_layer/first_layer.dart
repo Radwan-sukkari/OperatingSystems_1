@@ -89,25 +89,36 @@ class FirstLayer extends StatelessWidget {
                       },
                       child: MainButton(name: "اظهار الترجمة"),
                     ),
+                  SizedBox(height: height(10),),
                   if (state
                       is AnswerValidated) // Show "Next Question" and "Previous Question" buttons after answer is validated
-                    Column(
-                      children: [
-                        SizedBox(height: height(10)),
-                        GestureDetector(
-                          onTap: onNextQuestion,
-                          child: MainButton(
-                            name: " السؤال التالي",
+                    Container(
+                      margin: EdgeInsets.only(right: width(5)),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: width(137),
+                            child: GestureDetector(
+                              onTap: onPreviousQuestion,
+                              child: MainButton(
+                                name: "السؤال السايق ",
+                              ),
+                            ),
                           ),
-                        ),
-                        SizedBox(height: height(10)),
-                        GestureDetector(
-                          onTap: onPreviousQuestion,
-                          child: MainButton(
-                            name: "السؤال السايق ",
+                          SizedBox(width: width(10)),
+
+                          SizedBox(
+                            width: width(137),
+                            child: GestureDetector(
+                              onTap: onNextQuestion,
+                              child: MainButton(
+                                name: " السؤال التالي",
+                              ),
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   SizedBox(height: height(8)),
                 ],

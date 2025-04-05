@@ -23,10 +23,6 @@ class FavouriteScreen extends StatefulWidget {
 
 class _FavouriteScreenState extends State<FavouriteScreen> {
   @override
-  void initState() {
-print(widget.subjectType)   ; super.initState();
-  }
-  @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
       value: getIt<FavouriteBloc>()..add(GetFavouriteEvent()),
@@ -34,21 +30,34 @@ print(widget.subjectType)   ; super.initState();
         length: 2,
         child: Scaffold(
           backgroundColor: Theme.of(context).colorScheme.surfaceTint,
-          appBar:AppAppBar(title: 'المفضلة',isFavourite:true,isBack: true,),
+          appBar: AppAppBar(
+            title: 'المفضلة',
+            isFavourite: true,
+            isBack: true,
+          ),
           body: Padding(
             padding: EdgeInsets.only(
               top: height(25),
               right: width(2),
               left: width(2),
             ),
-            child: TabBarView(
-              children: [
-                // Multi Choice tab (answer != 2)
-                _buildFilteredFavoritesList(context, false),
+            child: BlocBuilder<FavouriteBloc, FavouriteState>(
+              builder: (context, state) {
+                return RefreshIndicator(
+                  onRefresh: () async {
+                    context.read<FavouriteBloc>().add(GetFavouriteEvent());
+                  },
+                  child: TabBarView(
+                    children: [
+                      // Multi Choice tab (answer != 2)
+                      _buildFilteredFavoritesList(context, false),
 
-                // True/False tab (answer == 2)
-                _buildFilteredFavoritesList(context, true),
-              ],
+                      // True/False tab (answer == 2)
+                      _buildFilteredFavoritesList(context, true),
+                    ],
+                  ),
+                );
+              },
             ),
           ),
         ),
@@ -64,32 +73,56 @@ print(widget.subjectType)   ; super.initState();
         return BlocStateDataBuilder(
           data: state,
           onSuccess: (allQuestions) {
-            // Filter questions based on the tab type
-            final filteredQuestions = allQuestions?.where((question) {
+            // First filter by question type (true/false vs multi-choice)
+            var filteredQuestions = allQuestions?.where((question) {
               return isTrueFalse
                   ? question.answers.length == 2
                   : question.answers.length != 2;
             }).toList();
+
+            // Additional filtering based on subjectType and chapter numbers
+            if (widget.subjectType == "1" || widget.subjectType == "2") {
+              filteredQuestions = filteredQuestions?.where((question) {
+                final chapter = question.chapterEn;
+
+                if (widget.subjectType == "1") {
+                  return !_matchesChapters(chapter, ["12", "13", "15"]);
+                } else if (widget.subjectType == "2") {
+                  return _matchesChapters(chapter, ["12", "13", "15"]);
+                }
+
+                return false;
+              }).toList();
+            }
 
             if (filteredQuestions?.isEmpty ?? true) {
               return Center(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(Images.boy15,height: height(300),width: width(250),),
-                    Text("المفضلة فارغة",style: Theme.of(context).textTheme.titleLarge!.copyWith(color: Theme.of(context).primaryColor,fontSize: 22),)
+                    Image.asset(
+                      Images.boy15,
+                      height: height(300),
+                      width: width(250),
+                    ),
+                    Text(
+                      "المفضلة فارغة",
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                            color: Theme.of(context).primaryColor,
+                            fontSize: 22,
+                          ),
+                    ),
                   ],
                 ),
-
               );
             }
 
             return ListView.builder(
               itemCount: filteredQuestions!.length,
               itemBuilder: (context, index) {
-                final question = filteredQuestions[index];
+                final question = filteredQuestions![index];
                 return Padding(
-                  padding:  EdgeInsets.only(top: height(30)),
+                  padding: EdgeInsets.only(top: height(30)),
                   child: OsiCard(
                     question: question,
                     index: index,
@@ -101,5 +134,14 @@ print(widget.subjectType)   ; super.initState();
         );
       },
     );
+  }
+
+  bool _matchesChapters(String chapter, List<String> allowedChapters) {
+    for (final allowedChapter in allowedChapters) {
+      if (chapter.contains(allowedChapter)) {
+        return true;
+      }
+    }
+    return false;
   }
 }

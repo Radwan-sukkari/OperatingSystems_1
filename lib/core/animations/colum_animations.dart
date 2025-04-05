@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:operating_systems/core/app/size.dart';
 
 class ColumnAnimations extends StatelessWidget {
   final int duration;

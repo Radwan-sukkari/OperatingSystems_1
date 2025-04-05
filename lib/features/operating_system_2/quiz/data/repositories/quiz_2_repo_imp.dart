@@ -3,6 +3,7 @@ import 'package:injectable/injectable.dart';
 import 'package:operating_systems/core/app/network_repository.dart';
 import 'package:operating_systems/core/errors/failuer.dart';
 import 'package:operating_systems/core/injection/injection.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/data/model/definitions_random_quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_random_model.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/data/data_sources/quiz_2_data_source.dart';
@@ -42,5 +43,17 @@ class QuizOperatingSystem2ImpRepo implements QuizOperatingSystem2Repo {
       localDataFetcher: null,
     );
     return trueFalse2Quiz;
+  }
+
+  @override
+  Future<Either<Failure, DefinitionsRandomQuizModel>> definitionsRandom2Quiz() {
+    networkRepository = getIt<NetworkRepository>();
+    final definitionsRandom2Quiz =
+        networkRepository<DefinitionsRandomQuizModel>(
+      remoteDataFetcher: () =>
+          quizOperatingSystem2DataSource.definitionsRandom2Quiz(),
+      localDataFetcher: null,
+    );
+    return definitionsRandom2Quiz;
   }
 }

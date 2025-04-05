@@ -6,6 +6,7 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/data_source/study_data_source.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
+import 'package:operating_systems/features/operating_system_1/study/data/model/important_question_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/domain/repositories/study_repo.dart';
 
@@ -39,6 +40,15 @@ class StudyRepoImp implements StudyRepo {
     networkRepository = getIt<NetworkRepository>();
     final definitions = networkRepository<SystemDefinitionsModel>(
       remoteDataFetcher: () => studyDataSource.definitions(),
+    );
+    return definitions;
+  }
+
+  @override
+  Future<Either<Failure, ImportantQuestionModel>> importantQuestions() {
+    networkRepository = getIt<NetworkRepository>();
+    final definitions = networkRepository<ImportantQuestionModel>(
+      remoteDataFetcher: () => studyDataSource.importantQuestion(),
     );
     return definitions;
   }

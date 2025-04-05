@@ -23,6 +23,8 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/important_question/important_question_sreen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/important_question/show_full_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/choose_comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/study_section_study_screen.dart';
@@ -86,8 +88,10 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
       name: DefinitionsScreen.name,
       builder: (context, state) {
         final definitions = state.extra as List<Definition>;
+        final index = int.tryParse(state.uri.queryParameters['index'] ?? '0') ?? 0;
+
         return DefinitionsScreen(
-          definitions: definitions,
+          definitions: definitions, index: index,
         );
       }),
   GoRoute(
@@ -131,13 +135,29 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => ChooseAlgorithmsScreen(),
   ),
   GoRoute(
+    path: ShowFullScreen.path,
+    name: ShowFullScreen.name,
+    builder: (context, state) {
+      final String question = state.uri.queryParameters['question']!;
+      final String imagePath = state.uri.queryParameters['imagePath']!;
+
+      return  ShowFullScreen(question: question, imagePath: imagePath,);
+    }
+  ),
+  GoRoute(
+    path: ImportantQuestionScreen.path,
+    name: ImportantQuestionScreen.name,
+    builder: (context, state) => ImportantQuestionScreen(),
+  ),
+  GoRoute(
       path: ComparisonsScreen.path,
       name: ComparisonsScreen.name,
       builder: (context, state) {
         final Comparisons = state.extra as List<Comparison>;
+        final String title = state.uri.queryParameters['title']!;
 
         return ComparisonsScreen(
-          comparisons: Comparisons,
+          comparisons: Comparisons, title: title,
         );
       }),
   GoRoute(

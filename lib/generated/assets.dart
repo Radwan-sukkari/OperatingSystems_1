@@ -46,6 +46,9 @@ class Assets {
   static const String imagesSplashScreen = 'assets/images/splash_screen.png';
   static const String jsonAlgorithms = 'assets/json/algorithms.json';
   static const String jsonComparison = 'assets/json/comparison.json';
+  static const String jsonDefinitions2RandomQuiz = 'assets/json/definitions_2_random_quiz.json';
+  static const String jsonDefinitionsRandomQuiz = 'assets/json/definitions_random_quiz.json';
+  static const String jsonImportantQuestion = 'assets/json/important_question.json';
   static const String jsonOsi2quiz = 'assets/json/osi2quiz.json';
   static const String jsonRandomQuiz = 'assets/json/random_quiz.json';
   static const String jsonRandomQuizOsi2 = 'assets/json/random_quiz_osi2.json';

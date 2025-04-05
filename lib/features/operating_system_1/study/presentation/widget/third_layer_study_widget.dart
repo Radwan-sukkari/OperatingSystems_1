@@ -10,7 +10,7 @@ class ThirdLayerStudyWidget extends StatelessWidget {
     return
       Positioned(
       right: 0,
-      top: -75,
+      top:height(-75),
       child: Image.asset(
         Images.boyQuiz,
         height: height(90),

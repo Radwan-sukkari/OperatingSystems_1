@@ -21,7 +21,7 @@ class ContainerRowCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: height(200),
+        height: height(210),
         width: width(180),
         decoration: BoxDecoration(
           color: Colors.white38,
