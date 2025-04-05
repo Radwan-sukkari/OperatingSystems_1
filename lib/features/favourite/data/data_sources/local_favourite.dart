@@ -1,3 +1,6 @@
+import 'dart:convert';
+
+import 'package:crypto/crypto.dart';
 import 'package:dartz/dartz.dart';
 import 'package:hive/hive.dart';
 import 'package:injectable/injectable.dart';
@@ -18,9 +21,9 @@ class FavoriteLocalDataSourceImpl implements FavoriteLocalDataSource {
 
   @override
   Future<Unit> addToFavorite(Question question) async {
-    await   box.put(question.questionAr, question);
+    final key = generateSafeKey(question.questionAr);
+    await box.put(key, question);
     return unit;
-
   }
 
   @override
@@ -32,5 +35,10 @@ class FavoriteLocalDataSourceImpl implements FavoriteLocalDataSource {
   @override
   Future<List<Question>> getFavorites() async {
     return box.values.toList();
+  }
+
+
+  String generateSafeKey(String input) {
+    return sha256.convert(utf8.encode(input)).toString();
   }
 }

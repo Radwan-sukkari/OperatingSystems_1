@@ -121,25 +121,25 @@ extension GetItInjectableX on _i174.GetIt {
         _i945.QuizOperatingSystem2ImpRepo(
             quizOperatingSystem2DataSource:
                 gh<_i955.QuizOperatingSystem2DataSource>()));
+    gh.lazySingleton<_i750.DefinitionsRandom2QuizUseCase>(() =>
+        _i750.DefinitionsRandom2QuizUseCase(
+            quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i724.Osi2QuizUseCase>(() => _i724.Osi2QuizUseCase(
         quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i799.RandomQuiz2UseCase>(() => _i799.RandomQuiz2UseCase(
         quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i589.TrueFalse2UseCase>(() => _i589.TrueFalse2UseCase(
         quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
-    gh.lazySingleton<_i750.DefinitionsRandom2QuizUseCase>(() =>
-        _i750.DefinitionsRandom2QuizUseCase(
-            quizOperatingSystem2Repo: gh<_i963.QuizOperatingSystem2Repo>()));
     gh.lazySingleton<_i370.StudyRepo>(() =>
         _i1023.StudyRepoImp(studyDataSource: gh<_i1021.StudyDataSource>()));
+    gh.lazySingleton<_i589.DefinitionsRandomQuizUseCse>(() =>
+        _i589.DefinitionsRandomQuizUseCse(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i453.OsiQuizUseCase>(
         () => _i453.OsiQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i862.RandomQuizUseCase>(
         () => _i862.RandomQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
     gh.lazySingleton<_i668.TrueFalseQuizUseCase>(
         () => _i668.TrueFalseQuizUseCase(quizRepo: gh<_i1006.QuizRepo>()));
-    gh.lazySingleton<_i589.DefinitionsRandomQuizUseCse>(() =>
-        _i589.DefinitionsRandomQuizUseCse(quizRepo: gh<_i1006.QuizRepo>()));
     gh.factory<_i438.QuizFeatureBloc>(() => _i438.QuizFeatureBloc(
           gh<_i453.OsiQuizUseCase>(),
           gh<_i668.TrueFalseQuizUseCase>(),
