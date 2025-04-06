@@ -4,9 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/choose_subject.dart';
 import 'package:operating_systems/core/app/nav_bar.dart';
 import 'package:operating_systems/core/app/nav_bar2.dart';
-import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject.dart';
-import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 
 import '../../resources/resources.dart';
 

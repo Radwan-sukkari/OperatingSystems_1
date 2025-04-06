@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
@@ -7,6 +8,8 @@ import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/favourite/presentation/manager/favourite/favourite_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/widget/about_subject_container.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/osi_card.dart';
 import 'package:operating_systems/resources/resources.dart';
 
@@ -117,18 +120,46 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
               );
             }
 
-            return ListView.builder(
-              itemCount: filteredQuestions!.length,
-              itemBuilder: (context, index) {
-                final question = filteredQuestions![index];
-                return Padding(
-                  padding: EdgeInsets.only(top: height(30)),
-                  child: OsiCard(
-                    question: question,
-                    index: index,
+            return SingleChildScrollView(
+              child: Column(
+                children: [
+                  if (filteredQuestions?.isNotEmpty ?? false)
+                    Padding(
+                      padding:  EdgeInsets.symmetric(horizontal: width(12)),
+                      child: AboutSubjectContainer(
+                        title1: " اختبار لاسئلة المفضلة",
+                        title2: '  ',
+                        function: () {
+                          context.pushNamed(
+                            QuizScreen.name,
+                            extra: filteredQuestions,
+                            queryParameters: {
+                              "chapterEnglish": "quiz",
+                              "chapterArabic": "كويز التعاريق",
+                            },
+                          );
+                        },
+                      ),
+                    ),
+                  SizedBox(height: height(16)),
+                  ListView.builder(
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    padding: EdgeInsets.only(bottom: height(30)),
+                    itemCount: filteredQuestions!.length,
+                    itemBuilder: (context, index) {
+                      final question = filteredQuestions![index];
+                      return Padding(
+                        padding: EdgeInsets.only(top: height(30)),
+                        child: OsiCard(
+                          question: question,
+                          index: index,
+                        ),
+                      );
+                    },
                   ),
-                );
-              },
+                ],
+              ),
             );
           },
         );
