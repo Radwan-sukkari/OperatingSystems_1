@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String fontsCairoRegular = 'assets/fonts/Cairo-Regular.ttf';
+  static const String iconIcon = 'assets/icon/icon.png';
   static const String images1 = 'assets/images/1.jpg';
   static const String images10 = 'assets/images/10.jpg';
   static const String images11 = 'assets/images/11.jpg';
@@ -15,6 +16,7 @@ class Assets {
   static const String images18 = 'assets/images/18.jpg';
   static const String images19 = 'assets/images/19.jpg';
   static const String images2 = 'assets/images/2.jpg';
+  static const String images20 = 'assets/images/20.jpg';
   static const String images3 = 'assets/images/3.jpg';
   static const String images4 = 'assets/images/4.jpg';
   static const String images5 = 'assets/images/5.jpg';

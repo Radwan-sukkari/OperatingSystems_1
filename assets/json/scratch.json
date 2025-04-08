@@ -104,24 +104,24 @@
             {
               "answer_en": "The earliest digital computers of the 1940s and 1950s included operating systems.",
               "answer_ar": "أجهزة الكمبيوتر الرقمية الأولى في الأربعينيات والخمسينيات تضمنت أنظمة تشغيل.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Programmers often entered programs in machine language one bit at a time using mechanical switches.",
-              "answer_ar": "كان المبرمجون يدخلون البرامج بلغة الآلة بتة واحدة في كل مرة باستخدام المفاتيح الميكانيكية.",
+              "answer_ar": "كان المبرمجون يدخلون البرامج بلغة الآلة  بمعدل بت في كل مرة باستخدام المفاتيح الميكانيكية.",
               "is_correct": false
             },
             {
               "answer_en": "All of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "chapter_en": "Chapter 1",
           "chapter_ar": "الفصل الأول",
-          "question_en": "Which of the following statements about the single-stream batch-processing systems of the 1950s is false?",
+          "question_en": "Which of the following stateme nts about the single-stream batch-processing systems of the 1950s is false?",
           "question_ar": "أي من العبارات التالية عن أنظمة معالجة الدُفعات ذات التدفق الواحد في الخمسينيات خاطئة؟",
           "answers": [
             {
@@ -141,7 +141,7 @@
             },
             {
               "answer_en": "An entire program had to be loaded into memory for the program to run.",
-              "answer_ar": "كان يجب تحميل البرنامج بالكامل في الذاكرة لكي يعمل.",
+              "answer_ar": " يجب تحميل البرنامج بالكامل في الذاكرة لكي يعمل.",
               "is_correct": false
             }
           ]
@@ -176,12 +176,13 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Which of the following was a benefit of the timesharing systems of the 1960s?",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Which of the following was a benefit of the timesharing systems of the 1960s?",
           "question_ar": "أي مما يلي كان فائدة لأنظمة المشاركة الزمنية في الستينيات؟",
           "answers": [
             {
               "answer_en": "The average turnaround time decreased significantly.",
-              "answer_ar": "انخفض متوسط وقت الاستجابة بشكل كبير.",
+              "answer_ar": "انخفض متوسط وقت التنفيذ بشكل كبير.",
               "is_correct": false
             },
             {
@@ -192,12 +193,12 @@
             {
               "answer_en": "Multiple interactive users could operate simultaneously.",
               "answer_ar": "يمكن لعدة مستخدمين تفاعليين العمل في نفس الوقت.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "All of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
@@ -231,8 +232,9 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "During the 1970s, communication throughout the United States and across local area networks increased due to the proliferation of the Department of Defense’s ________ communication standards and Xerox’s ________ standard.",
-          "question_ar": "خلال السبعينيات، زادت الاتصالات في جميع أنحاء الولايات المتحدة وعبر الشبكات المحلية بسبب انتشار معايير الاتصالات ________ لوزارة الدفاع ومعيار ________ لشركة Xerox.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "During the 1970s, communication throughout the United States and across local area networks increased due to the proliferation of the Department of Defense’s ________ communication standards and Xerox’s ________ standard.",
+          "question_ar": "خلال السبعينيات، زادت الاتصالات في جميع أنحاء الولايات المتحدة وعبر الشبكات المنطقة المحلية بسبب انتشار معايير الاتصال الخاصة ________ لوزارة الدفاع ومعيار ________ لشركة Xerox.",
           "answers": [
             {
               "answer_en": "HTTP, TCP/IP",
@@ -287,7 +289,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "In a distributed computing environment, clients are ________.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "In a distributed computing environment, clients are ________.",
           "question_ar": "في بيئة الحوسبة الموزعة، العملاء هم ________.",
           "answers": [
             {
@@ -341,7 +344,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
           "question_ar": "________ يساعد في ضمان توجيه الرسائل بشكل صحيح من المرسل إلى المستقبل وأن تصل الرسائل سليمة.",
           "answers": [
             {
@@ -368,7 +372,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
           "question_ar": "طور تيم بيرنرز لي ________ في عام 1990.",
           "answers": [
             {
@@ -395,17 +400,18 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
-          "question_ar": "جعل تطوير الإنترنت وشبكة الويب العالمية ________ شائعًا بين أجهزة الكمبيوتر الشخصية.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
+          "question_ar": "أدى تطوير الإنترنت وشبكة الويب العالمية ________  أمرا شائعًا بين أجهزة الكمبيوتر الشخصية.",
           "answers": [
             {
               "answer_en": "Distributed computing",
               "answer_ar": "الحوسبة الموزعة",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "Object-oriented programming",
-              "answer_ar": "البرمجة الشيئية",
+              "answer_ar": "البرمجة الموجهة للكائنات",
               "is_correct": false
             },
             {
@@ -416,13 +422,14 @@
             {
               "answer_en": "Open-source software",
               "answer_ar": "البرمجيات مفتوحة المصدر",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
           "question_ar": "يتم توزيع الكود المصدري لبرامج ________ بحرية، مما يسمح للمبرمجين بفحص البرنامج وتعديله قبل تجميعه وتنفيذه.",
           "answers": [
             {
@@ -449,7 +456,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
           "question_ar": "________ تشمل مجموعة من المعايير التي تسمح للتطبيقات بتبادل البيانات عبر الإنترنت.",
           "answers": [
             {
@@ -476,7 +484,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A system that exhibits massive parallelism ________.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "A system that exhibits massive parallelism ________.",
           "question_ar": "النظام الذي يعرض التوازي الهائل ________.",
           "answers": [
             {
@@ -503,7 +512,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
           "question_ar": "________ يسمح للمبرمجين بتنفيذ مهام النظام المعقدة ببساطة عن طريق استدعاء وظائف محددة مسبقًا.",
           "answers": [
             {
@@ -530,13 +540,14 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "An application base is the combination of the ________ and operating system environment in which applications are developed.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "An application base is the combination of the ________ and operating system environment in which applications are developed.",
           "question_ar": "قاعدة التطبيق هي مزيج من ________ وبيئة نظام التشغيل التي يتم فيها تطوير التطبيقات.",
           "answers": [
             {
               "answer_en": "hardware",
               "answer_ar": "الأجهزة",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "software",
@@ -546,7 +557,7 @@
             {
               "answer_en": "both a and b",
               "answer_ar": "كل من أ و ب",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "neither a nor b",
@@ -557,8 +568,9 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "________ systems are characterized by a minimal amount of code, specialized power management resources and user-friendly interfaces.",
-          "question_ar": "تتميز أنظمة ________ بكمية قليلة من التعليمات البرمجية، وموارد متخصصة لإدارة الطاقة، وواجهات سهلة الاستخدام.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "________ systems are characterized by a minimal amount of code, specialized power management resources and user-friendly interfaces.",
+          "question_ar": "  ________ تتميز الأنظمة بالحد الأدنى  من التعليمات البرمجية، وموارد متخصصة لإدارة الطاقة، وواجهات سهلة الاستخدام.",
           "answers": [
             {
               "answer_en": "Real-time",
@@ -584,250 +596,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "In a distributed computing environment, clients are ________.",
-          "question_ar": "في بيئة الحوسبة الموزعة، العملاء هم ________.",
-          "answers": [
-            {
-              "answer_en": "computers that perform requested services",
-              "answer_ar": "أجهزة الكمبيوتر التي تنفذ الخدمات المطلوبة",
-              "is_correct": false
-            },
-            {
-              "answer_en": "user computers that request remote services",
-              "answer_ar": "أجهزة الكمبيوتر الخاصة بالمستخدم التي تطلب خدمات عن بعد",
-              "is_correct": true
-            },
-            {
-              "answer_en": "often dedicated to one type of task, such as rendering graphics or managing databases",
-              "answer_ar": "غالبًا ما تكون مخصصة لنوع واحد من المهام، مثل عرض الرسومات أو إدارة قواعد البيانات",
-              "is_correct": false
-            },
-            {
-              "answer_en": "none of the above",
-              "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The ________ is the grandparent of today’s Internet.",
-          "question_ar": "________ هو الجد الأكبر للإنترنت اليوم.",
-          "answers": [
-            {
-              "answer_en": "ARPAnet",
-              "answer_ar": "ARPAnet",
-              "is_correct": true
-            },
-            {
-              "answer_en": "TCP/IP protocol",
-              "answer_ar": "بروتوكول TCP/IP",
-              "is_correct": false
-            },
-            {
-              "answer_en": "Ethernet",
-              "answer_ar": "Ethernet",
-              "is_correct": false
-            },
-            {
-              "answer_en": "World Wide Web",
-              "answer_ar": "شبكة الويب العالمية",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
-          "question_ar": "________ يساعد في ضمان توجيه الرسائل بشكل صحيح من المرسل إلى المستقبل وأن تصل الرسائل سليمة.",
-          "answers": [
-            {
-              "answer_en": "HyperText Markup Language (HTML)",
-              "answer_ar": "لغة ترميز النص الفائق (HTML)",
-              "is_correct": false
-            },
-            {
-              "answer_en": "Internet Protocol (IP)",
-              "answer_ar": "بروتوكول الإنترنت (IP)",
-              "is_correct": true
-            },
-            {
-              "answer_en": "Transmission Control Protocol (TCP)",
-              "answer_ar": "بروتوكول التحكم في الإرسال (TCP)",
-              "is_correct": false
-            },
-            {
-              "answer_en": "The Ethernet standard",
-              "answer_ar": "معيار Ethernet",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
-          "question_ar": "طور تيم بيرنرز لي ________ في عام 1990.",
-          "answers": [
-            {
-              "answer_en": "TCP/IP standard",
-              "answer_ar": "معيار TCP/IP",
-              "is_correct": false
-            },
-            {
-              "answer_en": "World Wide Web (WWW)",
-              "answer_ar": "شبكة الويب العالمية (WWW)",
-              "is_correct": true
-            },
-            {
-              "answer_en": "Internet",
-              "answer_ar": "الإنترنت",
-              "is_correct": false
-            },
-            {
-              "answer_en": "graphical user interface (GUI)",
-              "answer_ar": "واجهة المستخدم الرسومية (GUI)",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
-          "question_ar": "جعل تطور الإنترنت وشبكة الويب العالمية ________ شائعًا بين أجهزة الكمبيوتر الشخصية.",
-          "answers": [
-            {
-              "answer_en": "distributed computing",
-              "answer_ar": "الحوسبة الموزعة",
-              "is_correct": true
-            },
-            {
-              "answer_en": "object-oriented programming",
-              "answer_ar": "البرمجة الشيئية",
-              "is_correct": false
-            },
-            {
-              "answer_en": "supercomputing",
-              "answer_ar": "الحوسبة الفائقة",
-              "is_correct": false
-            },
-            {
-              "answer_en": "open-source software",
-              "answer_ar": "البرمجيات مفتوحة المصدر",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
-          "question_ar": "يتم توزيع الكود المصدري لبرمجيات ________ بحرية، مما يسمح للمبرمجين بفحصها وتعديلها قبل تجميعها وتنفيذها.",
-          "answers": [
-            {
-              "answer_en": "proprietary",
-              "answer_ar": "الملكية",
-              "is_correct": false
-            },
-            {
-              "answer_en": "open-source",
-              "answer_ar": "مفتوحة المصدر",
-              "is_correct": true
-            },
-            {
-              "answer_en": "free",
-              "answer_ar": "مجانية",
-              "is_correct": false
-            },
-            {
-              "answer_en": "all of the above",
-              "answer_ar": "كل ما سبق",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
-          "question_ar": "________ تشمل مجموعة من المعايير التي تسمح للتطبيقات بتبادل البيانات عبر الإنترنت.",
-          "answers": [
-            {
-              "answer_en": "Web browsers",
-              "answer_ar": "متصفحات الويب",
-              "is_correct": false
-            },
-            {
-              "answer_en": "Web services",
-              "answer_ar": "خدمات الويب",
-              "is_correct": true
-            },
-            {
-              "answer_en": "Distributed computing",
-              "answer_ar": "الحوسبة الموزعة",
-              "is_correct": false
-            },
-            {
-              "answer_en": "none of the above",
-              "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A system that exhibits massive parallelism ________.",
-          "question_ar": "النظام الذي يظهر توازيًا هائلاً ________.",
-          "answers": [
-            {
-              "answer_en": "has a large number of processors that perform many independent parts of computations in parallel",
-              "answer_ar": "لديه عدد كبير من المعالجات التي تنفذ العديد من أجزاء الحسابات المستقلة بشكل متوازي",
-              "is_correct": true
-            },
-            {
-              "answer_en": "has one processor that performs many independent parts of computations at the same time",
-              "answer_ar": "لديه معالج واحد ينفذ العديد من أجزاء الحسابات المستقلة في نفس الوقت",
-              "is_correct": false
-            },
-            {
-              "answer_en": "communicates over a network to supply a specific set of operations that other applications can invoke",
-              "answer_ar": "يتواصل عبر الشبكة لتوفير مجموعة محددة من العمليات التي يمكن للتطبيقات الأخرى استدعاؤها",
-              "is_correct": false
-            },
-            {
-              "answer_en": "none of the above",
-              "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
-          "question_ar": "________ يسمح للمبرمجين بتنفيذ مهام نظام معقدة ببساطة عن طريق استدعاء وظائف محددة مسبقًا.",
-          "answers": [
-            {
-              "answer_en": "system call",
-              "answer_ar": "استدعاء النظام",
-              "is_correct": false
-            },
-            {
-              "answer_en": "application programming interface (API)",
-              "answer_ar": "واجهة برمجة التطبيقات (API)",
-              "is_correct": true
-            },
-            {
-              "answer_en": "Web service",
-              "answer_ar": "خدمة الويب",
-              "is_correct": false
-            },
-            {
-              "answer_en": "none of the above",
-              "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
-            }
-          ]
-        },
-        {
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Virtual machines promote ________, the ability for software to run on multiple platforms.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Virtual machines promote ________, the ability for software to run on multiple platforms.",
           "question_ar": "تعزز الآلات الافتراضية ________، القدرة على تشغيل البرمجيات على منصات متعددة.",
           "answers": [
             {
@@ -854,12 +624,13 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A user may interact with an operating system via an application such as ________.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "A user may interact with an operating system via an application such as ________.",
           "question_ar": "يمكن للمستخدم التفاعل مع نظام التشغيل عبر تطبيق مثل ________.",
           "answers": [
             {
               "answer_en": "a command-line interpreter",
-              "answer_ar": "مفسر سطر الأوامر",
+              "answer_ar": "مترجم سطر الأوامر",
               "is_correct": false
             },
             {
@@ -870,18 +641,19 @@
             {
               "answer_en": "a graphical user interface (GUI)",
               "answer_ar": "واجهة المستخدم الرسومية (GUI)",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "either b) or c)",
               "answer_ar": "إما ب) أو ج)",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "The ________ is the part of the operating system that determines when and for how long a process executes.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "The ________ is the part of the operating system that determines when and for how long a process executes.",
           "question_ar": "________ هو جزء من نظام التشغيل الذي يحدد متى وكم من الوقت يتم تنفيذ العملية.",
           "answers": [
             {
@@ -908,7 +680,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "An efficient operating system generally achieves ________ throughput and ________ average turnaround time.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "An efficient operating system generally achieves ________ throughput and ________ average turnaround time.",
           "question_ar": "نظام التشغيل الفعال يحقق عمومًا ________ إنتاجية و ________ متوسط وقت الاستجابة.",
           "answers": [
             {
@@ -935,7 +708,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ operating system can adapt well to new technologies and can be modified to perform tasks beyond its original design; a(n) ________ operating system is designed to operate on many hardware configurations.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "A(n) ________ operating system can adapt well to new technologies and can be modified to perform tasks beyond its original design; a(n) ________ operating system is designed to operate on many hardware configurations.",
           "question_ar": "نظام التشغيل ________ يمكنه التكيف جيدًا مع التقنيات الجديدة ويمكن تعديله لأداء مهام تتجاوز تصميمه الأصلي؛ نظام التشغيل ________ مصمم للعمل على العديد من تكوينات الأجهزة.",
           "answers": [
             {
@@ -962,13 +736,14 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Which type of system features direct intercommunication between every component, making the system highly efficient?",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Which type of system features direct intercommunication between every component, making the system highly efficient?",
           "question_ar": "أي نوع من الأنظمة يتميز بالاتصال المباشر بين كل مكون، مما يجعل النظام فعالاً للغاية؟",
           "answers": [
             {
               "answer_en": "monolithic operating system",
               "answer_ar": "نظام تشغيل أحادي",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "layered operating system",
@@ -978,23 +753,24 @@
             {
               "answer_en": "distributed operating system",
               "answer_ar": "نظام تشغيل موزع",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "microkernel operating system",
-              "answer_ar": "نظام تشغيل بالنواة الصغيرة",
+              "answer_ar": "نظام تشغيل النواة ",
               "is_correct": false
             }
           ]
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Which of the following statements about layered operating systems is true?",
-          "question_ar": "أي من العبارات التالية حول أنظمة التشغيل المتعددة الطبقات صحيح؟",
+          "chapter_ar": "الفصل الأول",
+           "question_en": "Which of the following statements about layered operating systems is true?",
+          "question_ar": "أي من العبارات التالية حول أنظمة التشغيل  الطبقات صحيح؟",
           "answers": [
             {
               "answer_en": "Layered operating systems are easier to modify than monolithic operating systems.",
-              "answer_ar": "أنظمة التشغيل المتعددة الطبقات أسهل في التعديل من أنظمة التشغيل الأحادية.",
+              "answer_ar": "أنظمة التشغيل المتعددة الطبقات أسهل في التعديل من أنظمة التشغيل المتجانسة .",
               "is_correct": false
             },
             {
@@ -1016,8 +792,9 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "In a microkernel architecture, the kernel typically includes only a small number of services, such as ________; most other services, such as ________, execute outside of the kernel with a lower privilege level.",
-          "question_ar": "في بنية النواة الصغيرة، تتضمن النواة عادةً عددًا صغيرًا من الخدمات، مثل ________؛ معظم الخدمات الأخرى، مثل ________، يتم تنفيذها خارج النواة بمستوى امتياز أقل.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "In a microkernel architecture, the kernel typically includes only a small number of services, such as ________; most other services, such as ________, execute outside of the kernel with a lower privilege level.",
+          "question_ar": "في بنية النواة الدقيقة، تتضمن النواة عادةً عددًا صغيرًا من الخدمات، مثل ________؛ معظم الخدمات الأخرى، مثل ________، يتم تنفيذها خارج النواة بمستوى امتياز أقل.",
           "answers": [
             {
               "answer_en": "device management, networking",
@@ -1032,18 +809,19 @@
             {
               "answer_en": "interprocess communication, low-level memory management",
               "answer_ar": "الاتصال بين العمليات، إدارة الذاكرة منخفضة المستوى",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "low-level memory management, file system management",
               "answer_ar": "إدارة الذاكرة منخفضة المستوى، إدارة نظام الملفات",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Advantages to distributed systems include:",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Advantages to distributed systems include:",
           "question_ar": "تشمل مزايا الأنظمة الموزعة:",
           "answers": [
             {
@@ -1070,7 +848,8 @@
         },
         {
           "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",          "question_en": "Sun’s ________ enables users to access remote files as if the files were on the local computer.",
+          "chapter_ar": "الفصل الأول",
+          "question_en": "Sun’s ________ enables users to access remote files as if the files were on the local computer.",
           "question_ar": "________ من Sun يمكن المستخدمين من الوصول إلى الملفات البعيدة كما لو كانت الملفات على الكمبيوتر المحلي.",
           "answers": [
             {
@@ -1135,7 +914,7 @@
           "chapter_ar": "الفصل الثاني",
 
           "question_en": "From the user’s point of view, plug-and-play devices that are added to the system typically are ready to use ________.",
-          "question_ar": "من وجهة نظر المستخدم، تكون الأجهزة التي تعمل بتقنية plug-and-play والتي يتم إضافتها إلى النظام جاهزة للاستخدام ________.",
+          "question_ar": "من وجهة نظر المستخدم، عادة ما تكون الأجهزة التوصيل والتشغيل  والتي يتم إضافتها إلى النظام جاهزة للاستخدام ________.",
           "answers": [
             {
               "answer_en": "after logging off and logging back onto the system.",
@@ -1163,7 +942,7 @@
           "chapter_en": "Chapter 2",
           "chapter_ar": "الفصل الثاني",
           "question_en": "Which of the following hardware components are required to execute instructions in a general-purpose computer?",
-          "question_ar": "أي من مكونات الأجهزة التالية مطلوبة لتنفيذ التعليمات في كمبيوتر عام الاستخدام؟",
+          "question_ar": "أي من مكونات الأجهزة التالية مطلوبة لتنفيذ التعليمات في كمبيوتر للأغراض العامة ؟",
           "answers": [
             {
               "answer_en": "main memory",
@@ -1218,7 +997,6 @@
         {
           "chapter_en": "Chapter 2",
           "chapter_ar": "الفصل الثاني",
-
           "question_en": "A(n) ________ is a piece of hardware that executes a set of machine-language instructions.",
           "question_ar": "________ هو قطعة من الأجهزة تنفذ مجموعة من تعليمات لغة الآلة.",
           "answers": [
@@ -1505,7 +1283,7 @@
             {
               "answer_en": "a controller",
               "answer_ar": "وحدة التحكم",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "the processor scheduler",
@@ -1520,7 +1298,7 @@
             {
               "answer_en": "interrupts",
               "answer_ar": "المقاطعات",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
@@ -1639,7 +1417,7 @@
         {
           "chapter_en": "Chapter 2",
           "chapter_ar": "الفصل الثاني",
-          "question_en": "As computer architectures have evolved, the number of privileged instructions (i.e., those instructions not accessible in user mode) has ________.",
+          "question_en": "As computer architect ures have evolved, the number of privileged instructions (i.e., those instructions not accessible in user mode) has ________.",
           "question_ar": "مع تطور بنية الكمبيوتر، انخفض عدد التعليمات المميزة (أي تلك التعليمات التي لا يمكن الوصول إليها في وضع المستخدم) ________.",
           "answers": [
             {
