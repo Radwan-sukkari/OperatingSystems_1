@@ -29,6 +29,7 @@ class FavoriteLocalDataSourceImpl implements FavoriteLocalDataSource {
   @override
   Future<Unit> removeFromFavorite(String id) async {
     await box.delete(id);
+    print("removed");
     return unit;
   }
 

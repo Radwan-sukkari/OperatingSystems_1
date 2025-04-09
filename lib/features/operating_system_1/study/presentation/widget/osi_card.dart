@@ -6,6 +6,7 @@ import 'package:operating_systems/features/favourite/presentation/manager/favour
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/first_layer_study_widget.dart';
 import 'package:operating_systems/resources/resources.dart';
+import 'package:phosphor_flutter/phosphor_flutter.dart';
 
 import 'second_layer_study_widget.dart';
 import 'third_layer_study_widget.dart';
@@ -27,13 +28,17 @@ class OsiCard extends StatelessWidget {
           clipBehavior: Clip.none,
           children: [
             FirstLayerStudyWidget(question: question),
-            SecondLayerStudyWidget(questionNumber: index + 1, chapter: question.chapterAr,),
+            SecondLayerStudyWidget(
+              questionNumber: index + 1,
+              chapter: question.chapterAr,
+            ),
             ThirdLayerStudyWidget(),
             BlocBuilder<FavouriteBloc, FavouriteState>(
               builder: (context, state) {
                 final favouriteQuestions = state.getFavouriteState.data ?? [];
                 final isFavourite = favouriteQuestions.any((favQuestion) =>
                     favQuestion.questionAr == question.questionAr);
+                    print(isFavourite);
                 return Positioned(
                   left: 0,
                   top: -40,
@@ -42,15 +47,16 @@ class OsiCard extends StatelessWidget {
                       if (isFavourite) {
                         context
                             .read<FavouriteBloc>()
-                            .add(RemoveFavouriteEvent(id: question.questionAr));
+                            .add(RemoveFavouriteEvent(id:question.questionAr));
                       } else {
                         context
                             .read<FavouriteBloc>()
-                            .add(AddFavouriteEvent(question: question));
+                            .add(AddFavouriteEvent(question:question));
                       }
                     },
                     icon: Icon(
-                      Icons.star,
+                      PhosphorIcons.star(PhosphorIconsStyle.fill
+                      ),
                       size: 40,
                       color: isFavourite ? Colors.amber : Colors.grey,
                     ),

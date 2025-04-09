@@ -7,11 +7,11 @@ import 'package:operating_systems/features/favourite/data/data_sources/local_fav
 import 'package:operating_systems/features/favourite/domain/repositories/favourite_repo.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 
-
-@LazySingleton(as:FavouriteRepo )
+@LazySingleton(as: FavouriteRepo)
 class FavoriteRepositoryImpl implements FavouriteRepo {
   final FavoriteLocalDataSource localDataSource;
-late NetworkRepository networkRepository;
+  late NetworkRepository networkRepository;
+
   FavoriteRepositoryImpl(this.localDataSource);
 
   @override
@@ -43,6 +43,4 @@ late NetworkRepository networkRepository;
     );
     return removeFavourite;
   }
-
- 
 }

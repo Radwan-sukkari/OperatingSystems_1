@@ -10,6 +10,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/data/model/qu
 part 'favourite_event.dart';
 
 part 'favourite_state.dart';
+
 @injectable
 class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
   final AddToFavouriteUseCae addToFavourite;
@@ -31,11 +32,11 @@ class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
     final addFavourite = await addToFavourite(event.question);
 
     addFavourite.fold(
-          (failure) => emit(state.copWith(addFavouriteState: const BlocStateData.failed())),
-          (data) {
+      (failure) =>
+          emit(state.copWith(addFavouriteState: const BlocStateData.failed())),
+      (data) {
         emit(state.copWith(addFavouriteState: BlocStateData.success(data)));
         print("Added to favourites");
-        // استدعاء إعادة جلب المفضلة بعد الإضافة
         add(GetFavouriteEvent());
       },
     );
@@ -48,16 +49,15 @@ class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
     final removeFavourite = await removeFromFavouriteUseCase(event.id);
 
     removeFavourite.fold(
-          (failure) => emit(state.copWith(removeFavouriteState: const BlocStateData.failed())),
-          (data) {
+      (failure) => emit(
+          state.copWith(removeFavouriteState: const BlocStateData.failed())),
+      (data) {
         emit(state.copWith(removeFavouriteState: BlocStateData.success(data)));
         print("Removed from favourites");
-        // استدعاء إعادة جلب المفضلة بعد الحذف
         add(GetFavouriteEvent());
       },
     );
   }
-
 
   Future<void> getFavouriteEvent(
       GetFavouriteEvent event, Emitter<FavouriteState> emit) async {
@@ -66,9 +66,9 @@ class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
     final getFavourite = await getFavouriteUseCase();
 
     getFavourite.fold(
-          (failure) =>
+      (failure) =>
           emit(state.copWith(getFavouriteState: const BlocStateData.failed())),
-          (data) =>
+      (data) =>
           emit(state.copWith(getFavouriteState: BlocStateData.success(data))),
     );
   }
