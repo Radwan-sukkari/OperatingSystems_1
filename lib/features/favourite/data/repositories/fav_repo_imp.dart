@@ -35,7 +35,7 @@ class FavoriteRepositoryImpl implements FavouriteRepo {
   }
 
   @override
-  Future<Either<Failure, Unit>> removeFavorite(String id) {
+  Future<Either<Failure, Unit>> removeFavorite(int id) {
     networkRepository = getIt<NetworkRepository>();
 
     final removeFavourite = networkRepository<Unit>(

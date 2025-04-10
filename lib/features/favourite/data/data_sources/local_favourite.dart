@@ -9,7 +9,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/data/model/qu
 abstract class FavoriteLocalDataSource {
   Future<Unit> addToFavorite(Question question);
 
-  Future<Unit> removeFromFavorite(String id);
+  Future<Unit> removeFromFavorite(int id);
 
   Future<List<Question>> getFavorites();
 }
@@ -21,13 +21,12 @@ class FavoriteLocalDataSourceImpl implements FavoriteLocalDataSource {
 
   @override
   Future<Unit> addToFavorite(Question question) async {
-    final key = generateSafeKey(question.questionAr);
-    await box.put(question.questionAr, question);
+    await box.put(question.id, question);
     return unit;
   }
 
   @override
-  Future<Unit> removeFromFavorite(String id) async {
+  Future<Unit> removeFromFavorite(int id) async {
     await box.delete(id);
     print("removed");
     return unit;

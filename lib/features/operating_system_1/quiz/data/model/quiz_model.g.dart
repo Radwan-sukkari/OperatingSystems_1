@@ -65,6 +65,7 @@ class QuestionAdapter extends TypeAdapter<Question> {
       questionEn: fields[2] as String,
       questionAr: fields[3] as String,
       answers: (fields[4] as List).cast<Answer>(),
+      id: fields[6] as int,
       description: fields[5] as String?,
     );
   }
@@ -72,7 +73,7 @@ class QuestionAdapter extends TypeAdapter<Question> {
   @override
   void write(BinaryWriter writer, Question obj) {
     writer
-      ..writeByte(6)
+      ..writeByte(7)
       ..writeByte(0)
       ..write(obj.chapterEn)
       ..writeByte(1)
@@ -84,7 +85,9 @@ class QuestionAdapter extends TypeAdapter<Question> {
       ..writeByte(4)
       ..write(obj.answers)
       ..writeByte(5)
-      ..write(obj.description);
+      ..write(obj.description)
+      ..writeByte(6)
+      ..write(obj.id);
   }
 
   @override

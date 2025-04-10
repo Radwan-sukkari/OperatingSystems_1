@@ -6,6 +6,7 @@
       "title_ar": "جميع الفصول ",
       "questions": [
         {
+          "id": 423,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A web service allows programmers to perform complicated system tasks simply by calling predefined functions.",
@@ -25,6 +26,7 @@
           ]
         },
         {
+          "id": 424,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A motherboard is a piece of hardware that executes a set of machine language instructions.",
@@ -44,6 +46,7 @@
           ]
         },
         {
+          "id": 425,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A trap would occur in the IA-32 architecture if a process attempts to divide by 0.",
@@ -63,6 +66,7 @@
           ]
         },
         {
+          "id": 426,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A process can continue execution after its primary thread exits.",
@@ -82,6 +86,7 @@
           ]
         },
         {
+          "id": 427,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Lockstep synchronization improves the efficiency of a process by forcing threads to operate at the same speed.",
@@ -101,6 +106,7 @@
           ]
         },
         {
+          "id": 428,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The intermediate level scheduler determines which active process the system will assign to a processor when one next becomes available.",
@@ -120,6 +126,7 @@
           ]
         },
         {
+          "id": 429,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Operating system can divide main memory into portions called modules so that one process inadvertently or maliciously.",
@@ -139,6 +146,7 @@
           ]
         },
         {
+          "id": 430,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "When a page references a page that is not in main memory the processor generates a TLB miss.",
@@ -158,6 +166,7 @@
           ]
         },
         {
+          "id": 431,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual memory fetch strategies determine when a page or segment should be moved from secondary storage to registers.",
@@ -176,7 +185,7 @@
             }
           ]
         },
-        {
+        {"id": 432,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual systems are characterized by a minimal amount of code, specialized power management recourses, and user-friendly interfaces.",
@@ -195,7 +204,7 @@
             }
           ]
         },
-        {
+        {"id": 433,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Compiling is the process of integrating the various modules referenced by a program into a single executable unit.",
@@ -216,6 +225,7 @@
         },
 
         {
+          "id": 434,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A disadvantage of preemptive scheduling is that short processes can experience lengthy services delays while longer processes complete.",
@@ -234,7 +244,7 @@
             }
           ]
         },
-        {
+        {"id": 435,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Main and secondary storage can be referenced directly by a processor.",
@@ -253,7 +263,7 @@
             }
           ]
         },
-        {
+        {"id": 436,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "An associative mapping stores the particular page table in content addressed associate memory.",
@@ -272,7 +282,7 @@
             }
           ]
         },
-        {
+        {"id": 437,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual memory replacement strategies determine how many pages should be added to main memory.",
@@ -291,7 +301,7 @@
             }
           ]
         },
-        {
+        {"id": 438,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Tim Berners-Lee developed the internet in 1990.",
@@ -310,7 +320,7 @@
             }
           ]
         },
-        {
+        {"id": 439,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The bootstrap chip typically located on the mainboard stores instruction for basic hardware initialization.",
@@ -329,7 +339,7 @@
             }
           ]
         },
-        {
+        {"id": 440,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Block operation is particularly useful for detecting security threats and debugging software.",
@@ -348,7 +358,7 @@
             }
           ]
         },
-        {
+        {"id": 441,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread enters the waiting state when it momentarily has no work to perform.",
@@ -367,7 +377,7 @@
             }
           ]
         },
-        {
+        {"id": 442,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "In semaphore, a thread performs the P operation after it enters its critical section.",
@@ -386,7 +396,7 @@
             }
           ]
         },
-        {
+        {"id": 443,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Processor-bound processes in a multi-programming computer system mainly use peripheral devices to perform their tasks.",
@@ -405,7 +415,7 @@
             }
           ]
         },
-        {
+        {"id": 444,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Demand fetch strategy attempt to load a piece of program or data into memory before it's referenced.",
@@ -424,7 +434,7 @@
             }
           ]
         },
-        {
+        {"id": 445,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "NUR is based on the idea that a page that has not been recently used is likely to be used in the near future.",
@@ -445,6 +455,7 @@
         },
 
         {
+          "id": 446,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread can continue execution after its primary process exits.",
@@ -464,6 +475,7 @@
           ]
         },
         {
+          "id": 447,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "When quantum size is too large, the overhead involved in context switching dominates and performance degrades.",
@@ -483,6 +495,7 @@
           ]
         },
         {
+          "id": 448,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual memory can be thought of as modern operating system-controlled version of overlays.",
@@ -502,6 +515,7 @@
           ]
         },
         {
+          "id": 449,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A FIFO page replacement strategy can be implemented with relatively low overhead using a stack.",
@@ -521,6 +535,7 @@
           ]
         },
         {
+          "id": 450,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Programmed I/O enables devices and controllers to transfer blocks of data to and from main memory directly.",
@@ -539,7 +554,7 @@
             }
           ]
         },
-        {
+        {"id": 451,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread enters a waiting state when it must wait for the completion of an I/O request.",
@@ -558,7 +573,7 @@
             }
           ]
         },
-        {
+        {"id": 452,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A segment protection exception is generated when a displacement is greater than a segment length.",
@@ -577,7 +592,7 @@
             }
           ]
         },
-        {
+        {"id": 453,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Maximizing throughput and minimizing variance of response times can lead to increased transmission time.",
@@ -597,6 +612,7 @@
           ]
         },
         {
+          "id": 454,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "From the user's point of view plug and play devices that are added to the system typically are ready to use after manually configuring the operating system to identify the device.",
@@ -616,6 +632,7 @@
           ]
         },
         {
+          "id": 455,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Thread cancellation always terminates the target thread immediately.",
@@ -634,7 +651,7 @@
             }
           ]
         },
-        {
+        {"id": 456,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Only one thread at a time can execute the instructions in its critical section for a particular resource.",
@@ -653,7 +670,7 @@
             }
           ]
         },
-        {
+        {"id": 457,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Compacting temporarily removes a process from main memory to allow another process to make use of the system's resources.",
@@ -674,6 +691,7 @@
         },
 
         {
+          "id": 458,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "In a combined segmentation/paging system all of the pages of a segment must be in main memory at once.",
@@ -693,6 +711,7 @@
           ]
         },
         {
+          "id": 459,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The source code of free software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
@@ -712,6 +731,7 @@
           ]
         },
         {
+          "id": 460,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A data bus is a bus that connects exactly 2 devices and an I/O channel is a bus that several devices share to perform I/O operations.",
@@ -730,7 +750,7 @@
             }
           ]
         },
-        {
+        {"id": 461,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Sending and receiving process often use a synchronization protocol to ensure that messages are properly received.",
@@ -749,7 +769,7 @@
             }
           ]
         },
-        {
+        {"id": 462,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Protection restricts access to a shared variable to only one thread at a time.",
@@ -768,7 +788,7 @@
             }
           ]
         },
-        {
+        {"id": 463,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The intermediate level scheduler determines which jobs may join admission to the system and actively compete for system resources.",
@@ -787,7 +807,7 @@
             }
           ]
         },
-        {
+        {"id": 464,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A memory manager's primary function is to interact with special memory management hardware.",
@@ -806,7 +826,7 @@
             }
           ]
         },
-        {
+        {"id": 465,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "In a paging system, a page frame is always larger than an incoming page.",
@@ -825,7 +845,7 @@
             }
           ]
         },
-        {
+        {"id": 466,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Demand paging improves performance for process with predictable memory access patterns.",
@@ -844,7 +864,7 @@
             }
           ]
         },
-        {
+        {"id": 467,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The lexical analyzer groups tokens in a program source code into syntactically correct statements.",
@@ -863,7 +883,7 @@
             }
           ]
         },
-        {
+        {"id": 468,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "An efficient operating system generally achieves high throughput and high average TOT.",
@@ -883,6 +903,7 @@
           ]
         },
         {
+          "id": 469,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Querying can be used instead of interrupts to inform the processor of changes in device status.",
@@ -902,6 +923,7 @@
           ]
         },
         {
+          "id": 470,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "To allow program to access and execute operating system instructions, operating systems provide memory protection keys.",
@@ -921,6 +943,7 @@
           ]
         },
         {
+          "id": 471,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Signals often are used to pass data between processes.",
@@ -941,6 +964,7 @@
         },
 
         {
+          "id": 472,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Batch process tends to use all the processor time that the system allocates for it.",
@@ -960,6 +984,7 @@
           ]
         },
         {
+          "id": 473,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread that uses processor cycles to continually test a condition before entering its critical section is said to be deadlocked.",
@@ -979,6 +1004,7 @@
           ]
         },
         {
+          "id": 474,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Demand paging improves performance for processes with predictable memory access patterns.",
@@ -998,6 +1024,7 @@
           ]
         },
         {
+          "id": 475,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "An application base is the combination of the software and OS environment in which apps are developed.",
@@ -1017,6 +1044,7 @@
           ]
         },
         {
+          "id": 476,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Thread can execute instruction independent of other processes.",
@@ -1036,6 +1064,7 @@
           ]
         },
         {
+          "id": 477,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A cache hit occurs when a referenced piece of data isn't present in cache memory.",
@@ -1055,6 +1084,7 @@
           ]
         },
         {
+          "id": 478,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Loading assigns a processor to the first process in ready list.",
@@ -1074,6 +1104,7 @@
           ]
         },
         {
+          "id": 479,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "User level thread are also called one to many thread mapping.",
@@ -1093,6 +1124,7 @@
           ]
         },
         {
+          "id": 480,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The constructs that encapsulate a threads critical section are sometimes called critical section primitives.",
@@ -1112,6 +1144,7 @@
           ]
         },
         {
+          "id": 481,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Based line scheduling is most important in real time systems.",
@@ -1130,7 +1163,7 @@
             }
           ]
         },
-        {
+        {"id": 482,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Secondary storage can be referenced directly by a processor.",
@@ -1149,7 +1182,7 @@
             }
           ]
         },
-        {
+        {"id": 483,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Next fit placement strategies attempt to load a piece of program or data into main memory before its referenced.",
@@ -1168,7 +1201,7 @@
             }
           ]
         },
-        {
+        {"id": 484,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Under random page replacement strategy the system is consistently likely to achieve high Performance.",

@@ -77,6 +77,8 @@ class Question extends HiveObject {
   final List<Answer> answers;
   @HiveField(5)
   final String? description;
+  @HiveField(6)
+  final int id;
 
   Question({
     required this.chapterEn,
@@ -84,6 +86,7 @@ class Question extends HiveObject {
     required this.questionEn,
     required this.questionAr,
     required this.answers,
+    required this.id,
     this.description,
   });
 
@@ -95,6 +98,7 @@ class Question extends HiveObject {
         answers:
             List<Answer>.from(json["answers"].map((x) => Answer.fromJson(x))),
         description: json["description"],
+        id: json["id"],
       );
 
   Map<String, dynamic> toJson() => {
@@ -103,7 +107,8 @@ class Question extends HiveObject {
         "answers": List<dynamic>.from(answers.map((x) => x.toJson())),
         "description": description,
         "chapter_en": chapterEn,
-        "chapter_ar": chapterAr
+        "chapter_ar": chapterAr,
+        "id": id,
       };
 }
 

@@ -4768,6 +4768,7 @@
       "title_ar": "الفصل الثامن",
       "questions": [
         {
+          "id": 164,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Which of the following is not a performance criterion that a processor scheduler should attempt to satisfy?",
@@ -4796,6 +4797,7 @@
           ]
         },
         {
+          "id": 165,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "The intermediate-level scheduler determines ___________.",
@@ -4804,12 +4806,12 @@
             {
               "answer_en": "which jobs may actively compete for processors",
               "answer_ar": "أي الوظائف قد تتنافس بنشاط على المعالجات",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "which jobs may gain admission to the system and actively compete for system resources",
               "answer_ar": "أي الوظائف قد تحصل على القبول في النظام وتتنافس بنشاط على موارد النظام",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "which active process the system will assign to a processor when one next becomes available",
@@ -4824,6 +4826,7 @@
           ]
         },
         {
+          "id": 166,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "At a minimum, an operating system typically implements __________.",
@@ -4832,7 +4835,7 @@
             {
               "answer_en": "an intermediate-level and a low-level scheduler",
               "answer_ar": "مجدول ذو مستوى متوسط ومجدول ذو مستوى منخفض",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "a high-level scheduler",
@@ -4847,11 +4850,12 @@
             {
               "answer_en": "a high-level and a low-level scheduler",
               "answer_ar": "مجدول ذو مستوى عالي ومجدول ذو مستوى منخفض",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 167,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "The ________ dispatches a processor to the process chosen to execute next.",
@@ -4880,6 +4884,7 @@
           ]
         },
         {
+          "id": 168,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Under ________ scheduling, processes can be interrupted whether they have completed their current task or not.",
@@ -4908,6 +4913,7 @@
           ]
         },
         {
+          "id": 169,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "A disadvantage of preemptive scheduling is ________.",
@@ -4936,6 +4942,7 @@
           ]
         },
         {
+          "id": 170,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "A ________ priority system incurs less overhead than a ________ priority system but is less responsive to changing conditions in the system.",
@@ -4964,6 +4971,7 @@
           ]
         },
         {
+          "id": 171,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "When a user purchases priority, that user’s process ______.",
@@ -4992,6 +5000,7 @@
           ]
         },
         {
+          "id": 172,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "________ is not generally considered one of the most important objectives in scheduler design.",
@@ -5010,16 +5019,17 @@
             {
               "answer_en": "Minimizing overhead",
               "answer_ar": "تقليل الحمل الزائد",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "Enforcing priorities",
               "answer_ar": "فرض الأولويات",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 173,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "A scheduling discipline is said to be ________ if all similar processes are treated the same, and no process can suffer indefinite postponement due to scheduling issues.",
@@ -5048,6 +5058,7 @@
           ]
         },
         {
+          "id": 174,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "________ occurs when a low-priority process temporarily is assigned higher priority than a high-priority process.",
@@ -5076,6 +5087,7 @@
           ]
         },
         {
+          "id": 175,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "A(n) ________ process tends to use all the processor time that the system allocates for it.",
@@ -5104,6 +5116,7 @@
           ]
         },
         {
+          "id": 176,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "A system should provide good response times to a(n) ________ process, whereas a(n) ________ process generally can withstand reasonable delays.",
@@ -5132,6 +5145,7 @@
           ]
         },
         {
+          "id": 177,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Under ________ scheduling, processes execute in the order the scheduler receives them.",
@@ -5160,6 +5174,7 @@
           ]
         },
         {
+          "id": 178,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "FIFO scheduling ________.",
@@ -5188,6 +5203,7 @@
           ]
         },
         {
+          "id": 179,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "When the quantum size is too ________, the overhead involved in ________ dominates and performance degrades.",
@@ -5216,6 +5232,7 @@
           ]
         },
         {
+          "id": 180,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "The use of aging in a round-robin scheme helps to ________.",
@@ -5244,6 +5261,7 @@
           ]
         },
         {
+          "id": 181,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Under SPF scheduling, important processes will be executed ________.",
@@ -5262,16 +5280,17 @@
             {
               "answer_en": "before less important processes can execute",
               "answer_ar": "قبل أن تتمكن العمليات الأقل أهمية من التنفيذ",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "according to their estimated time to completion",
               "answer_ar": "وفقًا للوقت المقدر لانتهائها",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 182,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "SPF scheduling might be desirable when ________ is the primary goal of the system.",
@@ -5300,6 +5319,7 @@
           ]
         },
         {
+          "id": 183,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "HRRN is a(n) ________ scheduling discipline in which each process’s priority is a function of its ________.",
@@ -5328,6 +5348,7 @@
           ]
         },
         {
+          "id": 184,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Incorporating _______ when assigning priorities allows HRRN to avoid indefinite postponement, similar to aging in RR schemes.",
@@ -5356,6 +5377,7 @@
           ]
         },
         {
+          "id": 185,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "SRT scheduling essentially incorporates ________ into SPF scheduling.",
@@ -5384,6 +5406,7 @@
           ]
         },
         {
+          "id": 186,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "________ contributes to a larger overhead in SRT than SPF.",
@@ -5412,6 +5435,7 @@
           ]
         },
         {
+          "id": 187,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "In general, multilevel feedback queues push ________ processes to lower-level queues and ________ processes to higher-level queues, resulting in rapid response times to interactive requests.",
@@ -5420,7 +5444,7 @@
             {
               "answer_en": "processor-bound, I/O-bound",
               "answer_ar": "مرتبطة بالمعالج، مرتبطة بالإدخال/الإخراج",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "low-priority, high-priority",
@@ -5440,6 +5464,7 @@
           ]
         },
         {
+          "id": 188,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Multilevel feedback queuing ________.",
@@ -5468,6 +5493,7 @@
           ]
         },
         {
+          "id": 189,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Fair share scheduling ensures ________.",
@@ -5481,12 +5507,12 @@
             {
               "answer_en": "that the performance of a process is affected only by the population of its process group",
               "answer_ar": "أن أداء العملية يتأثر فقط بمجموعة العمليات الخاصة بها",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "fairness across sets of processes grouped by individual user",
               "answer_ar": "العدالة عبر مجموعات العمليات المجمعة حسب المستخدم الفردي",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "both a and c",
@@ -5496,6 +5522,7 @@
           ]
         },
         {
+          "id": 190,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Deadline scheduling is most important in ________ systems.",
@@ -5524,6 +5551,7 @@
           ]
         },
         {
+          "id": 191,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "The intense resource management that deadline scheduling requires often leads to increased ________ in those systems.",
@@ -5552,6 +5580,7 @@
           ]
         },
         {
+          "id": 192,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "Soft real-time scheduling ________.",
@@ -5565,7 +5594,7 @@
             {
               "answer_en": "ensures that real-time processes are dispatched before other processes in the system",
               "answer_ar": "تضمن إرسال العمليات الزمنية الحقيقية قبل العمليات الأخرى في النظام",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "guarantees that real-time processes meet their timing constraints",
@@ -5575,11 +5604,12 @@
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 193,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "_______ scheduling algorithms guarantee that a process’s timing constraints are always met.",
@@ -5608,6 +5638,7 @@
           ]
         },
         {
+          "id": 194,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "The ________ algorithm bases priority on the amount of time until a process’s deadline and the remaining execution time until its task has completed.",
@@ -5636,6 +5667,7 @@
           ]
         },
         {
+          "id": 195,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "In an operating system that supports threads, processor scheduling can be performed by ________.",
@@ -5664,6 +5696,7 @@
           ]
         },
         {
+          "id": 196,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "If there are multiple threads at the highest priority level in the Java virtual machine, those threads execute using a(n) ________ scheduling algorithm.",
@@ -5692,6 +5725,7 @@
           ]
         },
         {
+          "id": 197,
           "chapter_en": "Chapter 8",
           "chapter_ar": "الفصل الثامن",
           "question_en": "On a system that does not support timeslicing, Java threads will run to completion in order unless they voluntarily relinquish control by calling the ________ method.",
@@ -5699,22 +5733,22 @@
           "answers": [
             {
               "answer_en": "Halt",
-              "answer_ar": "Halt",
+              "answer_ar": "التوقف",
               "is_correct": false
             },
             {
               "answer_en": "Sleep",
-              "answer_ar": "Sleep",
+              "answer_ar": "النوم",
               "is_correct": false
             },
             {
               "answer_en": "Yield",
-              "answer_ar": "Yield",
+              "answer_ar": "الخضوع",
               "is_correct": true
             },
             {
               "answer_en": "suspend",
-              "answer_ar": "suspend",
+              "answer_ar": "التعليق",
               "is_correct": false
             }
           ]
@@ -5727,10 +5761,11 @@
       "title_ar": "الفصل التاسع",
       "questions": [
         {
+          "id": 198,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________, while plentiful, is slower than other forms of storage and not suitable for running programs.",
-          "question_ar": "________، على الرغم من وفرة، أبطأ من أشكال التخزين الأخرى وغير مناسب لتشغيل البرامج.",
+          "question_ar": "________، على الرغم من وفرتها الا انها أبطأ من أشكال التخزين الأخرى وغير مناسب لتشغيل البرامج.",
           "answers": [
             {
               "answer_en": "Cache",
@@ -5755,6 +5790,7 @@
           ]
         },
         {
+          "id": 199,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Which of the following statements is false?",
@@ -5783,6 +5819,7 @@
           ]
         },
         {
+          "id": 200,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Operating systems can divide main memory into portions called ________ so that one process cannot overwrite another’s memory, either inadvertently or maliciously.",
@@ -5811,6 +5848,7 @@
           ]
         },
         {
+          "id": 201,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "A memory manager’s primary function is ________.",
@@ -5839,6 +5877,7 @@
           ]
         },
         {
+          "id": 202,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "According to ________, many processes that access data and instructions once are likely to access them again in the future.",
@@ -5867,6 +5906,7 @@
           ]
         },
         {
+          "id": 203,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Going from lower to higher levels in the memory hierarchy, ________.",
@@ -5895,6 +5935,7 @@
           ]
         },
         {
+          "id": 204,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ strategies determine which pieces of data to remove from main memory to free space for a new process.",
@@ -5923,6 +5964,7 @@
           ]
         },
         {
+          "id": 205,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ strategies attempt to load a piece of program or data into memory before it is referenced.",
@@ -5951,6 +5993,7 @@
           ]
         },
         {
+          "id": 206,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "In general, the overhead incurred by ________ allocation is outweighed by the advantages of being able to store more processes in main memory at the same time.",
@@ -5979,6 +6022,7 @@
           ]
         },
         {
+          "id": 207,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Noncontiguous memory allocation splits programs into blocks of memory called ________ that can be loaded into nonadjacent “holes” in main memory.",
@@ -5992,7 +6036,7 @@
             {
               "answer_en": "Pages",
               "answer_ar": "الصفحات",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Partitions",
@@ -6002,11 +6046,12 @@
             {
               "answer_en": "segments",
               "answer_ar": "القطاعات",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 208,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Before the advent of ________, programmers wrote all the code necessary to implement a particular application, including the highly detailed machine-level input/output instructions.",
@@ -6035,6 +6080,7 @@
           ]
         },
         {
+          "id": 209,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ is a technique that involves breaking a program into logical segments and keeping only the currently needed segment in memory at any one time.",
@@ -6063,6 +6109,7 @@
           ]
         },
         {
+          "id": 210,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ can be thought of as a modern operating system-controlled version of overlays.",
@@ -6091,6 +6138,7 @@
           ]
         },
         {
+          "id": 211,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "A(n) ________ can be used in single-user contiguous memory allocation systems to prevent programs from damaging the operating system’s memory.",
@@ -6119,6 +6167,7 @@
           ]
         },
         {
+          "id": 212,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "To allow programs to access and execute operating system instructions, operating systems provide ________.",
@@ -6147,6 +6196,7 @@
           ]
         },
         {
+          "id": 213,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ was an early innovation that helped decrease the amount of time the computer wasted between jobs.",
@@ -6175,6 +6225,7 @@
           ]
         },
         {
+          "id": 214,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "A ________ reads and executes the control-language statements that define each job as well as helps prepare the system for the next job.",
@@ -6203,6 +6254,7 @@
           ]
         },
         {
+          "id": 215,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Under fixed-partition multiprogramming, ________ occurs when a memory partition is larger than the memory and data of the process currently loaded into it.",
@@ -6231,6 +6283,7 @@
           ]
         },
         {
+          "id": 216,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "In a partitioned memory environment, the single boundary register is replaced by the ________ and ________ registers which delimit the upper and lower boundaries of a partition, respectively.",
@@ -6259,6 +6312,7 @@
           ]
         },
         {
+          "id": 217,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________-partition multiprogramming allows a process to occupy only as much space as needed in an attempt to prevent ________ fragmentation.",
@@ -6287,6 +6341,7 @@
           ]
         },
         {
+          "id": 218,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "To maximize the use of available space, ________ combines adjacent holes in memory, while ________ relocates all occupied areas of memory to one end of main memory, leaving a single large free memory hole instead of numerous small holes.",
@@ -6315,6 +6370,7 @@
           ]
         },
         {
+          "id": 219,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "The significant overhead associated with ________ makes it largely unsuitable for use in real-time systems.",
@@ -6343,6 +6399,7 @@
           ]
         },
         {
+          "id": 220,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "Under a ________ placement strategy, the system places an incoming job in the hole in main memory in which it fits most tightly.",
@@ -6371,6 +6428,7 @@
           ]
         },
         {
+          "id": 221,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "The ________ placement strategy allows the system to make a placement decision quickly and generally incurs the least amount of overhead of the various placement strategies.",
@@ -6399,6 +6457,7 @@
           ]
         },
         {
+          "id": 222,
           "chapter_en": "Chapter 9",
           "chapter_ar": "الفصل التاسع",
           "question_en": "________ temporarily removes a process from main memory to allow another process to make use of the system’s resources.",
@@ -6434,6 +6493,7 @@
       "title_ar": "الفصل العاشر",
       "questions": [
         {
+          "id": 223,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a virtual memory system, ________.",
@@ -6462,6 +6522,7 @@
           ]
         },
         {
+          "id": 224,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Systems that use dynamic address translation exhibit ________—the property that contiguous addresses in a process’s virtual address space need not be contiguous in physical memory.",
@@ -6490,6 +6551,7 @@
           ]
         },
         {
+          "id": 225,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In block mapping systems, _________.",
@@ -6518,6 +6580,7 @@
           ]
         },
         {
+          "id": 226,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a block mapping system, suppose that a is a base address stored in the block map table origin register and that the block map table for the process with base address a contains the real address b’ for the start of virtual block b in main memory and the real address d’ for the start of virtual block d in main memory. What is the real address of virtual address v = (b, d)?",
@@ -6546,6 +6609,7 @@
           ]
         },
         {
+          "id": 227,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a paging system, ________.",
@@ -6574,6 +6638,7 @@
           ]
         },
         {
+          "id": 228,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "When a page references a page that is not in main memory, the processor generates a(n) ________.",
@@ -6602,6 +6667,7 @@
           ]
         },
         {
+          "id": 229,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Consider paging address translation by direct mapping. Given the base address, a, in the page table origin register, virtual address v = (p, d) and an entry p’ (in the page table starting at address a) for the page frame corresponding to virtual page p, what is the real address corresponding to v?",
@@ -6630,6 +6696,7 @@
           ]
         },
         {
+          "id": 230,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Which of the following statements about direct mapping is false?",
@@ -6648,16 +6715,17 @@
             {
               "answer_en": "Using direct-mapping page address translation can cause the computer system to run programs faster.",
               "answer_ar": "يمكن أن يؤدي استخدام ترجمة عنوان الصفحات المعين مباشرة إلى جعل نظام الكمبيوتر يعمل البرامج بشكل أسرع.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Direct mapping is much like accessing an array location via subscripting.",
               "answer_ar": "التعيين المباشر يشبه إلى حد كبير الوصول إلى موقع مصفوفة عبر الفهرسة.",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 231,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "An associative mapping __________.",
@@ -6666,7 +6734,7 @@
             {
               "answer_en": "provides better performance than direct mapping",
               "answer_ar": "يوفر أداءً أفضل من التعيين المباشر",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "stores the entire page table in content-addressed associative memory",
@@ -6681,11 +6749,12 @@
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 232,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "A combined direct/associative mapping holds only a small percentage of the complete page table for a process in __________ and keeps the complete page table in __________.",
@@ -6714,6 +6783,7 @@
           ]
         },
         {
+          "id": 233,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Under direct/associative mapping, ________.",
@@ -6727,7 +6797,7 @@
             {
               "answer_en": "better performance can be achieved than under a complete associative mapping",
               "answer_ar": "يمكن تحقيق أداء أفضل من التعيين الترابطي الكامل",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "the number of entries in the TLB needs to be large to achieve good performance",
@@ -6737,11 +6807,12 @@
             {
               "answer_en": "the page table entries maintained in the TLB typically correspond only to the more-recently referenced pages",
               "answer_ar": "عادةً ما تتوافق إدخالات جدول الصفحات المحفوظة في TLB فقط مع الصفحات التي تمت الإشارة إليها مؤخرًا",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 234,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In multilevel page tables, __________ is reduced compared to direct-mapped tables when process’s use only a small number of pages.",
@@ -6770,6 +6841,7 @@
           ]
         },
         {
+          "id": 235,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "The overhead incurred by multilevel page address translation is __________.",
@@ -6798,6 +6870,7 @@
           ]
         },
         {
+          "id": 236,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In an inverted page table, the number of PTEs that must be stored in main memory is proportional to _________.",
@@ -6826,6 +6899,7 @@
           ]
         },
         {
+          "id": 237,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Inverted page tables use __________ to map virtual pages to PTEs.",
@@ -6854,6 +6928,7 @@
           ]
         },
         {
+          "id": 238,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "To improve performance, a designer can attempt to reduce the number of collisions that occur in an inverted page table by ________.",
@@ -6862,7 +6937,7 @@
             {
               "answer_en": "increasing the size of the inverted page table",
               "answer_ar": "زيادة حجم جدول الصفحات المقلوب",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "increasing the range of the hash function using a hash anchor table",
@@ -6872,7 +6947,7 @@
             {
               "answer_en": "both a and b",
               "answer_ar": "كل من أ و ب",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "none of the above",
@@ -6882,6 +6957,7 @@
           ]
         },
         {
+          "id": 239,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Page sharing ________.",
@@ -6900,16 +6976,17 @@
             {
               "answer_en": "does not allow modifiable procedures from being used by more than one process at the same time",
               "answer_ar": "لا تسمح بإجراءات قابلة للتعديل يتم استخدامها من قبل أكثر من عملية في نفس الوقت",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "none of the above",
               "answer_ar": "لا شيء مما سبق",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 240,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Using copy-on-write to ensure that two processes do not interfere with each other when modifying pages ________.",
@@ -6928,16 +7005,17 @@
             {
               "answer_en": "both a and b",
               "answer_ar": "كل من أ و ب",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "none of the above",
               "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 241,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "All of a process’s segments ________.",
@@ -6946,7 +7024,7 @@
             {
               "answer_en": "must consist of contiguous memory locations",
               "answer_ar": "يجب أن تتكون من مواقع ذاكرة متجاورة",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "must be placed adjacent to one another in main memory",
@@ -6961,11 +7039,12 @@
             {
               "answer_en": "are maintained in main memory during execution",
               "answer_ar": "يتم الاحتفاظ بها في الذاكرة الرئيسية أثناء التنفيذ",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 242,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a system that uses segmentation address translation by direct mapping, ________.",
@@ -6994,6 +7073,7 @@
           ]
         },
         {
+          "id": 243,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "A(n) __________ is generated when a displacement is greater than a segment length.",
@@ -7022,6 +7102,7 @@
           ]
         },
         {
+          "id": 244,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "Sharing __________ using segmentation can simplify memory management compared to paging.",
@@ -7030,12 +7111,12 @@
             {
               "answer_en": "reentrant code",
               "answer_ar": "الكود القابل لإعادة الدخول",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "a dynamic array",
               "answer_ar": "مصفوفة ديناميكية",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "an object",
@@ -7050,6 +7131,7 @@
           ]
         },
         {
+          "id": 244,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "________ access is useful for reentrant code because it allows a process to execute a segment or make its own copy of a segment which it may then modify.",
@@ -7058,12 +7140,12 @@
             {
               "answer_en": "Read/execute",
               "answer_ar": "قراءة/تنفيذ",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "Read/write",
               "answer_ar": "قراءة/كتابة",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Execute only",
@@ -7078,6 +7160,7 @@
           ]
         },
         {
+          "id": 245,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "A process given append-only access to a segment may __________.",
@@ -7106,6 +7189,7 @@
           ]
         },
         {
+          "id": 246,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a combined segmentation/paging system, ________.",
@@ -7134,6 +7218,7 @@
           ]
         },
         {
+          "id": 247,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a paged and segmented system using combined associative/direct mapping, ________.",
@@ -7142,7 +7227,7 @@
             {
               "answer_en": "the more tables a system maintains in main memory, the fewer processes it can support",
               "answer_ar": "كلما زاد عدد الجداول التي يحتفظ بها النظام في الذاكرة الرئيسية، قل عدد العمليات التي يمكنه دعمها",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "the associative memory is unimportant to the efficient operation of the dynamic address translation",
@@ -7157,11 +7242,12 @@
             {
               "answer_en": "the benefit of maintaining only a few of the tables in main memory at any one time is that address translation proceeds faster at execution time",
               "answer_ar": "فائدة الاحتفاظ بعدد قليل فقط من الجداول في الذاكرة الرئيسية في أي وقت هي أن ترجمة العناوين تتم بشكل أسرع في وقت التنفيذ",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 248,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In a segmentation/paging virtual memory system, two processes share memory when ________.",
@@ -7190,6 +7276,7 @@
           ]
         },
         {
+          "id": 249,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In the IA-32 architecture, the ________ register typically stores a process’s code segment selector (which typically corresponds to the segment containing its executable instructions).",
@@ -7218,6 +7305,7 @@
           ]
         },
         {
+          "id": 250,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "For operating systems that maintain more than 8,192 segments, or that maintain a separate segment map table for each process, the IA-32 architecture requires the base address of each local descriptor table to be stored in the __________.",
@@ -7231,12 +7319,12 @@
             {
               "answer_en": "global descriptor table",
               "answer_ar": "جدول الواصف العام",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "global descriptor table register",
               "answer_ar": "سجل جدول الواصف العام",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "none of the above",
@@ -7246,6 +7334,7 @@
           ]
         },
         {
+          "id": 251,
           "chapter_en": "Chapter 10",
           "chapter_ar": "الفصل العاشر",
           "question_en": "In the IA-32 architecture, a(n) ________ occurs when a process has attempted to access memory outside of its segment.",
@@ -7254,12 +7343,12 @@
             {
               "answer_en": "general protection fault exception",
               "answer_ar": "استثناء خطأ حماية عام",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "segment-overflow exception",
               "answer_ar": "استثناء تجاوز الجزء",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "TLB miss",
@@ -7281,6 +7370,7 @@
       "title_ar": "الفصل الحادي عشر",
       "questions": [
         {
+          "id":252,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Virtual memory fetch strategies determine when a page or segment should be moved from ________ to ________.",
@@ -7309,6 +7399,7 @@
           ]
         },
         {
+          "id":253,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Virtual memory replacement strategies determine ________.",
@@ -7337,6 +7428,7 @@
           ]
         },
         {
+          "id":254,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following computer operations involves the highest degree of spatial locality?",
@@ -7365,6 +7457,7 @@
           ]
         },
         {
+          "id":255,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "According to temporal locality, processes are likely to reference pages that ________.",
@@ -7393,6 +7486,7 @@
           ]
         },
         {
+          "id":256,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following reasons makes demand paging a desirable fetch policy?",
@@ -7406,7 +7500,7 @@
             {
               "answer_en": "Demand paging guarantees that the system brings into main memory only those pages that processes actually need.",
               "answer_ar": "يضمن استدعاء الصفحات عند الطلب أن النظام يحضر إلى الذاكرة الرئيسية فقط الصفحات التي تحتاجها العمليات فعليًا.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Demand paging improves performance by preloading pages that are likely to be needed in the future.",
@@ -7416,11 +7510,12 @@
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id":257,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Demand paging is disadvantageous because ________.",
@@ -7449,6 +7544,7 @@
           ]
         },
         {
+          "id":258,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "________ is not important in determining the success of a pre-paging strategy?",
@@ -7477,6 +7573,7 @@
           ]
         },
         {
+          "id":259,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Anticipatory paging strategies that load a few of a process’s contiguous pages when the process references a nonresident page exploit ________.",
@@ -7504,7 +7601,7 @@
             }
           ]
         },
-        {
+        {"id":260,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Page-replacement strategies typically attempt to ________ the number of page faults a process experiences as it runs from start to finish, hopefully ________ the process’s execution time.",
@@ -7533,6 +7630,7 @@
           ]
         },
         {
+          "id":261,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following activities could lead to significant overhead in a page-replacement strategy?",
@@ -7551,16 +7649,17 @@
             {
               "answer_en": "predicting future page use to determine which pages to replace",
               "answer_ar": "التنبؤ باستخدام الصفحات المستقبلية لتحديد الصفحات التي يجب استبدالها",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id":262,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under a random page replacement strategy, ________.",
@@ -7579,16 +7678,17 @@
             {
               "answer_en": "there is generally a small probability that the page that is replaced will be referenced soon",
               "answer_ar": "هناك عادة احتمال صغير بأن يتم الإشارة إلى الصفحة التي تم استبدالها قريبًا",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id":263,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "A FIFO page-replacement strategy can be implemented with relatively low overhead using a ________.",
@@ -7617,6 +7717,7 @@
           ]
         },
         {
+          "id":264,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Why is a FIFO page-replacement strategy impractical for most systems?",
@@ -7645,6 +7746,7 @@
           ]
         },
         {
+          "id":265,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "According to the FIFO Anomaly (also called Belady’s Anomaly) certain page reference patterns cause ________ page faults when the number of page frames allocated to a process is ________.",
@@ -7653,7 +7755,7 @@
             {
               "answer_en": "more, decreased",
               "answer_ar": "المزيد، انخفض",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "fewer, decreased",
@@ -7663,7 +7765,7 @@
             {
               "answer_en": "more, increased",
               "answer_ar": "المزيد، زاد",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "fewer, increased",
@@ -7673,6 +7775,7 @@
           ]
         },
         {
+          "id":266,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The least-recently-used (LRU) page-replacement strategy ________.",
@@ -7701,6 +7804,7 @@
           ]
         },
         {
+          "id":267,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "LRU replaces the page that has spent the ________.",
@@ -7728,7 +7832,7 @@
             }
           ]
         },
-        {
+        {"id":268,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The least-frequently-used (LFU) page-replacement strategy can be implemented using ________.",
@@ -7756,7 +7860,7 @@
             }
           ]
         },
-        {
+        {"id":269,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under a not-used-recently (NUR) page-replacement strategy, the best page to replace (if available) is one that has ________.",
@@ -7784,7 +7888,7 @@
             }
           ]
         },
-        {
+        {"id":270,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "NUR is based on the idea that ________.",
@@ -7813,6 +7917,7 @@
           ]
         },
         {
+          "id":271,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The far page-replacement strategy utilizes an ________ that characterizes a process’s reference patterns.",
@@ -7840,7 +7945,7 @@
             }
           ]
         },
-        {
+        {"id":272,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Why has the far page-replacement strategy not been implemented in real systems?",
@@ -7868,7 +7973,7 @@
             }
           ]
         },
-        {
+        {"id":273,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Thrashing is the term used to describe ________.",
@@ -7896,7 +8001,7 @@
             }
           ]
         },
-        {
+        {"id":274,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following statements about working set memory management is false?",
@@ -7924,7 +8029,7 @@
             }
           ]
         },
-        {
+        {"id":275,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The page-fault-frequency (PFF) strategy adjusts the process’s resident page set ________.",
@@ -7952,7 +8057,7 @@
             }
           ]
         },
-        {
+        {"id":276,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under the PFF strategy, those pages that belong to a particular process and are currently in memory are referred to as the process’s ________.",
@@ -7980,7 +8085,7 @@
             }
           ]
         },
-        {
+        {"id":277,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "________ is a technique that can improve working set page replacement by removing pages from memory a process is no longer using.",
@@ -8008,7 +8113,7 @@
             }
           ]
         },
-        {
+        {"id":278,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following statements about page sizes is false?",
@@ -8017,7 +8122,7 @@
             {
               "answer_en": "A large page size reduces the range of memory that the TLB can reference with each entry.",
               "answer_ar": "يقلل حجم الصفحة الكبير من نطاق الذاكرة التي يمكن لـ TLB الإشارة إليها مع كل إدخال.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "A smaller page size would help a process establish a smaller, tighter working set, leaving more memory available to other processes.",
@@ -8032,11 +8137,11 @@
             {
               "answer_en": "Large page sizes reduce page table fragmentation by decreasing the number of page table entries.",
               "answer_ar": "تقلل أحجام الصفحات الكبيرة من تجزئة جدول الصفحات عن طريق تقليل عدد إدخالات جدول الصفحات.",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
-        {
+        {"id":279,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "In today’s systems, what is the “industry-standard” page size?",
@@ -8045,12 +8150,12 @@
             {
               "answer_en": "4KB",
               "answer_ar": "4 كيلوبايت",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "There is no “industry-standard” page size.",
               "answer_ar": "لا يوجد حجم صفحة \"معيار صناعي\".",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "8KB",
@@ -8064,7 +8169,7 @@
             }
           ]
         },
-        {
+        {"id":280,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "In a system containing several concurrent processes, a running process with a small working set tends to experience a ________ number of page faults as the page size ________.",
@@ -8073,7 +8178,7 @@
             {
               "answer_en": "greater, increases",
               "answer_ar": "أكبر، يزيد",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "constant, increases",
@@ -8088,11 +8193,11 @@
             {
               "answer_en": "greater, decreases",
               "answer_ar": "أكبر، ينخفض",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
-        {
+        {"id":281,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The average inter-fault time ________ as the number of page frames allocated to a process ________.",
@@ -8120,7 +8225,7 @@
             }
           ]
         },
-        {
+        {"id":282,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The global LRU (gLRU) page-replacement strategy replaces the least-recently-used page in ________.",
@@ -8148,7 +8253,7 @@
             }
           ]
         },
-        {
+        {"id":283,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under the SEQ global replacement strategy, when looping behavior is detected, the _________ strategy is employed.",
@@ -8173,6 +8278,63 @@
               "answer_en": "most-recently-used (MRU)",
               "answer_ar": "الأكثر استخدامًا مؤخرًا (MRU)",
               "is_correct": true
+            }
+          ]
+        },
+        { "id":284,
+          "chapter_en": "chapter 11",
+          "chapter_ar": " الفصل الحادي عشر",
+          "question_en": "The second-chance page-replacement strategy ________.",
+          "question_ar": "إستراتيجية استبدال الصفحات ذات الفرصة الثانية ________.",
+          "answers": [
+            {
+              "answer_en": "moves pages found at the head of a FIFO queue with the referenced bit turned on back to the tail of the queue to avoid replacing them",
+              "answer_ar": "تنقل الصفحات الموجودة في رأس طابور FIFO مع بت المرجع قيد التشغيل إلى ذيل الطابور لتجنب استبدالها",
+              "is_correct": true
+            },
+            {
+              "answer_en": "relies on a modified bit to determine which page to replace",
+              "answer_ar": "تعتمد على بت معدل لتحديد الصفحة التي يجب استبدالها",
+              "is_correct": false
+            },
+            {
+              "answer_en": "searches through a circular list of pages and replaces the first page it encounters that has the referenced bit turned off",
+              "answer_ar": "تبحث في قائمة دائرية من الصفحات وتستبدل أول صفحة تصادفها والتي تم إيقاف بت المرجع فيها",
+              "is_correct": false
+            },
+            {
+              "answer_en": "none of the above",
+              "answer_ar": "لا شيء مما سبق",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 285,
+          "chapter_en": " chapter 11 ",
+          "chapter_ar": " الفصل الحادي عشر",
+          "question_en": "Linux uses a variation of the ________ algorithm to approximate an ________ page replacement strategy.",
+          "question_ar": "يستخدم لينكس اختلافًا في خوارزمية ________ لتقريب إستراتيجية استبدال الصفحات ________.",
+          "answers": [
+            {
+              "answer_en": "clock, LRU",
+              "answer_ar": "الساعة، LRU",
+              "is_correct": true
+            },
+            {
+              "answer_en": "NUR, LRU",
+              "answer_ar": "NUR، LRU",
+              "is_correct": false
+            },
+            {
+              "answer_en": "clock, LFU",
+              "answer_ar": "الساعة، LFU",
+              "is_correct": false
+            },
+            {
+              "answer_en": "NUR, LFU",
+              "answer_ar": "NUR، LFU",
+              "is_correct": false
             }
           ]
         }

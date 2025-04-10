@@ -12,7 +12,7 @@ class AddFavouriteEvent extends FavouriteEvent {
 }
 
 class RemoveFavouriteEvent extends FavouriteEvent {
-  final String id;
+  final int id;
   final VoidCallback fun;
 
   RemoveFavouriteEvent({required this.id, required this.fun});

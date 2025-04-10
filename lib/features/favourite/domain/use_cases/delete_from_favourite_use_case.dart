@@ -7,7 +7,7 @@ class RemoveFromFavouriteUseCase {
   final FavouriteRepo favouriteRepo;
 
   RemoveFromFavouriteUseCase({required this.favouriteRepo});
-  Future<Either<Failure, Unit>> call(String id)=>favouriteRepo.removeFavorite(id);
+  Future<Either<Failure, Unit>> call(int id)=>favouriteRepo.removeFavorite(id);
 
 
 }

@@ -6,6 +6,7 @@
       "title_ar": "الفصل  الثاني عشر",
       "questions": [
         {
+          "id": 286,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Magnetic storage became popular because it was ________.",
@@ -34,6 +35,7 @@
           ]
         },
         {
+          "id": 287,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Recently, disk capacities have ________, access times have ________ and cost per unit storage has ________.",
@@ -42,12 +44,12 @@
             {
               "answer_en": "decreased, decreased, decreased",
               "answer_ar": "انخفضت، انخفضت، انخفضت",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "increased, decreased exponentially, decreased exponentially",
               "answer_ar": "زادت، انخفضت بشكل أسي، انخفضت بشكل أسي",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "increased asymptotically, decreased, stayed the same",
@@ -62,6 +64,7 @@
           ]
         },
         {
+          "id": 288,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "________ is the amount of time required for the head to move from its current cylinder to its destination.",
@@ -70,7 +73,7 @@
             {
               "answer_en": "Seek time",
               "answer_ar": "وقت البحث",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Transmission time",
@@ -85,11 +88,12 @@
             {
               "answer_en": "none of the above",
               "answer_ar": "لا شيء مما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 289,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Moving-head disks store data in ________, which are part of larger units called _______, which form ________ when considered vertically.",
@@ -118,6 +122,7 @@
           ]
         },
         {
+          "id": 290,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Disk scheduling algorithms are designed to minimize ________ and/or ________, depending on the system’s requests.",
@@ -146,6 +151,7 @@
           ]
         },
         {
+          "id": 291,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Scheduling strategies are commonly evaluated by the system’s ________.",
@@ -174,6 +180,7 @@
           ]
         },
         {
+          "id": 292,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Maximizing ________and minimizing ________can lead to increased ________.",
@@ -202,6 +209,7 @@
           ]
         },
         {
+          "id": 293,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "FCFS scheduling tends to result in an acceptable amount of ________ at the expense of ________.",
@@ -210,12 +218,12 @@
             {
               "answer_en": "fairness, variance of response times",
               "answer_ar": "الإنصاف، تباين أوقات الاستجابة",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "variance of response times, throughput",
               "answer_ar": "تباين أوقات الاستجابة، الإنتاجية",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "throughput, fairness",
@@ -230,6 +238,7 @@
           ]
         },
         {
+          "id": 294,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Because SSTF scheduling exhibits high ________, it is inappropriate for real-time and interactive systems.",
@@ -258,6 +267,7 @@
           ]
         },
         {
+          "id": 295,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "SCAN disk scheduling considers ________ in addition to seek times.",
@@ -286,6 +296,7 @@
           ]
         },
         {
+          "id": 296,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Which if the following statements is false?",
@@ -294,7 +305,7 @@
             {
               "answer_en": "SCAN offers higher throughput than SSTF.",
               "answer_ar": "توفر SCAN إنتاجية أعلى من SSTF.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "SCAN is often called the elevator algorithm.",
@@ -304,7 +315,7 @@
             {
               "answer_en": "SCAN can suffer from indefinite postponement of requests.",
               "answer_ar": "يمكن أن تعاني SCAN من تأجيل غير محدد للطلبات.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "Both a and b.",
@@ -314,6 +325,7 @@
           ]
         },
         {
+          "id": 297,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Under C-SCAN scheduling, which the disk arm finishes sweeping from the outermost track to the innermost track, it ________.",
@@ -342,6 +354,7 @@
           ]
         },
         {
+          "id": 298,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The primary advantage of F-SCAN scheduling over other SCAN strategies is ________.",
@@ -360,16 +373,17 @@
             {
               "answer_en": "avoidance of indefinite postponement",
               "answer_ar": "تجنب التأجيل غير المحدد",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "both b and c",
               "answer_ar": "كل من ب و ج",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 299,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "N-Step SCAN differs from F-SCAN in that ________.",
@@ -398,6 +412,7 @@
           ]
         },
         {
+          "id": 300,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The LOOK algorithm is based on the ________ strategy, but it eliminates unnecessary seeks when there are no more requests in the current direction.",
@@ -426,6 +441,7 @@
           ]
         },
         {
+          "id": 301,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The C-LOOK algorithm reduces ________ compared to LOOK at the expense of ________.",
@@ -439,7 +455,7 @@
             {
               "answer_en": "variance of response times, fairness",
               "answer_ar": "تباين أوقات الاستجابة، الإنصاف",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "throughput, variance of response times",
@@ -449,11 +465,12 @@
             {
               "answer_en": "variance of response times, throughput",
               "answer_ar": "تباين أوقات الاستجابة، الإنتاجية",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 302,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Today’s hard disks exhibit seek times that are ________ rotational latency times.",
@@ -462,7 +479,7 @@
             {
               "answer_en": "much smaller than",
               "answer_ar": "أصغر بكثير من",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "greater than",
@@ -477,11 +494,12 @@
             {
               "answer_en": "the same order of magnitude as",
               "answer_ar": "بنفس ترتيب الحجم مثل",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 303,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "In SLTF scheduling, requests are ordered by ________, with the ________ one being serviced first.",
@@ -495,7 +513,7 @@
             {
               "answer_en": "size, smallest",
               "answer_ar": "الحجم، الأصغر",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "size, largest",
@@ -505,11 +523,12 @@
             {
               "answer_en": "sector, nearest",
               "answer_ar": "القطاع، الأقرب",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 304,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Both SPTF and SATF scheduling can lead to ________.",
@@ -538,6 +557,7 @@
           ]
         },
         {
+          "id": 305,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Access time is defined as ________ plus ________.",
@@ -556,16 +576,17 @@
             {
               "answer_en": "rotational latency, seek time",
               "answer_ar": "التأخر الدوراني، وقت البحث",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "positioning time, transmission time",
               "answer_ar": "وقت التموضع، وقت النقل",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 306,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Today’s hard disks counteract efforts to improve performance using disk scheduling ________.",
@@ -594,6 +615,7 @@
           ]
         },
         {
+          "id": 307,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Complex disk scheduling strategies are most appropriate ________.",
@@ -622,6 +644,7 @@
           ]
         },
         {
+          "id": 308,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "________ scheduling is appropriate for online transaction-processing systems.",
@@ -650,6 +673,7 @@
           ]
         },
         {
+          "id": 309,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "________ caching flushes data to disk immediately, ensuring it cannot be lost in the event of a system failure.",
@@ -678,6 +702,7 @@
           ]
         },
         {
+          "id": 310,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Disk cache buffers are stored ________.",
@@ -691,7 +716,7 @@
             {
               "answer_en": "in main memory",
               "answer_ar": "في الذاكرة الرئيسية",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "in a memory module attached to the disk drive",
@@ -701,11 +726,12 @@
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 311,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Compression can improve disk performance at the expense of ________.",
@@ -734,6 +760,7 @@
           ]
         },
         {
+          "id": 312,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Partitioning a drive can potentially ________ fragmentation.",
@@ -762,6 +789,7 @@
           ]
         },
         {
+          "id": 313,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Disk arm anticipation can be implemented by ________.",
@@ -780,16 +808,17 @@
             {
               "answer_en": "moving the disk arm to a “hot spot” of disk activity",
               "answer_ar": "تحريك ذراع القرص إلى “نقطة ساخنة” لنشاط القرص",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "both a and c",
               "answer_ar": "كل من أ و ج",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 314,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The letter “I” in RAID originally stood for ________, but has been revised to stand for ________.",
@@ -818,6 +847,7 @@
           ]
         },
         {
+          "id": 315,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The original motivation for RAID came from the observation that ________.",
@@ -846,6 +876,7 @@
           ]
         },
         {
+          "id": 316,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID relies on units of data called ________, which when combined into larger chunks are known as ________.",
@@ -874,6 +905,7 @@
           ]
         },
         {
+          "id": 317,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "A primary drawback to RAID schemes is greatly decreased ________.",
@@ -882,7 +914,7 @@
             {
               "answer_en": "mean-time-to-failure",
               "answer_ar": "متوسط الوقت حتى الفشل",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "redundancy",
@@ -897,11 +929,12 @@
             {
               "answer_en": "disk space",
               "answer_ar": "مساحة القرص",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 318,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 0 can increase performance ________.",
@@ -930,6 +963,7 @@
           ]
         },
         {
+          "id": 319,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 1 ________ of all RAID levels.",
@@ -958,6 +992,7 @@
           ]
         },
         {
+          "id": 320,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 1 ________.",
@@ -976,16 +1011,17 @@
             {
               "answer_en": "uses mirroring",
               "answer_ar": "يستخدم المرآة",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 321,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "________ is determined according to evenness or oddness of a sum of bits.",
@@ -1014,6 +1050,7 @@
           ]
         },
         {
+          "id": 321,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 2 schemes ________.",
@@ -1032,16 +1069,17 @@
             {
               "answer_en": "are rarely implemented",
               "answer_ar": "نادرًا ما يتم تنفيذها",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "both b and c",
               "answer_ar": "كل من ب و ج",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 322,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 3 performs ________ and incurs ________ storage overhead than RAID level 2.",
@@ -1070,6 +1108,7 @@
           ]
         },
         {
+          "id": 323,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "Disks in RAID level 4 are ________.",
@@ -1098,6 +1137,7 @@
           ]
         },
         {
+          "id": 324,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "The most significant bottleneck in RAID level 4 is its ________.",
@@ -1126,6 +1166,7 @@
           ]
         },
         {
+          "id": 325,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "One technique that can improve RAID level 5 performance, called ________, involves performing a read-modify-write cycle only when the system load is light.",
@@ -1154,6 +1195,7 @@
           ]
         },
         {
+          "id": 326,
           "chapter_en": "Chapter 12",
           "chapter_ar": "الفصل الثاني عشر",
           "question_en": "RAID level 5 provides performance that ________.",
@@ -1189,6 +1231,7 @@
       "title_ar": "الفصل  الثالث عشر",
       "questions": [
         {
+          "id": 375,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A file is ________.",
@@ -1217,6 +1260,7 @@
           ]
         },
         {
+          "id": 376,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A ________ is the number of bits a processor can operate on at once.",
@@ -1245,6 +1289,7 @@
           ]
         },
         {
+          "id": 377,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Unicode ________.",
@@ -1273,6 +1318,7 @@
           ]
         },
         {
+          "id": 378,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following lists elements of the data hierarchy in order from smallest to largest?",
@@ -1301,6 +1347,7 @@
           ]
         },
         {
+          "id": 378,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Files may be characterized by attributes such as ________.",
@@ -1329,6 +1376,7 @@
           ]
         },
         {
+          "id": 379,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The volatility attribute of a file specifies ________.",
@@ -1357,6 +1405,7 @@
           ]
         },
         {
+          "id": 380,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In a file with variable-length records, records may vary in size up to the ________ size.",
@@ -1385,6 +1434,7 @@
           ]
         },
         {
+          "id": 381,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A file system is responsible for ________.",
@@ -1413,6 +1463,7 @@
           ]
         },
         {
+          "id": 382,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "myFile.txt is an example of a ________, whereas “disk 2, blocks 782-791” is an example of a ________.",
@@ -1441,6 +1492,7 @@
           ]
         },
         {
+          "id": 383,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A ________ view of data is concerned with the layout of file data on a storage device.",
@@ -1469,6 +1521,7 @@
           ]
         },
         {
+          "id": 383,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following statements about directories is false?",
@@ -1497,6 +1550,7 @@
           ]
         },
         {
+          "id": 384,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In a hierarchically structured file system, the name of a file is formed by the pathname from the ________ to the file.",
@@ -1525,6 +1579,7 @@
           ]
         },
         {
+          "id": 385,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The UNIX-based operating systems use ________ as a delimiter between parts of a pathname; Windows operating systems use ________.",
@@ -1553,6 +1608,7 @@
           ]
         },
         {
+          "id": 386,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The ________ path to a file is the path beginning at the root.",
@@ -1581,6 +1637,7 @@
           ]
         },
         {
+          "id": 387,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which one of the following statements about links is false?",
@@ -1599,16 +1656,17 @@
             {
               "answer_en": "A hard link is a directory entry that specifies the physical location of a file.",
               "answer_ar": "الرابط الثابت هو إدخال دليل يحدد الموقع المادي للملف.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "File systems typically update soft links when a referenced file is moved to a different directory",
               "answer_ar": "عادةً ما تقوم أنظمة الملفات بتحديث الروابط الناعمة عند نقل الملف المشار إليه إلى دليل مختلف",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 388,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A File system metadata may contain ________.",
@@ -1637,6 +1695,7 @@
           ]
         },
         {
+          "id": 389,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The type of file system on a storage device is often specified by the ________ in the ________.",
@@ -1665,6 +1724,7 @@
           ]
         },
         {
+          "id": 390,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The mount command combines multiple file systems into one ________ and allows users to access data from different locations as if all files were located inside the native file system.",
@@ -1693,6 +1753,7 @@
           ]
         },
         {
+          "id": 391,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "What typically happens when a file system’s mount point contains directories of the native file system?",
@@ -1721,6 +1782,7 @@
           ]
         },
         {
+          "id": 392,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The ________ file organization scheme places records on disk in logical sequence according to a key contained in each record.",
@@ -1749,6 +1811,7 @@
           ]
         },
         {
+          "id": 393,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Contiguous file allocation is inappropriate for general-purpose file systems because ________.",
@@ -1777,6 +1840,7 @@
           ]
         },
         {
+          "id": 394,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Contiguous file allocation is most appropriate for ________.",
@@ -1805,6 +1869,7 @@
           ]
         },
         {
+          "id": 395,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A block allocation scheme allocates files using ________.",
@@ -1833,6 +1898,7 @@
           ]
         },
         {
+          "id": 396,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Large block sizes generally ________ the number of I/O operations required to access file data; small block sizes generally ________ the amount of internal fragmentation.",
@@ -1851,16 +1917,17 @@
             {
               "answer_en": "reduce, increase",
               "answer_ar": "يقلل، يزيد",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "reduce, reduce",
               "answer_ar": "يقلل، يقلل",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 397,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Microsoft’s FAT file system uses a(n) ________ file allocation scheme.",
@@ -1874,7 +1941,7 @@
             {
               "answer_en": "tabular noncontiguous",
               "answer_ar": "جدولي غير متجاور",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "contiguous",
@@ -1884,11 +1951,12 @@
             {
               "answer_en": "linked-list noncontiguous",
               "answer_ar": "قائمة مرتبطة غير متجاورة",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 398,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "An inode stores ________.",
@@ -1917,6 +1985,7 @@
           ]
         },
         {
+          "id": 399,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following statements is true?",
@@ -1945,6 +2014,7 @@
           ]
         },
         {
+          "id": 400,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Bitmaps allow the file type to ________ quickly; free lists enable the file system to ________ quickly.",
@@ -1963,16 +2033,17 @@
             {
               "answer_en": "find contiguous blocks, find the next available block",
               "answer_ar": "العثور على كتل متجاورة، العثور على الكتلة المتاحة التالية",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "find the next available block, find contiguous blocks",
               "answer_ar": "العثور على الكتلة المتاحة التالية، العثور على كتل متجاورة",
-              "is_correct": true
+              "is_correct": false
             }
           ]
         },
         {
+          "id": 401,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which one of the following statements about free space management techniques is false?",
@@ -1991,615 +2062,633 @@
             {
               "answer_en": "The file system typically maintains free blocks in a free list, sorted by memory address.",
               "answer_ar": "عادةً ما يحتفظ نظام الملفات بالكتل الحرة في قائمة حرة، مرتبة حسب عنوان الذاكرة.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "The last entry of the last free list block typically stores a null pointer.",
               "answer_ar": "يخزن الإدخال الأخير من آخر كتلة في القائمة الحرة عادةً مؤشرًا فارغًا.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 402,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which one of the following statements about access control matrices is true?",
+          "question_ar": "أي من العبارات التالية حول مصفوفات التحكم في الوصول صحيحة؟",
+          "answers": [
+            {
+              "answer_en": "Because allowing access to a file is the exception rather than the rule, the matrix will be rather dense.",
+              "answer_ar": "لأن السماح بالوصول إلى الملف هو الاستثناء وليس القاعدة، ستكون المصفوفة كثيفة إلى حد ما.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "The entry aij is 1 if user i is allowed access to file j.",
+              "answer_ar": "الإدخال aij هو 1 إذا كان المستخدم i مسموحًا له بالوصول إلى الملف j.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "The entry aij is 1 if user i may not be access file j.",
+              "answer_ar": "الإدخال aij هو 1 إذا كان المستخدم i غير مسموح له بالوصول إلى الملف j.",
+              "is_correct": true
+            },
+            {
+              "answer_en": "In an installation with a large number of users and number of files, the matrix would be quite small.",
+              "answer_ar": "في تثبيت يحتوي على عدد كبير من المستخدمين والملفات، ستكون المصفوفة صغيرة جدًا.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 403,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which of the following lists presents user classes in order from least restrictive to most restrictive?",
+          "question_ar": "أي من القوائم التالية تعرض فئات المستخدمين من الأقل تقييدًا إلى الأكثر تقييدًا؟",
+          "answers": [
+            {
+              "answer_en": "public, group, owner",
+              "answer_ar": "العام، المجموعة، المالك",
+              "is_correct": true
+            },
+            {
+              "answer_en": "owner, group, public",
+              "answer_ar": "المالك، المجموعة، العام",
+              "is_correct": false
+            },
+            {
+              "answer_en": "group, owner, public",
+              "answer_ar": "المجموعة، المالك، العام",
+              "is_correct": false
+            },
+            {
+              "answer_en": "public, owner, group",
+              "answer_ar": "العام، المالك، المجموعة",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 404,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Public access rights, by default, typically allow users to ________.",
+          "question_ar": "حقوق الوصول العامة، بشكل افتراضي، تسمح عادةً للمستخدمين بـ ________.",
+          "answers": [
+            {
+              "answer_en": "read a file, but not execute or write it",
+              "answer_ar": "قراءة الملف، ولكن لا تنفيذه أو الكتابة عليه",
+              "is_correct": false
+            },
+            {
+              "answer_en": "read and write a file, but not execute it",
+              "answer_ar": "قراءة وكتابة الملف، ولكن لا تنفيذه",
+              "is_correct": false
+            },
+            {
+              "answer_en": "read and execute a file, but not write it",
+              "answer_ar": "قراءة وتنفيذ الملف، ولكن لا الكتابة عليه",
+              "is_correct": true
+            },
+            {
+              "answer_en": "read, execute and write a file",
+              "answer_ar": "قراءة وتنفيذ وكتابة الملف",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 405,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "________ typically are used when the sequence in which records are to be processed can be anticipated; ________ generally are used when the sequence in which records are to be processed cannot be anticipated.",
+          "question_ar": "________ تُستخدم عادةً عندما يمكن توقع التسلسل الذي سيتم فيه معالجة السجلات؛ ________ تُستخدم عادةً عندما لا يمكن توقع التسلسل الذي سيتم فيه معالجة السجلات.",
+          "answers": [
+            {
+              "answer_en": "Sequential access methods, basic access methods",
+              "answer_ar": "طرق الوصول التسلسلي، طرق الوصول الأساسية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Basic access methods, sequential access methods",
+              "answer_ar": "طرق الوصول الأساسية، طرق الوصول التسلسلي",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Basic access methods, queued access methods",
+              "answer_ar": "طرق الوصول الأساسية، طرق الوصول في قائمة الانتظار",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Queued access methods, basic access methods",
+              "answer_ar": "طرق الوصول في قائمة الانتظار، طرق الوصول الأساسية",
               "is_correct": true
             }
           ]
         },
-
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which one of the following statements about access control matrices is true?",
-            "question_ar": "أي من العبارات التالية حول مصفوفات التحكم في الوصول صحيحة؟",
-            "answers": [
-              {
-                "answer_en": "Because allowing access to a file is the exception rather than the rule, the matrix will be rather dense.",
-                "answer_ar": "لأن السماح بالوصول إلى الملف هو الاستثناء وليس القاعدة، ستكون المصفوفة كثيفة إلى حد ما.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "The entry aij is 1 if user i is allowed access to file j.",
-                "answer_ar": "الإدخال aij هو 1 إذا كان المستخدم i مسموحًا له بالوصول إلى الملف j.",
-                "is_correct": true
-              },
-              {
-                "answer_en": "The entry aij is 1 if user i may not be access file j.",
-                "answer_ar": "الإدخال aij هو 1 إذا كان المستخدم i غير مسموح له بالوصول إلى الملف j.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "In an installation with a large number of users and number of files, the matrix would be quite small.",
-                "answer_ar": "في تثبيت يحتوي على عدد كبير من المستخدمين والملفات، ستكون المصفوفة صغيرة جدًا.",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which of the following lists presents user classes in order from least restrictive to most restrictive?",
-            "question_ar": "أي من القوائم التالية تعرض فئات المستخدمين من الأقل تقييدًا إلى الأكثر تقييدًا؟",
-            "answers": [
-              {
-                "answer_en": "public, group, owner",
-                "answer_ar": "العام، المجموعة، المالك",
-                "is_correct": true
-              },
-              {
-                "answer_en": "owner, group, public",
-                "answer_ar": "المالك، المجموعة، العام",
-                "is_correct": false
-              },
-              {
-                "answer_en": "group, owner, public",
-                "answer_ar": "المجموعة، المالك، العام",
-                "is_correct": false
-              },
-              {
-                "answer_en": "public, owner, group",
-                "answer_ar": "العام، المالك، المجموعة",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Public access rights, by default, typically allow users to ________.",
-            "question_ar": "حقوق الوصول العامة، بشكل افتراضي، تسمح عادةً للمستخدمين بـ ________.",
-            "answers": [
-              {
-                "answer_en": "read a file, but not execute or write it",
-                "answer_ar": "قراءة الملف، ولكن لا تنفيذه أو الكتابة عليه",
-                "is_correct": false
-              },
-              {
-                "answer_en": "read and write a file, but not execute it",
-                "answer_ar": "قراءة وكتابة الملف، ولكن لا تنفيذه",
-                "is_correct": false
-              },
-              {
-                "answer_en": "read and execute a file, but not write it",
-                "answer_ar": "قراءة وتنفيذ الملف، ولكن لا الكتابة عليه",
-                "is_correct": true
-              },
-              {
-                "answer_en": "read, execute and write a file",
-                "answer_ar": "قراءة وتنفيذ وكتابة الملف",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "________ typically are used when the sequence in which records are to be processed can be anticipated; ________ generally are used when the sequence in which records are to be processed cannot be anticipated.",
-            "question_ar": "________ تُستخدم عادةً عندما يمكن توقع التسلسل الذي سيتم فيه معالجة السجلات؛ ________ تُستخدم عادةً عندما لا يمكن توقع التسلسل الذي سيتم فيه معالجة السجلات.",
-            "answers": [
-              {
-                "answer_en": "Sequential access methods, basic access methods",
-                "answer_ar": "طرق الوصول التسلسلي، طرق الوصول الأساسية",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Basic access methods, sequential access methods",
-                "answer_ar": "طرق الوصول الأساسية، طرق الوصول التسلسلي",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Basic access methods, queued access methods",
-                "answer_ar": "طرق الوصول الأساسية، طرق الوصول في قائمة الانتظار",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Queued access methods, basic access methods",
-                "answer_ar": "طرق الوصول في قائمة الانتظار، طرق الوصول الأساسية",
-                "is_correct": true
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Memory-mapped files ________.",
-            "question_ar": "الملفات المعينة على الذاكرة ________.",
-            "answers": [
-              {
-                "answer_en": "map file data to file system caches",
-                "answer_ar": "تعيين بيانات الملف إلى ذاكرة التخزين المؤقت لنظام الملفات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "simplify application programming",
-                "answer_ar": "تبسط برمجة التطبيقات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "map file data to a process’s virtual address space",
-                "answer_ar": "تعيين بيانات الملف إلى مساحة العنوان الافتراضية للعملية",
-                "is_correct": true
-              },
-              {
-                "answer_en": "both a and c",
-                "answer_ar": "كل من أ و ج",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which of the following statements about backup operations is false?",
-            "question_ar": "أي من العبارات التالية حول عمليات النسخ الاحتياطي خاطئة؟",
-            "answers": [
-              {
-                "answer_en": "Logical backups store file system data and its logical structure.",
-                "answer_ar": "النسخ الاحتياطي المنطقي يخزن بيانات نظام الملفات وهيكله المنطقي.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Logical backups may not store hidden system files.",
-                "answer_ar": "قد لا تخزن النسخ الاحتياطية المنطقية ملفات النظام المخفية.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Physical backups are appropriate for a user to restore a single file from the backup.",
-                "answer_ar": "النسخ الاحتياطي المادي مناسب لاستعادة ملف واحد من النسخة الاحتياطية.",
-                "is_correct": true
-              },
-              {
-                "answer_en": "Physical backups duplicate a storage device’s data at the bit level.",
-                "answer_ar": "النسخ الاحتياطي المادي يكرر بيانات جهاز التخزين على مستوى البت.",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which type of backup would be best suited for a mission-critical system that modifies a small number of files between backups?",
-            "question_ar": "أي نوع من النسخ الاحتياطي سيكون الأنسب لنظام حاسم يعدل عددًا صغيرًا من الملفات بين النسخ الاحتياطية؟",
-            "answers": [
-              {
-                "answer_en": "frequent physical backup",
-                "answer_ar": "نسخ احتياطي مادي متكرر",
-                "is_correct": false
-              },
-              {
-                "answer_en": "infrequent incremental backup",
-                "answer_ar": "نسخ احتياطي تدريجي غير متكرر",
-                "is_correct": false
-              },
-              {
-                "answer_en": "infrequent logical backup",
-                "answer_ar": "نسخ احتياطي منطقي غير متكرر",
-                "is_correct": false
-              },
-              {
-                "answer_en": "frequent incremental backup",
-                "answer_ar": "نسخ احتياطي تدريجي متكرر",
-                "is_correct": true
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Transaction-based logging reduces the risk of data loss by using ________ transactions, which perform a group of operations in their entirety, or not at all.",
-            "question_ar": "يقلل التسجيل القائم على المعاملات من خطر فقدان البيانات باستخدام معاملات ________، والتي تنفذ مجموعة من العمليات بالكامل، أو لا تنفذها على الإطلاق.",
-            "answers": [
-              {
-                "answer_en": "Virtual",
-                "answer_ar": "الافتراضية",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Exclusive",
-                "answer_ar": "الحصرية",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Atomic",
-                "answer_ar": "الذرية",
-                "is_correct": true
-              },
-              {
-                "answer_en": "shadow",
-                "answer_ar": "الظل",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "If an error occurs that prevents a transaction from completing, transaction-based logging allows the system to “________” the system to the state before the transaction began.",
-            "question_ar": "إذا حدث خطأ يمنع اكتمال المعاملة، يسمح التسجيل القائم على المعاملات للنظام بـ “________” النظام إلى الحالة التي كانت قبل بدء المعاملة.",
-            "answers": [
-              {
-                "answer_en": "Restore",
-                "answer_ar": "استعادة",
-                "is_correct": false
-              },
-              {
-                "answer_en": "roll back",
-                "answer_ar": "التراجع",
-                "is_correct": true
-              },
-              {
-                "answer_en": "reset",
-                "answer_ar": "إعادة تعيين",
-                "is_correct": false
-              },
-              {
-                "answer_en": "unwind",
-                "answer_ar": "فك",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Because data is written ________ in an LFS, each write times generally ________ compared to traditional file systems.",
-            "question_ar": "لأن البيانات تُكتب ________ في نظام الملفات اللوغاريتمي (LFS)، فإن وقت كل كتابة عادةً ما ________ مقارنة بأنظمة الملفات التقليدية.",
-            "answers": [
-              {
-                "answer_en": "Non-sequentially, increase",
-                "answer_ar": "بشكل غير تسلسلي، يزيد",
-                "is_correct": false
-              },
-              {
-                "answer_en": "sequentially, decrease",
-                "answer_ar": "بشكل تسلسلي، يقل",
-                "is_correct": true
-              },
-              {
-                "answer_en": "non-sequentially, decrease",
-                "answer_ar": "بشكل غير تسلسلي، يقل",
-                "is_correct": false
-              },
-              {
-                "answer_en": "sequentially, increase",
-                "answer_ar": "بشكل تسلسلي، يزيد",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which one of the following statements about file servers and distributed systems is false?",
-            "question_ar": "أي من العبارات التالية حول خوادم الملفات والأنظمة الموزعة خاطئة؟",
-            "answers": [
-              {
-                "answer_en": "A file server is a computer system dedicated to resolving intercomputer file references.",
-                "answer_ar": "خادم الملفات هو نظام كمبيوتر مخصص لحل المراجع بين أجهزة الكمبيوتر للملفات.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "A distributed file system enables users to treat remote files in a computer network in much the same manner as local files.",
-                "answer_ar": "يسمح نظام الملفات الموزع للمستخدمين بالتعامل مع الملفات البعيدة في شبكة الكمبيوتر بنفس الطريقة تقريبًا مثل الملفات المحلية.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "NFS networks must contain computers running the same operating system.",
-                "answer_ar": "يجب أن تحتوي شبكات NFS على أجهزة كمبيوتر تعمل بنظام تشغيل واحد.",
-                "is_correct": true
-              },
-              {
-                "answer_en": "In an NFS network, each computer maintains a file system that can act as a server and/or a client",
-                "answer_ar": "في شبكة NFS، يحتفظ كل كمبيوتر بنظام ملفات يمكن أن يعمل كخادم و/أو عميل",
-                "is_correct": false
-              }
-            ]
-          },
-
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "A database system includes _________.",
-            "question_ar": "نظام قاعدة البيانات يتضمن _________.",
-            "answers": [
-              {
-                "answer_en": "the hardware on which the data resides.",
-                "answer_ar": "الأجهزة التي توجد عليها البيانات.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "the software that controls access to the data.",
-                "answer_ar": "البرمجيات التي تتحكم في الوصول إلى البيانات.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "the data in the database.",
-                "answer_ar": "البيانات في قاعدة البيانات.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "all of the above",
-                "answer_ar": "كل ما سبق",
-                "is_correct": true
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "A ________ is software that controls access to data in a database.",
-            "question_ar": "________ هو برنامج يتحكم في الوصول إلى البيانات في قاعدة البيانات.",
-            "answers": [
-              {
-                "answer_en": "structured query language",
-                "answer_ar": "لغة الاستعلام الهيكلية",
-                "is_correct": false
-              },
-              {
-                "answer_en": "database management server",
-                "answer_ar": "خادم إدارة قاعدة البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "data manipulation language",
-                "answer_ar": "لغة معالجة البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "database management system",
-                "answer_ar": "نظام إدارة قاعدة البيانات",
-                "is_correct": true
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which of the following is not an advantage of using a database system?",
-            "question_ar": "أي مما يلي ليس ميزة لاستخدام نظام قاعدة البيانات؟",
-            "answers": [
-              {
-                "answer_en": "Databases organize data by content instead of by pathname.",
-                "answer_ar": "تقوم قواعد البيانات بتنظيم البيانات حسب المحتوى بدلاً من المسار.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Databases help eliminate redundant data.",
-                "answer_ar": "تساعد قواعد البيانات في التخلص من البيانات المكررة.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Databases are not susceptible to attack due to the centralized control and location of data.",
-                "answer_ar": "قواعد البيانات ليست عرضة للهجوم بسبب التحكم المركزي وموقع البيانات.",
-                "is_correct": true
-              },
-              {
-                "answer_en": "Databases allow access to shared data.",
-                "answer_ar": "تسمح قواعد البيانات بالوصول إلى البيانات المشتركة.",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "A ________ enables users to find data items in a database.",
-            "question_ar": "________ يمكّن المستخدمين من العثور على عناصر البيانات في قاعدة البيانات.",
-            "answers": [
-              {
-                "answer_en": "data manipulation language",
-                "answer_ar": "لغة معالجة البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "query language",
-                "answer_ar": "لغة الاستعلام",
-                "is_correct": true
-              },
-              {
-                "answer_en": "data definition language",
-                "answer_ar": "لغة تعريف البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "all of the above",
-                "answer_ar": "كل ما سبق",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "The role of a data manipulation language (DML) is ________.",
-            "question_ar": "دور لغة معالجة البيانات (DML) هو ________.",
-            "answers": [
-              {
-                "answer_en": "to specify how data items are organized",
-                "answer_ar": "تحديد كيفية تنظيم عناصر البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "to modify data",
-                "answer_ar": "تعديل البيانات",
-                "is_correct": true
-              },
-              {
-                "answer_en": "to search the database",
-                "answer_ar": "البحث في قاعدة البيانات",
-                "is_correct": false
-              },
-              {
-                "answer_en": "to specify how data items are related",
-                "answer_ar": "تحديد كيفية ارتباط عناصر البيانات",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "The _______ is a logic representation of the data in a database that allows the relationships between the data to be considered without concerning oneself with physical implementation of the underlying data structures.",
-            "question_ar": "_______ هو تمثيل منطقي للبيانات في قاعدة البيانات يسمح بالنظر في العلاقات بين البيانات دون الاهتمام بالتنفيذ المادي للهياكل البيانات الأساسية.",
-            "answers": [
-              {
-                "answer_en": "structured database model",
-                "answer_ar": "نموذج قاعدة البيانات الهيكلية",
-                "is_correct": false
-              },
-              {
-                "answer_en": "relational database model",
-                "answer_ar": "نموذج قاعدة البيانات العلائقية",
-                "is_correct": true
-              },
-              {
-                "answer_en": "logical database model",
-                "answer_ar": "نموذج قاعدة البيانات المنطقي",
-                "is_correct": false
-              },
-              {
-                "answer_en": "none of the above",
-                "answer_ar": "لا شيء مما سبق",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "A particular element (row) of a relation is called a ________.",
-            "question_ar": "عنصر معين (صف) في العلاقة يُسمى ________.",
-            "answers": [
-              {
-                "answer_en": "primary key",
-                "answer_ar": "المفتاح الأساسي",
-                "is_correct": false
-              },
-              {
-                "answer_en": "result set",
-                "answer_ar": "مجموعة النتائج",
-                "is_correct": false
-              },
-              {
-                "answer_en": "tuple",
-                "answer_ar": "مجموعة",
-                "is_correct": true
-              },
-              {
-                "answer_en": "field",
-                "answer_ar": "حقل",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "The columns of a relation are known as ________.",
-            "question_ar": "أعمدة العلاقة تُعرف باسم ________.",
-            "answers": [
-              {
-                "answer_en": "Results",
-                "answer_ar": "النتائج",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Keys",
-                "answer_ar": "المفاتيح",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Attributes",
-                "answer_ar": "السمات",
-                "is_correct": true
-              },
-              {
-                "answer_en": "domains",
-                "answer_ar": "المجالات",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "The ________ operation forms a relation from more than one relation.",
-            "question_ar": "عملية ________ تُشكل علاقة من أكثر من علاقة واحدة.",
-            "answers": [
-              {
-                "answer_en": "Join",
-                "answer_ar": "الربط",
-                "is_correct": true
-              },
-              {
-                "answer_en": "Merge",
-                "answer_ar": "الدمج",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Projection",
-                "answer_ar": "الإسقاط",
-                "is_correct": false
-              },
-              {
-                "answer_en": "subset",
-                "answer_ar": "مجموعة فرعية",
-                "is_correct": false
-              }
-            ]
-          },
-          {
-            "chapter_en": "Chapter 13",
-            "chapter_ar": "الفصل الثالث عشر",
-            "question_en": "Which of the following statements accurately describes operating system support for databases?",
-            "question_ar": "أي من العبارات التالية تصف بدقة دعم نظام التشغيل لقواعد البيانات؟",
-            "answers": [
-              {
-                "answer_en": "Most operating systems modify file system management, memory management and interprocess communication to support multiple databases.",
-                "answer_ar": "معظم أنظمة التشغيل تعدل إدارة نظام الملفات، إدارة الذاكرة، والاتصال بين العمليات لدعم قواعد بيانات متعددة.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "DBMS designers tend to bypass operating system services in favor of their own.",
-                "answer_ar": "يميل مصممو أنظمة إدارة قواعد البيانات (DBMS) إلى تجاوز خدمات نظام التشغيل لصالح خدماتهم الخاصة.",
-                "is_correct": true
-              },
-              {
-                "answer_en": "Most operating systems modify file system management, memory management and inter-process communication to support a single databases.",
-                "answer_ar": "معظم أنظمة التشغيل تعدل إدارة نظام الملفات، إدارة الذاكرة، والاتصال بين العمليات لدعم قاعدة بيانات واحدة.",
-                "is_correct": false
-              },
-              {
-                "answer_en": "Databases are too complicated to merit operating system support.",
-                "answer_ar": "قواعد البيانات معقدة جدًا لتستحق دعم نظام التشغيل.",
-                "is_correct": false
-              }
-            ]
-          }
-        ]
-
-
+        {
+          "id": 406,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Memory-mapped files ________.",
+          "question_ar": "الملفات المعينة على الذاكرة ________.",
+          "answers": [
+            {
+              "answer_en": "map file data to file system caches",
+              "answer_ar": "تعيين بيانات الملف إلى ذاكرة التخزين المؤقت لنظام الملفات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "simplify application programming",
+              "answer_ar": "تبسط برمجة التطبيقات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "map file data to a process’s virtual address space",
+              "answer_ar": "تعيين بيانات الملف إلى مساحة العنوان الافتراضية للعملية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "both a and c",
+              "answer_ar": "كل من أ و ج",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 407,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which of the following statements about backup operations is false?",
+          "question_ar": "أي من العبارات التالية حول عمليات النسخ الاحتياطي خاطئة؟",
+          "answers": [
+            {
+              "answer_en": "Logical backups store file system data and its logical structure.",
+              "answer_ar": "النسخ الاحتياطي المنطقي يخزن بيانات نظام الملفات وهيكله المنطقي.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Logical backups may not store hidden system files.",
+              "answer_ar": "قد لا تخزن النسخ الاحتياطية المنطقية ملفات النظام المخفية.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Physical backups are appropriate for a user to restore a single file from the backup.",
+              "answer_ar": "النسخ الاحتياطي المادي مناسب لاستعادة ملف واحد من النسخة الاحتياطية.",
+              "is_correct": true
+            },
+            {
+              "answer_en": "Physical backups duplicate a storage device’s data at the bit level.",
+              "answer_ar": "النسخ الاحتياطي المادي يكرر بيانات جهاز التخزين على مستوى البت.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 408,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which type of backup would be best suited for a mission-critical system that modifies a small number of files between backups?",
+          "question_ar": "أي نوع من النسخ الاحتياطي سيكون الأنسب لنظام حاسم يعدل عددًا صغيرًا من الملفات بين النسخ الاحتياطية؟",
+          "answers": [
+            {
+              "answer_en": "frequent physical backup",
+              "answer_ar": "نسخ احتياطي مادي متكرر",
+              "is_correct": false
+            },
+            {
+              "answer_en": "infrequent incremental backup",
+              "answer_ar": "نسخ احتياطي تدريجي غير متكرر",
+              "is_correct": false
+            },
+            {
+              "answer_en": "infrequent logical backup",
+              "answer_ar": "نسخ احتياطي منطقي غير متكرر",
+              "is_correct": false
+            },
+            {
+              "answer_en": "frequent incremental backup",
+              "answer_ar": "نسخ احتياطي تدريجي متكرر",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 409,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Transaction-based logging reduces the risk of data loss by using ________ transactions, which perform a group of operations in their entirety, or not at all.",
+          "question_ar": "يقلل التسجيل القائم على المعاملات من خطر فقدان البيانات باستخدام معاملات ________، والتي تنفذ مجموعة من العمليات بالكامل، أو لا تنفذها على الإطلاق.",
+          "answers": [
+            {
+              "answer_en": "Virtual",
+              "answer_ar": "الافتراضية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Exclusive",
+              "answer_ar": "الحصرية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Atomic",
+              "answer_ar": "الذرية",
+              "is_correct": true
+            },
+            {
+              "answer_en": "shadow",
+              "answer_ar": "الظل",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 410,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "If an error occurs that prevents a transaction from completing, transaction-based logging allows the system to “________” the system to the state before the transaction began.",
+          "question_ar": "إذا حدث خطأ يمنع اكتمال المعاملة، يسمح التسجيل القائم على المعاملات للنظام بـ “________” النظام إلى الحالة التي كانت قبل بدء المعاملة.",
+          "answers": [
+            {
+              "answer_en": "Restore",
+              "answer_ar": "استعادة",
+              "is_correct": false
+            },
+            {
+              "answer_en": "roll back",
+              "answer_ar": "التراجع",
+              "is_correct": true
+            },
+            {
+              "answer_en": "reset",
+              "answer_ar": "إعادة تعيين",
+              "is_correct": false
+            },
+            {
+              "answer_en": "unwind",
+              "answer_ar": "فك",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 411,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Because data is written ________ in an LFS, each write times generally ________ compared to traditional file systems.",
+          "question_ar": "لأن البيانات تُكتب ________ في نظام الملفات اللوغاريتمي (LFS)، فإن وقت كل كتابة عادةً ما ________ مقارنة بأنظمة الملفات التقليدية.",
+          "answers": [
+            {
+              "answer_en": "Non-sequentially, increase",
+              "answer_ar": "بشكل غير تسلسلي، يزيد",
+              "is_correct": false
+            },
+            {
+              "answer_en": "sequentially, decrease",
+              "answer_ar": "بشكل تسلسلي، يقل",
+              "is_correct": true
+            },
+            {
+              "answer_en": "non-sequentially, decrease",
+              "answer_ar": "بشكل غير تسلسلي، يقل",
+              "is_correct": false
+            },
+            {
+              "answer_en": "sequentially, increase",
+              "answer_ar": "بشكل تسلسلي، يزيد",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 412,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which one of the following statements about file servers and distributed systems is false?",
+          "question_ar": "أي من العبارات التالية حول خوادم الملفات والأنظمة الموزعة خاطئة؟",
+          "answers": [
+            {
+              "answer_en": "A file server is a computer system dedicated to resolving intercomputer file references.",
+              "answer_ar": "خادم الملفات هو نظام كمبيوتر مخصص لحل المراجع بين أجهزة الكمبيوتر للملفات.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "A distributed file system enables users to treat remote files in a computer network in much the same manner as local files.",
+              "answer_ar": "يسمح نظام الملفات الموزع للمستخدمين بالتعامل مع الملفات البعيدة في شبكة الكمبيوتر بنفس الطريقة تقريبًا مثل الملفات المحلية.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "NFS networks must contain computers running the same operating system.",
+              "answer_ar": "يجب أن تحتوي شبكات NFS على أجهزة كمبيوتر تعمل بنظام تشغيل واحد.",
+              "is_correct": true
+            },
+            {
+              "answer_en": "In an NFS network, each computer maintains a file system that can act as a server and/or a client",
+              "answer_ar": "في شبكة NFS، يحتفظ كل كمبيوتر بنظام ملفات يمكن أن يعمل كخادم و/أو عميل",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 422,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "A database system includes _________.",
+          "question_ar": "نظام قاعدة البيانات يتضمن _________.",
+          "answers": [
+            {
+              "answer_en": "the hardware on which the data resides.",
+              "answer_ar": "الأجهزة التي توجد عليها البيانات.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "the software that controls access to the data.",
+              "answer_ar": "البرمجيات التي تتحكم في الوصول إلى البيانات.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "the data in the database.",
+              "answer_ar": "البيانات في قاعدة البيانات.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "all of the above",
+              "answer_ar": "كل ما سبق",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 413,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "A ________ is software that controls access to data in a database.",
+          "question_ar": "________ هو برنامج يتحكم في الوصول إلى البيانات في قاعدة البيانات.",
+          "answers": [
+            {
+              "answer_en": "structured query language",
+              "answer_ar": "لغة الاستعلام الهيكلية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "database management server",
+              "answer_ar": "خادم إدارة قاعدة البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "data manipulation language",
+              "answer_ar": "لغة معالجة البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "database management system",
+              "answer_ar": "نظام إدارة قاعدة البيانات",
+              "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 414,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which of the following is not an advantage of using a database system?",
+          "question_ar": "أي مما يلي ليس ميزة لاستخدام نظام قاعدة البيانات؟",
+          "answers": [
+            {
+              "answer_en": "Databases organize data by content instead of by pathname.",
+              "answer_ar": "تقوم قواعد البيانات بتنظيم البيانات حسب المحتوى بدلاً من المسار.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Databases help eliminate redundant data.",
+              "answer_ar": "تساعد قواعد البيانات في التخلص من البيانات المكررة.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Databases are not susceptible to attack due to the centralized control and location of data.",
+              "answer_ar": "قواعد البيانات ليست عرضة للهجوم بسبب التحكم المركزي وموقع البيانات.",
+              "is_correct": true
+            },
+            {
+              "answer_en": "Databases allow access to shared data.",
+              "answer_ar": "تسمح قواعد البيانات بالوصول إلى البيانات المشتركة.",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 415,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "A ________ enables users to find data items in a database.",
+          "question_ar": "________ يمكّن المستخدمين من العثور على عناصر البيانات في قاعدة البيانات.",
+          "answers": [
+            {
+              "answer_en": "data manipulation language",
+              "answer_ar": "لغة معالجة البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "query language",
+              "answer_ar": "لغة الاستعلام",
+              "is_correct": true
+            },
+            {
+              "answer_en": "data definition language",
+              "answer_ar": "لغة تعريف البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "all of the above",
+              "answer_ar": "كل ما سبق",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 416,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "The role of a data manipulation language (DML) is ________.",
+          "question_ar": "دور لغة معالجة البيانات (DML) هو ________.",
+          "answers": [
+            {
+              "answer_en": "to specify how data items are organized",
+              "answer_ar": "تحديد كيفية تنظيم عناصر البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "to modify data",
+              "answer_ar": "تعديل البيانات",
+              "is_correct": true
+            },
+            {
+              "answer_en": "to search the database",
+              "answer_ar": "البحث في قاعدة البيانات",
+              "is_correct": false
+            },
+            {
+              "answer_en": "to specify how data items are related",
+              "answer_ar": "تحديد كيفية ارتباط عناصر البيانات",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 417,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "The _______ is a logic representation of the data in a database that allows the relationships between the data to be considered without concerning oneself with physical implementation of the underlying data structures.",
+          "question_ar": "_______ هو تمثيل منطقي للبيانات في قاعدة البيانات يسمح بالنظر في العلاقات بين البيانات دون الاهتمام بالتنفيذ المادي للهياكل البيانات الأساسية.",
+          "answers": [
+            {
+              "answer_en": "structured database model",
+              "answer_ar": "نموذج قاعدة البيانات الهيكلية",
+              "is_correct": false
+            },
+            {
+              "answer_en": "relational database model",
+              "answer_ar": "نموذج قاعدة البيانات العلائقية",
+              "is_correct": true
+            },
+            {
+              "answer_en": "logical database model",
+              "answer_ar": "نموذج قاعدة البيانات المنطقي",
+              "is_correct": false
+            },
+            {
+              "answer_en": "none of the above",
+              "answer_ar": "لا شيء مما سبق",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 418,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "A particular element (row) of a relation is called a ________.",
+          "question_ar": "عنصر معين (صف) في العلاقة يُسمى ________.",
+          "answers": [
+            {
+              "answer_en": "primary key",
+              "answer_ar": "المفتاح الأساسي",
+              "is_correct": false
+            },
+            {
+              "answer_en": "result set",
+              "answer_ar": "مجموعة النتائج",
+              "is_correct": false
+            },
+            {
+              "answer_en": "tuple",
+              "answer_ar": "مجموعة",
+              "is_correct": true
+            },
+            {
+              "answer_en": "field",
+              "answer_ar": "حقل",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 419,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "The columns of a relation are known as ________.",
+          "question_ar": "أعمدة العلاقة تُعرف باسم ________.",
+          "answers": [
+            {
+              "answer_en": "Results",
+              "answer_ar": "النتائج",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Keys",
+              "answer_ar": "المفاتيح",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Attributes",
+              "answer_ar": "السمات",
+              "is_correct": true
+            },
+            {
+              "answer_en": "domains",
+              "answer_ar": "المجالات",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 420,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "The ________ operation forms a relation from more than one relation.",
+          "question_ar": "عملية ________ تُشكل علاقة من أكثر من علاقة واحدة.",
+          "answers": [
+            {
+              "answer_en": "Join",
+              "answer_ar": "الربط",
+              "is_correct": true
+            },
+            {
+              "answer_en": "Merge",
+              "answer_ar": "الدمج",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Projection",
+              "answer_ar": "الإسقاط",
+              "is_correct": false
+            },
+            {
+              "answer_en": "subset",
+              "answer_ar": "مجموعة فرعية",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 421,
+          "chapter_en": "Chapter 13",
+          "chapter_ar": "الفصل الثالث عشر",
+          "question_en": "Which of the following statements accurately describes operating system support for databases?",
+          "question_ar": "أي من العبارات التالية تصف بدقة دعم نظام التشغيل لقواعد البيانات؟",
+          "answers": [
+            {
+              "answer_en": "Most operating systems modify file system management, memory management and interprocess communication to support multiple databases.",
+              "answer_ar": "معظم أنظمة التشغيل تعدل إدارة نظام الملفات، إدارة الذاكرة، والاتصال بين العمليات لدعم قواعد بيانات متعددة.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "DBMS designers tend to bypass operating system services in favor of their own.",
+              "answer_ar": "يميل مصممو أنظمة إدارة قواعد البيانات (DBMS) إلى تجاوز خدمات نظام التشغيل لصالح خدماتهم الخاصة.",
+              "is_correct": true
+            },
+            {
+              "answer_en": "Most operating systems modify file system management, memory management and inter-process communication to support a single databases.",
+              "answer_ar": "معظم أنظمة التشغيل تعدل إدارة نظام الملفات، إدارة الذاكرة، والاتصال بين العمليات لدعم قاعدة بيانات واحدة.",
+              "is_correct": false
+            },
+            {
+              "answer_en": "Databases are too complicated to merit operating system support.",
+              "answer_ar": "قواعد البيانات معقدة جدًا لتستحق دعم نظام التشغيل.",
+              "is_correct": false
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 12,
       "title_en": "Chapter 15",
-      "title_ar": "الفصل  الخامس عشر",
+      "title_ar": "الفصل الخامس عشر",
       "questions": [
         {
+          "id": 327,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ is an example of responsibility for an operating system in a multiprocessing system that does not exist in a uniprocessor system.",
@@ -2628,6 +2717,7 @@
           ]
         },
         {
+          "id": 328,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A __________ is an example of a SIMD processor?",
@@ -2656,6 +2746,7 @@
           ]
         },
         {
+          "id": 329,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ is not an example of a technique for adding parallelism into a SISD computer?",
@@ -2684,6 +2775,7 @@
           ]
         },
         {
+          "id": 330,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The __________ is a measure of the performance of an interconnection scheme.",
@@ -2712,6 +2804,7 @@
           ]
         },
         {
+          "id": 331,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "For a system with 16 nodes, which of the following interconnection schemes would have the smallest network diameter?",
@@ -2720,12 +2813,12 @@
             {
               "answer_en": "crossbar-switch matrix",
               "answer_ar": "مصفوفة مفاتيح التقاطع",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "hypercube",
               "answer_ar": "المكعب الفائق",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "4-connected 2-D mesh network",
@@ -2740,6 +2833,7 @@
           ]
         },
         {
+          "id": 332,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following statements is a characteristic of a tightly coupled system?",
@@ -2768,6 +2862,7 @@
           ]
         },
         {
+          "id": 333,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A loosely coupled system is __________ than a tightly coupled system.",
@@ -2796,6 +2891,7 @@
           ]
         },
         {
+          "id": 334,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In which type of environment is a master/slave multiprocessor organization most appropriate?",
@@ -2824,6 +2920,7 @@
           ]
         },
         {
+          "id": 335,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Master/slave multiprocessor organizations __________.",
@@ -2852,6 +2949,7 @@
           ]
         },
         {
+          "id": 336,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A separate kernels multiprocessor organization does not __________.",
@@ -2880,6 +2978,7 @@
           ]
         },
         {
+          "id": 337,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A separate kernels multiprocessor organization is more appropriate for __________.",
@@ -2908,6 +3007,7 @@
           ]
         },
         {
+          "id": 338,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ is the most fault-tolerant type of multiprocessor organization.",
@@ -2936,6 +3036,7 @@
           ]
         },
         {
+          "id": 339,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A symmetrical multiprocessor organization must _______, unlike master/slave and separate kernels organizations.",
@@ -2964,6 +3065,7 @@
           ]
         },
         {
+          "id": 340,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In a UMA multiprocessor, __________.",
@@ -2992,6 +3094,7 @@
           ]
         },
         {
+          "id": 341,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In an SMP system, __________ is shared between all processors.",
@@ -3010,16 +3113,17 @@
             {
               "answer_en": "Memory",
               "answer_ar": "الذاكرة",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 342,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A NUMA system is more suitable for __________.",
@@ -3048,6 +3152,7 @@
           ]
         },
         {
+          "id": 343,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Why is the NUMA design more scalable than the UMA design?",
@@ -3076,6 +3181,7 @@
           ]
         },
         {
+          "id": 344,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following statements does not describe a benefit of the COMA design?",
@@ -3104,6 +3210,7 @@
           ]
         },
         {
+          "id": 345,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Attraction memory is __________.",
@@ -3132,6 +3239,7 @@
           ]
         },
         {
+          "id": 346,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Nodes in a NORMA multiprocessor communicate through __________.",
@@ -3160,6 +3268,7 @@
           ]
         },
         {
+          "id": 347,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A __________ is an example of a NORMA system.",
@@ -3188,6 +3297,7 @@
           ]
         },
         {
+          "id": 348,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A system exhibits __________ if the value obtained from reading a memory address is always the value that was most recently written to that address.",
@@ -3216,6 +3326,7 @@
           ]
         },
         {
+          "id": 349,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "How is bus snooping implemented to ensure cache coherence?",
@@ -3244,6 +3355,7 @@
           ]
         },
         {
+          "id": 350,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "How is the CC-NUMA home-based cache coherency protocol implemented when a cache miss occurs on a read?",
@@ -3252,7 +3364,7 @@
             {
               "answer_en": "The reading node contacts the home node. If the data item is clean, the home node forwards it to the reading node. If the data item is dirty, the home node broadcasts a request for the dirty copy to all nodes. The node with the dirty copy sends the data to the home node, which forwards it to the requesting node.",
               "answer_ar": "تتصل العقدة القارئة بالعقدة الرئيسية. إذا كان عنصر البيانات نظيفًا، تقوم العقدة الرئيسية بإعادة توجيهه إلى العقدة القارئة. إذا كان عنصر البيانات متسخًا، تقوم العقدة الرئيسية ببث طلب للحصول على النسخة المتسخة إلى جميع العقد. ترسل العقدة التي تحتوي على النسخة المتسخة البيانات إلى العقدة الرئيسية، والتي تقوم بإعادة توجيهها إلى العقدة الطالبة.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "The reading node contacts the home node. If the data item is clean, the home node forwards it to the reading node. If the data item is dirty, the home node broadcasts a request for the dirty copy to all nodes. The node with the dirty copy sends the data to both the home node and the requesting node.",
@@ -3262,7 +3374,7 @@
             {
               "answer_en": "The reading node contacts the home node. If the data item is clean, the home node forwards it to the reading node. If the data item is dirty, the home node forwards the request to the node with the dirty copy. This node sends the data to both the home node and the requesting node.",
               "answer_ar": "تتصل العقدة القارئة بالعقدة الرئيسية. إذا كان عنصر البيانات نظيفًا، تقوم العقدة الرئيسية بإعادة توجيهه إلى العقدة القارئة. إذا كان عنصر البيانات متسخًا، تقوم العقدة الرئيسية بإعادة توجيه الطلب إلى العقدة التي تحتوي على النسخة المتسخة. ترسل هذه العقدة البيانات إلى كل من العقدة الرئيسية والعقدة الطالبة.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "The reading node contacts the home node, which always stores the most updated version of the data item. The home node forwards the data to the requesting node.",
@@ -3272,6 +3384,7 @@
           ]
         },
         {
+          "id": 351,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A page that is __________ is a good candidate for page migration.",
@@ -3290,16 +3403,17 @@
             {
               "answer_en": "frequently read by several remote nodes, but not modified",
               "answer_ar": "يتم قراءتها بشكل متكرر من قبل عدة عقد بعيدة، ولكن لا يتم تعديلها",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "frequently modified by a single remote node",
               "answer_ar": "يتم تعديلها بشكل متكرر من قبل عقدة بعيدة واحدة",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 352,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "How might page migration and page replication actually reduce system performance?",
@@ -3328,6 +3442,7 @@
           ]
         },
         {
+          "id": 353,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In the __________ memory coherence protocol, a write causes all nodes except the writing node to remove their copy of the modified page.",
@@ -3356,6 +3471,7 @@
           ]
         },
         {
+          "id": 354,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In the __________ implementation of a memory coherence protocol, all shared page updates that occur between an acquire operation and a release operation are batched as one update message after the release operation completes.",
@@ -3364,7 +3480,7 @@
             {
               "answer_en": "lazy release consistency",
               "answer_ar": "اتساق الإصدار الكسول",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "home-based consistency",
@@ -3374,7 +3490,7 @@
             {
               "answer_en": "release consistency",
               "answer_ar": "اتساق الإصدار",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "delayed consistency",
@@ -3384,6 +3500,7 @@
           ]
         },
         {
+          "id": 355,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Processor affinity is the __________.",
@@ -3412,6 +3529,7 @@
           ]
         },
         {
+          "id": 356,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ process scheduling attempts to exploit parallelism inherent in groups of related processes.",
@@ -3440,6 +3558,7 @@
           ]
         },
         {
+          "id": 357,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which of the following job-blind process scheduling algorithms attempt to exploit processor affinity?",
@@ -3468,6 +3587,7 @@
           ]
         },
         {
+          "id": 358,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Which job-blind process scheduling algorithm is least likely to indefinitely postpone a process?",
@@ -3496,6 +3616,7 @@
           ]
         },
         {
+          "id": 359,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "Consider a system containing 18 processors and three jobs: Job A contains 11 runnable processes, job B contains eight runnable processes and job C contains four runnable processes. The system contains 18 processors. If the system uses dynamic partitioning scheduling, how are processors allocated to jobs?",
@@ -3524,6 +3645,7 @@
           ]
         },
         {
+          "id": 360,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "The undivided coscheduling algorithm does not __________.",
@@ -3537,7 +3659,7 @@
             {
               "answer_en": "permit indefinite postponement",
               "answer_ar": "تسمح بالتأجيل إلى أجل غير مسمى",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "permit processors to remain idle if there are processes waiting to execute.",
@@ -3547,11 +3669,12 @@
             {
               "answer_en": "exploit processor affinity",
               "answer_ar": "تستغل تقارب المعالج",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 360,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A system might decide to migrate a process __________",
@@ -3580,6 +3703,7 @@
           ]
         },
         {
+          "id": 361,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ are not migrated with a process as part of its process state.",
@@ -3608,6 +3732,7 @@
           ]
         },
         {
+          "id": 362,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "How does a system typically handle messages sent to a migrating process?",
@@ -3616,12 +3741,12 @@
             {
               "answer_en": "The sending node creates a dummy process that receives messages for the migrating process. Once migration completes, the sending and receiving nodes inform other nodes of the process's new location. The dummy process forwards messages to the migrated process, and the sending node terminates the dummy process.",
               "answer_ar": "تقوم العقدة المرسلة بإنشاء عملية وهمية تستقبل الرسائل للعملية المهاجرة. بمجرد اكتمال الهجرة، تقوم العقدة المرسلة والمستقبلة بإعلام العقد الأخرى بموقع العملية الجديد. تقوم العملية الوهمية بإعادة توجيه الرسائل إلى العملية المهاجرة، وتقوم العقدة المرسلة بإنهاء العملية الوهمية.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "The sending node creates a message queue to hold all messages destined for the migrating process. Once migration completes, the sending and receiving nodes inform other nodes of the process's new location. The sending node forwards the messages in the message queue to the receiving node and destroys its instance of the process.",
               "answer_ar": "تقوم العقدة المرسلة بإنشاء قائمة انتظار للرسائل لتخزين جميع الرسائل الموجهة للعملية المهاجرة. بمجرد اكتمال الهجرة، تقوم العقدة المرسلة والمستقبلة بإعلام العقد الأخرى بموقع العملية الجديد. تقوم العقدة المرسلة بإعادة توجيه الرسائل في قائمة الانتظار إلى العقدة المستقبلة وتدمر نسختها من العملية.",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "All messages must be sent to the receiving node once migration starts; all messages sent to the sending node are lost.",
@@ -3636,6 +3761,7 @@
           ]
         },
         {
+          "id": 363,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A migrated process's reliance on its previous node is called __________.",
@@ -3664,6 +3790,7 @@
           ]
         },
         {
+          "id": 364,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ is not a desirable characteristic of a successful migration strategy.",
@@ -3692,6 +3819,7 @@
           ]
         },
         {
+          "id": 365,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In __________, the sender begins transferring dirty pages before the original process is suspended, then migrates the process when the number of dirty page remaining at the sending node reaches a lower threshold.",
@@ -3720,6 +3848,7 @@
           ]
         },
         {
+          "id": 366,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "An advantage of eager migration over dirty eager migration is __________.",
@@ -3733,12 +3862,12 @@
             {
               "answer_en": "that no messages are lost during migration",
               "answer_ar": "أنه لا يتم فقدان أي رسائل أثناء الهجرة",
-              "is_correct": false
+              "is_correct": true
             },
             {
               "answer_en": "less initial migration latency",
               "answer_ar": "وقت استجابة أقل للهجرة الأولية",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "none of the above",
@@ -3748,6 +3877,7 @@
           ]
         },
         {
+          "id": 367,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In which type of environment would static load balancing be most appropriate?",
@@ -3776,6 +3906,7 @@
           ]
         },
         {
+          "id": 368,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "__________ is a goal of static load balancing algorithms.",
@@ -3804,6 +3935,7 @@
           ]
         },
         {
+          "id": 369,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In which environments does a symmetric load balancing policy perform well?",
@@ -3822,16 +3954,17 @@
             {
               "answer_en": "There are some periods when the system is underloaded, and some when the system is overloaded.",
               "answer_ar": "هناك بعض الفترات التي يكون فيها النظام غير مثقل بالحمل، وبعض الفترات التي يكون فيها النظام مثقلًا بالحمل.",
-              "is_correct": true
+              "is_correct": false
             },
             {
               "answer_en": "all of the above",
               "answer_ar": "كل ما سبق",
-              "is_correct": false
+              "is_correct": true
             }
           ]
         },
         {
+          "id": 370,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "In the _______ load balancing algorithm, processors classify their loads as low, normal or high, send this information to other processors and use a receiver-initiated policy based on these classifications to migrate processes.",
@@ -3860,6 +3993,7 @@
           ]
         },
         {
+          "id": 371,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A process waiting for a spin lock __________.",
@@ -3888,6 +4022,7 @@
           ]
         },
         {
+          "id": 372,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "An adaptive lock is a mutual exclusion lock that __________.",
@@ -3916,6 +4051,7 @@
           ]
         },
         {
+          "id": 373,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A ________ occurs when two or more processes access a resource in a nondeterministic order, and the outcome depends on the order that the processes access the resource.",
@@ -3944,6 +4080,7 @@
           ]
         },
         {
+          "id": 374,
           "chapter_en": "Chapter 13",
           "chapter_ar": "الفصل الثالث عشر",
           "question_en": "A(n) __________ lock is useful for a situation in which__________",

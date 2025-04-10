@@ -30,7 +30,7 @@ class FavouriteWidget extends StatelessWidget {
                       fun:(){
                         showFlushBar(context, "تم حذف السؤال بنجاح ");
                       },
-                      id: question.questionAr,));
+                      id: question.id,));
               } else {
                 context
                     .read<FavouriteBloc>()
