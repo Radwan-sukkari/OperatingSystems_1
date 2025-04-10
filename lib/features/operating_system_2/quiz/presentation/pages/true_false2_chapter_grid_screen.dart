@@ -69,6 +69,8 @@ class TrueFalse2ChapterGridScreen extends StatelessWidget {
                                               ? context.pushNamed(
                                                   QuizScreen.name,
                                                   queryParameters: {
+                                                    "appBarTitle":" كويز ${state.chapters[index].titleAr} ",
+
                                                     'chapterEnglish': state
                                                         .chapters[index]
                                                         .titleEn,

@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
+import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
 import 'package:operating_systems/core/bloc/app_state_bloc.dart';
 import 'package:operating_systems/features/favourite/domain/use_cases/add_to_favorite_use_case.dart';
@@ -36,8 +37,9 @@ class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
           emit(state.copWith(addFavouriteState: const BlocStateData.failed())),
       (data) {
         emit(state.copWith(addFavouriteState: BlocStateData.success(data)));
-        print("Added to favourites");
         add(GetFavouriteEvent());
+        event.fun();
+
       },
     );
   }
@@ -53,8 +55,8 @@ class FavouriteBloc extends Bloc<FavouriteEvent, FavouriteState> {
           state.copWith(removeFavouriteState: const BlocStateData.failed())),
       (data) {
         emit(state.copWith(removeFavouriteState: BlocStateData.success(data)));
-        print("Removed from favourites");
         add(GetFavouriteEvent());
+        event.fun();
       },
     );
   }

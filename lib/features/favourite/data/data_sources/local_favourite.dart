@@ -22,7 +22,7 @@ class FavoriteLocalDataSourceImpl implements FavoriteLocalDataSource {
   @override
   Future<Unit> addToFavorite(Question question) async {
     final key = generateSafeKey(question.questionAr);
-    await box.put(key, question);
+    await box.put(question.questionAr, question);
     return unit;
   }
 

@@ -3,19 +3,23 @@ import 'package:flutter/material.dart';
 
 void showFlushBar(BuildContext context, String message) {
   Flushbar(
-    message: message,
-    duration: const Duration(seconds: 6),
+    messageText: Text(
+      message,
+      style: Theme.of(context)
+          .textTheme
+          .titleLarge!
+          .copyWith(color: Colors.white, fontWeight: FontWeight.w500),
+    ),
+    duration: const Duration(seconds: 4),
     titleColor: Colors.black,
     backgroundColor: Theme.of(context).colorScheme.primary,
     flushbarPosition: FlushbarPosition.TOP,
     margin: const EdgeInsets.all(20),
     padding: const EdgeInsets.all(12),
     borderRadius: BorderRadius.circular(8),
-
     animationDuration: const Duration(milliseconds: 150),
     forwardAnimationCurve: Curves.easeIn,
     reverseAnimationCurve: Curves.easeOut,
-
     flushbarStyle: FlushbarStyle.FLOATING,
     boxShadows: [
       BoxShadow(

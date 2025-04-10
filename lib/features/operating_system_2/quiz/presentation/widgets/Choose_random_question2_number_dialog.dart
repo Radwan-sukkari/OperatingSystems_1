@@ -76,6 +76,7 @@ class ChooseRandomQuestion2NumberDialog extends StatelessWidget {
                       context.pushNamed(
                         QuizScreen.name,
                         queryParameters: {
+                          "appBarTitle":" كويز شامل ",
                           'chapterEnglish': "RandomChapter",
                           'chapterArabic': "RandomChapter"
                         },

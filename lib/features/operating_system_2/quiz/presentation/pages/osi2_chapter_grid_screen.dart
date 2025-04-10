@@ -75,6 +75,8 @@ class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
                                               ? context.pushNamed(
                                                   QuizScreen.name,
                                                   queryParameters: {
+                                                    "appBarTitle":" كويز ${state.chapters[index].titleAr} ",
+
                                                     'chapterEnglish': state
                                                         .chapters[index]
                                                         .titleEn,

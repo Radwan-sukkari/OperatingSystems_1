@@ -272,10 +272,12 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
             state.uri.queryParameters['chapterEnglish']!;
         final String chapterArabic =
             state.uri.queryParameters['chapterArabic']!;
+        final String appBarTitle = state.uri.queryParameters['appBarTitle']!;
+
         return QuizScreen(
           questions: questions,
           chapterEnglish: chapterEnglish,
-          chapterArabic: chapterArabic,
+          chapterArabic: chapterArabic, appBarTitle: appBarTitle
         );
       }),
 ]);

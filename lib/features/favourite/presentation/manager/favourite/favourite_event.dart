@@ -1,16 +1,19 @@
 part of 'favourite_bloc.dart';
 
- class FavouriteEvent {}
-class GetFavouriteEvent extends FavouriteEvent{}
-class AddFavouriteEvent extends FavouriteEvent{
+class FavouriteEvent {}
+
+class GetFavouriteEvent extends FavouriteEvent {}
+
+class AddFavouriteEvent extends FavouriteEvent {
   final Question question;
+  final VoidCallback fun;
 
-  AddFavouriteEvent({required this.question});
-}
-class RemoveFavouriteEvent extends FavouriteEvent{
-   final String id;
-
-  RemoveFavouriteEvent({required this.id});
-
+  AddFavouriteEvent({required this.question, required this.fun});
 }
 
+class RemoveFavouriteEvent extends FavouriteEvent {
+  final String id;
+  final VoidCallback fun;
+
+  RemoveFavouriteEvent({required this.id, required this.fun});
+}

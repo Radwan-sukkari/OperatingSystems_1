@@ -33,37 +33,6 @@ class OsiCard extends StatelessWidget {
               chapter: question.chapterAr,
             ),
             ThirdLayerStudyWidget(),
-            BlocBuilder<FavouriteBloc, FavouriteState>(
-              builder: (context, state) {
-                final favouriteQuestions = state.getFavouriteState.data ?? [];
-                final isFavourite = favouriteQuestions.any((favQuestion) =>
-                    favQuestion.questionAr == question.questionAr);
-                    print(isFavourite);
-                return Positioned(
-                  left: 0,
-                  top: -40,
-                  child: IconButton(
-                    onPressed: () {
-                      if (isFavourite) {
-                        context
-                            .read<FavouriteBloc>()
-                            .add(RemoveFavouriteEvent(id:question.questionAr));
-                      } else {
-                        context
-                            .read<FavouriteBloc>()
-                            .add(AddFavouriteEvent(question:question));
-                      }
-                    },
-                    icon: Icon(
-                      PhosphorIcons.star(PhosphorIconsStyle.fill
-                      ),
-                      size: 40,
-                      color: isFavourite ? Colors.amber : Colors.grey,
-                    ),
-                  ),
-                );
-              },
-            ),
           ],
         ),
       ),

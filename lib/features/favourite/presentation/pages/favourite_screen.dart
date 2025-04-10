@@ -134,6 +134,8 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                             QuizScreen.name,
                             extra: filteredQuestions,
                             queryParameters: {
+                              "appBarTitle":" كويز المفضلة ",
+
                               "chapterEnglish": "quiz",
                               "chapterArabic": "كويز التعاريق",
                             },

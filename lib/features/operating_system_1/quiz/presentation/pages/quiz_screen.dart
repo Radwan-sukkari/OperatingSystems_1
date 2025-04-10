@@ -17,12 +17,12 @@ class QuizScreen extends StatefulWidget {
   final List<Question> questions;
   final String chapterEnglish;
   final String chapterArabic;
-
+final String appBarTitle;
   const QuizScreen({
     super.key,
     required this.questions,
     required this.chapterEnglish,
-    required this.chapterArabic,
+    required this.chapterArabic, required this.appBarTitle,
   });
 
   @override
@@ -81,6 +81,7 @@ class _QuizScreenState extends State<QuizScreen> {
     return BlocProvider.value(
       value: getIt<ToggleBloc>(),
       child: Scaffold(
+        appBar: AppAppBar(title: widget.appBarTitle,isBack: true,),
         backgroundColor: Theme
             .of(context)
             .colorScheme
@@ -88,7 +89,7 @@ class _QuizScreenState extends State<QuizScreen> {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-                right: width(20), left: width(20), top: height(30)),
+                right: width(20), left: width(20), top: height(30),bottom: height(10)),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -145,7 +146,7 @@ class _QuizScreenState extends State<QuizScreen> {
                   ),
                 ),
 
-                /// 🔹 **أزرار التنقل بين الأسئلة**
+
               ],
             ),
           ),
