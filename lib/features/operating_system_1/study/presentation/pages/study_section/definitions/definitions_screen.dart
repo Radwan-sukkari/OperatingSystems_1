@@ -12,13 +12,16 @@ class DefinitionsScreen extends StatelessWidget {
   static const String name = 'definitions_screen';
   static const String path = '/definitions_screen';
 
-  const DefinitionsScreen({super.key, required this.definitions, required this.index});
+  const DefinitionsScreen(
+      {super.key, required this.definitions, required this.index});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppAppBar(title: " المحاضرة  ${index}",isBack: true,),
-
+      appBar: AppAppBar(
+        title: index == 0 ? "اسئلة الدورات" : " المحاضرة  ${index}",
+        isBack: true,
+      ),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: Padding(
           padding: EdgeInsets.only(
@@ -36,7 +39,9 @@ class DefinitionsScreen extends StatelessWidget {
                       );
                     }),
               ),
-              SizedBox(height: height(15),)
+              SizedBox(
+                height: height(15),
+              )
             ],
           )),
     );

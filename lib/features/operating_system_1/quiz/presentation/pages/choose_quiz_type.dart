@@ -29,70 +29,73 @@ class ChooseQuizTypeScreen extends StatelessWidget {
 
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
       body: SafeArea(
-          child: SectionWidget(
-        widget: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SecondButton(
-                  name: 'اسئلة الموقع OSI',
-                  function: () {
-                    subjectType == "1"
-                        ? context
-                            .pushNamed(OsiChapterGridScreen.name, queryParameters: {
-                            "isStudy": "isNotStudy",
-                          })
-                        : context.pushNamed(Osi2ChapterGridScreen.name,
-                            queryParameters: {
-                                "isStudy": "isNotStudy",
-                              });
-                  },
-                ),
-                SizedBox(width: width(30)),
-                SecondButton(
-                  name: 'اسئلة الصح والخطأ',
-                  function: () {
-                    subjectType == "1"
-                        ? context.pushNamed(TrueFalseChapterGridScreen.name,
-                            queryParameters: {
-                                "isStudy": "isNotStudy",
-                              })
-                        : context.pushNamed(TrueFalse2ChapterGridScreen.name,
-                            queryParameters: {
-                                "isStudy": "isNotStudy",
-                              });
-                  },
-                ),
-
-              ],
-            ),
-            SizedBox(height: height(30)),
-            Align(
-              alignment: Alignment.topRight,
-              child: SecondButton(
-                name: 'التعاريف',
-                function: () {
-                  subjectType == "1"
-                      ? context.pushNamed(DefinitionsGridScreen.name,
-                      queryParameters: {
-                        "isStudy": "isNotStudy",
-                      })
-                      : context.pushNamed(Identification2GridScreen.name,
-                      queryParameters: {
-                        "isStudy": "isNotStudy",
-                      });
-                },
+          child: Padding(
+            padding:  EdgeInsets.only(top: height(15)),
+            child: SectionWidget(
+                    widget: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SecondButton(
+                    name: 'اسئلة الموقع OSI',
+                    function: () {
+                      subjectType == "1"
+                          ? context
+                              .pushNamed(OsiChapterGridScreen.name, queryParameters: {
+                              "isStudy": "isNotStudy",
+                            })
+                          : context.pushNamed(Osi2ChapterGridScreen.name,
+                              queryParameters: {
+                                  "isStudy": "isNotStudy",
+                                });
+                    },
+                  ),
+                  SizedBox(width: width(30)),
+                  SecondButton(
+                    name: 'اسئلة الصح والخطأ',
+                    function: () {
+                      subjectType == "1"
+                          ? context.pushNamed(TrueFalseChapterGridScreen.name,
+                              queryParameters: {
+                                  "isStudy": "isNotStudy",
+                                })
+                          : context.pushNamed(TrueFalse2ChapterGridScreen.name,
+                              queryParameters: {
+                                  "isStudy": "isNotStudy",
+                                });
+                    },
+                  ),
+            
+                ],
               ),
-            ),
-          ],
-        ),
-        name: 'اختر نوع الكويز',
-        image: Image.asset(
-          Images.boy7,
-          height: height(210),
-        ),
-      )),
+              SizedBox(height: height(30)),
+              Align(
+                alignment: Alignment.topRight,
+                child: SecondButton(
+                  name: 'التعاريف',
+                  function: () {
+                    subjectType == "1"
+                        ? context.pushNamed(DefinitionsGridScreen.name,
+                        queryParameters: {
+                          "isStudy": "isNotStudy",
+                        })
+                        : context.pushNamed(Identification2GridScreen.name,
+                        queryParameters: {
+                          "isStudy": "isNotStudy",
+                        });
+                  },
+                ),
+              ),
+            ],
+                    ),
+                    name: 'اختر نوع الكويز',
+                    image: Image.asset(
+            Images.boy7,
+            height: height(210),
+                    ),
+                  ),
+          )),
     );
   }
 }

@@ -1,9 +1,9 @@
 {
   "randomQuiz": [
     {
+      "id": 1,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
-
       "question_en": "Networks of computers have become so powerful that they are used to:",
       "question_ar": "أصبحت شبكات أجهزة الكمبيوتر قوية جدًا بحيث يتم استخدامها من أجل:",
       "answers": [
@@ -30,6 +30,7 @@
       ]
     },
     {
+      "id": 2,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "Operating systems can be found in which of the following devices?",
@@ -58,6 +59,7 @@
       ]
     },
     {
+      "id": 3,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "The software that contains the core components of the operating system is called the ________.",
@@ -86,6 +88,7 @@
       ]
     },
     {
+      "id": 4,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "Which of the following statements about computing in the 1940s and 1950s is false?",
@@ -99,24 +102,25 @@
         {
           "answer_en": "The earliest digital computers of the 1940s and 1950s included operating systems.",
           "answer_ar": "أجهزة الكمبيوتر الرقمية الأولى في الأربعينيات والخمسينيات تضمنت أنظمة تشغيل.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "Programmers often entered programs in machine language one bit at a time using mechanical switches.",
-          "answer_ar": "كان المبرمجون يدخلون البرامج بلغة الآلة بتة واحدة في كل مرة باستخدام المفاتيح الميكانيكية.",
+          "answer_ar": "كان المبرمجون يدخلون البرامج بلغة الآلة  بمعدل بت في كل مرة باستخدام المفاتيح الميكانيكية.",
           "is_correct": false
         },
         {
           "answer_en": "All of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
     {
+      "id": 5,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
-      "question_en": "Which of the following statements about the single-stream batch-processing systems of the 1950s is false?",
+      "question_en": "Which of the following stateme nts about the single-stream batch-processing systems of the 1950s is false?",
       "question_ar": "أي من العبارات التالية عن أنظمة معالجة الدُفعات ذات التدفق الواحد في الخمسينيات خاطئة؟",
       "answers": [
         {
@@ -136,12 +140,13 @@
         },
         {
           "answer_en": "An entire program had to be loaded into memory for the program to run.",
-          "answer_ar": "كان يجب تحميل البرنامج بالكامل في الذاكرة لكي يعمل.",
+          "answer_ar": " يجب تحميل البرنامج بالكامل في الذاكرة لكي يعمل.",
           "is_correct": false
         }
       ]
     },
     {
+      "id": 6,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "________ jobs in a multiprogramming computer system mainly use peripheral devices to perform their tasks.",
@@ -170,13 +175,15 @@
       ]
     },
     {
+      "id": 7,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Which of the following was a benefit of the timesharing systems of the 1960s?",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Which of the following was a benefit of the timesharing systems of the 1960s?",
       "question_ar": "أي مما يلي كان فائدة لأنظمة المشاركة الزمنية في الستينيات؟",
       "answers": [
         {
           "answer_en": "The average turnaround time decreased significantly.",
-          "answer_ar": "انخفض متوسط وقت الاستجابة بشكل كبير.",
+          "answer_ar": "انخفض متوسط وقت التنفيذ بشكل كبير.",
           "is_correct": false
         },
         {
@@ -187,16 +194,17 @@
         {
           "answer_en": "Multiple interactive users could operate simultaneously.",
           "answer_ar": "يمكن لعدة مستخدمين تفاعليين العمل في نفس الوقت.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "All of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
     {
+      "id": 8,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "Ken Thompson and Dennis Ritchie designed the high-level language ________ specifically to implement the UNIX operating system.",
@@ -225,9 +233,11 @@
       ]
     },
     {
+      "id": 9,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "During the 1970s, communication throughout the United States and across local area networks increased due to the proliferation of the Department of Defense’s ________ communication standards and Xerox’s ________ standard.",
-      "question_ar": "خلال السبعينيات، زادت الاتصالات في جميع أنحاء الولايات المتحدة وعبر الشبكات المحلية بسبب انتشار معايير الاتصالات ________ لوزارة الدفاع ومعيار ________ لشركة Xerox.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "During the 1970s, communication throughout the United States and across local area networks increased due to the proliferation of the Department of Defense’s ________ communication standards and Xerox’s ________ standard.",
+      "question_ar": "خلال السبعينيات، زادت الاتصالات في جميع أنحاء الولايات المتحدة وعبر الشبكات المنطقة المحلية بسبب انتشار معايير الاتصال الخاصة ________ لوزارة الدفاع ومعيار ________ لشركة Xerox.",
       "answers": [
         {
           "answer_en": "HTTP, TCP/IP",
@@ -252,7 +262,7 @@
       ]
     },
     {
-
+      "id": 10,
       "chapter_en": "Chapter 1",
       "chapter_ar": "الفصل الأول",
       "question_en": "In the 1980s, software such as spreadsheet programs, word processors, database packages and graphics packages helped drive the ________ revolution by creating demand from businesses that could use these products to increase their productivity.",
@@ -281,8 +291,10 @@
       ]
     },
     {
+      "id": 11,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "In a distributed computing environment, clients are ________.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "In a distributed computing environment, clients are ________.",
       "question_ar": "في بيئة الحوسبة الموزعة، العملاء هم ________.",
       "answers": [
         {
@@ -308,8 +320,10 @@
       ]
     },
     {
+      "id": 12,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The ________ is the grandparent of today’s Internet.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "The ________ is the grandparent of today’s Internet.",
       "question_ar": "________ هو الجد للإنترنت اليوم.",
       "answers": [
         {
@@ -335,8 +349,10 @@
       ]
     },
     {
+      "id": 13,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
       "question_ar": "________ يساعد في ضمان توجيه الرسائل بشكل صحيح من المرسل إلى المستقبل وأن تصل الرسائل سليمة.",
       "answers": [
         {
@@ -362,8 +378,10 @@
       ]
     },
     {
+      "id": 14,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Tim Berners-Lee developed the ________ in 1990.",
       "question_ar": "طور تيم بيرنرز لي ________ في عام 1990.",
       "answers": [
         {
@@ -389,18 +407,20 @@
       ]
     },
     {
+      "id": 15,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
-      "question_ar": "جعل تطوير الإنترنت وشبكة الويب العالمية ________ شائعًا بين أجهزة الكمبيوتر الشخصية.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
+      "question_ar": "أدى تطوير الإنترنت وشبكة الويب العالمية ________  أمرا شائعًا بين أجهزة الكمبيوتر الشخصية.",
       "answers": [
         {
           "answer_en": "Distributed computing",
           "answer_ar": "الحوسبة الموزعة",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "Object-oriented programming",
-          "answer_ar": "البرمجة الشيئية",
+          "answer_ar": "البرمجة الموجهة للكائنات",
           "is_correct": false
         },
         {
@@ -411,13 +431,15 @@
         {
           "answer_en": "Open-source software",
           "answer_ar": "البرمجيات مفتوحة المصدر",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
     {
+      "id": 16,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
       "question_ar": "يتم توزيع الكود المصدري لبرامج ________ بحرية، مما يسمح للمبرمجين بفحص البرنامج وتعديله قبل تجميعه وتنفيذه.",
       "answers": [
         {
@@ -443,8 +465,10 @@
       ]
     },
     {
+      "id": 17,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
       "question_ar": "________ تشمل مجموعة من المعايير التي تسمح للتطبيقات بتبادل البيانات عبر الإنترنت.",
       "answers": [
         {
@@ -470,8 +494,10 @@
       ]
     },
     {
+      "id": 18,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A system that exhibits massive parallelism ________.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "A system that exhibits massive parallelism ________.",
       "question_ar": "النظام الذي يعرض التوازي الهائل ________.",
       "answers": [
         {
@@ -497,8 +523,10 @@
       ]
     },
     {
+      "id": 19,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
       "question_ar": "________ يسمح للمبرمجين بتنفيذ مهام النظام المعقدة ببساطة عن طريق استدعاء وظائف محددة مسبقًا.",
       "answers": [
         {
@@ -524,14 +552,16 @@
       ]
     },
     {
+      "id": 20,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "An application base is the combination of the ________ and operating system environment in which applications are developed.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "An application base is the combination of the ________ and operating system environment in which applications are developed.",
       "question_ar": "قاعدة التطبيق هي مزيج من ________ وبيئة نظام التشغيل التي يتم فيها تطوير التطبيقات.",
       "answers": [
         {
           "answer_en": "hardware",
           "answer_ar": "الأجهزة",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "software",
@@ -541,7 +571,7 @@
         {
           "answer_en": "both a and b",
           "answer_ar": "كل من أ و ب",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "neither a nor b",
@@ -551,9 +581,11 @@
       ]
     },
     {
+      "id": 21,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "________ systems are characterized by a minimal amount of code, specialized power management resources and user-friendly interfaces.",
-      "question_ar": "تتميز أنظمة ________ بكمية قليلة من التعليمات البرمجية، وموارد متخصصة لإدارة الطاقة، وواجهات سهلة الاستخدام.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "________ systems are characterized by a minimal amount of code, specialized power management resources and user-friendly interfaces.",
+      "question_ar": "  ________ تتميز الأنظمة بالحد الأدنى  من التعليمات البرمجية، وموارد متخصصة لإدارة الطاقة، وواجهات سهلة الاستخدام.",
       "answers": [
         {
           "answer_en": "Real-time",
@@ -578,251 +610,10 @@
       ]
     },
     {
+      "id": 22,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "In a distributed computing environment, clients are ________.",
-      "question_ar": "في بيئة الحوسبة الموزعة، العملاء هم ________.",
-      "answers": [
-        {
-          "answer_en": "computers that perform requested services",
-          "answer_ar": "أجهزة الكمبيوتر التي تنفذ الخدمات المطلوبة",
-          "is_correct": false
-        },
-        {
-          "answer_en": "user computers that request remote services",
-          "answer_ar": "أجهزة الكمبيوتر الخاصة بالمستخدم التي تطلب خدمات عن بعد",
-          "is_correct": true
-        },
-        {
-          "answer_en": "often dedicated to one type of task, such as rendering graphics or managing databases",
-          "answer_ar": "غالبًا ما تكون مخصصة لنوع واحد من المهام، مثل عرض الرسومات أو إدارة قواعد البيانات",
-          "is_correct": false
-        },
-        {
-          "answer_en": "none of the above",
-          "answer_ar": "لا شيء مما سبق",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The ________ is the grandparent of today’s Internet.",
-      "question_ar": "________ هو الجد الأكبر للإنترنت اليوم.",
-      "answers": [
-        {
-          "answer_en": "ARPAnet",
-          "answer_ar": "ARPAnet",
-          "is_correct": true
-        },
-        {
-          "answer_en": "TCP/IP protocol",
-          "answer_ar": "بروتوكول TCP/IP",
-          "is_correct": false
-        },
-        {
-          "answer_en": "Ethernet",
-          "answer_ar": "Ethernet",
-          "is_correct": false
-        },
-        {
-          "answer_en": "World Wide Web",
-          "answer_ar": "شبكة الويب العالمية",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The ________ helps ensure that messages are properly routed from sender to receiver and that the messages arrive intact.",
-      "question_ar": "________ يساعد في ضمان توجيه الرسائل بشكل صحيح من المرسل إلى المستقبل وأن تصل الرسائل سليمة.",
-      "answers": [
-        {
-          "answer_en": "HyperText Markup Language (HTML)",
-          "answer_ar": "لغة ترميز النص الفائق (HTML)",
-          "is_correct": false
-        },
-        {
-          "answer_en": "Internet Protocol (IP)",
-          "answer_ar": "بروتوكول الإنترنت (IP)",
-          "is_correct": true
-        },
-        {
-          "answer_en": "Transmission Control Protocol (TCP)",
-          "answer_ar": "بروتوكول التحكم في الإرسال (TCP)",
-          "is_correct": false
-        },
-        {
-          "answer_en": "The Ethernet standard",
-          "answer_ar": "معيار Ethernet",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Tim Berners-Lee developed the ________ in 1990.",
-      "question_ar": "طور تيم بيرنرز لي ________ في عام 1990.",
-      "answers": [
-        {
-          "answer_en": "TCP/IP standard",
-          "answer_ar": "معيار TCP/IP",
-          "is_correct": false
-        },
-        {
-          "answer_en": "World Wide Web (WWW)",
-          "answer_ar": "شبكة الويب العالمية (WWW)",
-          "is_correct": true
-        },
-        {
-          "answer_en": "Internet",
-          "answer_ar": "الإنترنت",
-          "is_correct": false
-        },
-        {
-          "answer_en": "graphical user interface (GUI)",
-          "answer_ar": "واجهة المستخدم الرسومية (GUI)",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The development of the Internet and World Wide Web made ________ commonplace among personal computers.",
-      "question_ar": "جعل تطور الإنترنت وشبكة الويب العالمية ________ شائعًا بين أجهزة الكمبيوتر الشخصية.",
-      "answers": [
-        {
-          "answer_en": "distributed computing",
-          "answer_ar": "الحوسبة الموزعة",
-          "is_correct": true
-        },
-        {
-          "answer_en": "object-oriented programming",
-          "answer_ar": "البرمجة الشيئية",
-          "is_correct": false
-        },
-        {
-          "answer_en": "supercomputing",
-          "answer_ar": "الحوسبة الفائقة",
-          "is_correct": false
-        },
-        {
-          "answer_en": "open-source software",
-          "answer_ar": "البرمجيات مفتوحة المصدر",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The source code of ________ software is distributed freely, allowing programmers to examine and modify the software before compiling and executing it.",
-      "question_ar": "يتم توزيع الكود المصدري لبرمجيات ________ بحرية، مما يسمح للمبرمجين بفحصها وتعديلها قبل تجميعها وتنفيذها.",
-      "answers": [
-        {
-          "answer_en": "proprietary",
-          "answer_ar": "الملكية",
-          "is_correct": false
-        },
-        {
-          "answer_en": "open-source",
-          "answer_ar": "مفتوحة المصدر",
-          "is_correct": true
-        },
-        {
-          "answer_en": "free",
-          "answer_ar": "مجانية",
-          "is_correct": false
-        },
-        {
-          "answer_en": "all of the above",
-          "answer_ar": "كل ما سبق",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "________ encompass a set of standards that allow applications to exchange data via the Internet.",
-      "question_ar": "________ تشمل مجموعة من المعايير التي تسمح للتطبيقات بتبادل البيانات عبر الإنترنت.",
-      "answers": [
-        {
-          "answer_en": "Web browsers",
-          "answer_ar": "متصفحات الويب",
-          "is_correct": false
-        },
-        {
-          "answer_en": "Web services",
-          "answer_ar": "خدمات الويب",
-          "is_correct": true
-        },
-        {
-          "answer_en": "Distributed computing",
-          "answer_ar": "الحوسبة الموزعة",
-          "is_correct": false
-        },
-        {
-          "answer_en": "none of the above",
-          "answer_ar": "لا شيء مما سبق",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A system that exhibits massive parallelism ________.",
-      "question_ar": "النظام الذي يظهر توازيًا هائلاً ________.",
-      "answers": [
-        {
-          "answer_en": "has a large number of processors that perform many independent parts of computations in parallel",
-          "answer_ar": "لديه عدد كبير من المعالجات التي تنفذ العديد من أجزاء الحسابات المستقلة بشكل متوازي",
-          "is_correct": true
-        },
-        {
-          "answer_en": "has one processor that performs many independent parts of computations at the same time",
-          "answer_ar": "لديه معالج واحد ينفذ العديد من أجزاء الحسابات المستقلة في نفس الوقت",
-          "is_correct": false
-        },
-        {
-          "answer_en": "communicates over a network to supply a specific set of operations that other applications can invoke",
-          "answer_ar": "يتواصل عبر الشبكة لتوفير مجموعة محددة من العمليات التي يمكن للتطبيقات الأخرى استدعاؤها",
-          "is_correct": false
-        },
-        {
-          "answer_en": "none of the above",
-          "answer_ar": "لا شيء مما سبق",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ allows programmers to perform complicated system tasks simply by calling predefined functions.",
-      "question_ar": "________ يسمح للمبرمجين بتنفيذ مهام نظام معقدة ببساطة عن طريق استدعاء وظائف محددة مسبقًا.",
-      "answers": [
-        {
-          "answer_en": "system call",
-          "answer_ar": "استدعاء النظام",
-          "is_correct": false
-        },
-        {
-          "answer_en": "application programming interface (API)",
-          "answer_ar": "واجهة برمجة التطبيقات (API)",
-          "is_correct": true
-        },
-        {
-          "answer_en": "Web service",
-          "answer_ar": "خدمة الويب",
-          "is_correct": false
-        },
-        {
-          "answer_en": "none of the above",
-          "answer_ar": "لا شيء مما سبق",
-          "is_correct": false
-        }
-      ]
-    },
-    {
-      "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Virtual machines promote ________, the ability for software to run on multiple platforms.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Virtual machines promote ________, the ability for software to run on multiple platforms.",
       "question_ar": "تعزز الآلات الافتراضية ________، القدرة على تشغيل البرمجيات على منصات متعددة.",
       "answers": [
         {
@@ -848,13 +639,15 @@
       ]
     },
     {
+      "id": 23,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A user may interact with an operating system via an application such as ________.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "A user may interact with an operating system via an application such as ________.",
       "question_ar": "يمكن للمستخدم التفاعل مع نظام التشغيل عبر تطبيق مثل ________.",
       "answers": [
         {
           "answer_en": "a command-line interpreter",
-          "answer_ar": "مفسر سطر الأوامر",
+          "answer_ar": "مترجم سطر الأوامر",
           "is_correct": false
         },
         {
@@ -865,18 +658,20 @@
         {
           "answer_en": "a graphical user interface (GUI)",
           "answer_ar": "واجهة المستخدم الرسومية (GUI)",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "either b) or c)",
           "answer_ar": "إما ب) أو ج)",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
     {
+      "id": 24,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "The ________ is the part of the operating system that determines when and for how long a process executes.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "The ________ is the part of the operating system that determines when and for how long a process executes.",
       "question_ar": "________ هو جزء من نظام التشغيل الذي يحدد متى وكم من الوقت يتم تنفيذ العملية.",
       "answers": [
         {
@@ -902,8 +697,10 @@
       ]
     },
     {
+      "id": 25,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "An efficient operating system generally achieves ________ throughput and ________ average turnaround time.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "An efficient operating system generally achieves ________ throughput and ________ average turnaround time.",
       "question_ar": "نظام التشغيل الفعال يحقق عمومًا ________ إنتاجية و ________ متوسط وقت الاستجابة.",
       "answers": [
         {
@@ -929,8 +726,10 @@
       ]
     },
     {
+      "id": 26,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "A(n) ________ operating system can adapt well to new technologies and can be modified to perform tasks beyond its original design; a(n) ________ operating system is designed to operate on many hardware configurations.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "A(n) ________ operating system can adapt well to new technologies and can be modified to perform tasks beyond its original design; a(n) ________ operating system is designed to operate on many hardware configurations.",
       "question_ar": "نظام التشغيل ________ يمكنه التكيف جيدًا مع التقنيات الجديدة ويمكن تعديله لأداء مهام تتجاوز تصميمه الأصلي؛ نظام التشغيل ________ مصمم للعمل على العديد من تكوينات الأجهزة.",
       "answers": [
         {
@@ -956,14 +755,16 @@
       ]
     },
     {
+      "id": 27,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Which type of system features direct intercommunication between every component, making the system highly efficient?",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Which type of system features direct intercommunication between every component, making the system highly efficient?",
       "question_ar": "أي نوع من الأنظمة يتميز بالاتصال المباشر بين كل مكون، مما يجعل النظام فعالاً للغاية؟",
       "answers": [
         {
           "answer_en": "monolithic operating system",
           "answer_ar": "نظام تشغيل أحادي",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "layered operating system",
@@ -973,23 +774,25 @@
         {
           "answer_en": "distributed operating system",
           "answer_ar": "نظام تشغيل موزع",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "microkernel operating system",
-          "answer_ar": "نظام تشغيل بالنواة الصغيرة",
+          "answer_ar": "نظام تشغيل النواة ",
           "is_correct": false
         }
       ]
     },
     {
+      "id": 28,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Which of the following statements about layered operating systems is true?",
-      "question_ar": "أي من العبارات التالية حول أنظمة التشغيل المتعددة الطبقات صحيح؟",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Which of the following statements about layered operating systems is true?",
+      "question_ar": "أي من العبارات التالية حول أنظمة التشغيل  الطبقات صحيح؟",
       "answers": [
         {
           "answer_en": "Layered operating systems are easier to modify than monolithic operating systems.",
-          "answer_ar": "أنظمة التشغيل المتعددة الطبقات أسهل في التعديل من أنظمة التشغيل الأحادية.",
+          "answer_ar": "أنظمة التشغيل المتعددة الطبقات أسهل في التعديل من أنظمة التشغيل المتجانسة .",
           "is_correct": false
         },
         {
@@ -1010,9 +813,11 @@
       ]
     },
     {
+      "id": 29,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "In a microkernel architecture, the kernel typically includes only a small number of services, such as ________; most other services, such as ________, execute outside of the kernel with a lower privilege level.",
-      "question_ar": "في بنية النواة الصغيرة، تتضمن النواة عادةً عددًا صغيرًا من الخدمات، مثل ________؛ معظم الخدمات الأخرى، مثل ________، يتم تنفيذها خارج النواة بمستوى امتياز أقل.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "In a microkernel architecture, the kernel typically includes only a small number of services, such as ________; most other services, such as ________, execute outside of the kernel with a lower privilege level.",
+      "question_ar": "في بنية النواة الدقيقة، تتضمن النواة عادةً عددًا صغيرًا من الخدمات، مثل ________؛ معظم الخدمات الأخرى، مثل ________، يتم تنفيذها خارج النواة بمستوى امتياز أقل.",
       "answers": [
         {
           "answer_en": "device management, networking",
@@ -1027,18 +832,20 @@
         {
           "answer_en": "interprocess communication, low-level memory management",
           "answer_ar": "الاتصال بين العمليات، إدارة الذاكرة منخفضة المستوى",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "low-level memory management, file system management",
           "answer_ar": "إدارة الذاكرة منخفضة المستوى، إدارة نظام الملفات",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
     {
+      "id": 30,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Advantages to distributed systems include:",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Advantages to distributed systems include:",
       "question_ar": "تشمل مزايا الأنظمة الموزعة:",
       "answers": [
         {
@@ -1064,8 +871,10 @@
       ]
     },
     {
+      "id": 31,
       "chapter_en": "Chapter 1",
-      "chapter_ar": "الفصل الأول",          "question_en": "Sun’s ________ enables users to access remote files as if the files were on the local computer.",
+      "chapter_ar": "الفصل الأول",
+      "question_en": "Sun’s ________ enables users to access remote files as if the files were on the local computer.",
       "question_ar": "________ من Sun يمكن المستخدمين من الوصول إلى الملفات البعيدة كما لو كانت الملفات على الكمبيوتر المحلي.",
       "answers": [
         {
@@ -1090,10 +899,8 @@
         }
       ]
     },
-
-
-
     {
+      "id": 32,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Operating systems use ________, often provided by hardware manufacturers, to perform device-specific I/O operations.",
@@ -1122,11 +929,11 @@
       ]
     },
     {
+      "id": 33,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
-
       "question_en": "From the user’s point of view, plug-and-play devices that are added to the system typically are ready to use ________.",
-      "question_ar": "من وجهة نظر المستخدم، تكون الأجهزة التي تعمل بتقنية plug-and-play والتي يتم إضافتها إلى النظام جاهزة للاستخدام ________.",
+      "question_ar": "من وجهة نظر المستخدم، عادة ما تكون الأجهزة التوصيل والتشغيل  والتي يتم إضافتها إلى النظام جاهزة للاستخدام ________.",
       "answers": [
         {
           "answer_en": "after logging off and logging back onto the system.",
@@ -1151,10 +958,11 @@
       ]
     },
     {
+      "id": 34,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following hardware components are required to execute instructions in a general-purpose computer?",
-      "question_ar": "أي من مكونات الأجهزة التالية مطلوبة لتنفيذ التعليمات في كمبيوتر عام الاستخدام؟",
+      "question_ar": "أي من مكونات الأجهزة التالية مطلوبة لتنفيذ التعليمات في كمبيوتر للأغراض العامة ؟",
       "answers": [
         {
           "answer_en": "main memory",
@@ -1179,6 +987,7 @@
       ]
     },
     {
+      "id": 35,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "The ________ chip, typically located on the mainboard, stores instructions for basic hardware initialization and management.",
@@ -1207,9 +1016,9 @@
       ]
     },
     {
+      "id": 36,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
-
       "question_en": "A(n) ________ is a piece of hardware that executes a set of machine-language instructions.",
       "question_ar": "________ هو قطعة من الأجهزة تنفذ مجموعة من تعليمات لغة الآلة.",
       "answers": [
@@ -1236,6 +1045,7 @@
       ]
     },
     {
+      "id": 37,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Within a processor, the ________ loads instructions into high-speed memory (i.e., instruction registers), the ________ interprets the instructions and the ________ performs basic arithmetic and logical operations.",
@@ -1264,6 +1074,7 @@
       ]
     },
     {
+      "id": 38,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which type of memory provides the fastest data access?",
@@ -1292,6 +1103,7 @@
       ]
     },
     {
+      "id": 39,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "What is the role of a computer system’s clock generator?",
@@ -1320,6 +1132,7 @@
       ]
     },
     {
+      "id": 40,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following lists memory types from highest to lowest speed?",
@@ -1348,6 +1161,7 @@
       ]
     },
     {
+      "id": 41,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Data stored on ________ media (i.e., caches) vanishes when the computer is turned off, whereas ________ media (i.e., hard disks) preserve data when no power is present.",
@@ -1376,6 +1190,7 @@
       ]
     },
     {
+      "id": 42,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "As manufacturers develop new memory technologies, the speed and capacity of memory tend to ________, while the cost per storage unit tends to ________.",
@@ -1404,6 +1219,7 @@
       ]
     },
     {
+      "id": 43,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Why is hard disk storage much slower to access than main memory?",
@@ -1432,6 +1248,7 @@
       ]
     },
     {
+      "id": 44,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Removable media such as CD-Rs generally have ________ capacity and ________ latency than other forms of storage such as hard disks.",
@@ -1460,6 +1277,7 @@
       ]
     },
     {
+      "id": 45,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "A(n) ________ is a bus that connects exactly two devices, and a(n) ________ is a bus that several devices share to perform I/O operations.",
@@ -1488,6 +1306,7 @@
       ]
     },
     {
+      "id": 46,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "To prevent signals from colliding on the bus, ________ prioritize(s) access to memory by I/O channels and processors.",
@@ -1496,7 +1315,7 @@
         {
           "answer_en": "a controller",
           "answer_ar": "وحدة التحكم",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "the processor scheduler",
@@ -1511,14 +1330,15 @@
         {
           "answer_en": "interrupts",
           "answer_ar": "المقاطعات",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
     {
+      "id": 47,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
-      "question_en": "________ enables devices and controllers to transfer blocks of data to and from main memory directly.",
+      "question_en": "________ enables devices and controllers to transfer blocks of data to and from main memory directly .",
       "question_ar": "________ يتيح للأجهزة ووحدات التحكم نقل كتل البيانات من وإلى الذاكرة الرئيسية مباشرة.",
       "answers": [
         {
@@ -1544,6 +1364,7 @@
       ]
     },
     {
+      "id": 48,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following devices is not considered a peripheral device?",
@@ -1572,6 +1393,7 @@
       ]
     },
     {
+      "id": 49,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following is not a serial interface?",
@@ -1600,6 +1422,7 @@
       ]
     },
     {
+      "id": 50,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "In what ways do processors support operating system services?",
@@ -1628,10 +1451,11 @@
       ]
     },
     {
+      "id": 51,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
-      "question_en": "As computer architectures have evolved, the number of privileged instructions (i.e., those instructions not accessible in user mode) has ________.",
-      "question_ar": "مع تطور بنية الكمبيوتر، انخفض عدد التعليمات المميزة (أي تلك التعليمات التي لا يمكن الوصول إليها في وضع المستخدم) ________.",
+      "question_en": "As computer architect ures have evolved, the number of privileged instructions (i.e., those instructions not accessible in user mode) has ________.",
+      "question_ar": "مع تطور بنية الكمبيوتر،  عدد التعليمات المميزة (أي تلك التعليمات التي لا يمكن الوصول إليها في وضع المستخدم) ________.",
       "answers": [
         {
           "answer_en": "increased dramatically",
@@ -1641,7 +1465,7 @@
         {
           "answer_en": "increased",
           "answer_ar": "زادت",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "remained the same",
@@ -1651,11 +1475,12 @@
         {
           "answer_en": "decreased",
           "answer_ar": "انخفضت",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
     {
+      "id": 52,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following events would not lead to an exception being generated?",
@@ -1684,6 +1509,7 @@
       ]
     },
     {
+      "id": 53,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "A(n) ________ periodically generates an interrupt that causes a processor to invoke the operating system.",
@@ -1712,6 +1538,7 @@
       ]
     },
     {
+      "id": 54,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following does not occur during bootstrapping?",
@@ -1720,12 +1547,12 @@
         {
           "answer_en": "the system prepares to run user applications.",
           "answer_ar": "يقوم النظام بالتحضير لتشغيل تطبيقات المستخدم.",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "a login prompt is loaded.",
           "answer_ar": "يتم تحميل موجه تسجيل الدخول.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "processor registers are initialized.",
@@ -1740,6 +1567,7 @@
       ]
     },
     {
+      "id": 55,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following events does not occur when a plug-and-play device is attached to a computer?",
@@ -1768,6 +1596,7 @@
       ]
     },
     {
+      "id": 56,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "A cache hit occurs when ________.",
@@ -1796,9 +1625,10 @@
       ]
     },
     {
+      "id": 57,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
-      "question_en": "________ improve system performance by temporarily storing data during transfers between devices or processes that operate at different speeds.",
+      "question_en": "________ improve system performance by temporarily   storing data during transfers between devices or processes that operate at different speeds.",
       "question_ar": "________ تحسن أداء النظام عن طريق تخزين البيانات مؤقتًا أثناء النقل بين الأجهزة أو العمليات التي تعمل بسرعات مختلفة.",
       "answers": [
         {
@@ -1824,6 +1654,7 @@
       ]
     },
     {
+      "id": 58,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Computer languages can be classified as one of three types. Which of the following is not one of these types?",
@@ -1852,6 +1683,7 @@
       ]
     },
     {
+      "id": 59,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Specifying elementary computer operations with English-like abbreviations forms the basis of ________ languages.",
@@ -1880,6 +1712,7 @@
       ]
     },
     {
+      "id": 60,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Translator programs called ________ convert high-level language programs into machine language.",
@@ -1908,6 +1741,7 @@
       ]
     },
     {
+      "id": 61,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "________ are programs that directly execute source code or code that has been reduced to low-level language but not machine code.",
@@ -1936,6 +1770,7 @@
       ]
     },
     {
+      "id": 62,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "IBM developed ________ in the mid 1950s for scientific and engineering applications that require complex mathematical computations.",
@@ -1964,6 +1799,7 @@
       ]
     },
     {
+      "id": 63,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "________, a programming language designed for teaching structured programming in academic environments, was developed by Professor Nicklaus Wirth in 1971.",
@@ -1992,6 +1828,7 @@
       ]
     },
     {
+      "id": 64,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "The _______ programming language facilitated concurrent programming.",
@@ -2020,6 +1857,7 @@
       ]
     },
     {
+      "id": 65,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Objects have ________, such as color, size and weight; and they perform ________, such as moving, sleeping or drawing.",
@@ -2048,6 +1886,7 @@
       ]
     },
     {
+      "id": 66,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Fortran, Pascal, BASIC and C are all forms of ________.",
@@ -2076,6 +1915,7 @@
       ]
     },
     {
+      "id": 67,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "The Portable Operating System Interface (POSIX) is an example of a(n):",
@@ -2104,6 +1944,7 @@
       ]
     },
     {
+      "id": 68,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "A compiler accepts ________ code, written in a high-level language, and returns executable ________ code that contains machine-language instructions.",
@@ -2132,6 +1973,7 @@
       ]
     },
     {
+      "id": 69,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "What is the role of the lexical analyzer in a compiler?",
@@ -2160,6 +2002,7 @@
       ]
     },
     {
+      "id": 70,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "________ is the process of integrating the various modules referenced by a program into a single executable unit.",
@@ -2167,7 +2010,7 @@
       "answers": [
         {
           "answer_en": "Parsing",
-          "answer_ar": "التحليل النحوي",
+          "answer_ar": "التحليل ",
           "is_correct": false
         },
         {
@@ -2188,6 +2031,7 @@
       ]
     },
     {
+      "id": 71,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Input to the linker can include which of the following items?",
@@ -2216,6 +2060,7 @@
       ]
     },
     {
+      "id": 72,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following statements about dynamic linking is false?",
@@ -2224,7 +2069,7 @@
         {
           "answer_en": "A dynamically linked program must be relinked when a library that is uses is modified.",
           "answer_ar": "يجب إعادة ربط البرنامج المرتبط ديناميكيًا عند تعديل المكتبة التي يستخدمها.",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "Dynamic linking saves space on secondary storage, as only a single copy of a shared library must be stored.",
@@ -2239,11 +2084,12 @@
         {
           "answer_en": "References to external functions are not resolved until a process issues calls to the functions.",
           "answer_ar": "لا يتم حل المراجع إلى الوظائف الخارجية حتى تقوم العملية بإجراء استدعاءات للوظائف.",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
     {
+      "id": 73,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "________ occurs when the loader places instructions and data units at particular memory addresses.",
@@ -2272,6 +2118,7 @@
       ]
     },
     {
+      "id": 74,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following represents a correct sequence of events to transform software written in a high-level language to an executable program?",
@@ -2300,6 +2147,7 @@
       ]
     },
     {
+      "id": 75,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Firmware consists of executable instructions, written using ________ and stored in persistent memory that is attached to a particular ________.",
@@ -2328,6 +2176,7 @@
       ]
     },
     {
+      "id": 76,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "Which of the following is a true statement about middleware?",
@@ -2356,6 +2205,7 @@
       ]
     },
     {
+      "id": 77,
       "chapter_en": "Chapter 2",
       "chapter_ar": "الفصل الثاني",
       "question_en": "An ODBC driver is a piece of middleware that:",
@@ -2383,11 +2233,8 @@
         }
       ]
     },
-
-
-
-
     {
+      "id": 78,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following is not typically part of a process’s address space?",
@@ -2416,6 +2263,7 @@
       ]
     },
     {
+      "id": 79,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following is a synonym for “process”?",
@@ -2444,6 +2292,7 @@
       ]
     },
     {
+      "id": 80,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "How many processes truly can execute concurrently in a system at any time?",
@@ -2472,6 +2321,7 @@
       ]
     },
     {
+      "id": 81,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following states is not a discrete process state?",
@@ -2500,6 +2350,7 @@
       ]
     },
     {
+      "id": 82,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Typically, the ready list of ready processes is maintained in ________ order, while the blocked list of blocked processes is ________.",
@@ -2528,6 +2379,7 @@
       ]
     },
     {
+      "id": 83,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "When a user runs a program, processes are created and inserted into the ________ list.",
@@ -2556,6 +2408,7 @@
       ]
     },
     {
+      "id": 84,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "________ assigns a processor to the first process in the ready list.",
@@ -2584,6 +2437,7 @@
       ]
     },
     {
+      "id": 85,
       "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following state transitions is not possible?",
@@ -2611,7 +2465,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 86,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "A process control block (PCB) typically includes which of the following information?",
       "question_ar": "عادةً ما يتضمن كتلة تحكم العملية (PCB) أيًا من المعلومات التالية؟",
@@ -2638,7 +2494,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 87,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following typically is not part of a process’s execution context?",
       "question_ar": "أي مما يلي ليس جزءًا من سياق تنفيذ العملية؟",
@@ -2651,7 +2509,7 @@
         {
           "answer_en": "registers that store pointers to the process’s address space",
           "answer_ar": "سجلات تخزن مؤشرات إلى مساحة عنوان العملية",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "general-purpose registers that store process data",
@@ -2661,11 +2519,13 @@
         {
           "answer_en": "process management registers",
           "answer_ar": "سجلات إدارة العمليات",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 88,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following statements is true?",
       "question_ar": "أي من العبارات التالية صحيحة؟",
@@ -2692,7 +2552,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 89,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following may occur when a process is destroyed?",
       "question_ar": "أي مما يلي قد يحدث عند تدمير العملية؟",
@@ -2719,7 +2581,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 90,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "What operation is particularly useful for detecting security threats and debugging software?",
       "question_ar": "ما هي العملية المفيدة بشكل خاص لاكتشاف التهديدات الأمنية وتصحيح البرمجيات؟",
@@ -2746,7 +2610,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 91,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following can occur?",
       "question_ar": "أي مما يلي يمكن أن يحدث؟",
@@ -2773,7 +2639,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 92,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "What must occur for a system to perform a context switch?",
       "question_ar": "ما الذي يجب أن يحدث حتى يقوم النظام بتبديل السياق؟",
@@ -2800,7 +2668,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 93,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "An operating system must be designed such that ________.",
       "question_ar": "يجب تصميم نظام التشغيل بحيث ________.",
@@ -2808,7 +2678,7 @@
         {
           "answer_en": "context switches are transparent to processes",
           "answer_ar": "تبديل السياق يكون شفافًا للعمليات",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "as many “useful” computations as possible are performed while switching contexts",
@@ -2823,11 +2693,13 @@
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 94,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "A(n) ________ is a set of instructions to be executed in response to a certain type of interrupt.",
       "question_ar": "________ هي مجموعة من التعليمات التي يتم تنفيذها استجابةً لنوع معين من المقاطعة.",
@@ -2854,7 +2726,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 95,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "________ can be used instead of interrupts to inform the processor of changes in device status?",
       "question_ar": "________ يمكن استخدامها بدلاً من المقاطعات لإعلام المعالج بالتغييرات في حالة الجهاز؟",
@@ -2881,7 +2755,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 96,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "The interrupt vector ________.",
       "question_ar": "متجه المقاطعة ________.",
@@ -2908,7 +2784,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 97,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Software-generated interrupts in the IA-32 architecture can be used to ________.",
       "question_ar": "يمكن استخدام المقاطعات التي يتم إنشاؤها بواسطة البرمجيات في بنية IA-32 لـ ________.",
@@ -2916,12 +2794,12 @@
         {
           "answer_en": "perform system calls",
           "answer_ar": "تنفيذ استدعاءات النظام",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "indicate an I/O completion",
           "answer_ar": "الإشارة إلى اكتمال الإدخال/الإخراج",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "indicate errors occurring in hardware",
@@ -2935,7 +2813,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 98,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "What type of exception would occur in the IA-32 architecture if a process attempts to divide by zero?",
       "question_ar": "ما نوع الاستثناء الذي سيحدث في بنية IA-32 إذا حاولت عملية القسمة على صفر؟",
@@ -2962,7 +2842,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 99,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "________________ employs interprocess communication IPC.",
       "question_ar": "________________ يستخدم الاتصال بين العمليات IPC.",
@@ -2989,7 +2871,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 101,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following statements about signals is true?",
       "question_ar": "أي من العبارات التالية حول الإشارات صحيحة؟",
@@ -3016,7 +2900,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 102,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "When a process ________ a signal, the operating system responds to the signal using the default signal handler; however, when a process ________ a signal of a particular type, the operating system does not deliver signals of that type and does not respond to the signal.",
       "question_ar": "عندما تقوم العملية ________ بإشارة، يستجيب نظام التشغيل للإشارة باستخدام معالج الإشارة الافتراضي؛ ومع ذلك، عندما تقوم العملية ________ بإشارة من نوع معين، لا يقوم نظام التشغيل بتسليم إشارات من هذا النوع ولا يستجيب للإشارة.",
@@ -3024,12 +2910,12 @@
         {
           "answer_en": "ignores, masks",
           "answer_ar": "تتجاهل، تخفي",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "catches, masks",
           "answer_ar": "تلتقط، تخفي",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "masks, catches",
@@ -3043,7 +2929,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 102,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "A ________ send is an example of ________ communication that requires the sender to wait for receipt notification before continuing program execution.",
       "question_ar": "________ إرسال هو مثال على ________ اتصال يتطلب من المرسل الانتظار لإشعار الاستلام قبل متابعة تنفيذ البرنامج.",
@@ -3070,7 +2958,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 103,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Which of the following statements about pipes is true?",
       "question_ar": "أي من العبارات التالية حول الأنابيب صحيحة؟",
@@ -3083,7 +2973,7 @@
         {
           "answer_en": "A pipe serves as a buffer through which two or more processes can exchange data.",
           "answer_ar": "يعمل الأنبوب كحاجز يمكن من خلاله لعمليتين أو أكثر تبادل البيانات.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "The operating system synchronizes access to a pipe.",
@@ -3093,11 +2983,13 @@
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {   "chapter_en": "Chapter 3",
+    {
+      "id": 104,
+      "chapter_en": "Chapter 3",
       "chapter_ar": "الفصل الثالث",
       "question_en": "Sending and receiving processes often use ________ to ensure that messages are properly received.",
       "question_ar": "غالبًا ما تستخدم عمليات الإرسال والاستقبال ________ للتأكد من استلام الرسائل بشكل صحيح.",
@@ -3124,9 +3016,96 @@
         }
       ]
     },
-
-
-    {   "chapter_en": "Chapter 4",
+    {
+      "id": 105,
+      "chapter_en": "Chapter 3",
+      "chapter_ar": "الفصل  الثالث",
+      "question_en": "Which of the following statements about UNIX processes is true?",
+      "question_ar": "أي من العبارات التالية صحيحة حول عمليات يونكس؟",
+      "answers": [
+        {
+          "answer_en": "The UNIX kernel allows user processes to modify PCBs as needed.",
+          "answer_ar": "تسمح نواة يونكس للعمليات المستخدمة بتعديل PCBs حسب الحاجة.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "The process table allows the operating system to access information regarding every process.",
+          "answer_ar": "يسمح جدول العمليات لنظام التشغيل بالوصول إلى معلومات حول كل عملية.",
+          "is_correct": true
+        },
+        {
+          "answer_en": "UNIX processes are provided with a range of physical addresses in which to store its code, data and stack.",
+          "answer_ar": "تحصل عمليات يونكس على نطاق من العناوين الفعلية لتخزين الكود والبيانات والمكدس.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "all of the above",
+          "answer_ar": "كل ما سبق",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter_en": "Chapter 3",
+      "chapter_ar": "الفصل  الثالث",
+      "question_en": "When a child process is spawned, the UNIX fork system call returns __ to the parent process and __ to the child process.",
+      "question_ar": "عند إنشاء عملية فرعية، يرجع استدعاء نظام fork في يونكس __ إلى العملية الأم و __ إلى العملية الفرعية.",
+      "answers": [
+        {
+          "answer_en": "a value of zero, the PID of the parent process",
+          "answer_ar": "قيمة صفر، معرف عملية العملية الأم",
+          "is_correct": false
+        },
+        {
+          "answer_en": "the PID of the child process, a value of zero",
+          "answer_ar": "معرف العملية الفرعية، قيمة صفر",
+          "is_correct": true
+        },
+        {
+          "answer_en": "the PID of the child process, a value of one",
+          "answer_ar": "معرف العملية الفرعية، قيمة واحد",
+          "is_correct": false
+        },
+        {
+          "answer_en": "a value of one, the PID of the parent process",
+          "answer_ar": "قيمة واحد، معرف عملية العملية الأم",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter_en": "Chapter 3",
+      "chapter_ar": "الفصل الثالث",
+      "question_en": "In UNIX systems, kernel processes often have__ numerical priority values and typically have ____ scheduling priority than user processes.",
+      "question_ar": "في أنظمة يونكس، عادة ما يكون لعمليات النواة قيم أولوية عددية __ وعادة ما يكون لها أولوية جدولة ____ من عمليات المستخدم.",
+      "answers": [
+        {
+          "answer_en": "positive, lower",
+          "answer_ar": "موجبة، أقل",
+          "is_correct": false
+        },
+        {
+          "answer_en": "negative, higher",
+          "answer_ar": "سالبة، أعلى",
+          "is_correct": true
+        },
+        {
+          "answer_en": "positive, higher",
+          "answer_ar": "موجبة، أعلى",
+          "is_correct": false
+        },
+        {
+          "answer_en": "negative, lower",
+          "answer_ar": "سالبة، أقل",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In the 1970s and 1980s, what was an early roadblock to concurrent programming?",
       "question_ar": "في السبعينيات والثمانينيات، ما كان العائق المبكر أمام البرمجة المتزامنة؟",
@@ -3153,7 +3132,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 109,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following are general-purpose programming languages that directly support concurrency through multithreading?",
       "question_ar": "أي من لغات البرمجة التالية تدعم التوازي مباشرة من خلال تعدد السلاسل؟",
@@ -3180,7 +3161,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 110,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following statements about threads is false?",
       "question_ar": "أي من العبارات التالية حول السلاسل خاطئة؟",
@@ -3207,7 +3190,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 111,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "The POSIX specification provides the ___ standard for developing portable multithreaded applications.",
       "question_ar": "توفر مواصفات POSIX المعيار ___ لتطوير تطبيقات متعددة السلاسل قابلة للنقل.",
@@ -3234,7 +3219,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 112,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Multithreading is important because it can ____",
       "question_ar": "تعدد السلاسل مهم لأنه يمكن أن ____",
@@ -3261,7 +3248,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 113,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following applications can benefit from multithreading?",
       "question_ar": "أي من التطبيقات التالية يمكن أن تستفيد من تعدد السلاسل؟",
@@ -3288,7 +3277,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 114,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "A thread enters the waiting state when ___",
       "question_ar": "تدخل السلسلة حالة الانتظار عندما ___",
@@ -3315,7 +3306,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 115,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "A(n) ___ thread can enter the sleeping state for a specified period of time, after which it enters to the ___ state.",
       "question_ar": "يمكن لسلسلة ___ الدخول في حالة النوم لفترة زمنية محددة، وبعد ذلك تدخل في حالة ___.",
@@ -3342,7 +3335,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 116,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Many operating systems require ___ instructions to share resources than they do to initialize them, so in these systems, thread creation is ___ than process creation.",
       "question_ar": "تتطلب العديد من أنظمة التشغيل ___ تعليمات لمشاركة الموارد مقارنة بتهيئتها، لذلك في هذه الأنظمة، إنشاء السلاسل ___ من إنشاء العمليات.",
@@ -3369,7 +3364,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 117,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following statements about thread operations is true?",
       "question_ar": "أي من العبارات التالية حول عمليات السلاسل صحيحة؟",
@@ -3396,7 +3393,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 118,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "User-level thread implementations are also called ___ thread mappings.",
       "question_ar": "تسمى تطبيقات السلاسل على مستوى المستخدم أيضًا بتعيينات السلاسل ___.",
@@ -3423,7 +3422,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 119,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Threads in user space can be more appropriate than kernel threads because ___.",
       "question_ar": "يمكن أن تكون السلاسل في مساحة المستخدم أكثر ملاءمة من سلاسل النواة لأن ___.",
@@ -3450,7 +3451,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 120,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Kernel-level threads are often described as ___ thread mappings.",
       "question_ar": "غالبًا ما توصف سلاسل مستوى النواة بتعيينات السلاسل ___.",
@@ -3477,7 +3480,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 121,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following statements about kernel-level threads is false?",
       "question_ar": "أي من العبارات التالية حول سلاسل مستوى النواة خاطئة؟",
@@ -3504,7 +3509,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 122,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "The amount of overhead incurred by many-to-many thread mappings that implement thread pooling is ___ the amount of overhead incurred by one-to-one mappings.",
       "question_ar": "كمية العبء الناتجة عن تعيينات السلاسل من كثير إلى كثير التي تنفذ تجميع السلاسل هي ___ كمية العبء الناتجة عن التعيينات من واحد إلى واحد.",
@@ -3531,7 +3538,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 123,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following statements about scheduler activations is false?",
       "question_ar": "أي من العبارات التالية حول تفعيلات الجدولة خاطئة؟",
@@ -3558,7 +3567,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 124,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Identifying the recipient of a(n) ___ signal is ___ in a multithreaded system than in a system in which all processes contain a single thread of control.",
       "question_ar": "تحديد مستلم إشارة ___ هو ___ في نظام متعدد السلاسل مقارنة بنظام تحتوي فيه جميع العمليات على سلسلة تحكم واحدة.",
@@ -3585,7 +3596,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 125,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In which of the following events would the operating system send a synchronous signal?",
       "question_ar": "في أي من الأحداث التالية سيرسل نظام التشغيل إشارة متزامنة؟",
@@ -3612,7 +3625,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 126,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "According to the POSIX specification, processes send signals by specifying a ___.",
       "question_ar": "وفقًا لمواصفات POSIX، ترسل العمليات الإشارات عن طريق تحديد ___.",
@@ -3639,7 +3654,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 127,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "What could cause a thread to terminate prematurely?",
       "question_ar": "ما الذي يمكن أن يتسبب في إنهاء سلسلة قبل الأوان؟",
@@ -3666,7 +3683,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 128,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "A POSIX thread that defers cancellation ___.",
       "question_ar": "سلسلة POSIX التي تؤجل الإلغاء ___.",
@@ -3693,7 +3712,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 129,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "According to the POSIX threading API, processor registers, a stack and a signal mask are ___.",
       "question_ar": "وفقًا لواجهة برمجة تطبيقات سلاسل POSIX، فإن سجلات المعالج، المكدس، وقناع الإشارة هي ___.",
@@ -3720,7 +3741,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 130,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In Linux, what is the difference between the fork and clone system calls?",
       "question_ar": "في لينكس، ما الفرق بين استدعاءات النظام fork و clone؟",
@@ -3747,7 +3770,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 131,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In Linux, a process in the ___ state has been terminated but has not yet been removed from the system.",
       "question_ar": "في لينكس، العملية في حالة ___ تم إنهاؤها ولكن لم تتم إزالتها بعد من النظام.",
@@ -3774,7 +3799,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 132,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Which of the following statements about Windows XP threads is false?",
       "question_ar": "أي من العبارات التالية حول سلاسل Windows XP خاطئة؟",
@@ -3801,7 +3828,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 133,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In Windows XP, a fiber is scheduled for execution ___.",
       "question_ar": "في Windows XP، يتم جدولة الألياف للتنفيذ ___.",
@@ -3828,7 +3857,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 134,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "The size of a thread pool in Windows XP is ___.",
       "question_ar": "حجم مجموعة السلاسل في Windows XP هو ___.",
@@ -3855,7 +3886,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 135,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In Windows XP, a thread enters the ___ state when the thread’s requested data is currently unavailable, but the thread is otherwise ready to execute.",
       "question_ar": "في Windows XP، تدخل السلسلة حالة ___ عندما تكون البيانات المطلوبة غير متوفرة حاليًا، ولكن السلسلة جاهزة للتنفيذ بخلاف ذلك.",
@@ -3882,7 +3915,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 136,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "In Java, the ___ method of the Thread class contains the code that performs the “real work” of a thread.",
       "question_ar": "في Java، تحتوي طريقة ___ لفئة Thread على الكود الذي ينفذ \"العمل الحقيقي\" للسلسلة.",
@@ -3909,7 +3944,9 @@
         }
       ]
     },
-    {"chapter_en": "Chapter 4",
+    {
+      "id": 137,
+      "chapter_en": "Chapter 4",
       "chapter_ar": "الفصل الرابع",
       "question_en": "Java implements thread signaling using the ___ method of the Thread class.",
       "question_ar": "تنفذ Java إشارات السلاسل باستخدام طريقة ___ لفئة Thread.",
@@ -3936,9 +3973,8 @@
         }
       ]
     },
-
-
     {
+      "id": 138,
       "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Threads that operate independently of one another but must occasionally interact to perform cooperative tasks are said to execute ________.",
@@ -3946,12 +3982,12 @@
       "answers": [
         {
           "answer_en": "Simultaneously",
-          "answer_ar": "بشكل متزامن",
+          "answer_ar": "في وقت واحد ",
           "is_correct": false
         },
         {
           "answer_en": "Asynchronously",
-          "answer_ar": "بشغير متزامن",
+          "answer_ar": "بشكل غير متزامن",
           "is_correct": true
         },
         {
@@ -3967,6 +4003,7 @@
       ]
     },
     {
+      "id": 139,
       "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Preventing more than one thread from accessing a shared variable simultaneously is known as ________ access to the shared variable.",
@@ -3985,16 +4022,18 @@
         {
           "answer_en": "Serializing",
           "answer_ar": "تسلسل",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "synchronizing",
           "answer_ar": "تزامن",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 140,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "________ restricts access to a shared variable to only one thread at any given time.",
       "question_ar": "________ يحدد الوصول إلى متغير مشترك لخيط واحد فقط في أي وقت معين.",
@@ -4021,7 +4060,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 141,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "An example of a producer/consumer relationship is ________.",
       "question_ar": "مثال على علاقة المنتج/المستهلك هو ________.",
@@ -4048,10 +4089,12 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 142,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "In Java, Object method notify transitions a thread from the ________ state to the ________ state.",
-      "question_ar": "في Java، طريقة notify في الكائن تنقل الخيط من الحالة ________ إلى الحالة ________.",
+      "question_ar": "في Java، طريقة اعلام في الكائن تنقل سلسلة من الحالة ________ إلى الحالة ________.",
       "answers": [
         {
           "answer_en": "waiting, ready",
@@ -4075,10 +4118,12 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 143,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "In Java, the sleep method call must appear in part of a ________ statement because it might throw an exception indicating that the thread was interrupted before its sleep time expired.",
-      "question_ar": "في Java، يجب أن تظهر استدعاءات طريقة sleep في جزء من عبارة ________ لأنها قد ترمي استثناء يشير إلى أن الخيط تمت مقاطعته قبل انتهاء وقت النوم.",
+      "question_ar": "في Java، يجب أن تظهر استدعاءات طريقة النوم في جزء من عبارة ________ لأنها قد ترمي استثناء يشير إلى أن الخيط تمت مقاطعته قبل انتهاء وقت النوم.",
       "answers": [
         {
           "answer_en": "do...while",
@@ -4102,7 +4147,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 144,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Which of the following statements about critical sections is false?",
       "question_ar": "أي من العبارات التالية حول الأقسام الحرجة خاطئة؟",
@@ -4129,7 +4176,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 145,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Code inside a critical section should ________.",
       "question_ar": "يجب أن ________ الكود داخل القسم الحرج.",
@@ -4156,7 +4205,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 146,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "The constructs that encapsulate a thread’s critical section are sometimes called ________.",
       "question_ar": "الهياكل التي تغلف قسم الخيط الحرج تسمى أحيانًا ________.",
@@ -4183,7 +4234,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 147,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Which property of mutual exclusion primitives is inappropriate for multiprocessor systems?",
       "question_ar": "أي خاصية من خصائص بدائيات الاستبعاد المتبادل غير مناسبة لأنظمة متعددة المعالجات؟",
@@ -4210,7 +4263,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 148,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "A thread that uses processor cycles to continually test a condition before entering its critical section is said to be ________.",
       "question_ar": "الخيط الذي يستخدم دورات المعالج لاختبار حالة بشكل مستمر قبل دخول قسمه الحرج يُقال إنه ________.",
@@ -4237,7 +4292,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 149,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Lockstep synchronization does not ________.",
       "question_ar": "التزامن المتسلسل لا ________.",
@@ -4250,7 +4307,7 @@
         {
           "answer_en": "improve the efficiency of a process by forcing threads to operate at the same speed",
           "answer_ar": "يحسن كفاءة العملية عن طريق إجبار الخيوط على العمل بنفس السرعة",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "occur when threads must enter and leave their critical sections in strict alternation",
@@ -4260,11 +4317,13 @@
         {
           "answer_en": "occur as a result of using a single variable to govern access to threads’ critical sections",
           "answer_ar": "يحدث نتيجة استخدام متغير واحد للتحكم في الوصول إلى أقسام الخيوط الحرجة",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 150,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "________ occurs when an infinite loop prevents progress in a multithreaded application.",
       "question_ar": "________ يحدث عندما تمنع حلقة لا نهائية التقدم في تطبيق متعدد الخيوط.",
@@ -4291,7 +4350,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 151,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Lamport’s Bakery Algorithm does not require ________.",
       "question_ar": "خوارزمية المخبز لـ Lamport لا تتطلب ________.",
@@ -4318,7 +4379,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 152,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Which of the following statements about Lamport’s Bakery Algorithm is false?",
       "question_ar": "أي من العبارات التالية حول خوارزمية المخبز لـ Lamport خاطئة؟",
@@ -4336,16 +4399,18 @@
         {
           "answer_en": "Lamport’s algorithm allows multiple threads to obtain the same ticket number.",
           "answer_ar": "خوارزمية Lamport تسمح لعدة خيوط بالحصول على نفس رقم التذكرة.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "The thread possessing the ticket with the highest numerical value can enter its critical section.",
           "answer_ar": "الخيط الذي يمتلك التذكرة ذات القيمة العددية الأعلى يمكنه دخول قسمه الحرج.",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 153,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Which of the following mutual exclusion algorithms require instructions to be executed atomically?",
       "question_ar": "أي من خوارزميات الاستبعاد المتبادل التالية تتطلب تنفيذ التعليمات بشكل ذري؟",
@@ -4372,7 +4437,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 154,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Disabling interrupts ________.",
       "question_ar": "تعطيل المقاطعات ________.",
@@ -4399,7 +4466,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 155,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "A ________ is a variable that governs access to critical sections.",
       "question_ar": "________ هو متغير يتحكم في الوصول إلى الأقسام الحرجة.",
@@ -4407,7 +4476,7 @@
         {
           "answer_en": "Flag",
           "answer_ar": "علم",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "Controller",
@@ -4417,7 +4486,7 @@
         {
           "answer_en": "Lock",
           "answer_ar": "قفل",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "primitive",
@@ -4426,7 +4495,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 156,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "The test-and-set instruction ________.",
       "question_ar": "تعليمة الاختبار والإعداد ________.",
@@ -4453,7 +4524,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 5",
+    {
+      "id": 157,
+      "chapter_en": "Chapter 5",
       "chapter_ar": "الفصل الخامس",
       "question_en": "Many system architectures support a(n) ________ instruction that enables a thread to exchange the values of two variables atomically.",
       "question_ar": "تدعم العديد من معماريات الأنظمة تعليمة ________ تمكن الخيط من تبادل قيم متغيرين بشكل ذري.",
@@ -4480,8 +4553,182 @@
         }
       ]
     },
-
     {
+      "id": 158,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "Which of the following statements about semaphores is false?",
+      "question_ar": "أي من العبارات التالية خاطئة حول الاشارات؟",
+      "answers": [
+        {
+          "answer_en": "Initializing a semaphore creates a queue that stores references to threads waiting to enter their critical sections protected by that semaphore.",
+          "answer_ar": "تهيئة الاشارات تنشئ طابورًا يخزن مراجع للسلاسل المنتظرة لدخول أقسامها الحرجة المحمية بواسطة هذه الاشارة.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "A thread performs the V operation before exiting its critical section.",
+          "answer_ar": "يقوم الخيط بعملية V قبل الخروج من قسمه الحرج.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "Initializing a semaphore sets the value of a protected variable to indicate that no thread is executing its critical section.",
+          "answer_ar": "تهيئة الاشارة تضبط قيمة متغير محمي للإشارة إلى عدم وجود خيط ينفذ قسمه الحرج.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "A thread performs the P operation after it enters its critical section.",
+          "answer_ar": "يقوم الخيط بعملية P بعد دخوله قسمه الحرج.",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "What happens when a thread calls P(S) when it wants to enter its critical section, where S is a binary semaphore set to 1?",
+      "question_ar": "ماذا يحدث عندما يستدعي خيط P(S) عند رغبته في دخول قسمه الحرج، حيث S هو اشارة ثنائية مضبوطة على 1؟",
+      "answers": [
+        {
+          "answer_en": "The thread is allowed to enter its critical section and S is decremented.",
+          "answer_ar": "يسمح للخيط بدخول قسمه الحرج ويتم إنقاص S.",
+          "is_correct": true
+        },
+        {
+          "answer_en": "The semaphore is set to 2.",
+          "answer_ar": "يتم ضبط الاشارة على 2.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "The thread is blocked and added to a queue of waiting threads.",
+          "answer_ar": "يتم حظر الخيط وإضافته إلى طابور الخيوط المنتظرة.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "None of the above",
+          "answer_ar": "لا شيء مما سبق",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "Which of the following statements about semaphores is true?",
+      "question_ar": "أي من العبارات التالية صحيحة حول الاشارات؟",
+      "answers": [
+        {
+          "answer_en": "A semaphore implementation should guarantee that threads do not suffer indefinite postponement.",
+          "answer_ar": "يجب أن تضمن تنفيذ الاشارة أن الخيوط لا تعاني من تأجيل غير محدد.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "If several threads attempt a P(S) operation simultaneously, only one thread should be allowed to proceed.",
+          "answer_ar": "إذا حاولت عدة خيوط تنفيذ عملية P(S) في وقت واحد، يجب السماح لخيط واحد فقط بالمتابعة.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "P and V operations should be indivisible operations.",
+          "answer_ar": "يجب أن تكون عمليات P و V عمليات غير قابلة للتقسيم.",
+          "is_correct": false
+        },
+        {
+          "answer_en": "All of the above",
+          "answer_ar": "كل ما سبق",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "Semaphores can be used for each of the following purposes except:",
+      "question_ar": "يمكن استخدام الاشارات لكل الأغراض التالية ما عدا:",
+      "answers": [
+        {
+          "answer_en": "to protect access to a critical section",
+          "answer_ar": "حماية الوصول إلى قسم حرج",
+          "is_correct": false
+        },
+        {
+          "answer_en": "to notify the process that an event has occurred",
+          "answer_ar": "إخطار العملية بحدوث حدث",
+          "is_correct": true
+        },
+        {
+          "answer_en": "to prevent shared variables from getting corrupted",
+          "answer_ar": "منع تلف المتغيرات المشتركة",
+          "is_correct": false
+        },
+        {
+          "answer_en": "to synchronize two or more concurrent threads",
+          "answer_ar": "تزامن خيطين متزامنين أو أكثر",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "If a thread attempts a P operation when a counting semaphore has been decremented to zero, ________.",
+      "question_ar": "إذا حاول خيط تنفيذ عملية P عندما يكون سمفور العد قد تم إنقاصه إلى الصفر، ________.",
+      "answers": [
+        {
+          "answer_en": "the thread returns a resource to the pool and increments the semaphore to 1",
+          "answer_ar": "يعيد الخيط موردًا إلى المجموعة ويزيد الاشارة إلى 1",
+          "is_correct": false
+        },
+        {
+          "answer_en": "the thread obtains a resource from the pool and decrements the semaphore to -1",
+          "answer_ar": "يحصل الخيط على مورد من المجموعة وينقص الاشارة إلى -1",
+          "is_correct": false
+        },
+        {
+          "answer_en": "the thread obtains a resource from the pool and the semaphore remains equal to 0",
+          "answer_ar": "يحصل الخيط على مورد من المجموعة وتبقى الاشارة مساويًا لـ 0",
+          "is_correct": false
+        },
+        {
+          "answer_en": "the thread must wait until a resource is returned to the pool by a V operation",
+          "answer_ar": "يجب على الخيط الانتظار حتى يتم إعادة مورد إلى المجموعة بواسطة عملية V",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter_en": "Chapter 5",
+      "chapter_ar": "الفصل الخامس",
+      "question_en": "Semaphore operations can be implemented in the kernel of a multiprocessor system by:",
+      "question_ar": "يمكن تنفيذ عمليات الاشارات في نواة نظام متعدد المعالجات عن طريق:",
+      "answers": [
+        {
+          "answer_en": "controlling access (via busy waiting) to a shared ready list",
+          "answer_ar": "التحكم في الوصول (عن طريق الانتظار المشغول) إلى قائمة جاهزة مشتركة",
+          "is_correct": false
+        },
+        {
+          "answer_en": "giving one processor the job of controlling the ready list",
+          "answer_ar": "إعطاء معالج واحد مهمة التحكم في القائمة الجاهزة",
+          "is_correct": false
+        },
+        {
+          "answer_en": "both a and b",
+          "answer_ar": "كل من أ و ب",
+          "is_correct": false
+        },
+        {
+          "answer_en": "none of the above",
+          "answer_ar": "لا شيء مما سبق",
+          "is_correct": true
+        }
+      ]
+    },
+    {
+      "id": 164,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Which of the following is not a performance criterion that a processor scheduler should attempt to satisfy?",
@@ -4510,6 +4757,7 @@
       ]
     },
     {
+      "id": 165,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "The intermediate-level scheduler determines ___________.",
@@ -4518,12 +4766,12 @@
         {
           "answer_en": "which jobs may actively compete for processors",
           "answer_ar": "أي الوظائف قد تتنافس بنشاط على المعالجات",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "which jobs may gain admission to the system and actively compete for system resources",
           "answer_ar": "أي الوظائف قد تحصل على القبول في النظام وتتنافس بنشاط على موارد النظام",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "which active process the system will assign to a processor when one next becomes available",
@@ -4538,6 +4786,7 @@
       ]
     },
     {
+      "id": 166,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "At a minimum, an operating system typically implements __________.",
@@ -4546,7 +4795,7 @@
         {
           "answer_en": "an intermediate-level and a low-level scheduler",
           "answer_ar": "مجدول ذو مستوى متوسط ومجدول ذو مستوى منخفض",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "a high-level scheduler",
@@ -4561,11 +4810,13 @@
         {
           "answer_en": "a high-level and a low-level scheduler",
           "answer_ar": "مجدول ذو مستوى عالي ومجدول ذو مستوى منخفض",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 167,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "The ________ dispatches a processor to the process chosen to execute next.",
       "question_ar": "________ يقوم بتعيين معالج للعملية المختارة للتنفيذ التالي.",
@@ -4593,6 +4844,7 @@
       ]
     },
     {
+      "id": 168,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Under ________ scheduling, processes can be interrupted whether they have completed their current task or not.",
@@ -4621,6 +4873,7 @@
       ]
     },
     {
+      "id": 169,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "A disadvantage of preemptive scheduling is ________.",
@@ -4649,6 +4902,7 @@
       ]
     },
     {
+      "id": 170,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "A ________ priority system incurs less overhead than a ________ priority system but is less responsive to changing conditions in the system.",
@@ -4677,6 +4931,7 @@
       ]
     },
     {
+      "id": 171,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "When a user purchases priority, that user’s process ______.",
@@ -4705,6 +4960,7 @@
       ]
     },
     {
+      "id": 172,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "________ is not generally considered one of the most important objectives in scheduler design.",
@@ -4723,16 +4979,17 @@
         {
           "answer_en": "Minimizing overhead",
           "answer_ar": "تقليل الحمل الزائد",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "Enforcing priorities",
           "answer_ar": "فرض الأولويات",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
     {
+      "id": 173,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "A scheduling discipline is said to be ________ if all similar processes are treated the same, and no process can suffer indefinite postponement due to scheduling issues.",
@@ -4761,6 +5018,7 @@
       ]
     },
     {
+      "id": 174,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "________ occurs when a low-priority process temporarily is assigned higher priority than a high-priority process.",
@@ -4789,6 +5047,7 @@
       ]
     },
     {
+      "id": 175,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "A(n) ________ process tends to use all the processor time that the system allocates for it.",
@@ -4817,6 +5076,7 @@
       ]
     },
     {
+      "id": 176,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "A system should provide good response times to a(n) ________ process, whereas a(n) ________ process generally can withstand reasonable delays.",
@@ -4845,6 +5105,7 @@
       ]
     },
     {
+      "id": 177,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Under ________ scheduling, processes execute in the order the scheduler receives them.",
@@ -4873,6 +5134,7 @@
       ]
     },
     {
+      "id": 178,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "FIFO scheduling ________.",
@@ -4901,6 +5163,7 @@
       ]
     },
     {
+      "id": 179,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "When the quantum size is too ________, the overhead involved in ________ dominates and performance degrades.",
@@ -4929,6 +5192,7 @@
       ]
     },
     {
+      "id": 180,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "The use of aging in a round-robin scheme helps to ________.",
@@ -4957,6 +5221,7 @@
       ]
     },
     {
+      "id": 181,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Under SPF scheduling, important processes will be executed ________.",
@@ -4975,16 +5240,17 @@
         {
           "answer_en": "before less important processes can execute",
           "answer_ar": "قبل أن تتمكن العمليات الأقل أهمية من التنفيذ",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "according to their estimated time to completion",
           "answer_ar": "وفقًا للوقت المقدر لانتهائها",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
     {
+      "id": 182,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "SPF scheduling might be desirable when ________ is the primary goal of the system.",
@@ -5013,6 +5279,7 @@
       ]
     },
     {
+      "id": 183,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "HRRN is a(n) ________ scheduling discipline in which each process’s priority is a function of its ________.",
@@ -5041,6 +5308,7 @@
       ]
     },
     {
+      "id": 184,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Incorporating _______ when assigning priorities allows HRRN to avoid indefinite postponement, similar to aging in RR schemes.",
@@ -5069,6 +5337,7 @@
       ]
     },
     {
+      "id": 185,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "SRT scheduling essentially incorporates ________ into SPF scheduling.",
@@ -5097,6 +5366,7 @@
       ]
     },
     {
+      "id": 186,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "________ contributes to a larger overhead in SRT than SPF.",
@@ -5125,6 +5395,7 @@
       ]
     },
     {
+      "id": 187,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "In general, multilevel feedback queues push ________ processes to lower-level queues and ________ processes to higher-level queues, resulting in rapid response times to interactive requests.",
@@ -5133,7 +5404,7 @@
         {
           "answer_en": "processor-bound, I/O-bound",
           "answer_ar": "مرتبطة بالمعالج، مرتبطة بالإدخال/الإخراج",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "low-priority, high-priority",
@@ -5153,6 +5424,7 @@
       ]
     },
     {
+      "id": 188,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Multilevel feedback queuing ________.",
@@ -5181,6 +5453,7 @@
       ]
     },
     {
+      "id": 189,
       "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Fair share scheduling ensures ________.",
@@ -5194,12 +5467,12 @@
         {
           "answer_en": "that the performance of a process is affected only by the population of its process group",
           "answer_ar": "أن أداء العملية يتأثر فقط بمجموعة العمليات الخاصة بها",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "fairness across sets of processes grouped by individual user",
           "answer_ar": "العدالة عبر مجموعات العمليات المجمعة حسب المستخدم الفردي",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "both a and c",
@@ -5208,7 +5481,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 190,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Deadline scheduling is most important in ________ systems.",
       "question_ar": "جدولة المواعيد النهائية هي الأكثر أهمية في أنظمة ________.",
@@ -5235,7 +5510,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 191,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "The intense resource management that deadline scheduling requires often leads to increased ________ in those systems.",
       "question_ar": "إدارة الموارد المكثفة التي تتطلبها جدولة المواعيد النهائية تؤدي غالبًا إلى زيادة ________ في تلك الأنظمة.",
@@ -5262,7 +5539,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 192,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "Soft real-time scheduling ________.",
       "question_ar": "جدولة الزمن الحقيقي الناعمة ________.",
@@ -5275,7 +5554,7 @@
         {
           "answer_en": "ensures that real-time processes are dispatched before other processes in the system",
           "answer_ar": "تضمن إرسال العمليات الزمنية الحقيقية قبل العمليات الأخرى في النظام",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "guarantees that real-time processes meet their timing constraints",
@@ -5285,11 +5564,13 @@
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 193,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "_______ scheduling algorithms guarantee that a process’s timing constraints are always met.",
       "question_ar": "خوارزميات جدولة _______ تضمن دائمًا تحقيق القيود الزمنية للعملية.",
@@ -5316,7 +5597,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 194,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "The ________ algorithm bases priority on the amount of time until a process’s deadline and the remaining execution time until its task has completed.",
       "question_ar": "خوارزمية ________ تعتمد الأولوية على مقدار الوقت المتبقي حتى الموعد النهائي للعملية والوقت المتبقي للتنفيذ حتى اكتمال مهمتها.",
@@ -5343,7 +5626,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 195,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "In an operating system that supports threads, processor scheduling can be performed by ________.",
       "question_ar": "في نظام تشغيل يدعم الخيوط، يمكن تنفيذ جدولة المعالج بواسطة ________.",
@@ -5370,7 +5655,9 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 196,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "If there are multiple threads at the highest priority level in the Java virtual machine, those threads execute using a(n) ________ scheduling algorithm.",
       "question_ar": "إذا كانت هناك خيوط متعددة في أعلى مستوى أولوية في آلة Java الافتراضية، فإن تلك الخيوط تنفذ باستخدام خوارزمية جدولة ________.",
@@ -5397,40 +5684,41 @@
         }
       ]
     },
-    {     "chapter_en": "Chapter 8",
+    {
+      "id": 197,
+      "chapter_en": "Chapter 8",
       "chapter_ar": "الفصل الثامن",
       "question_en": "On a system that does not support timeslicing, Java threads will run to completion in order unless they voluntarily relinquish control by calling the ________ method.",
       "question_ar": "في نظام لا يدعم تقسيم الوقت، ستقوم خيوط Java بالتنفيذ حتى الاكتمال بالترتيب ما لم تتخلى طواعية عن التحكم عن طريق استدعاء الطريقة ________.",
       "answers": [
         {
           "answer_en": "Halt",
-          "answer_ar": "Halt",
+          "answer_ar": "التوقف",
           "is_correct": false
         },
         {
           "answer_en": "Sleep",
-          "answer_ar": "Sleep",
+          "answer_ar": "النوم",
           "is_correct": false
         },
         {
           "answer_en": "Yield",
-          "answer_ar": "Yield",
+          "answer_ar": "الخضوع",
           "is_correct": true
         },
         {
           "answer_en": "suspend",
-          "answer_ar": "suspend",
+          "answer_ar": "التعليق",
           "is_correct": false
         }
       ]
     },
-
-
     {
+      "id": 198,
       "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________, while plentiful, is slower than other forms of storage and not suitable for running programs.",
-      "question_ar": "________، على الرغم من وفرة، أبطأ من أشكال التخزين الأخرى وغير مناسب لتشغيل البرامج.",
+      "question_ar": "________، على الرغم من وفرتها الا انها أبطأ من أشكال التخزين الأخرى وغير مناسب لتشغيل البرامج.",
       "answers": [
         {
           "answer_en": "Cache",
@@ -5455,6 +5743,7 @@
       ]
     },
     {
+      "id": 199,
       "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Which of the following statements is false?",
@@ -5482,7 +5771,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 200,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Operating systems can divide main memory into portions called ________ so that one process cannot overwrite another’s memory, either inadvertently or maliciously.",
       "question_ar": "يمكن لأنظمة التشغيل تقسيم الذاكرة الرئيسية إلى أجزاء تسمى ________ بحيث لا يمكن لعملية واحدة الكتابة فوق ذاكرة عملية أخرى، سواء عن طريق الخطأ أو عن قصد.",
@@ -5509,7 +5800,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 201,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "A memory manager’s primary function is ________.",
       "question_ar": "الوظيفة الأساسية لمدير الذاكرة هي ________.",
@@ -5536,7 +5829,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 202,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "According to ________, many processes that access data and instructions once are likely to access them again in the future.",
       "question_ar": "وفقًا لـ ________، العديد من العمليات التي تصل إلى البيانات والتعليمات مرة واحدة من المحتمل أن تصل إليها مرة أخرى في المستقبل.",
@@ -5563,7 +5858,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 203,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Going from lower to higher levels in the memory hierarchy, ________.",
       "question_ar": "عند الانتقال من المستويات الأدنى إلى الأعلى في تسلسل الذاكرة، ________.",
@@ -5590,7 +5887,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 204,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ strategies determine which pieces of data to remove from main memory to free space for a new process.",
       "question_ar": "تحدد استراتيجيات ________ أي أجزاء البيانات يجب إزالتها من الذاكرة الرئيسية لتحرير مساحة لعملية جديدة.",
@@ -5617,7 +5916,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 205,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ strategies attempt to load a piece of program or data into memory before it is referenced.",
       "question_ar": "تحاول استراتيجيات ________ تحميل جزء من البرنامج أو البيانات إلى الذاكرة قبل الإشارة إليها.",
@@ -5644,7 +5945,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 206,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "In general, the overhead incurred by ________ allocation is outweighed by the advantages of being able to store more processes in main memory at the same time.",
       "question_ar": "بشكل عام، يتم تعويض التكاليف الإضافية الناتجة عن تخصيص ________ بمزايا القدرة على تخزين المزيد من العمليات في الذاكرة الرئيسية في نفس الوقت.",
@@ -5671,7 +5974,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 207,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Noncontiguous memory allocation splits programs into blocks of memory called ________ that can be loaded into nonadjacent “holes” in main memory.",
       "question_ar": "يقوم تخصيص الذاكرة غير المتجاورة بتقسيم البرامج إلى كتل من الذاكرة تسمى ________ يمكن تحميلها في “ثقوب” غير متجاورة في الذاكرة الرئيسية.",
@@ -5684,7 +5989,7 @@
         {
           "answer_en": "Pages",
           "answer_ar": "الصفحات",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "Partitions",
@@ -5694,11 +5999,13 @@
         {
           "answer_en": "segments",
           "answer_ar": "القطاعات",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 208,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Before the advent of ________, programmers wrote all the code necessary to implement a particular application, including the highly detailed machine-level input/output instructions.",
       "question_ar": "قبل ظهور ________، كان المبرمجون يكتبون كل الكود اللازم لتنفيذ تطبيق معين، بما في ذلك تعليمات الإدخال/الإخراج التفصيلية على مستوى الآلة.",
@@ -5725,7 +6032,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 209,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ is a technique that involves breaking a program into logical segments and keeping only the currently needed segment in memory at any one time.",
       "question_ar": "________ هي تقنية تتضمن تقسيم البرنامج إلى أجزاء منطقية والاحتفاظ فقط بالجزء المطلوب حاليًا في الذاكرة في أي وقت.",
@@ -5752,7 +6061,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 210,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ can be thought of as a modern operating system-controlled version of overlays.",
       "question_ar": "يمكن اعتبار ________ نسخة حديثة من التراكبات يتم التحكم فيها بواسطة نظام التشغيل.",
@@ -5779,7 +6090,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 211,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "A(n) ________ can be used in single-user contiguous memory allocation systems to prevent programs from damaging the operating system’s memory.",
       "question_ar": "يمكن استخدام ________ في أنظمة تخصيص الذاكرة المتجاورة لمستخدم واحد لمنع البرامج من إتلاف ذاكرة نظام التشغيل.",
@@ -5806,7 +6119,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 212,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "To allow programs to access and execute operating system instructions, operating systems provide ________.",
       "question_ar": "لتمكين البرامج من الوصول إلى تعليمات نظام التشغيل وتنفيذها، توفر أنظمة التشغيل ________.",
@@ -5833,7 +6148,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 213,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ was an early innovation that helped decrease the amount of time the computer wasted between jobs.",
       "question_ar": "كان ________ ابتكارًا مبكرًا ساعد في تقليل الوقت الذي يهدره الكمبيوتر بين المهام.",
@@ -5860,7 +6177,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 214,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "A ________ reads and executes the control-language statements that define each job as well as helps prepare the system for the next job.",
       "question_ar": "يقوم ________ بقراءة وتنفيذ عبارات لغة التحكم التي تحدد كل مهمة بالإضافة إلى المساعدة في إعداد النظام للمهمة التالية.",
@@ -5887,7 +6206,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 215,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Under fixed-partition multiprogramming, ________ occurs when a memory partition is larger than the memory and data of the process currently loaded into it.",
       "question_ar": "في البرمجة المتعددة ذات الأقسام الثابتة، يحدث ________ عندما يكون قسم الذاكرة أكبر من الذاكرة والبيانات الخاصة بالعملية المحملة حاليًا فيه.",
@@ -5914,7 +6235,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 216,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "In a partitioned memory environment, the single boundary register is replaced by the ________ and ________ registers which delimit the upper and lower boundaries of a partition, respectively.",
       "question_ar": "في بيئة الذاكرة المقسمة، يتم استبدال سجل الحدود الفردي بـ ________ و ________ اللذين يحددان الحدود العليا والدنيا للقسم، على التوالي.",
@@ -5941,7 +6264,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 217,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________-partition multiprogramming allows a process to occupy only as much space as needed in an attempt to prevent ________ fragmentation.",
       "question_ar": "تسمح البرمجة المتعددة ذات الأقسام ________ للعملية باحتلال المساحة التي تحتاجها فقط في محاولة لمنع التجزئة ________.",
@@ -5968,7 +6293,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 218,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "To maximize the use of available space, ________ combines adjacent holes in memory, while ________ relocates all occupied areas of memory to one end of main memory, leaving a single large free memory hole instead of numerous small holes.",
       "question_ar": "لتعظيم استخدام المساحة المتاحة، يقوم ________ بدمج الثقوب المجاورة في الذاكرة، بينما يقوم ________ بنقل جميع المناطق المشغولة في الذاكرة إلى طرف واحد من الذاكرة الرئيسية، تاركًا ثقبًا واحدًا كبيرًا بدلاً من العديد من الثقوب الصغيرة.",
@@ -5995,7 +6322,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 219,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "The significant overhead associated with ________ makes it largely unsuitable for use in real-time systems.",
       "question_ar": "التكاليف الإضافية الكبيرة المرتبطة بـ ________ تجعلها غير مناسبة للاستخدام في الأنظمة الزمنية الحقيقية.",
@@ -6022,7 +6351,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 220,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "Under a ________ placement strategy, the system places an incoming job in the hole in main memory in which it fits most tightly.",
       "question_ar": "تحت استراتيجية وضع ________، يضع النظام المهمة الواردة في الثقب في الذاكرة الرئيسية الذي يناسبها بشكل أكثر إحكامًا.",
@@ -6049,7 +6380,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 221,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "The ________ placement strategy allows the system to make a placement decision quickly and generally incurs the least amount of overhead of the various placement strategies.",
       "question_ar": "تسمح استراتيجية وضع ________ للنظام باتخاذ قرار الوضع بسرعة وتتسبب عمومًا في أقل قدر من التكاليف الإضافية مقارنة باستراتيجيات الوضع المختلفة.",
@@ -6076,7 +6409,9 @@
         }
       ]
     },
-    {   "chapter_en": "Chapter 9",
+    {
+      "id": 222,
+      "chapter_en": "Chapter 9",
       "chapter_ar": "الفصل التاسع",
       "question_en": "________ temporarily removes a process from main memory to allow another process to make use of the system’s resources.",
       "question_ar": "يقوم ________ بإزالة عملية مؤقتًا من الذاكرة الرئيسية للسماح لعملية أخرى باستخدام موارد النظام.",
@@ -6103,11 +6438,8 @@
         }
       ]
     },
-
-
-
-
     {
+      "id": 223,
       "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a virtual memory system, ________.",
@@ -6136,6 +6468,7 @@
       ]
     },
     {
+      "id": 224,
       "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Systems that use dynamic address translation exhibit ________—the property that contiguous addresses in a process’s virtual address space need not be contiguous in physical memory.",
@@ -6164,6 +6497,7 @@
       ]
     },
     {
+      "id": 225,
       "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In block mapping systems, _________.",
@@ -6192,6 +6526,7 @@
       ]
     },
     {
+      "id": 226,
       "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a block mapping system, suppose that a is a base address stored in the block map table origin register and that the block map table for the process with base address a contains the real address b’ for the start of virtual block b in main memory and the real address d’ for the start of virtual block d in main memory. What is the real address of virtual address v = (b, d)?",
@@ -6219,7 +6554,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 227,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a paging system, ________.",
       "question_ar": "في نظام الصفحات، ________.",
@@ -6246,7 +6583,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 228,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "When a page references a page that is not in main memory, the processor generates a(n) ________.",
       "question_ar": "عندما تشير صفحة إلى صفحة غير موجودة في الذاكرة الرئيسية، يقوم المعالج بإنشاء ________.",
@@ -6273,7 +6612,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 229,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Consider paging address translation by direct mapping. Given the base address, a, in the page table origin register, virtual address v = (p, d) and an entry p’ (in the page table starting at address a) for the page frame corresponding to virtual page p, what is the real address corresponding to v?",
       "question_ar": "ضع في الاعتبار ترجمة عنوان الصفحات باستخدام التعيين المباشر. بالنظر إلى العنوان الأساسي، a، في سجل أصل جدول الصفحات، العنوان الافتراضي v = (p, d) وإدخال p’ (في جدول الصفحات الذي يبدأ من العنوان a) لإطار الصفحة المقابل للصفحة الافتراضية p، ما هو العنوان الفعلي المقابل لـ v؟",
@@ -6300,7 +6641,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 230,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Which of the following statements about direct mapping is false?",
       "question_ar": "أي من العبارات التالية حول التعيين المباشر خاطئة؟",
@@ -6318,16 +6661,18 @@
         {
           "answer_en": "Using direct-mapping page address translation can cause the computer system to run programs faster.",
           "answer_ar": "يمكن أن يؤدي استخدام ترجمة عنوان الصفحات المعين مباشرة إلى جعل نظام الكمبيوتر يعمل البرامج بشكل أسرع.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "Direct mapping is much like accessing an array location via subscripting.",
           "answer_ar": "التعيين المباشر يشبه إلى حد كبير الوصول إلى موقع مصفوفة عبر الفهرسة.",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 231,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "An associative mapping __________.",
       "question_ar": "التعيين الترابطي __________.",
@@ -6335,7 +6680,7 @@
         {
           "answer_en": "provides better performance than direct mapping",
           "answer_ar": "يوفر أداءً أفضل من التعيين المباشر",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "stores the entire page table in content-addressed associative memory",
@@ -6350,11 +6695,13 @@
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 232,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "A combined direct/associative mapping holds only a small percentage of the complete page table for a process in __________ and keeps the complete page table in __________.",
       "question_ar": "يحتفظ التعيين المباشر/الترابطي المشترك بنسبة صغيرة فقط من جدول الصفحات الكامل للعملية في __________ ويحتفظ بجدول الصفحات الكامل في __________.",
@@ -6381,7 +6728,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 233,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Under direct/associative mapping, ________.",
       "question_ar": "تحت التعيين المباشر/الترابطي، ________.",
@@ -6394,7 +6743,7 @@
         {
           "answer_en": "better performance can be achieved than under a complete associative mapping",
           "answer_ar": "يمكن تحقيق أداء أفضل من التعيين الترابطي الكامل",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "the number of entries in the TLB needs to be large to achieve good performance",
@@ -6404,11 +6753,13 @@
         {
           "answer_en": "the page table entries maintained in the TLB typically correspond only to the more-recently referenced pages",
           "answer_ar": "عادةً ما تتوافق إدخالات جدول الصفحات المحفوظة في TLB فقط مع الصفحات التي تمت الإشارة إليها مؤخرًا",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 234,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In multilevel page tables, __________ is reduced compared to direct-mapped tables when process’s use only a small number of pages.",
       "question_ar": "في جداول الصفحات متعددة المستويات، يتم تقليل __________ مقارنة بالجداول المعينة مباشرة عندما تستخدم العمليات عددًا صغيرًا فقط من الصفحات.",
@@ -6435,7 +6786,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 235,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "The overhead incurred by multilevel page address translation is __________.",
       "question_ar": "التكاليف الإضافية الناتجة عن ترجمة عنوان الصفحات متعددة المستويات هي __________.",
@@ -6462,7 +6815,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 236,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In an inverted page table, the number of PTEs that must be stored in main memory is proportional to _________.",
       "question_ar": "في جدول الصفحات المقلوب، يكون عدد PTEs التي يجب تخزينها في الذاكرة الرئيسية متناسبًا مع _________.",
@@ -6489,7 +6844,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 237,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Inverted page tables use __________ to map virtual pages to PTEs.",
       "question_ar": "تستخدم جداول الصفحات المقلوبة __________ لتعيين الصفحات الافتراضية إلى PTEs.",
@@ -6516,7 +6873,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 238,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "To improve performance, a designer can attempt to reduce the number of collisions that occur in an inverted page table by ________.",
       "question_ar": "لتحسين الأداء، يمكن للمصمم محاولة تقليل عدد التصادمات التي تحدث في جدول الصفحات المقلوب عن طريق ________.",
@@ -6524,7 +6883,7 @@
         {
           "answer_en": "increasing the size of the inverted page table",
           "answer_ar": "زيادة حجم جدول الصفحات المقلوب",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "increasing the range of the hash function using a hash anchor table",
@@ -6534,7 +6893,7 @@
         {
           "answer_en": "both a and b",
           "answer_ar": "كل من أ و ب",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "none of the above",
@@ -6543,7 +6902,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 239,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Page sharing ________.",
       "question_ar": "مشاركة الصفحات ________.",
@@ -6561,16 +6922,18 @@
         {
           "answer_en": "does not allow modifiable procedures from being used by more than one process at the same time",
           "answer_ar": "لا تسمح بإجراءات قابلة للتعديل يتم استخدامها من قبل أكثر من عملية في نفس الوقت",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "none of the above",
           "answer_ar": "لا شيء مما سبق",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 240,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Using copy-on-write to ensure that two processes do not interfere with each other when modifying pages ________.",
       "question_ar": "استخدام نسخ عند الكتابة لضمان ألا تتداخل عمليتان مع بعضهما البعض عند تعديل الصفحات ________.",
@@ -6588,16 +6951,18 @@
         {
           "answer_en": "both a and b",
           "answer_ar": "كل من أ و ب",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "none of the above",
           "answer_ar": "لا شيء مما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 241,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "All of a process’s segments ________.",
       "question_ar": "جميع أجزاء العملية ________.",
@@ -6605,7 +6970,7 @@
         {
           "answer_en": "must consist of contiguous memory locations",
           "answer_ar": "يجب أن تتكون من مواقع ذاكرة متجاورة",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "must be placed adjacent to one another in main memory",
@@ -6620,11 +6985,13 @@
         {
           "answer_en": "are maintained in main memory during execution",
           "answer_ar": "يتم الاحتفاظ بها في الذاكرة الرئيسية أثناء التنفيذ",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 242,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a system that uses segmentation address translation by direct mapping, ________.",
       "question_ar": "في نظام يستخدم ترجمة عنوان التجزئة عن طريق التعيين المباشر، ________.",
@@ -6651,7 +7018,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 243,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "A(n) __________ is generated when a displacement is greater than a segment length.",
       "question_ar": "يتم إنشاء __________ عندما يكون الإزاحة أكبر من طول الجزء.",
@@ -6678,7 +7047,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 244,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "Sharing __________ using segmentation can simplify memory management compared to paging.",
       "question_ar": "يمكن أن يبسط مشاركة __________ باستخدام التجزئة إدارة الذاكرة مقارنة بالصفحات.",
@@ -6686,12 +7057,12 @@
         {
           "answer_en": "reentrant code",
           "answer_ar": "الكود القابل لإعادة الدخول",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "a dynamic array",
           "answer_ar": "مصفوفة ديناميكية",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "an object",
@@ -6705,7 +7076,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 244,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "________ access is useful for reentrant code because it allows a process to execute a segment or make its own copy of a segment which it may then modify.",
       "question_ar": "الوصول ________ مفيد للكود القابل لإعادة الدخول لأنه يسمح للعملية بتنفيذ جزء أو إنشاء نسخة خاصة به من الجزء الذي يمكنها تعديله لاحقًا.",
@@ -6713,12 +7086,12 @@
         {
           "answer_en": "Read/execute",
           "answer_ar": "قراءة/تنفيذ",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "Read/write",
           "answer_ar": "قراءة/كتابة",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "Execute only",
@@ -6732,7 +7105,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 245,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "A process given append-only access to a segment may __________.",
       "question_ar": "العملية التي لديها وصول للإلحاق فقط إلى جزء قد __________.",
@@ -6759,7 +7134,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 246,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a combined segmentation/paging system, ________.",
       "question_ar": "في نظام التجزئة/الصفحات المشترك، ________.",
@@ -6786,7 +7163,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 247,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a paged and segmented system using combined associative/direct mapping, ________.",
       "question_ar": "في نظام الصفحات والأجزاء الذي يستخدم التعيين الترابطي/المباشر المشترك، ________.",
@@ -6794,7 +7173,7 @@
         {
           "answer_en": "the more tables a system maintains in main memory, the fewer processes it can support",
           "answer_ar": "كلما زاد عدد الجداول التي يحتفظ بها النظام في الذاكرة الرئيسية، قل عدد العمليات التي يمكنه دعمها",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "the associative memory is unimportant to the efficient operation of the dynamic address translation",
@@ -6809,11 +7188,13 @@
         {
           "answer_en": "the benefit of maintaining only a few of the tables in main memory at any one time is that address translation proceeds faster at execution time",
           "answer_ar": "فائدة الاحتفاظ بعدد قليل فقط من الجداول في الذاكرة الرئيسية في أي وقت هي أن ترجمة العناوين تتم بشكل أسرع في وقت التنفيذ",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 248,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In a segmentation/paging virtual memory system, two processes share memory when ________.",
       "question_ar": "في نظام الذاكرة الافتراضية للتجزئة/الصفحات، تشارك عمليتان الذاكرة عندما ________.",
@@ -6840,7 +7221,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 249,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In the IA-32 architecture, the ________ register typically stores a process’s code segment selector (which typically corresponds to the segment containing its executable instructions).",
       "question_ar": "في بنية IA-32، يقوم السجل ________ عادةً بتخزين محدد جزء الكود للعملية (والذي يتوافق عادةً مع الجزء الذي يحتوي على تعليماتها القابلة للتنفيذ).",
@@ -6867,7 +7250,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 250,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "For operating systems that maintain more than 8,192 segments, or that maintain a separate segment map table for each process, the IA-32 architecture requires the base address of each local descriptor table to be stored in the __________.",
       "question_ar": "بالنسبة لأنظمة التشغيل التي تحتفظ بأكثر من 8,192 جزءًا، أو التي تحتفظ بجدول تعيين أجزاء منفصل لكل عملية، تتطلب بنية IA-32 تخزين العنوان الأساسي لكل جدول واصف محلي في __________.",
@@ -6880,12 +7265,12 @@
         {
           "answer_en": "global descriptor table",
           "answer_ar": "جدول الواصف العام",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "global descriptor table register",
           "answer_ar": "سجل جدول الواصف العام",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "none of the above",
@@ -6894,7 +7279,9 @@
         }
       ]
     },
-    {  "chapter_en": "Chapter 10",
+    {
+      "id": 251,
+      "chapter_en": "Chapter 10",
       "chapter_ar": "الفصل العاشر",
       "question_en": "In the IA-32 architecture, a(n) ________ occurs when a process has attempted to access memory outside of its segment.",
       "question_ar": "في بنية IA-32، يحدث ________ عندما تحاول عملية الوصول إلى ذاكرة خارج جزءها.",
@@ -6902,12 +7289,12 @@
         {
           "answer_en": "general protection fault exception",
           "answer_ar": "استثناء خطأ حماية عام",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "segment-overflow exception",
           "answer_ar": "استثناء تجاوز الجزء",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "TLB miss",
@@ -6921,11 +7308,8 @@
         }
       ]
     },
-
-
-
-
     {
+      "id": 252,
       "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Virtual memory fetch strategies determine when a page or segment should be moved from ________ to ________.",
@@ -6953,7 +7337,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 253,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Virtual memory replacement strategies determine ________.",
       "question_ar": "تحدد استراتيجيات استبدال الذاكرة الافتراضية ________.",
@@ -6980,7 +7366,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 254,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Which of the following computer operations involves the highest degree of spatial locality?",
       "question_ar": "أي من عمليات الكمبيوتر التالية تتضمن أعلى درجة من المحلية المكانية؟",
@@ -7007,7 +7395,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 255,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "According to temporal locality, processes are likely to reference pages that ________.",
       "question_ar": "وفقًا للمحلية الزمنية، من المحتمل أن تشير العمليات إلى الصفحات التي ________.",
@@ -7034,7 +7424,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 256,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Which of the following reasons makes demand paging a desirable fetch policy?",
       "question_ar": "أي من الأسباب التالية يجعل استدعاء الصفحات عند الطلب سياسة جذب مرغوبة؟",
@@ -7047,7 +7439,7 @@
         {
           "answer_en": "Demand paging guarantees that the system brings into main memory only those pages that processes actually need.",
           "answer_ar": "يضمن استدعاء الصفحات عند الطلب أن النظام يحضر إلى الذاكرة الرئيسية فقط الصفحات التي تحتاجها العمليات فعليًا.",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "Demand paging improves performance by preloading pages that are likely to be needed in the future.",
@@ -7057,11 +7449,13 @@
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": false
+          "is_correct": true
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 257,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Demand paging is disadvantageous because ________.",
       "question_ar": "استدعاء الصفحات عند الطلب غير مفيد لأن ________.",
@@ -7088,7 +7482,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 258,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "________ is not important in determining the success of a pre-paging strategy?",
       "question_ar": "________ ليس مهمًا في تحديد نجاح استراتيجية التحميل المسبق للصفحات؟",
@@ -7115,7 +7511,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 259,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Anticipatory paging strategies that load a few of a process’s contiguous pages when the process references a nonresident page exploit ________.",
       "question_ar": "تستغل استراتيجيات التحميل المسبق للصفحات التي تقوم بتحميل بعض الصفحات المتجاورة للعملية عندما تشير العملية إلى صفحة غير مقيمة ________.",
@@ -7142,7 +7540,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 260,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Page-replacement strategies typically attempt to ________ the number of page faults a process experiences as it runs from start to finish, hopefully ________ the process’s execution time.",
       "question_ar": "تحاول استراتيجيات استبدال الصفحات عادةً ________ عدد أخطاء الصفحات التي تواجهها العملية أثناء تشغيلها من البداية إلى النهاية، على أمل ________ وقت تنفيذ العملية.",
@@ -7169,7 +7569,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 261,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Which of the following activities could lead to significant overhead in a page-replacement strategy?",
       "question_ar": "أي من الأنشطة التالية يمكن أن يؤدي إلى عبء كبير في استراتيجية استبدال الصفحات؟",
@@ -7187,16 +7589,18 @@
         {
           "answer_en": "predicting future page use to determine which pages to replace",
           "answer_ar": "التنبؤ باستخدام الصفحات المستقبلية لتحديد الصفحات التي يجب استبدالها",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 262,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Under a random page replacement strategy, ________.",
       "question_ar": "في إطار استراتيجية استبدال الصفحات العشوائية، ________.",
@@ -7214,16 +7618,18 @@
         {
           "answer_en": "there is generally a small probability that the page that is replaced will be referenced soon",
           "answer_ar": "هناك عادة احتمال صغير بأن يتم الإشارة إلى الصفحة التي تم استبدالها قريبًا",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "all of the above",
           "answer_ar": "كل ما سبق",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 263,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "A FIFO page-replacement strategy can be implemented with relatively low overhead using a ________.",
       "question_ar": "يمكن تنفيذ استراتيجية استبدال الصفحات FIFO مع عبء منخفض نسبيًا باستخدام ________.",
@@ -7250,7 +7656,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 264,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Why is a FIFO page-replacement strategy impractical for most systems?",
       "question_ar": "لماذا تعتبر استراتيجية استبدال الصفحات FIFO غير عملية لمعظم الأنظمة؟",
@@ -7277,7 +7685,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 265,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "According to the FIFO Anomaly (also called Belady’s Anomaly) certain page reference patterns cause ________ page faults when the number of page frames allocated to a process is ________.",
       "question_ar": "وفقًا لشذوذ FIFO (المعروف أيضًا بشذوذ Belady)، فإن أنماط معينة من الإشارة إلى الصفحات تسبب ________ أخطاء صفحات عندما يكون عدد إطارات الصفحات المخصصة للعملية ________.",
@@ -7285,7 +7695,7 @@
         {
           "answer_en": "more, decreased",
           "answer_ar": "المزيد، انخفض",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "fewer, decreased",
@@ -7295,7 +7705,7 @@
         {
           "answer_en": "more, increased",
           "answer_ar": "المزيد، زاد",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "fewer, increased",
@@ -7304,7 +7714,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 266,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The least-recently-used (LRU) page-replacement strategy ________.",
       "question_ar": "استراتيجية استبدال الصفحات الأقل استخدامًا مؤخرًا (LRU) ________.",
@@ -7331,7 +7743,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 267,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "LRU replaces the page that has spent the ________.",
       "question_ar": "تقوم LRU باستبدال الصفحة التي قضت ________.",
@@ -7358,7 +7772,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 268,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The least-frequently-used (LFU) page-replacement strategy can be implemented using ________.",
       "question_ar": "يمكن تنفيذ استراتيجية استبدال الصفحات الأقل استخدامًا (LFU) باستخدام ________.",
@@ -7385,7 +7801,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 269,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Under a not-used-recently (NUR) page-replacement strategy, the best page to replace (if available) is one that has ________.",
       "question_ar": "في إطار استراتيجية استبدال الصفحات غير المستخدمة مؤخرًا (NUR)، فإن أفضل صفحة للاستبدال (إذا كانت متاحة) هي الصفحة التي ________.",
@@ -7412,7 +7830,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 270,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "NUR is based on the idea that ________.",
       "question_ar": "تعتمد NUR على فكرة أن ________.",
@@ -7439,7 +7859,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 271,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The far page-replacement strategy utilizes an ________ that characterizes a process’s reference patterns.",
       "question_ar": "تستخدم استراتيجية استبدال الصفحات البعيدة ________ التي تميز أنماط الإشارة للعملية.",
@@ -7466,7 +7888,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 272,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Why has the far page-replacement strategy not been implemented in real systems?",
       "question_ar": "لماذا لم يتم تنفيذ استراتيجية استبدال الصفحات البعيدة في الأنظمة الحقيقية؟",
@@ -7493,7 +7917,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 273,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Thrashing is the term used to describe ________.",
       "question_ar": "التهريج هو المصطلح المستخدم لوصف ________.",
@@ -7520,7 +7946,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 274,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Which of the following statements about working set memory management is false?",
       "question_ar": "أي من العبارات التالية حول إدارة ذاكرة مجموعة العمل خاطئة؟",
@@ -7547,7 +7975,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 275,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The page-fault-frequency (PFF) strategy adjusts the process’s resident page set ________.",
       "question_ar": "تعدل استراتيجية تردد أخطاء الصفحات (PFF) مجموعة الصفحات المقيمة للعملية ________.",
@@ -7574,7 +8004,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 276,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Under the PFF strategy, those pages that belong to a particular process and are currently in memory are referred to as the process’s ________.",
       "question_ar": "في إطار استراتيجية PFF، تُسمى الصفحات التي تنتمي إلى عملية معينة وتوجد حاليًا في الذاكرة ________ العملية.",
@@ -7601,7 +8033,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 277,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "________ is a technique that can improve working set page replacement by removing pages from memory a process is no longer using.",
       "question_ar": "________ هي تقنية يمكنها تحسين استبدال صفحات مجموعة العمل عن طريق إزالة الصفحات من الذاكرة التي لم تعد العملية تستخدمها.",
@@ -7628,7 +8062,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 278,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Which of the following statements about page sizes is false?",
       "question_ar": "أي من العبارات التالية حول أحجام الصفحات خاطئة؟",
@@ -7636,7 +8072,7 @@
         {
           "answer_en": "A large page size reduces the range of memory that the TLB can reference with each entry.",
           "answer_ar": "يقلل حجم الصفحة الكبير من نطاق الذاكرة التي يمكن لـ TLB الإشارة إليها مع كل إدخال.",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "A smaller page size would help a process establish a smaller, tighter working set, leaving more memory available to other processes.",
@@ -7651,11 +8087,13 @@
         {
           "answer_en": "Large page sizes reduce page table fragmentation by decreasing the number of page table entries.",
           "answer_ar": "تقلل أحجام الصفحات الكبيرة من تجزئة جدول الصفحات عن طريق تقليل عدد إدخالات جدول الصفحات.",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 279,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "In today’s systems, what is the “industry-standard” page size?",
       "question_ar": "في أنظمة اليوم، ما هو حجم الصفحة \"المعيار الصناعي\"؟",
@@ -7663,12 +8101,12 @@
         {
           "answer_en": "4KB",
           "answer_ar": "4 كيلوبايت",
-          "is_correct": true
+          "is_correct": false
         },
         {
           "answer_en": "There is no “industry-standard” page size.",
           "answer_ar": "لا يوجد حجم صفحة \"معيار صناعي\".",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "8KB",
@@ -7682,7 +8120,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 280,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "In a system containing several concurrent processes, a running process with a small working set tends to experience a ________ number of page faults as the page size ________.",
       "question_ar": "في نظام يحتوي على عدة عمليات متزامنة، تميل العملية قيد التشغيل مع مجموعة عمل صغيرة إلى تجربة ________ عدد من أخطاء الصفحات مع ________ حجم الصفحة.",
@@ -7690,7 +8130,7 @@
         {
           "answer_en": "greater, increases",
           "answer_ar": "أكبر، يزيد",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "answer_en": "constant, increases",
@@ -7705,11 +8145,13 @@
         {
           "answer_en": "greater, decreases",
           "answer_ar": "أكبر، ينخفض",
-          "is_correct": true
+          "is_correct": false
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 281,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The average inter-fault time ________ as the number of page frames allocated to a process ________.",
       "question_ar": "متوسط الوقت بين الأخطاء ________ مع ________ عدد إطارات الصفحات المخصصة للعملية.",
@@ -7736,7 +8178,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 282,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "The global LRU (gLRU) page-replacement strategy replaces the least-recently-used page in ________.",
       "question_ar": "تقوم استراتيجية استبدال الصفحات العالمية الأقل استخدامًا مؤخرًا (gLRU) باستبدال الصفحة الأقل استخدامًا مؤخرًا في ________.",
@@ -7763,7 +8207,9 @@
         }
       ]
     },
-    { "chapter_en": "Chapter 11",
+    {
+      "id": 283,
+      "chapter_en": "Chapter 11",
       "chapter_ar": "الفصل الحادي عشر",
       "question_en": "Under the SEQ global replacement strategy, when looping behavior is detected, the _________ strategy is employed.",
       "question_ar": "في إطار استراتيجية الاستبدال العالمية SEQ، عند اكتشاف سلوك التكرار، يتم استخدام استراتيجية _________.",
@@ -7789,8 +8235,64 @@
           "is_correct": true
         }
       ]
+    },
+    {
+      "id": 284,
+      "chapter_en": "chapter 11",
+      "chapter_ar": " الفصل الحادي عشر",
+      "question_en": "The second-chance page-replacement strategy ________.",
+      "question_ar": "إستراتيجية استبدال الصفحات ذات الفرصة الثانية ________.",
+      "answers": [
+        {
+          "answer_en": "moves pages found at the head of a FIFO queue with the referenced bit turned on back to the tail of the queue to avoid replacing them",
+          "answer_ar": "تنقل الصفحات الموجودة في رأس طابور FIFO مع بت المرجع قيد التشغيل إلى ذيل الطابور لتجنب استبدالها",
+          "is_correct": true
+        },
+        {
+          "answer_en": "relies on a modified bit to determine which page to replace",
+          "answer_ar": "تعتمد على بت معدل لتحديد الصفحة التي يجب استبدالها",
+          "is_correct": false
+        },
+        {
+          "answer_en": "searches through a circular list of pages and replaces the first page it encounters that has the referenced bit turned off",
+          "answer_ar": "تبحث في قائمة دائرية من الصفحات وتستبدل أول صفحة تصادفها والتي تم إيقاف بت المرجع فيها",
+          "is_correct": false
+        },
+        {
+          "answer_en": "none of the above",
+          "answer_ar": "لا شيء مما سبق",
+          "is_correct": false
+        }
+      ]
+    },
+    {
+      "id": 285,
+      "chapter_en": " chapter 11 ",
+      "chapter_ar": " الفصل الحادي عشر",
+      "question_en": "Linux uses a variation of the ________ algorithm to approximate an ________ page replacement strategy.",
+      "question_ar": "يستخدم لينكس اختلافًا في خوارزمية ________ لتقريب إستراتيجية استبدال الصفحات ________.",
+      "answers": [
+        {
+          "answer_en": "clock, LRU",
+          "answer_ar": "الساعة، LRU",
+          "is_correct": true
+        },
+        {
+          "answer_en": "NUR, LRU",
+          "answer_ar": "NUR، LRU",
+          "is_correct": false
+        },
+        {
+          "answer_en": "clock, LFU",
+          "answer_ar": "الساعة، LFU",
+          "is_correct": false
+        },
+        {
+          "answer_en": "NUR, LFU",
+          "answer_ar": "NUR، LFU",
+          "is_correct": false
+        }
+      ]
     }
-
-
   ]
 }

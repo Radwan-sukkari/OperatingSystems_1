@@ -7370,7 +7370,7 @@
       "title_ar": "الفصل الحادي عشر",
       "questions": [
         {
-          "id":252,
+          "id": 252,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Virtual memory fetch strategies determine when a page or segment should be moved from ________ to ________.",
@@ -7399,7 +7399,7 @@
           ]
         },
         {
-          "id":253,
+          "id": 253,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Virtual memory replacement strategies determine ________.",
@@ -7428,7 +7428,7 @@
           ]
         },
         {
-          "id":254,
+          "id": 254,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following computer operations involves the highest degree of spatial locality?",
@@ -7457,7 +7457,7 @@
           ]
         },
         {
-          "id":255,
+          "id": 255,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "According to temporal locality, processes are likely to reference pages that ________.",
@@ -7486,7 +7486,7 @@
           ]
         },
         {
-          "id":256,
+          "id": 256,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following reasons makes demand paging a desirable fetch policy?",
@@ -7515,7 +7515,7 @@
           ]
         },
         {
-          "id":257,
+          "id": 257,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Demand paging is disadvantageous because ________.",
@@ -7544,7 +7544,7 @@
           ]
         },
         {
-          "id":258,
+          "id": 258,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "________ is not important in determining the success of a pre-paging strategy?",
@@ -7573,7 +7573,7 @@
           ]
         },
         {
-          "id":259,
+          "id": 259,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Anticipatory paging strategies that load a few of a process’s contiguous pages when the process references a nonresident page exploit ________.",
@@ -7601,7 +7601,8 @@
             }
           ]
         },
-        {"id":260,
+        {
+          "id": 260,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Page-replacement strategies typically attempt to ________ the number of page faults a process experiences as it runs from start to finish, hopefully ________ the process’s execution time.",
@@ -7630,7 +7631,7 @@
           ]
         },
         {
-          "id":261,
+          "id": 261,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following activities could lead to significant overhead in a page-replacement strategy?",
@@ -7659,7 +7660,7 @@
           ]
         },
         {
-          "id":262,
+          "id": 262,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under a random page replacement strategy, ________.",
@@ -7688,7 +7689,7 @@
           ]
         },
         {
-          "id":263,
+          "id": 263,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "A FIFO page-replacement strategy can be implemented with relatively low overhead using a ________.",
@@ -7717,7 +7718,7 @@
           ]
         },
         {
-          "id":264,
+          "id": 264,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Why is a FIFO page-replacement strategy impractical for most systems?",
@@ -7746,7 +7747,7 @@
           ]
         },
         {
-          "id":265,
+          "id": 265,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "According to the FIFO Anomaly (also called Belady’s Anomaly) certain page reference patterns cause ________ page faults when the number of page frames allocated to a process is ________.",
@@ -7775,7 +7776,7 @@
           ]
         },
         {
-          "id":266,
+          "id": 266,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The least-recently-used (LRU) page-replacement strategy ________.",
@@ -7804,7 +7805,7 @@
           ]
         },
         {
-          "id":267,
+          "id": 267,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "LRU replaces the page that has spent the ________.",
@@ -7832,7 +7833,8 @@
             }
           ]
         },
-        {"id":268,
+        {
+          "id": 268,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The least-frequently-used (LFU) page-replacement strategy can be implemented using ________.",
@@ -7860,7 +7862,8 @@
             }
           ]
         },
-        {"id":269,
+        {
+          "id": 269,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under a not-used-recently (NUR) page-replacement strategy, the best page to replace (if available) is one that has ________.",
@@ -7888,7 +7891,8 @@
             }
           ]
         },
-        {"id":270,
+        {
+          "id": 270,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "NUR is based on the idea that ________.",
@@ -7917,7 +7921,7 @@
           ]
         },
         {
-          "id":271,
+          "id": 271,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The far page-replacement strategy utilizes an ________ that characterizes a process’s reference patterns.",
@@ -7945,7 +7949,8 @@
             }
           ]
         },
-        {"id":272,
+        {
+          "id": 272,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Why has the far page-replacement strategy not been implemented in real systems?",
@@ -7973,7 +7978,8 @@
             }
           ]
         },
-        {"id":273,
+        {
+          "id": 273,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Thrashing is the term used to describe ________.",
@@ -8001,7 +8007,8 @@
             }
           ]
         },
-        {"id":274,
+        {
+          "id": 274,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following statements about working set memory management is false?",
@@ -8029,7 +8036,8 @@
             }
           ]
         },
-        {"id":275,
+        {
+          "id": 275,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The page-fault-frequency (PFF) strategy adjusts the process’s resident page set ________.",
@@ -8057,7 +8065,8 @@
             }
           ]
         },
-        {"id":276,
+        {
+          "id": 276,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under the PFF strategy, those pages that belong to a particular process and are currently in memory are referred to as the process’s ________.",
@@ -8085,7 +8094,8 @@
             }
           ]
         },
-        {"id":277,
+        {
+          "id": 277,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "________ is a technique that can improve working set page replacement by removing pages from memory a process is no longer using.",
@@ -8113,7 +8123,8 @@
             }
           ]
         },
-        {"id":278,
+        {
+          "id": 278,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Which of the following statements about page sizes is false?",
@@ -8141,7 +8152,8 @@
             }
           ]
         },
-        {"id":279,
+        {
+          "id": 279,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "In today’s systems, what is the “industry-standard” page size?",
@@ -8169,7 +8181,8 @@
             }
           ]
         },
-        {"id":280,
+        {
+          "id": 280,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "In a system containing several concurrent processes, a running process with a small working set tends to experience a ________ number of page faults as the page size ________.",
@@ -8197,7 +8210,8 @@
             }
           ]
         },
-        {"id":281,
+        {
+          "id": 281,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The average inter-fault time ________ as the number of page frames allocated to a process ________.",
@@ -8225,7 +8239,8 @@
             }
           ]
         },
-        {"id":282,
+        {
+          "id": 282,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "The global LRU (gLRU) page-replacement strategy replaces the least-recently-used page in ________.",
@@ -8253,7 +8268,8 @@
             }
           ]
         },
-        {"id":283,
+        {
+          "id": 283,
           "chapter_en": "Chapter 11",
           "chapter_ar": "الفصل الحادي عشر",
           "question_en": "Under the SEQ global replacement strategy, when looping behavior is detected, the _________ strategy is employed.",
@@ -8281,7 +8297,8 @@
             }
           ]
         },
-        { "id":284,
+        {
+          "id": 284,
           "chapter_en": "chapter 11",
           "chapter_ar": " الفصل الحادي عشر",
           "question_en": "The second-chance page-replacement strategy ________.",

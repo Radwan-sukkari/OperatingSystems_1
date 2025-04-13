@@ -70,7 +70,7 @@ class Identification2GridScreen extends StatelessWidget {
                                         name: state.systemDefinitions[index]
                                             .pdfNumberEn,
                                         function: () {
-                                          isStudy == "true"
+                                          isStudy == "isStudy"
                                               ? context.pushNamed(
                                                   DefinitionsScreen.name,
                                                   extra: state

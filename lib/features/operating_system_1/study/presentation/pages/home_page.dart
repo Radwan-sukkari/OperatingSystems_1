@@ -33,7 +33,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-              top: height(5),
+              top: height(15),
             ),
             child: SingleChildScrollView(
                 child: ColumnAnimations(

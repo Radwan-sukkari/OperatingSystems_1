@@ -46,37 +46,40 @@ class StudySectionStudyScreen extends StatelessWidget {
         title: "الدراسة",
       ),
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
-      body: SectionWidget(
-        widget: AnimationLimiter(
-          child: Expanded(
-            child: ListView.builder(
-              padding: EdgeInsets.symmetric(vertical: 0),
-              itemCount: content.length,
-              itemBuilder: (context, index) {
-                return AnimationConfiguration.staggeredList(
-                  position: index,
-                  duration: Duration(milliseconds: 500),
-                  child: SlideAnimation(
-                    verticalOffset: 50.0,
-                    child: FadeInAnimation(
-                      child: StudySectionStudyWidget(
-                        text: content[index],
-                        fun: onTap[index],
+      body: Padding(
+        padding:  EdgeInsets.only(top: height(15)),
+        child: SectionWidget(
+          widget: AnimationLimiter(
+            child: Expanded(
+              child: ListView.builder(
+                padding: EdgeInsets.symmetric(vertical: 0),
+                itemCount: content.length,
+                itemBuilder: (context, index) {
+                  return AnimationConfiguration.staggeredList(
+                    position: index,
+                    duration: Duration(milliseconds: 500),
+                    child: SlideAnimation(
+                      verticalOffset: 50.0,
+                      child: FadeInAnimation(
+                        child: StudySectionStudyWidget(
+                          text: content[index],
+                          fun: onTap[index],
+                        ),
                       ),
                     ),
-                  ),
-                );
-              },
+                  );
+                },
+              ),
             ),
           ),
-        ),
-        name: "اختر ماتود ان تدرسه من الاقسام",
-        image: Transform(
-          alignment: Alignment.center,
-          transform: Matrix4.rotationY(math.pi),
-          child: Image.asset(
-            Images.boy5,
-            height: height(220),
+          name: "اختر ماتود ان تدرسه من الاقسام",
+          image: Transform(
+            alignment: Alignment.center,
+            transform: Matrix4.rotationY(math.pi),
+            child: Image.asset(
+              Images.boy5,
+              height: height(220),
+            ),
           ),
         ),
       ),

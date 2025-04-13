@@ -67,6 +67,7 @@ class SettingsScreen extends StatelessWidget {
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
+                          if(subjectType=="1")
                           SettingWidget(
                             name: 'عن المادة',
                             function: () {

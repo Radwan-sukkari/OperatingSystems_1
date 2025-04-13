@@ -27,7 +27,7 @@ class RandomQuiz extends StatelessWidget {
           padding: EdgeInsets.only(
             right: width(25),
             left: width(25),
-            top: height(50),
+            top: height(40),
             bottom: height(0),
           ),
           child: SingleChildScrollView(

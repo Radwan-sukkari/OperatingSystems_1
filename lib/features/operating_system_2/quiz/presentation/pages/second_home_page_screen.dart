@@ -7,6 +7,7 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_1/study/presentation/widget/home_page_row_widget.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/osi2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
+import 'package:operating_systems/features/operating_system_2/quiz/presentation/widgets/Choose_random_question2_number_dialog.dart';
 
 class SecondHomePageScreen extends StatelessWidget {
   static const String name = 'second_home_page_screen';
@@ -24,7 +25,7 @@ class SecondHomePageScreen extends StatelessWidget {
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-              top: height(10),
+              top: height(15),
             ),
             child: SingleChildScrollView(
               child: Column(
@@ -34,7 +35,14 @@ class SecondHomePageScreen extends StatelessWidget {
                     child: AboutSubjectContainer(
                       title1: " قم  باختبار  شامل  لكافة ",
                       title2: '     فصول  osi  ',
-                      function: () {},
+                      function: () {
+                        showDialog(
+                          context: context,
+                          builder: (context) {
+                            return
+                                 ChooseRandomQuestion2NumberDialog();
+                          },
+                        );                      },
                     ),
                   ),
                   SizedBox(
