@@ -29,6 +29,7 @@ class AnswerWidget extends StatelessWidget {
             borderColor = Colors.green;
           }
         } else if (state is ToggleInitial) {
+
           if (state.selectedIndex == index) {
             borderColor = Colors.blue; // Highlight selected answer
           }

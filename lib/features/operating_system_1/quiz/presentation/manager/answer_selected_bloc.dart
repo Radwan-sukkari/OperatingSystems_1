@@ -10,16 +10,15 @@ class SelectAnswer extends ToggleEvent {
   SelectAnswer(this.selectedIndex);
 }
 
-class ShowAnswer extends ToggleEvent {
+class ShowAnswerEvent extends ToggleEvent {
   final List<Answer> answers;
 
-  ShowAnswer(this.answers);
+  ShowAnswerEvent(this.answers);
 }
 
-class ResetState extends ToggleEvent {}
+class ResetEvent extends ToggleEvent {}
 
 abstract class ToggleState {}
-
 
 class ToggleInitial extends ToggleState {
   final int? selectedIndex;
@@ -42,7 +41,7 @@ class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
       emit(ToggleInitial(event.selectedIndex));
     });
 
-    on<ShowAnswer>((event, emit) {
+    on<ShowAnswerEvent>((event, emit) {
       final currentState = state;
       if (currentState is ToggleInitial) {
         final selectedIndex = currentState.selectedIndex;
@@ -58,7 +57,7 @@ class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
       }
     });
 
-    on<ResetState>((event, emit) {
+    on<ResetEvent>((event, emit) {
       emit(ToggleInitial(null));
     });
   }

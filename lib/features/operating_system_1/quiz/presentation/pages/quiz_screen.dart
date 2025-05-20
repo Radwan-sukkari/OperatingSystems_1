@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/answer_selected_bloc.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/result_page.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/previous_and_next_question.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/first_layer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/second_layer.dart';
@@ -37,55 +39,50 @@ class _QuizScreenState extends State<QuizScreen> {
   int correctAnswers = 0;
   int incorrectAnswers = 0;
   bool addCounter = true;
+  bool isShowNextQuestionCircle=false;
 
   @override
   void initState() {
     super.initState();
     _pageController = PageController();
   }
-
   void _nextQuestion(BuildContext context) {
     if (_currentPage < widget.questions.length - 1) {
+      context.read<ToggleBloc>().add(ResetEvent());
+
       _pageController.nextPage(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
       setState(() {
+        isShowNextQuestionCircle=false;
         addCounter = true;
         _currentPage++;
       });
-
-      context.read<ToggleBloc>().add(ResetState());
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("No more questions!"),
-          duration: Duration(seconds: 2),
-        ),
-      );
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
-          content: Text("No more questions!"),
-          duration: Duration(seconds: 2),
-        ),
-      );
+      // ScaffoldMessenger.of(context).showSnackBar(
+      //   const SnackBar(
+      //     content: Text("No more questions!"),
+      //     duration: Duration(seconds: 2),
+      //   ),
+      // );
     }
   }
 
   void _previousQuestion(BuildContext context) {
     if (_currentPage > 0) {
+      context.read<ToggleBloc>().add(ResetEvent());
       _pageController.previousPage(
         duration: const Duration(milliseconds: 300),
         curve: Curves.easeInOut,
       );
       setState(() {
         addCounter = false;
+        isShowNextQuestionCircle=true;
         _currentPage--;
       });
-
-      context.read<ToggleBloc>().add(ResetState());
     } else {
-      showFlushBar(context, "هذا اول سؤال");
+      showFlushBar(context, "هذا اول ");
     }
   }
 
@@ -107,8 +104,15 @@ class _QuizScreenState extends State<QuizScreen> {
             }
             if (_currentPage == widget.questions.length - 1) {
               Future.delayed(const Duration(milliseconds: 500), () {
-                _showResultsDialog(context);
-              });
+                context.pushReplacementNamed(
+                  ResultPage.name,
+                  extra: {
+                    'correctAnswer': correctAnswers,
+                    'inCorrectAnswer': incorrectAnswers,
+                    'questionLength': widget.questions.length,
+                  },
+                );
+          });
             }
           }
         },
@@ -125,8 +129,8 @@ class _QuizScreenState extends State<QuizScreen> {
               ),
               child: Column(
                 children: [
-                  Text(
-                      " correct answer $correctAnswers  incorrect answer $incorrectAnswers"),
+                  // Text(
+                  //     " correct answer $correctAnswers  incorrect answer $incorrectAnswers"),
                   BlocBuilder<ToggleBloc, ToggleState>(
                     builder: (context, state) {
                       return PreviousAndNextQuestion(
@@ -135,7 +139,7 @@ class _QuizScreenState extends State<QuizScreen> {
                         },
                         previousQuestion: () {
                           _previousQuestion(context);
-                        },
+                        }, isShowNextQuestionCircle: isShowNextQuestionCircle ,
                       );
                     },
                   ),
@@ -187,28 +191,4 @@ class _QuizScreenState extends State<QuizScreen> {
     );
   }
 
-  void _showResultsDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      barrierDismissible: false,
-      builder: (context) {
-        return AlertDialog(
-          title: const Text('نتيجة الاختبار'),
-          content: Text(
-            'عدد الإجابات الصحيحة: $correctAnswers\nعدد الإجابات الخاطئة: $incorrectAnswers',
-            textAlign: TextAlign.center,
-          ),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.pop(context);
-                Navigator.pop(context); // يرجع  للشاشة السابقة
-              },
-              child: const Text('حسنًا'),
-            ),
-          ],
-        );
-      },
-    );
-  }
 }

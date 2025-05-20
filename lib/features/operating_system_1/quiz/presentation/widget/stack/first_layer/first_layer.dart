@@ -40,6 +40,8 @@ class FirstLayer extends StatelessWidget {
       value: getIt<FavouriteBloc>()..add(GetFavouriteEvent()),
       child: BlocBuilder<ToggleBloc, ToggleState>(
         builder: (context, state) {
+          final isAnswerSelected = state is ToggleInitial && state.selectedIndex != null;
+          final isAnswerValidated = state is AnswerValidated;
           return Container(
             width: width(350),
             decoration: BoxDecoration(
@@ -71,9 +73,26 @@ class FirstLayer extends StatelessWidget {
                     if (!isArabic)
                       GestureDetector(
                         onTap: () {
+                          context.pushNamed(TranslateQuestionTArabicScreen.name,
+                              extra: question,
+                              queryParameters: {
+                                "chapterArabic": chapterArabic,
+                                "questionNumberInTheChapter":
+                                questionNumberInTheChapter.toString(),
+                                "questionIReceived":
+                                questionIReceived.toString()
+                              });
+                        },
+                        child: MainButton(name: "اظهار الترجمة"),
+                      ),
+                    SizedBox(height: height(8)),
+
+                    if (!isArabic&& isAnswerSelected && !isAnswerValidated)
+                      GestureDetector(
+                        onTap: () {
                           context
                               .read<ToggleBloc>()
-                              .add(ShowAnswer(question.answers));
+                              .add(ShowAnswerEvent(question.answers));
                           question.description != null &&
                                   question.description!.isNotEmpty
                               ? showFlushBar(
@@ -84,22 +103,7 @@ class FirstLayer extends StatelessWidget {
                           name: "اظهار الجواب",
                         ),
                       ),
-                    SizedBox(height: height(8)),
-                    if (!isArabic)
-                      GestureDetector(
-                        onTap: () {
-                          context.pushNamed(TranslateQuestionTArabicScreen.name,
-                              extra: question,
-                              queryParameters: {
-                                "chapterArabic": chapterArabic,
-                                "questionNumberInTheChapter":
-                                    questionNumberInTheChapter.toString(),
-                                "questionIReceived":
-                                    questionIReceived.toString()
-                              });
-                        },
-                        child: MainButton(name: "اظهار الترجمة"),
-                      ),
+
                     SizedBox(
                       height: height(10),
                     ),

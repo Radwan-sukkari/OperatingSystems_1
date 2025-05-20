@@ -45,6 +45,8 @@ class Assets {
   static const String imagesEmpty = 'assets/images/empty.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesLogo3 = 'assets/images/logo3.png';
+  static const String imagesResult = 'assets/images/result.png';
+  static const String imagesResult2 = 'assets/images/result2.png';
   static const String imagesSplashScreen = 'assets/images/splash_screen.png';
   static const String jsonAlgorithms = 'assets/json/algorithms.json';
   static const String jsonComparison = 'assets/json/comparison.json';

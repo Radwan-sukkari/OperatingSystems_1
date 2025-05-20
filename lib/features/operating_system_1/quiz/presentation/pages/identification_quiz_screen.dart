@@ -4,6 +4,7 @@ import 'package:operating_systems/core/app/app_app_bar.dart';
 import 'package:operating_systems/core/app/flush_bar.dart';
 import 'package:operating_systems/core/app/size.dart';
 import 'package:operating_systems/core/injection/injection.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/answer_selected_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/identification_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/Identification_quiz_card.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/previous_and_next_question.dart';
@@ -68,18 +69,23 @@ class _IdentificationQuizScreenState extends State<IdentificationQuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider.value(
-      value: getIt<ShowAnswerBloc>(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider.value(value: getIt<ShowAnswerBloc>()),
+        BlocProvider.value(value: getIt<ToggleBloc>()),
+
+      ],
       child: Scaffold(
-        appBar: AppAppBar(title: "كويز التعاريف",isBack: true,),
+        appBar: AppAppBar(title: "كويز التعاريف", isBack: true),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: Padding(
             padding: EdgeInsets.only(
-                right: width(15),
-                left: width(15),
-                top: height(30),
-                bottom: height(20)),
+              right: width(15),
+              left: width(15),
+              top: height(30),
+              bottom: height(20),
+            ),
             child: Column(
               children: [
                 PreviousAndNextQuestion(
@@ -89,8 +95,9 @@ class _IdentificationQuizScreenState extends State<IdentificationQuizScreen> {
                   previousQuestion: () {
                     _previousQuestion(context);
                   },
+                  isShowNextQuestionCircle: true,
                 ),
-                SizedBox(height: height(15),),
+                SizedBox(height: height(15)),
                 Flexible(
                   child: SingleChildScrollView(
                     child: Column(
@@ -118,15 +125,12 @@ class _IdentificationQuizScreenState extends State<IdentificationQuizScreen> {
                               return Column(
                                 children: [
                                   DefinitionCard2(
-                                    title: widget
-                                        .definitions[_currentPage].titleEn,
-                                    explain: widget
-                                        .definitions[_currentPage].explain,
+                                    title: widget.definitions[_currentPage].titleEn,
+                                    explain: widget.definitions[_currentPage].explain,
                                     isYourAnswer: false,
                                   ),
                                   DefinitionCard2(
-                                    title: widget
-                                        .definitions[_currentPage].titleEn,
+                                    title: widget.definitions[_currentPage].titleEn,
                                     explain: controller.text,
                                     isYourAnswer: true,
                                   ),

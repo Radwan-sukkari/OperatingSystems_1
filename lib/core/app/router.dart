@@ -9,6 +9,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/osi_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/random_quiz.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/result_page.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/translate_the_question_to_arabic_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/true_false_chapter_grid.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
@@ -114,6 +115,20 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     name: SecondHomePageScreen.name,
     builder: (context, state) => SecondHomePageScreen(),
   ),
+  GoRoute(
+    path: ResultPage.path,
+    name: ResultPage.name,
+    builder: (context, state) {
+      final extra = state.extra as Map<String, int>;
+      return ResultPage(
+        
+        correctAnswer: extra['correctAnswer']!,
+        inCorrectAnswer: extra['inCorrectAnswer']!,
+        questionLength: extra['questionLength']!,
+      );
+    },
+  ),
+
   GoRoute(
     path: AboutTheApp.path,
     name: AboutTheApp.name,
