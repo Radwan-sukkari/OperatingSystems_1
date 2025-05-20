@@ -5,36 +5,7 @@
       "title_en": "Chapter 1",
       "title_ar": "الفصل الأول",
       "questions": [
-        {
-          "id": 1,
-          "chapter_en": "Chapter 1",
-          "chapter_ar": "الفصل الأول",
-          "question_en": "Networks of computers have become so powerful that they are used to:",
-          "question_ar": "أصبحت شبكات أجهزة الكمبيوتر قوية جدًا بحيث يتم استخدامها من أجل:",
-          "answers": [
-            {
-              "answer_en": "Emulate human intelligence",
-              "answer_ar": "محاكاة الذكاء البشري",
-              "is_correct": false
-            },
-            {
-              "answer_en": "Model the Earth’s climate",
-              "answer_ar": "تصميم مناخ الأرض",
-              "is_correct": false
-            },
-            {
-              "answer_en": "Construct lifelike 3D animations",
-              "answer_ar": "إنشاء رسوم متحركة ثلاثية الأبعاد",
-              "is_correct": false
-            },
-            {
-              "answer_en": "All of the above",
-              "answer_ar": "كل ما سبق",
-              "is_correct": true
-            }
-          ]
-        },
-        {
+         {
           "id": 2,
           "chapter_en": "Chapter 1",
           "chapter_ar": "الفصل الأول",

@@ -131,7 +131,7 @@
           "chapter_ar": "كل الفصول",
           "question_en": "Operating system can divide main memory into portions called modules so that one process inadvertently or maliciously.",
           "question_ar": "يمكن لنظام التشغيل تقسيم الذاكرة الرئيسية إلى أجزاء تسمى وحدات بحيث تقوم عملية واحدة عن غير قصد أو بسوء نية.",
-          "description": "partitions",
+          "description": " called partitions",
           "answers": [
             {
               "answer_en": "True",
@@ -185,7 +185,8 @@
             }
           ]
         },
-        {"id": 432,
+        {
+          "id": 432,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual systems are characterized by a minimal amount of code, specialized power management recourses, and user-friendly interfaces.",
@@ -204,7 +205,8 @@
             }
           ]
         },
-        {"id": 433,
+        {
+          "id": 433,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Compiling is the process of integrating the various modules referenced by a program into a single executable unit.",
@@ -223,6 +225,47 @@
             }
           ]
         },
+        {
+            "id": 521,
+            "chapter_en": "all chapter",
+            "chapter_ar": "جميع الفصول",
+            "question_en": "When a thread joins another thread, the former does not execute until the latter terminates.",
+            "question_ar": "عندما ينضم سلسلة برمجية إلى سلسلة أخرى، فإن السلسلة الأولى لا تنفذ حتى تنتهي السلسلة الثانية.",
+            "answers": [
+              {
+                "answer_en": "True",
+                "answer_ar": "صحيح",
+                "is_correct": true
+              },
+              {
+                "answer_en": "False",
+                "answer_ar": "خطأ",
+                "is_correct": false
+              }
+            ]
+          },
+        {
+            "id": 522,
+            "chapter_en": "all chapter",
+            "chapter_ar": "جميع الفصول",
+            "question_en": "Lamport's algorithm allows multiple threads to obtain the same ticket number.",
+            "question_ar": "يسمح خوارزمية لامبورت للعديد من السلاسل البرمجية بالحصول على نفس رقم التذكرة.",
+            "answers": [
+              {
+                "answer_en": "True",
+                "answer_ar": "صحيح",
+                "is_correct": true
+              },
+              {
+                "answer_en": "False",
+                "answer_ar": "خطأ",
+                "is_correct": false
+              }
+            ]
+          },
+
+
+
         {
           "id": 434,
           "chapter_en": "all chapters",
@@ -243,7 +286,8 @@
             }
           ]
         },
-        {"id": 435,
+        {
+          "id": 435,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Main and secondary storage can be referenced directly by a processor.",
@@ -262,7 +306,8 @@
             }
           ]
         },
-        {"id": 436,
+        {
+          "id": 436,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "An associative mapping stores the particular page table in content addressed associate memory.",
@@ -281,7 +326,8 @@
             }
           ]
         },
-        {"id": 437,
+        {
+          "id": 437,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Virtual memory replacement strategies determine how many pages should be added to main memory.",
@@ -300,7 +346,8 @@
             }
           ]
         },
-        {"id": 438,
+        {
+          "id": 438,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Tim Berners-Lee developed the internet in 1990.",
@@ -319,7 +366,8 @@
             }
           ]
         },
-        {"id": 439,
+        {
+          "id": 439,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The bootstrap chip typically located on the mainboard stores instruction for basic hardware initialization.",
@@ -338,7 +386,8 @@
             }
           ]
         },
-        {"id": 440,
+        {
+          "id": 440,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Block operation is particularly useful for detecting security threats and debugging software.",
@@ -357,7 +406,8 @@
             }
           ]
         },
-        {"id": 441,
+        {
+          "id": 441,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread enters the waiting state when it momentarily has no work to perform.",
@@ -376,7 +426,8 @@
             }
           ]
         },
-        {"id": 442,
+        {
+          "id": 442,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "In semaphore, a thread performs the P operation after it enters its critical section.",
@@ -395,7 +446,8 @@
             }
           ]
         },
-        {"id": 443,
+        {
+          "id": 443,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Processor-bound processes in a multi-programming computer system mainly use peripheral devices to perform their tasks.",
@@ -414,7 +466,8 @@
             }
           ]
         },
-        {"id": 444,
+        {
+          "id": 444,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Demand fetch strategy attempt to load a piece of program or data into memory before it's referenced.",
@@ -433,7 +486,27 @@
             }
           ]
         },
-        {"id": 445,
+        {
+          "id": 523,
+          "chapter_en": "all chapter ",
+          "chapter_ar": "جميع الفصول ",
+          "question_en": "Page sharing doesn't allow modifiable procedures from being used by more than one process at the same time.",
+          "question_ar": "مشاركة الصفحات لا تسمح للإجراءات القابلة للتعديل بأن تستخدم من قبل أكثر من عملية في نفس الوقت.",
+          "answers": [
+            {
+              "answer_en": "True",
+              "answer_ar": "صحيح",
+              "is_correct": true
+            },
+            {
+              "answer_en": "False",
+              "answer_ar": "خطأ",
+              "is_correct": false
+            }
+          ]
+        },
+        {
+          "id": 445,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "NUR is based on the idea that a page that has not been recently used is likely to be used in the near future.",
@@ -552,7 +625,8 @@
             }
           ]
         },
-        {"id": 451,
+        {
+          "id": 451,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A thread enters a waiting state when it must wait for the completion of an I/O request.",
@@ -571,7 +645,8 @@
             }
           ]
         },
-        {"id": 452,
+        {
+          "id": 452,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A segment protection exception is generated when a displacement is greater than a segment length.",
@@ -590,7 +665,8 @@
             }
           ]
         },
-        {"id": 453,
+        {
+          "id": 453,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Maximizing throughput and minimizing variance of response times can lead to increased transmission time.",
@@ -606,6 +682,26 @@
               "answer_en": "False",
               "answer_ar": "خطأ",
               "is_correct": true
+            }
+          ]
+        },
+        {
+          "id": 524,
+          "chapter_en": " all chapter",
+          "chapter_ar": "تاريخ أنظمة التشغيل",
+          "question_en": "A benefit of the time sharing system of the 1960s is that time sharing made it possible for real-time systems to provide quick results to users.",
+          "question_ar": "إحدى فوائد نظام المشاركة الزمنية في الستينيات هي أن المشاركة الزمنية جعلت من الممكن لأنظمة الوقت الحقيقي تقديم نتائج سريعة للمستخدمين.",
+          "description": "",
+          "answers": [
+            {
+              "answer_en": "True",
+              "answer_ar": "صحيح",
+              "is_correct": true
+            },
+            {
+              "answer_en": "False",
+              "answer_ar": "خطأ",
+              "is_correct": false
             }
           ]
         },
@@ -649,7 +745,8 @@
             }
           ]
         },
-        {"id": 456,
+        {
+          "id": 456,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Only one thread at a time can execute the instructions in its critical section for a particular resource.",
@@ -668,7 +765,8 @@
             }
           ]
         },
-        {"id": 457,
+        {
+          "id": 457,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Compacting temporarily removes a process from main memory to allow another process to make use of the system's resources.",
@@ -687,7 +785,6 @@
             }
           ]
         },
-
         {
           "id": 458,
           "chapter_en": "all chapters",
@@ -748,7 +845,8 @@
             }
           ]
         },
-        {"id": 461,
+        {
+          "id": 461,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Sending and receiving process often use a synchronization protocol to ensure that messages are properly received.",
@@ -767,7 +865,8 @@
             }
           ]
         },
-        {"id": 462,
+        {
+          "id": 462,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Protection restricts access to a shared variable to only one thread at a time.",
@@ -786,7 +885,8 @@
             }
           ]
         },
-        {"id": 463,
+        {
+          "id": 463,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The intermediate level scheduler determines which jobs may join admission to the system and actively compete for system resources.",
@@ -805,7 +905,8 @@
             }
           ]
         },
-        {"id": 464,
+        {
+          "id": 464,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "A memory manager's primary function is to interact with special memory management hardware.",
@@ -824,7 +925,8 @@
             }
           ]
         },
-        {"id": 465,
+        {
+          "id": 465,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "In a paging system, a page frame is always larger than an incoming page.",
@@ -843,7 +945,8 @@
             }
           ]
         },
-        {"id": 466,
+        {
+          "id": 466,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Demand paging improves performance for process with predictable memory access patterns.",
@@ -862,7 +965,8 @@
             }
           ]
         },
-        {"id": 467,
+        {
+          "id": 467,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "The lexical analyzer groups tokens in a program source code into syntactically correct statements.",
@@ -881,7 +985,8 @@
             }
           ]
         },
-        {"id": 468,
+        {
+          "id": 468,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "An efficient operating system generally achieves high throughput and high average TOT.",
@@ -1160,7 +1265,8 @@
             }
           ]
         },
-        {"id": 482,
+        {
+          "id": 482,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Secondary storage can be referenced directly by a processor.",
@@ -1179,7 +1285,8 @@
             }
           ]
         },
-        {"id": 483,
+        {
+          "id": 483,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Next fit placement strategies attempt to load a piece of program or data into main memory before its referenced.",
@@ -1198,7 +1305,8 @@
             }
           ]
         },
-        {"id": 484,
+        {
+          "id": 484,
           "chapter_en": "all chapters",
           "chapter_ar": "كل الفصول",
           "question_en": "Under random page replacement strategy the system is consistently likely to achieve high Performance.",
@@ -1217,7 +1325,6 @@
             }
           ]
         }
-
       ]
     }
   ]

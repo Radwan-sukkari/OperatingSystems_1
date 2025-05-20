@@ -5,7 +5,6 @@ import 'package:operating_systems/core/injection/injection.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   OperatingSystemApp.hive();
-
-  configureDependencies( );
+  configureDependencies();
   runApp(OperatingSystemApp());
 }

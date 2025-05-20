@@ -6,11 +6,13 @@ abstract class ToggleEvent {}
 
 class SelectAnswer extends ToggleEvent {
   final int selectedIndex;
+
   SelectAnswer(this.selectedIndex);
 }
 
 class ShowAnswer extends ToggleEvent {
   final List<Answer> answers;
+
   ShowAnswer(this.answers);
 }
 
@@ -18,12 +20,13 @@ class ResetState extends ToggleEvent {}
 
 abstract class ToggleState {}
 
+
 class ToggleInitial extends ToggleState {
   final int? selectedIndex;
+
   ToggleInitial(this.selectedIndex);
 }
 
-// In your ToggleBloc, ensure you have a state for AnswerValidated
 class AnswerValidated extends ToggleState {
   final int? selectedIndex;
   final bool isCorrect;
@@ -31,8 +34,8 @@ class AnswerValidated extends ToggleState {
 
   AnswerValidated(this.selectedIndex, this.isCorrect, this.correctAnswerIndex);
 }
+
 @injectable
-// In your ToggleBloc, handle the ShowAnswer event
 class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
   ToggleBloc() : super(ToggleInitial(null)) {
     on<SelectAnswer>((event, emit) {
@@ -43,7 +46,8 @@ class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
       final currentState = state;
       if (currentState is ToggleInitial) {
         final selectedIndex = currentState.selectedIndex;
-        final correctAnswerIndex = event.answers.indexWhere((answer) => answer.isCorrect);
+        final correctAnswerIndex =
+            event.answers.indexWhere((answer) => answer.isCorrect);
 
         if (selectedIndex != null) {
           final isCorrect = event.answers[selectedIndex].isCorrect;
@@ -55,7 +59,7 @@ class ToggleBloc extends Bloc<ToggleEvent, ToggleState> {
     });
 
     on<ResetState>((event, emit) {
-      emit(ToggleInitial(null)); // Reset the state
+      emit(ToggleInitial(null));
     });
   }
 }

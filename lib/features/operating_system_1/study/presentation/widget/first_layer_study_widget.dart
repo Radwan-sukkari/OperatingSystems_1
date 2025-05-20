@@ -47,6 +47,16 @@ class FirstLayerStudyWidget extends StatelessWidget {
                   AnswerListViewStudyWidget(
                     answers: question.answers,
                   ),
+                  Align(
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        softWrap: true,
+                        textAlign: TextAlign.justify,
+                        question.description ?? "",
+                        style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                            color: Theme.of(context).colorScheme.error,
+                            fontWeight: FontWeight.w500),
+                      ))
                 ],
                 verticalOffset: 0,
                 horizontalOffset: 350)),
