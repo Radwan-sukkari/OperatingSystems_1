@@ -69,7 +69,7 @@ class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
                                     verticalOffset: 50.0,
                                     child: FadeInAnimation(
                                       child: SecondButton(
-                                        name: state.chapters[index].titleAr,
+                                        name: state.chapters[index].titleEn,
                                         function: () {
                                           widget.isStudy == "isNotStudy"
                                               ? context.pushNamed(

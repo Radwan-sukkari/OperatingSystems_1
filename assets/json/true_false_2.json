@@ -9,7 +9,7 @@
           "id": 485,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "The patitioned file organization schema places records on disk logical sequence according to a key contained in each record",
+          "question_en": "The partitioned file organization schema places records on disk logical sequence according to a key contained in each record",
           "question_ar": "نظام تنظيم الملفات المقسم يضع السجلات على القرص بتسلسل منطقي بناءً على مفتاح موجود في كل سجل",
           "description": "indexed sequential",
           "answers": [
@@ -29,7 +29,7 @@
           "id": 486,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "The rational for developing industry _ standard benchmark is that benchmark often are used asabasis of comparison  between system constructed by different",
+          "question_en": "The rational for developing industry _ standard benchmark is that benchmark often are used a abasis of comparison  between system constructed by different",
           "question_ar": "السبب المنطقي لتطوير معايير الصناعة القياسية هو أن المعايير غالبًا ما تُستخدم كأساس للمقارنة بين الأنظمة التي تم بناؤها بواسطة أطراف مختلفة",
           "description": "",
           "answers": [
@@ -49,7 +49,7 @@
           "id": 487,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "A systemtical multi processor organization must be able to recover from processor failure unlike mester/slave and separate kernals",
+          "question_en": "A systemtical multi processor organization must be able to recover from processor failure unlike master/slave and separate karnals",
           "question_ar": "يجب أن تكون المنظمة المتعددة المعاليج النظامية قادرة على التعافي من فشل المعالج على عكس أنظمة السيد/العبد والنواة المنفصلة",
           "description": "ensure mutual exclusion to all kernel data",
           "answers": [
@@ -89,7 +89,7 @@
           "id": 489,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "In RPC packaging procedure arguments along with the procedure name into a message for transmission over a network is performed marshaling",
+          "question_en": "In RPC packaging procedure arguments along with the procedure name into a message for transmission over a network is performed packaging",
           "question_ar": "في الاستدعاء البعيد للإجراءات (RPC)، يتم تجميع وسائط الإجراء مع اسم الإجراء في رسالة للإرسال عبر الشبكة عبر عملية التسلسل (Marshaling)",
           "description": "marshaling",
           "answers": [
@@ -111,7 +111,7 @@
           "chapter_ar": "كل الفصول",
           "question_en": "File systems typically update soft links when are fernced file is moved to different directory",
           "question_ar": "أنظمة الملفات عادةً ما تقوم بتحديث الروابط الرمزية عند نقل الملف المشار إليه إلى دليل مختلف",
-          "description": "soft links",
+          "description": "  (not sure) soft links",
           "answers": [
             {
               "answer_en": "True",
@@ -169,7 +169,7 @@
           "id": 493,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "Connection oriented services en surere liability whereas connection less services rely on the underlying network",
+          "question_en": "Connection oriented services en surerel liability whereas connection less services rely on the underlying network",
           "question_ar": "الخدمات الموجهة للاتصال تضمن الموثوقية بينما تعتمد الخدمات غير الموجهة للاتصال على الشبكة الأساسية",
           "description": "",
           "answers": [
@@ -229,7 +229,7 @@
           "id": 496,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "Ablock allocation schema allocates file using blocks of continguous sectors",
+          "question_en": "Ablocke allocation schema allocates file using blocks of continguous sectors",
           "question_ar": "نظام تخصيص الكتل يخصص الملف باستخدام كتل من القطاعات المتجاورة",
           "description": "",
           "answers": [

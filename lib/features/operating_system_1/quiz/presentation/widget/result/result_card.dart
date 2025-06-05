@@ -40,7 +40,7 @@ class ResultCard extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: Text(
-                "عدد الاجابات الصحيحة :      $correctAnswer",
+                "عدد الاجابات الصحيحة :        $correctAnswer",
                 style: Theme.of(context)
                     .textTheme
                     .titleLarge!
@@ -57,7 +57,7 @@ class ResultCard extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: Text(
-                "عدد الاجابات الخاطئة :       $inCorrectAnswer",
+                "عدد الاجابات الخاطئة :          $inCorrectAnswer",
                 style: Theme.of(context)
                     .textTheme
                     .titleLarge!
@@ -74,7 +74,7 @@ class ResultCard extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: Text(
-                "عدد الأسئلة الكلي  :          $questionLength",
+                "عدد الأسئلة الكلي      :         $questionLength",
                 style: Theme.of(context)
                     .textTheme
                     .titleLarge!

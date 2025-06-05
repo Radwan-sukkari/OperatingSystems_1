@@ -10,40 +10,33 @@ import 'package:operating_systems/core/bloc/app_state_bloc.dart';
 import 'package:operating_systems/core/bloc/bloc_state_data_builder.dart';
 import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/pages/quiz_screen.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/shimmer/osi_chapter_shimmer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/osi_question_study/osi_question_study_screen.dart';
-import 'package:operating_systems/features/operating_system_2/quiz/presentation/manager/quiz_2/quiz_operating_system2_bloc.dart';
 
 import 'package:operating_systems/resources/resources.dart';
 
-class Osi2ChapterGridScreen extends StatefulWidget {
+class OsiChapterGridScreen extends StatelessWidget {
   final String isStudy;
-  static const String name = 'osi2_chapter_grid_screen';
-  static const String path = '/osi2_chapter_grid_screen';
+  static const String name = 'osi_chapter_grid_screen';
+  static const String path = '/osi_chapter_grid_screen';
 
-  const Osi2ChapterGridScreen({super.key, required this.isStudy});
-
-  @override
-  State<Osi2ChapterGridScreen> createState() => _Osi2ChapterGridScreenState();
-}
-
-class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
-
+  const OsiChapterGridScreen({super.key, required this.isStudy});
 
   @override
   Widget build(BuildContext context) {
     return BlocProvider.value(
-      value: getIt<QuizOperatingSystem2Bloc>()..add(QuizOsi2Event()),
+      value: getIt<QuizFeatureBloc>()..add(OsiQuizEvent()),
       child: Scaffold(
         appBar: AppAppBar(title: "الفصول",isBack: true,),
         backgroundColor: Theme.of(context).colorScheme.surfaceTint,
         body: SafeArea(
           child: SectionWidget(
-            widget: BlocSelector<QuizOperatingSystem2Bloc,
-                QuizOperatingSystem2State, BlocStateData<QuizModel>>(
-              selector: (state) => state.osiQuiz2State,
+            widget: BlocSelector<QuizFeatureBloc, QuizFeatureState,
+                BlocStateData<QuizModel>>(
+              selector: (state) => state.osiQuizState,
               builder: (context, state) {
                 return BlocStateDataBuilder(
                     data: state,
@@ -69,14 +62,13 @@ class _Osi2ChapterGridScreenState extends State<Osi2ChapterGridScreen> {
                                     verticalOffset: 50.0,
                                     child: FadeInAnimation(
                                       child: SecondButton(
-                                        name: state.chapters[index].titleAr,
+                                        name: state.chapters[index].titleEn,
                                         function: () {
-                                          widget.isStudy == "isNotStudy"
+                                          isStudy == "isNotStudy"
                                               ? context.pushNamed(
                                                   QuizScreen.name,
                                                   queryParameters: {
                                                     "appBarTitle":" كويز ${state.chapters[index].titleAr} ",
-
                                                     'chapterEnglish': state
                                                         .chapters[index]
                                                         .titleEn,

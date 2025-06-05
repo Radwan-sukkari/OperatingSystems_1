@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:operating_systems/core/app/size.dart';
-import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/result/result_card.dart';
 
 import '../../pages/show_in_correct_answer.dart';
@@ -11,10 +10,8 @@ class ResultColumn extends StatelessWidget {
   final int inCorrectAnswer;
   final int questionLength;
   final double percentage;
-  final List<Question>inCorrectAnswerList;
 
-  const ResultColumn({super.key, required this.correctAnswer, required this.inCorrectAnswer, required this.questionLength, required this.percentage, required this.inCorrectAnswerList});
-
+  const ResultColumn({super.key, required this.correctAnswer, required this.inCorrectAnswer, required this.questionLength, required this.percentage});
 
   @override
   Widget build(BuildContext context) {
@@ -55,9 +52,7 @@ class ResultColumn extends StatelessWidget {
             Spacer(),
             GestureDetector(
               onTap: (){
-                context.pushNamed(IncorrectAnswersScreen.name,extra: {
-                  "inCorrectAnswerList":inCorrectAnswerList
-                });
+                context.pushNamed(IncorrectAnswersScreen.name);
               },
               child:
               Container(

@@ -63,7 +63,7 @@ class TrueFalseChapterGridScreen extends StatelessWidget {
                                     verticalOffset: 50.0,
                                     child: FadeInAnimation(
                                       child: SecondButton(
-                                        name: state.chapters[index].titleEn,
+                                        name: state.chapters[index].titleAr,
                                         function: () {
                                           isStudy == "isNotStudy"
                                               ? context.pushNamed(

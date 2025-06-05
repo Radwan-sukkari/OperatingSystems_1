@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:operating_systems/features/operating_system_1/quiz/data/model/quiz_model.dart';
 import 'package:operating_systems/generated/assets.dart';
-import 'package:operating_systems/resources/resources.dart';
-
 import '../../../../../core/app/app_app_bar.dart';
 import '../../../../../core/app/size.dart';
 import '../widget/result/resullt_column.dart';
-import '../widget/result/result_card.dart'; // Or use Navigator.pop if you're not using go_router
 
 class ResultPage extends StatelessWidget {
   static const String name = 'result_screen';
@@ -14,20 +11,24 @@ class ResultPage extends StatelessWidget {
   final int correctAnswer;
   final int inCorrectAnswer;
   final int questionLength;
+  final List<Question> incorrectAnswerList;
 
   const ResultPage({
     super.key,
     required this.correctAnswer,
     required this.inCorrectAnswer,
     required this.questionLength,
+    required this.incorrectAnswerList
   });
 
   @override
   Widget build(BuildContext context) {
     final double percentage = (correctAnswer / questionLength) * 100;
-
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surfaceTint,
+      backgroundColor: Theme
+          .of(context)
+          .colorScheme
+          .surfaceTint,
       appBar: AppAppBar(
         title: "نتائج الكويز",
       ),
@@ -41,7 +42,7 @@ class ResultPage extends StatelessWidget {
                 correctAnswer: correctAnswer,
                 inCorrectAnswer: inCorrectAnswer,
                 questionLength: questionLength,
-                percentage: percentage,
+                percentage: percentage, inCorrectAnswerList: incorrectAnswerList,
               ),
               Positioned(
                   top: height(-115),

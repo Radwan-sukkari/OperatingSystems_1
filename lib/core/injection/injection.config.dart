@@ -47,6 +47,8 @@ import '../../features/operating_system_1/quiz/presentation/manager/identificati
     as _i835;
 import '../../features/operating_system_1/quiz/presentation/manager/quiz_feature/quiz_feature_bloc.dart'
     as _i438;
+import '../../features/operating_system_1/quiz/presentation/manager/show_incoorect_answers/show_incorrect_answer_bloc.dart'
+    as _i577;
 import '../../features/operating_system_1/study/data/data_source/study_data_source.dart'
     as _i1021;
 import '../../features/operating_system_1/study/data/repositories/study_repo_imp.dart'
@@ -107,6 +109,8 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i125.QuizDataSource>(() => _i125.QuizDataSource());
     gh.factory<_i660.ToggleBloc>(() => _i660.ToggleBloc());
     gh.factory<_i835.ShowAnswerBloc>(() => _i835.ShowAnswerBloc());
+    gh.factory<_i577.ShowIncorrectAnswerBloc>(
+        () => _i577.ShowIncorrectAnswerBloc());
     gh.factory<_i1021.StudyDataSource>(() => _i1021.StudyDataSource());
     gh.factory<_i955.QuizOperatingSystem2DataSource>(
         () => _i955.QuizOperatingSystem2DataSource());

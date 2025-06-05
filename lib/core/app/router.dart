@@ -20,8 +20,8 @@ import 'package:operating_systems/features/operating_system_1/study/presentation
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/resources_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/settings_screen.dart';
-import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/choose_algorithm_screen.dart';
-import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/algorithm/choose_algorithm_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons/comparisons_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/definitions/definitions_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/important_question/important_question_sreen.dart';
@@ -33,6 +33,8 @@ import 'package:operating_systems/features/operating_system_2/quiz/presentation/
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/second_home_page_screen.dart';
 import 'package:operating_systems/features/operating_system_2/quiz/presentation/pages/true_false2_chapter_grid_screen.dart';
 import 'package:operating_systems/features/operating_system_2/study/presentation/pages/identification2_grid.dart';
+
+import '../../features/operating_system_1/quiz/presentation/pages/show_in_correct_answer.dart';
 
 final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
@@ -89,10 +91,12 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
       name: DefinitionsScreen.name,
       builder: (context, state) {
         final definitions = state.extra as List<Definition>;
-        final index = int.tryParse(state.uri.queryParameters['index'] ?? '0') ?? 0;
+        final index =
+            int.tryParse(state.uri.queryParameters['index'] ?? '0') ?? 0;
 
         return DefinitionsScreen(
-          definitions: definitions, index: index,
+          definitions: definitions,
+          index: index,
         );
       }),
   GoRoute(
@@ -118,17 +122,30 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
   GoRoute(
     path: ResultPage.path,
     name: ResultPage.name,
+    routes: [
+      GoRoute(
+        path: IncorrectAnswersScreen.path,
+        name: IncorrectAnswersScreen.name,
+        builder: (context, state) {
+          final extra = state.extra as Map<String, dynamic>;
+
+          return IncorrectAnswersScreen(inCorrectAnswerList: extra["inCorrectAnswerList"] as List<Question>,);
+        }
+
+      ),
+    ],
     builder: (context, state) {
-      final extra = state.extra as Map<String, int>;
+      final extra = state.extra as Map<String, dynamic>;
+
       return ResultPage(
-        
-        correctAnswer: extra['correctAnswer']!,
-        inCorrectAnswer: extra['inCorrectAnswer']!,
-        questionLength: extra['questionLength']!,
+        correctAnswer: extra['correctAnswer'] as int,
+        inCorrectAnswer: extra['inCorrectAnswer'] as int,
+        questionLength: extra['questionLength'] as int,
+        incorrectAnswerList: extra['incorrectAnswerList'] as List<Question>,
       );
     },
-  ),
 
+  ),
   GoRoute(
     path: AboutTheApp.path,
     name: AboutTheApp.name,
@@ -150,15 +167,17 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
     builder: (context, state) => ChooseAlgorithmsScreen(),
   ),
   GoRoute(
-    path: ShowFullScreen.path,
-    name: ShowFullScreen.name,
-    builder: (context, state) {
-      final String question = state.uri.queryParameters['question']!;
-      final String imagePath = state.uri.queryParameters['imagePath']!;
+      path: ShowFullScreen.path,
+      name: ShowFullScreen.name,
+      builder: (context, state) {
+        final String question = state.uri.queryParameters['question']!;
+        final String imagePath = state.uri.queryParameters['imagePath']!;
 
-      return  ShowFullScreen(question: question, imagePath: imagePath,);
-    }
-  ),
+        return ShowFullScreen(
+          question: question,
+          imagePath: imagePath,
+        );
+      }),
   GoRoute(
     path: ImportantQuestionScreen.path,
     name: ImportantQuestionScreen.name,
@@ -172,7 +191,8 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
         final String title = state.uri.queryParameters['title']!;
 
         return ComparisonsScreen(
-          comparisons: Comparisons, title: title,
+          comparisons: Comparisons,
+          title: title,
         );
       }),
   GoRoute(
@@ -290,9 +310,9 @@ final GoRouter router = GoRouter(initialLocation: SplashScreen.path, routes: [
         final String appBarTitle = state.uri.queryParameters['appBarTitle']!;
 
         return QuizScreen(
-          questions: questions,
-          chapterEnglish: chapterEnglish,
-          chapterArabic: chapterArabic, appBarTitle: appBarTitle
-        );
+            questions: questions,
+            chapterEnglish: chapterEnglish,
+            chapterArabic: chapterArabic,
+            appBarTitle: appBarTitle);
       }),
 ]);

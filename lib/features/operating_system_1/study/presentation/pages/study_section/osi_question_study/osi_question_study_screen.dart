@@ -19,7 +19,8 @@ class OsiQuestionStudyScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return
+      Scaffold(
       appBar: AppAppBar(
         title: chapterArabic,
         isBack: true,

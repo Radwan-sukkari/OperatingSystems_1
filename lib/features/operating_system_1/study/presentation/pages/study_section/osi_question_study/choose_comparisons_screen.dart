@@ -11,7 +11,7 @@ import 'package:operating_systems/core/injection/injection.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/first_layer/section_widget.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/manager/study_bloc.dart';
-import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/comparisons/comparisons_screen.dart';
 
 import 'package:operating_systems/resources/resources.dart';
 

@@ -13,6 +13,8 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/second_layer.dart';
 import 'package:operating_systems/features/operating_system_1/quiz/presentation/widget/stack/third_layer.dart';
 
+import '../manager/show_incoorect_answers/show_incorrect_answer_bloc.dart';
+
 class QuizScreen extends StatefulWidget {
   static const String name = 'quiz_screen';
   static const String path = '/quiz_screen';
@@ -39,13 +41,15 @@ class _QuizScreenState extends State<QuizScreen> {
   int correctAnswers = 0;
   int incorrectAnswers = 0;
   bool addCounter = true;
-  bool isShowNextQuestionCircle=false;
+  bool isShowNextQuestionCircle = false;
+  List<Question> inCorrectAnswerList = [];
 
   @override
   void initState() {
     super.initState();
     _pageController = PageController();
   }
+
   void _nextQuestion(BuildContext context) {
     if (_currentPage < widget.questions.length - 1) {
       context.read<ToggleBloc>().add(ResetEvent());
@@ -55,7 +59,7 @@ class _QuizScreenState extends State<QuizScreen> {
         curve: Curves.easeInOut,
       );
       setState(() {
-        isShowNextQuestionCircle=false;
+        isShowNextQuestionCircle = false;
         addCounter = true;
         _currentPage++;
       });
@@ -78,7 +82,7 @@ class _QuizScreenState extends State<QuizScreen> {
       );
       setState(() {
         addCounter = false;
-        isShowNextQuestionCircle=true;
+        isShowNextQuestionCircle = true;
         _currentPage--;
       });
     } else {
@@ -88,8 +92,13 @@ class _QuizScreenState extends State<QuizScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider.value(
-      value: getIt<ToggleBloc>(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<ToggleBloc>.value(value: getIt<ToggleBloc>()),
+
+        // BlocProvider<ShowIncorrectAnswerBloc>.value(
+        //     value: getIt<ShowIncorrectAnswerBloc>()),
+      ],
       child: BlocListener<ToggleBloc, ToggleState>(
         listener: (context, state) {
           if (state is AnswerValidated) {
@@ -101,18 +110,29 @@ class _QuizScreenState extends State<QuizScreen> {
               setState(() {
                 incorrectAnswers++;
               });
+              final currentQuestion = widget.questions[_currentPage];
+              inCorrectAnswerList.add(currentQuestion);
+              for (int i = 0; i < inCorrectAnswerList.length; i++) {
+                print(
+                    "${inCorrectAnswerList[i].id}+${inCorrectAnswerList[i].questionAr}");
+              }
+
+              // context.read<ShowIncorrectAnswerBloc>().add(
+              //       AddIncorrectAnswerEvent(incorrectQuestion: currentQuestion),
+              //     );
             }
             if (_currentPage == widget.questions.length - 1) {
               Future.delayed(const Duration(milliseconds: 500), () {
                 context.pushReplacementNamed(
                   ResultPage.name,
                   extra: {
+                    "incorrectAnswerList": inCorrectAnswerList,
                     'correctAnswer': correctAnswers,
                     'inCorrectAnswer': incorrectAnswers,
                     'questionLength': widget.questions.length,
                   },
                 );
-          });
+              });
             }
           }
         },
@@ -139,7 +159,8 @@ class _QuizScreenState extends State<QuizScreen> {
                         },
                         previousQuestion: () {
                           _previousQuestion(context);
-                        }, isShowNextQuestionCircle: isShowNextQuestionCircle ,
+                        },
+                        isShowNextQuestionCircle: isShowNextQuestionCircle,
                       );
                     },
                   ),
@@ -190,5 +211,4 @@ class _QuizScreenState extends State<QuizScreen> {
       ),
     );
   }
-
 }
