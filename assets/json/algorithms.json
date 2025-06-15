@@ -10,23 +10,22 @@
         {
           "system": [
             "System",
-            ";int threadName=1",
-            "startThreads ()"
+            "; int threadName=1",
+            " () startThreads "
           ],
           "thread 1": [
-            "Thread2",
-            "} () void main ",
+            "Thread1",
+            "} () void main",
             "}while(!done)",
-            ";while(threadNumber==2)",
+            "; while(threadNumber==2)",
             "critical Section//",
-            ";ThreadNumber==2",
-            "code outside critical Section;",
+            "; ThreadNumber==2",
+            "code outside critical Section//",
             "{{"
           ],
           "thread2": [
             "Thread2",
-            " ",
-            "} () void main ",
+            "} () void main",
             "}while(!done)",
             ";while(threadNumber==1)",
             "critical Section//",
@@ -49,27 +48,27 @@
             "System",
             ";bool t1Inside=false",
             ";bool t2Inside=false",
-            "()startThreads "
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
-            "} () void main ",
+            "} () void main",
             "}while(!done)",
             ";while(t2Inside)",
             ";t1Inside=true",
             "critical Section//",
-            ";t2Inside=false",
+            ";t1Inside=false",
             "code outside critical Section//",
             "{{"
           ],
           "thread2": [
             "Thread2",
-            "} () void main ",
+            "} () void main",
             "}while(!done)",
             ";while(t1Inside)",
             ";t2Inside=true",
             "critical Section//",
-            ";t1Inside=false",
+            ";t2Inside=false",
             "code outside critical Section//",
             "{{"
           ]
@@ -88,11 +87,11 @@
             "System",
             ";bool t1WantsToEnter=false",
             ";bool t2WantsToEnter=false",
-            "()startThreads "
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
-            "} () void main ",
+            "} () void main",
             "}while(!done)",
             ";t1WantsToEnter=true",
             ";while(t2WantsToEnter)",
@@ -102,13 +101,13 @@
             "{{"
           ],
           "thread2": [
-            "Thread1",
-            "} () void main ",
+            "Thread2",
+            "} () void main",
             "}while(!done)",
             ";t2WantsToEnter=true",
             ";while(t1WantsToEnter)",
             "critical Section//",
-            ";t1WantsToEnter=false",
+            ";t2WantsToEnter=false",
             "code outside critical Section//",
             "{{"
           ]
@@ -127,7 +126,7 @@
             "System",
             ";bool t1WantsToEnter=false",
             ";bool t2WantsToEnter=false",
-            "()startThreads"
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
@@ -140,7 +139,7 @@
             ";t1WantsToEnter=true",
             "{",
             "critical Section//",
-            ";t1WantsToEnter=true",
+            ";t1WantsToEnter==false",
             "code outside critical Section//",
             "{{"
           ],
@@ -149,8 +148,8 @@
             "} () void main",
             "}while(!done)",
             ";t2WantsToEnter=true",
-            "}while(t1WantsToEnter)",
-            ";t1WantsToEnter=false",
+            "} while(t1WantsToEnter)",
+            ";t2WantsToEnter=false",
             "()sleep//",
             ";t2WantsToEnter=true",
             "{",
@@ -175,7 +174,7 @@
             ";int favoredThread=1",
             ";bool t1WantsToEnter=false",
             ";bool t2WantsToEnter=false",
-            "()startThreads"
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
@@ -218,7 +217,7 @@
     },
     {
       "id": 6,
-      "algorithm_name": "  peterson Algorithm v5 ",
+      "algorithm_name": " peterson Algorithm v5 ",
       "exam_question": " peterson Algorithm v5 ",
       "first_name": "thread1",
       "second_name": "thread2",
@@ -229,7 +228,7 @@
             ";int favoredThread=1",
             ";bool t1WantsToEnter=false",
             ";bool t2WantsToEnter=false",
-            "()startThreads"
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
@@ -269,7 +268,7 @@
           "system": [
             "System",
             ";bool occupied=false",
-            "()startThreads"
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
@@ -280,7 +279,7 @@
             "testAndSet(p1MustToWait,occupied)",
             "{",
             "critical Section//",
-            ";p1MustToWait=false",
+            ";p1MustToWait=true",
             "; occupied=false",
             "code outside critical Section//",
             "{{"
@@ -294,7 +293,7 @@
             ";testAndSet(p2MustToWait,occupied)",
             "{",
             "critical Section//",
-            ";p2MustToWait=false",
+            ";p2MustToWait=true",
             "; occupied=false",
             "code outside critical Section//",
             "{{"
@@ -313,7 +312,7 @@
           "system": [
             "System",
             ";bool occupied=false",
-            "()startThreads"
+            ";()startThreads"
           ],
           "thread 1": [
             "Thread1",
@@ -321,8 +320,8 @@
             ";bool p1MustToWait=true",
             "}while(!done)",
             "}do",
-            ";swap(p1MustToWait,occupied)",
-            "} while(p1MustToWait)",
+            ";swap(p1MustToWait , occupied)",
+            "  ;(p1MustToWait) while {",
             "critical Section//",
             ";p1MustToWait=true",
             "; occupied=false",
@@ -335,8 +334,8 @@
             ";bool p2MustToWait=true",
             "}while(!done)",
             "}do",
-            ";swap(p2MustToWait,occupied)",
-            "} while(p2MustToWait)",
+            ";swap(p2MustToWait , occupied)",
+            ";(p2MustToWait) while {",
             "critical Section//",
             ";p2MustToWait=true",
             "; occupied=false",
@@ -394,22 +393,22 @@
             "} () void main",
             "; int nextValueProducer",
             "}while(!done)",
-            ";nextValueProducer=generateTheValue()",
-            "p(valueConsumed);   ",
-            ";sharedValue=nextValurProducer",
+            ";()nextValueProducer=generateTheValue",
+            ";p(valueConsumed)",
+            ";sharedValue=nextValurProduced",
             "critical Section//",
-            "v(valueProducer);   ",
+            "v(valueProducer);",
             "code outside critical Section//",
             "{{"
           ],
           "thread2": [
             "Consumer Thread",
             "} () void main",
-            "; int nextValueProducer",
+            "; int nextValueConsumed",
             "}while(!done)",
-            "p(valueProducer);",
+            "p(valueProduced);",
             ";nextValurConsumed=sharedValue",
-            "v(valueProducer); ",
+            ";v(valueConsumed)",
             ";processThreadValue(nextValueConsumed)",
             "{{"
           ]

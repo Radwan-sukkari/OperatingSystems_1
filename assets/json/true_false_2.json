@@ -209,7 +209,7 @@
           "id": 495,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "BISCK proceors decode instructions using micro code",
+          "question_en": " A BISCK processors decode instructions using micro code",
           "question_ar": "معالجات BISCK تفك تشفير التعليمات باستخدام مايكروكود",
           "description": "",
           "answers": [
@@ -269,9 +269,9 @@
           "id": 498,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "Master/slave multi processor organization exhibit high scalability processors rated capacity",
+          "question_en": "Master/slave multi processor organization exhibit high scalability processors where adding a processor increase the system through put the new processors rated capacity ",
           "question_ar": "منظمة المعالجات المتعددة من نوع سيد/عبد تُظهر سعة عالية قابلة للتوسع للمعالجات",
-          "description": "   .",
+          "description": "",
           "answers": [
             {
               "answer_en": "True",
@@ -389,9 +389,9 @@
           "id": 504,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "Grid computing requires high speed , dedicated communition channels to operate efficiently",
+          "question_en": "Grid computing requires high speed , dedicated communication channels to operate efficiently",
           "question_ar": "الحوسبة الشبكية تتطلب قنوات اتصال عالية السرعة ومخصصة لتعمل بكفاءة",
-          "description": "a chieves high performance using separe computer power at little or not cost ",
+          "description": "archieves high performance using separe computer power at little or not cost ",
           "answers": [
             {
               "answer_en": "True",
@@ -469,7 +469,7 @@
           "id": 508,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "Asystem exhibits cache consistency if the value obtained from reading a memory address is always the value that was most recently written to the address",
+          "question_en": "A system exhibits cache consistency if the value obtained from reading a memory address is always the value that was most recently written to the address",
           "question_ar": "النظام يُظهر اتساق الذاكرة المؤقتة إذا كانت القيمة التي تم الحصول عليها من قراءة عنوان الذاكرة هي دائمًا القيمة الأكثر حداثة التي كُتبت إلى ذلك العنوان",
           "description": "memory coherence",
           "answers": [
@@ -489,7 +489,7 @@
           "id": 509,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "A logical ordering ensures that  all event are ordered and the causality in presrved",
+          "question_en": "A logical ordering ensures that  all event are ordered and the causality is presrved",
           "question_ar": "الترتيب المنطقي يضمن أن جميع الأحداث مُرتّبة وأن السببية محفوظة",
           "description": "total ",
           "answers": [
@@ -551,7 +551,7 @@
           "chapter_ar": "كل الفصول",
           "question_en": "Distributed system divide resources among a group of machines and let multiple user share the resources",
           "question_ar": "النظم الموزعة تقسم الموارد بين مجموعة من الأجهزة وتسمح لعدة مستخدمين بمشاركة الموارد",
-          "description": "  ",
+          "description": " ",
           "answers": [
             {
               "answer_en": "True",
@@ -649,7 +649,7 @@
           "id": 517,
           "chapter_en": "12",
           "chapter_ar": "كل الفصول",
-          "question_en": "EPIC processor attempt to provide higher performance than called post RISC processor by including sub stantailly more execution units than do conventional sperscalr architecture",
+          "question_en": "EPIC processor attempt to provide higher performance than called post RISC processor by including sub stantailly more execution units than do conventional sperscalar architecture",
           "question_ar": "تحاول معالجات EPIC توفير أداء أعلى من معالجات post-RISC عن طريق تضمين وحدات تنفيذ أكثر بكثير من بنية super-scalar التقليدية",
           "description": "",
           "answers": [
@@ -691,7 +691,7 @@
           "chapter_ar": "كل الفصول",
           "question_en": "In a transaction wait for graph , each node represents a process and each arrow represents a dead lock",
           "question_ar": "في رسم بياني لانتظار المعاملات، كل عقدة تمثل عملية وكل سهم يمثل حالة تعليق (deadlock)",
-          "description": "rwquest resources being held by another process",
+          "description": "request resources being held by another process",
           "answers": [
             {
               "answer_en": "True",

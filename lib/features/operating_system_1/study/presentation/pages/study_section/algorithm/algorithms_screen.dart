@@ -15,12 +15,12 @@ class AlgorithmsScreens extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Theme.of(context).colorScheme.surfaceTint,
-      appBar: AppAppBar(title: algorithm.algorithmName),
+      appBar: AppAppBar(title: algorithm.algorithmName,isBack: true,),
       body: Padding(
           padding: EdgeInsets.only(left: 20, top: height(10), right: 20),
           child: Column(
             children: [
-              Text(algorithm.examQuestion),
+              Text(""),
               AlgorithmListView(algorithmBody: algorithm.algorithmBody)
             ],
           )),

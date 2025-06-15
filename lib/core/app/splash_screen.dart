@@ -58,12 +58,11 @@ class _SplashScreenState extends State<SplashScreen> {
                   AboutSubject(child: Image.asset(Images.logo3)),
                   Spacer(),
                   Align(
-                    alignment: Alignment.bottomRight,
+                    alignment: Alignment.bottomLeft,
                     child: Text(
-                      "تمت برمجة وتصميم التطبيق بواسطة الطالب رضوان سكري",
-                      style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                      "by : Radwan Sukkari",
+                      style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             fontWeight: FontWeight.w400,
-                            fontSize: 15,
                             color: Theme.of(context).colorScheme.primary,
                           ),
                     )

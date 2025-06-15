@@ -15,7 +15,7 @@ import 'package:operating_systems/features/operating_system_1/quiz/presentation/
 import 'package:operating_systems/features/operating_system_1/study/data/model/algorithms_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/comparisons_model.dart';
 import 'package:operating_systems/features/operating_system_1/study/data/model/system_1_definitions_model.dart';
-import 'package:operating_systems/features/operating_system_1/study/presentation/pages/algorithms_screen.dart';
+import 'package:operating_systems/features/operating_system_1/study/presentation/pages/study_section/algorithm/algorithms_screen.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_app.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/about_the_subject.dart';
 import 'package:operating_systems/features/operating_system_1/study/presentation/pages/settings_screen/resources_screen.dart';

@@ -34,7 +34,7 @@ class DefinitionFirstLayer extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: height(5)),
                   child: Text(
-                    "${definition.whichCourse}",
+                    definition.whichCourse??"",
                     style: Theme.of(context).textTheme.labelSmall!.copyWith(
                           color: Theme.of(context).colorScheme.error,
                           fontWeight: FontWeight.w500,
